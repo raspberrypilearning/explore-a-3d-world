@@ -146,7 +146,7 @@ If you have enough room on your screen then it's really useful to see the Scene 
 --- task ---
 Drag the Game view tab to the right so that it appears next to the Scene view:
 
-![Dragging Game view tab to position the Game view to the right of the Scene view](images/side-by-side-views.png)
+![Dragging Game view tab to position the Game view to the right of the Scene view](images/side-by-side-views.gif)
 
 --- /task ---
 
