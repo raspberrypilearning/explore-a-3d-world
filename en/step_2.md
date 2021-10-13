@@ -39,7 +39,7 @@ title: The Unity Editor windows and views
 
 3. The Scene View - is used to navigate and edit your Scene. You can select and position Game objects including characters, scenery, cameras and lights.
 
-4. The Game View - shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter PlayMode The GameView simulates your scene as it would be viewed by a user. 
+4. The Game View - shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter Play mode The Game View simulates your scene as it would be viewed by a user. 
 
 5. The Hierarchy Window - shows all the Game objects in your Scene and the structure between them. You can add and navigate the Game objects in your project. Game objects can had child objects that move with them.
 

@@ -1,22 +1,12 @@
-## Upgrade your project
+## Improve player movement
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Summary or upgrade project task
-</div>
-<div>
-![](images/image.png){:width="300px"}
-</div>
-</div>
+You can also control the speed of movement and rotation.
 
---- collapse ---
+--- task ---
+Add variables for the `moveSpeed` and `rotateSpeed`. Making these variables `public` means that you can set them in the Unity Inspector.
 
----
-title: Completed project
----
+```
 
-You can view the [completed project here](https://scratch.mit.edu/projects/485673032/){:target="_blank"}.
+```
 
---- /collapse ---
-
---- save ---
+--- /task ---
