@@ -30,81 +30,24 @@ The Unity editor looks like this:
 --- collapse ---
 
 ---
-title: 1. The Unity Menu
+title: The Unity Editor windows and views
 ---
 
-The Unity Menu is used to import, open and save scenes and projects. You can amend your Unity Editor preferences and add new Game objects and components. 
+1. The Unity Menu - is used to import, open and save scenes and projects. You can amend your Unity Editor preferences and add new Game objects and components. 
 
---- /collapse ---
+2. The Toolbar - contains tools for navigating round in the Scene View, controlling play of the Game View and customising your Unity Editor layout. 
 
---- collapse ---
+3. The Scene View - is used to navigate and edit your Scene. You can select and position Game objects including characters, scenery, cameras and lights.
 
----
-title: 2. The Toolbar
----
+4. The Game View - shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter PlayMode The GameView simulates your scene as it would be viewed by a user. 
 
-The Toolbar contains tools for navigating round in the Scene View, controlling play of the Game View and customising your Unity Editor layout. 
+5. The Hierarchy Window - shows all the Game objects in your Scene and the structure between them. You can add and navigate the Game objects in your project. Game objects can had child objects that move with them.
 
---- /collapse ---
+6. The Project Window - shows a library of all the files included in your project. You can find Assets to use here.
 
---- collapse ---
+7. The Console Window - shows important messages. This is where you can see Compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
 
----
-title: 3. The Scene View
----
-
-The Scene View is used to navigate and edit your Scene. You can select and position Game objects including characters, scenery, cameras and lights.
-
---- /collapse ---
-
---- collapse ---
-
----
-title: 4. The Game View
----
-
-The Game View shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter PlayMode The GameView simulates your scene as it would be viewed by a user.  
-
---- /collapse ---
-
---- collapse ---
-
----
-title: 5. The Hierarchy Window
----
-
-The Hierarchy View shows all the Game objects in your Scene and the structure between them. You can add and navigate the Game objects in your project. Game objects can had child objects that move with them.
-
---- /collapse ---
-
---- collapse ---
-
----
-title: 6. The Project Window
----
-
-The Project Window shows a library of all the files included in your project. You can find Assets to use here.
-
---- /collapse ---
-
---- collapse ---
-
----
-title: 7. The Console Window
----
-
-The Console Window shows important messages. This is where you can see Compiler errors (errors in your Script) and messages that you print using Debug.Log().
-
---- /collapse ---
-
---- collapse ---
-
----
-title: 8. The Inspector Window
----
-
-The Inspector Window allows you to view and edit the properties of Game objects. You can add other components to your Game objects and edit the values they use. 
-
+8. The Inspector Window - allows you to view and edit the properties of Game objects. You can add other components to your Game objects and edit the values they use. 
 
 --- /collapse ---
 
@@ -163,6 +106,8 @@ Click on the arrow next to your Character in the hierarchy to see the 'child obj
 
 ![Inspector with ConstructionGearMesh active property highlighted and unchecked](images/uncheck-hat-active.png)
 
+![The Scene view with ConstructionGearMesh removed from the Raccoon](images/no-hat-scene.png)
+
 Hide the other accessories for your character in the same way, or just keep one active. 
 
 **Tip:** Game objects that are not active appeared greyed out in the Hierarchy Window
@@ -216,6 +161,17 @@ Click on your character in the Hierarchy and then change its Transform settings 
 ![Transform for character with position set to 0, 0, 0](images/transform-centre.png)
 
 Your character will move to the centre in the Scene view and the Game view.
+
+![The Scene view with character at 0, 0, 0 in the middle of the plane](images/transform-centre-scene-view.png)
+
+--- /task ---
+
+--- task ---
+Unity does not autosave changes. When you have unsaved changes you will see a '*' next to your scene in the Hierarchy.
+
+Save your scene by clicking 'File' -> 'Save' or 'Ctrl-S'. 
+
+Also, save your project by clicking 'File' -> 'Save Project'.
 
 --- /task ---
 
