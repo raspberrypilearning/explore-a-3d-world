@@ -130,7 +130,7 @@ Select the location dropdown and navigate to your `Scenes` folder:
 
 A new file will appear in the Project Window:
 
-![Projects Window with 3D World scene in the Scenes folder](images/3dworld-scene.png)
+![Projects Window with 3D World scene in the Scenes folder](images/3dworld-scene.png)e
 
 --- /task ---
 
