@@ -81,7 +81,7 @@ A new file will appear in the Project Window:
 
 Double click on the Models folder. A model describes what a 3D object looks like and can be created using 3D modelling tools. We have included some models that you can use. 
 
-Choose either the `Cat` or `Raccoon model` and drag it from the Projects Window to the Scene View.
+Choose either the `Cat` or `Raccoon` model and drag it from the Projects Window to the Scene View.
 
 ![Animation of Raccoon being dragged from Project Window to Scene View](images/drag-character.gif)
 
