@@ -33,7 +33,7 @@ The Unity editor looks like this:
 title: 1. The Unity Menu
 ---
 
-
+The Unity Menu is used to import, open and save scenes and projects. You can amend your Unity Editor preferences and add new Game objects and components. 
 
 --- /collapse ---
 
@@ -130,7 +130,7 @@ Select the location dropdown and navigate to your `Scenes` folder:
 
 A new file will appear in the Project Window:
 
-![Projects Window with 3D World scene in the Scenes folder](images/3dworld-scene.png)e
+![Projects Window with 3D World scene in the Scenes folder](images/3dworld-scene.png)
 
 --- /task ---
 
@@ -144,19 +144,78 @@ Choose either the `Cat` or `Raccoon model` and drag it from the Projects Window 
 
 --- /task ---
 
+Your character will appear in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
+
 --- task ---
+Click on your character in the Scene view and tap the 'F' key. This will focus on your character. You can also use the scroll wheel on your mouse to zoom in and out. 
 
-
+**Tip:** If you get lost in the Scene view, you can click on your character (or another game object) in the Hierarchy window and then click 'Shift-F' to focus on your character in the Scene view.
 
 --- /task ---
 
+Hmm, your character is wearing multiple accessories. 
+
 --- task ---
 
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
+Click on your character in the Hierarchy. This will open the settings for the game object in the Inspector Window.
+
+Click on the arrow next to your Character in the hierarchy to see the 'child objects'. Click on 'ConstructionGearMesh' and uncheck the box next to it's name in the Inspector. This will hide the hat. 
+
+![Inspector with ConstructionGearMesh active property highlighted and unchecked](images/uncheck-hat-active.png)
+
+Hide the other accessories for your character in the same way, or just keep one active. 
+
+**Tip:** Game objects that are not active appeared greyed out in the Hierarchy Window
+
+![Hierarchy Window with greyed out ConstructionGearMesh](images/greyed-out-mesh.png)
+
+--- /task ---
+
+Your character is floating in the air! 
+
+--- task ---
+
+Right-click on your scene (name '3D World') in the Hierachy and choose 'GameObject' -> '3D Object' -> 'Plane'. 
+
+![The 3D World scene with menu extended and plane highlighted](images/add-plane.png)
+
+This will create a 'Floor' for your World. 
+
+The default size for the plane is 10m x 10m. Unity uses metres as the unit of measurement. 
+
+--- /task ---
+
+The player will see the game through the Main Camera which is shown as a video camera icon in the scene:
+
+![Camera selected in scene view](images/camera-in-scene.png)
+
+The Game view shows what your project will look like to a Player.
+
+--- task ---
+Click on the Game view tab. Your character will be in whatever position you dragged it to in the Scene view (you might not be able to see it). 
+
+--- /task ---
+
+If you have enough room on your screen then it's really useful to see the Scene view and the Game view at the same time. 
+
+--- task ---
+Drag the Game view tab to the right so that it appears next to the Scene view:
+
+![Dragging Game view tab to position the Game view to the right of the Scene view](images/side-by-side-views.png)
+
+--- /task ---
+
+Unity uses X, Y and Z coordinates to position Game objects in 3D space. 
+
+[unity-3d-coordinates]
+
+--- task ---
+
+Click on your character in the Hierarchy and then change its Transform settings so the Position is (0, 0, 0) - the centre of the world.
+
+![Transform for character with position set to 0, 0, 0](images/transform-centre.png)
+
+Your character will move to the centre in the Scene view and the Game view.
 
 --- /task ---
 
