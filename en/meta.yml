@@ -9,6 +9,7 @@ steps:
   - title: Introduction
   - title: Set the 3D scene
   - title: Make your character move
+  - title: Improve player movement
   - title: Reflection
     knowledge_quiz:
       path: quiz1
