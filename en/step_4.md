@@ -45,7 +45,7 @@ Set their values to `3` and `1`:
 
 Your player is moving around, but at the moment, it's stuck in a T-pose position. You can improve this by using animations. 
 
-![The game view with the character moving around with animation](images/animated-character.gif)
+![The game view with the character moving around with animation](images/animated-char.gif)
 
 --- task ---
 Drag the 'IdleWalk' Animator from the Animations folder in the Projects Window to the Controller property of the Animator component of your character.
