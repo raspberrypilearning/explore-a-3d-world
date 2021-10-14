@@ -77,46 +77,7 @@ A new file will appear in the Project Window:
 
 --- /task ---
 
---- task ---
-
-Double click on the Models folder. A model describes what a 3D object looks like and can be created using 3D modelling tools. We have included some models that you can use. 
-
-Choose either the `Cat` or `Raccoon` model and drag it from the Projects Window to the Scene View.
-
-![Animation of Raccoon being dragged from Project Window to Scene View](images/drag-character.gif)
-
---- /task ---
-
-Your character will appear in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
-
---- task ---
-Click on your character in the Scene view and tap the 'F' key. This will focus on your character. You can also use the scroll wheel on your mouse to zoom in and out. 
-
-**Tip:** If you get lost in the Scene view, you can click on your character (or another game object) in the Hierarchy window and then click 'Shift-F' to focus on your character in the Scene view.
-
---- /task ---
-
-Hmm, your character is wearing multiple accessories. 
-
---- task ---
-
-Click on your character in the Hierarchy. This will open the settings for the game object in the Inspector Window.
-
-Click on the arrow next to your Character in the hierarchy to see the 'child objects'. Click on 'ConstructionGearMesh' and uncheck the box next to it's name in the Inspector. This will hide the hat. 
-
-![Inspector with ConstructionGearMesh active property highlighted and unchecked](images/uncheck-hat-active.png)
-
-![The Scene view with ConstructionGearMesh removed from the Raccoon](images/no-hat-scene.png)
-
-Hide the other accessories for your character in the same way, or just keep one active. 
-
-**Tip:** Game objects that are not active appeared greyed out in the Hierarchy Window
-
-![Hierarchy Window with greyed out ConstructionGearMesh](images/greyed-out-mesh.png)
-
---- /task ---
-
-Your character is floating in the air! 
+Your world needs some ground. 
 
 --- task ---
 
@@ -124,45 +85,100 @@ Right-click on your scene (name '3D World') in the Hierachy and choose 'GameObje
 
 ![The 3D World scene with menu extended and plane highlighted](images/add-plane.png)
 
-This will create a 'Floor' for your World. 
+This will create a 'Ground' for your World. 
 
 The default size for the plane is 10m x 10m. Unity uses metres as the unit of measurement. 
 
 --- /task ---
 
-The player will see the game through the Main Camera which is shown as a video camera icon in the scene:
-
-![Camera selected in scene view](images/camera-in-scene.png)
-
-The Game view shows what your project will look like to a Player.
-
 --- task ---
-Click on the Game view tab. Your character will be in whatever position you dragged it to in the Scene view (you might not be able to see it). 
+In the Projects View, open the Materials folder and drag the 'Yellow Stone' material to the plane in the Scene view.
+
+![The Project window with Yellow Stone material highlighted.](images/yellow-stone-window.png)
+
+The plane will immediately have the new material.
+
+![The scene view with yello stone material applied to the plane](images/yellow-stone-floor.png)
 
 --- /task ---
 
-If you have enough room on your screen then it's really useful to see the Scene view and the Game view at the same time. 
+You can create objects from 3D shapes. 
 
 --- task ---
-Drag the Game view tab to the right so that it appears next to the Scene view:
+Right-click on your '3D World' scene in the Hierarchy and choose 'GameObject' -> '3D Object' -> 'Cube'. 
 
-![Dragging Game view tab to position the Game view to the right of the Scene view](images/side-by-side-views.gif)
+![The expanded menu with cube object highlighted](images/add-cube.png)
+
+This will create a cube at the centre of the scene, at (0, 0, 0).
+
+![The cube in the centre of the scene view half above and half below the plane.](images/cube-scene-view.png)
 
 --- /task ---
 
-Unity uses X, Y and Z coordinates to position Game objects in 3D space. 
+You need to get the cube to sit on the plane. 
+--- task ---
+Click on the Cube in the Scene view or Hierarchy to select it.
 
-[unity-3d-coordinates]
+**Choose** You can either:
+
++ Drag the green arrow up until the cube sits on the plane.
+
++ Change the Y position in the Inspector to 0.5 (half the height of the cube) 
+
+![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.png)
+
+![The Transform component for the Cube with the y position coordinate set to 0.5](images/y-transform-cube.png)
+
+--- /task ---
 
 --- task ---
+Now change the cube into a wall with the following Position and Scale settings. 
 
-Click on your character in the Hierarchy and then change its Transform settings so the Position is (0, 0, 0) - the centre of the world.
+Position X=0, Y=1, Z=3
+Scale X=5, Y=2, Z=0.25
 
-![Transform for character with position set to 0, 0, 0](images/transform-centre.png)
+![The transform component with updated position and scale properies](images/transform-cube-to-wall.png)
 
-Your character will move to the centre in the Scene view and the Game view.
+You can either enter the values in the Transform for the Cube or drag the arrows (this will update the Transform values.)
 
-![The Scene view with character at 0, 0, 0 in the middle of the plane](images/transform-centre-scene-view.png)
+![The new positioned and scaled wall in the scene view ](images/scene-cube-wall.png)
+--- /task ---
+
+--- task ---
+Drag the 'Red Brick' material from the Materials folder in the Project view to the wall in the scene. 
+
+![The scene view with red brick wall.](images/red-brick-wall.png)
+
+--- /task ---
+
+--- task ---
+In the Inspector, rename your object from Cube to Wall.
+
+![Inspector showing Wall as the name.](images/name-wall.png)
+
+--- /task ---
+
+--- task ---
+Right-click on your 'Wall' object in the Hierarchy and choose 'Duplicate' to create a copy of the wall. It will be in exactly the same place as your first wall. 
+--- /task ---
+
+--- task ---
+Change the Y rotation of the new wall to 90. 
+
+![The new wall transform component with rotate on the y axis showing 90 degrees ](images/transform-rotate-90.png)
+
+--- /task ---
+
+--- task ---
+Reposition the new wall to following position:
+
+X=4, Y=1, Z=-1
+
+You can either enter the values in the Inspector or drag the arrows in the scene - it doesn't matter if the position is exact.
+
+Your scene should look like this:
+
+![Scene with two red brick walls.](images/scene-with-walls.png)
 
 --- /task ---
 

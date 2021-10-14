@@ -86,6 +86,24 @@ void Update() {
 
 --- /task ---
 
-Camera
+In games, the camera often follows the player. 
+
+--- task ---
+In the Hierarchy, drag the Main Camera to the Player GameObject, it will become a child of the Player and will follow the player around. 
+
+--- /task ---
+
+--- task ---
+**Test:** Play your project. The camera will now follow your character, but it's a bit far away. 
+
+--- /task ---
+
+--- task ---
+You can adjust the position and rotation of the camera in the Scene view or the Inspector.
+
+Try these settings to get a 3rd person view of your Player:
+
+Y
+--- /task ---
 
 --- save ---
