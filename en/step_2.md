@@ -91,18 +91,6 @@ The default size for the plane is 10m x 10m. Unity uses metres as the unit of me
 
 --- /task ---
 
---- task ---
-
-In the Projects View, open the Materials folder and drag the 'Yellow Stone' material to the plane in the Scene view.
-
-![The Project window with Yellow Stone material highlighted.](images/yellow-stone-window.png)
-
-The plane will immediately have the new material.
-
-![The scene view with yello stone material applied to the plane](images/yellow-stone-floor.png)
-
---- /task ---
-
 You can create objects from 3D shapes. 
 
 --- task ---
@@ -129,7 +117,7 @@ Click on the Cube in the Scene view or Hierarchy to select it.
 
 + Change the Y position in the Inspector to 0.5 (half the height of the cube) 
 
-![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.png)
+![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
 
 ![The Transform component for the Cube with the y position coordinate set to 0.5](images/y-transform-cube.png)
 
@@ -191,6 +179,17 @@ You can either enter the values in the Inspector or drag the arrows in the scene
 Your scene should look like this:
 
 ![Scene with two red brick walls.](images/scene-with-walls.png)
+
+--- /task ---
+
+--- task ---
+Change the Scale settings on the Plane to make it bigger so you have more room. 
+
+![The transform component with scale X and Z coordinates changed to 4](images/plane-scale-4-1-4.png)
+
+![The Scene view showing the larger plane](images/new-resized-plane.png)
+
+Think of a 4x4 plane as 40 metres by 40 metres in the real world. Plenty of room for your character to move around.
 
 --- /task ---
 
