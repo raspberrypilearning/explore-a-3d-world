@@ -101,9 +101,18 @@ In the Hierarchy, drag the Main Camera to the Player GameObject, it will become 
 --- task ---
 You can adjust the position and rotation of the camera in the Scene view or the Inspector.
 
-Try these settings to get a 3rd person view of your Player:
+Try these settings to get a 3rd person view of your Player, looking down from behind and above your player. 
 
-Y
+Position: X=0, Y=2.5, Z=2.5
+Rotation X=35
+
+You can position the camera in the Scene view using the Transform and Rotate tools if you prefer.
+
+--- /task ---
+
+--- task ---
+**Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
+
 --- /task ---
 
 --- save ---

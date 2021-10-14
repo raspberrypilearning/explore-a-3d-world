@@ -92,6 +92,7 @@ The default size for the plane is 10m x 10m. Unity uses metres as the unit of me
 --- /task ---
 
 --- task ---
+
 In the Projects View, open the Materials folder and drag the 'Yellow Stone' material to the plane in the Scene view.
 
 ![The Project window with Yellow Stone material highlighted.](images/yellow-stone-window.png)
@@ -105,6 +106,7 @@ The plane will immediately have the new material.
 You can create objects from 3D shapes. 
 
 --- task ---
+
 Right-click on your '3D World' scene in the Hierarchy and choose 'GameObject' -> '3D Object' -> 'Cube'. 
 
 ![The expanded menu with cube object highlighted](images/add-cube.png)
@@ -116,7 +118,9 @@ This will create a cube at the centre of the scene, at (0, 0, 0).
 --- /task ---
 
 You need to get the cube to sit on the plane. 
+
 --- task ---
+
 Click on the Cube in the Scene view or Hierarchy to select it.
 
 **Choose** You can either:
@@ -132,6 +136,7 @@ Click on the Cube in the Scene view or Hierarchy to select it.
 --- /task ---
 
 --- task ---
+
 Now change the cube into a wall with the following Position and Scale settings. 
 
 Position X=0, Y=1, Z=3
@@ -142,9 +147,11 @@ Scale X=5, Y=2, Z=0.25
 You can either enter the values in the Transform for the Cube or drag the arrows (this will update the Transform values.)
 
 ![The new positioned and scaled wall in the scene view ](images/scene-cube-wall.png)
+
 --- /task ---
 
 --- task ---
+
 Drag the 'Red Brick' material from the Materials folder in the Project view to the wall in the scene. 
 
 ![The scene view with red brick wall.](images/red-brick-wall.png)
@@ -152,6 +159,7 @@ Drag the 'Red Brick' material from the Materials folder in the Project view to t
 --- /task ---
 
 --- task ---
+
 In the Inspector, rename your object from Cube to Wall.
 
 ![Inspector showing Wall as the name.](images/name-wall.png)
@@ -159,10 +167,13 @@ In the Inspector, rename your object from Cube to Wall.
 --- /task ---
 
 --- task ---
+
 Right-click on your 'Wall' object in the Hierarchy and choose 'Duplicate' to create a copy of the wall. It will be in exactly the same place as your first wall. 
+
 --- /task ---
 
 --- task ---
+
 Change the Y rotation of the new wall to 90. 
 
 ![The new wall transform component with rotate on the y axis showing 90 degrees ](images/transform-rotate-90.png)
@@ -170,6 +181,7 @@ Change the Y rotation of the new wall to 90.
 --- /task ---
 
 --- task ---
+
 Reposition the new wall to following position:
 
 X=4, Y=1, Z=-1
@@ -183,6 +195,7 @@ Your scene should look like this:
 --- /task ---
 
 --- task ---
+
 Unity does not autosave changes. When you have unsaved changes you will see a '*' next to your scene in the Hierarchy.
 
 Save your scene by clicking 'File' -> 'Save' or 'Ctrl-S'. 
