@@ -6,13 +6,10 @@ Create a 3D world in Unity and explore it with an animated 3D player character.
 <span style="color: #0faeb0">**Unity**</span> is a development environment for making games, virtual environments, visual novels, digital animations and more. You can use Unity to develop 2D and 3D cross-platform games for PCs, consoles, mobile devices and the Web.
 </p>
 
-<mark>Objectives in language that learners will understand</mark>
-
 You will:
 + Understand the Unity environment including the Scene editor
-+ Create a player character with animations that can move around
 + Add 3D objects with materials as scenery
-
++ Create a player character with animations that can move around
 
 --- no-print ---
 --- task ---

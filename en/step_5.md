@@ -1,28 +1,76 @@
-## Upgrade your project
+## Animation and camera angle
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now you can make your 3D world just the way you want it.
-</div>
-<div>
-![](images/image.png){:width="300px"}
-</div>
-</div>
+Your player is moving around, but at the moment, it's stuck in a T-pose position. You can improve this by using animations. 
 
-You can: 
-+ add more 3D objects to your world, try Spheres and Capsule, 
-+ try different colours and materials,
-+ adjust the player movement and rotation speed,
-+ adjust the position of the camera.
+![The game view with the character moving around with animation](images/animated-char.gif)
 
---- collapse ---
+--- task ---
+Drag the 'IdleWalk' Animator from the Animations folder in the Projects Window to the Controller property of the Animator component of your character.
 
----
-title: Completed project
----
+![The animator component](images/animation-controller.png)
 
-You can view the [completed project here](https://scratch.mit.edu/projects/485673032/){:target="_blank"}.
+This will add Idle and Walk animations to your character with an `isMoving` Boolean that you can use to control which animation plays.
 
---- /collapse ---
+--- /task ---
+
+--- task ---
+**Test:** Play your project and make sure you can see the Idle animation.
+--- /task ---
+
+--- task ---
+Add code to the Update method of your script to make your character use a different animation when moving forward.
+
+```
+void Update() {
+
+    Animator anim = gameObject.GetComponent<Animator>();
+
+    if (Input.GetAxis("Vertical") > 0)
+    {
+        anim.SetBool("isMoving", true);
+        //Debug.Log("Walk");
+    }
+    else 
+    {
+        anim.SetBool("isMoving", false);
+        //Debug.Log("Idle");
+    }
+```
+--- /task ---
+
+--- task ---
+**Test:** Play your project and make sure you can see the animation change to Walk when you move forward and switch to Idle when you are not moving forward. 
+
+--- /task ---
+
+In games, the camera often follows the player. 
+
+--- task ---
+In the Hierarchy, drag the Main Camera to the Player GameObject, it will become a child of the Player and will follow the player around. 
+
+--- /task ---
+
+--- task ---
+**Test:** Play your project. The camera will now follow your character, but it's a bit far away. 
+
+--- /task ---
+
+You can adjust the position and rotation of the camera in the Scene view or the Inspector.
+
+--- task ---
+
+Try these settings to get a 3rd person view of your Player, looking down from behind and above your player. 
+
+Position: X=0, Y=2.5, Z=2.5
+Rotation X=35
+
+You can position the camera in the Scene view using the Transform and Rotate tools if you prefer.
+
+--- /task ---
+
+--- task ---
+**Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
+
+--- /task ---
 
 --- save ---
