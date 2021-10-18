@@ -5,7 +5,7 @@
 Add a Cat or Raccoon character.  
 </div>
 <div>
-![The scene in Game view with character moving around the scene.](images/moving-character.gif){:width="300px"}
+![The scene view with character.](images/added-character.gif){:width="300px"}
 </div>
 </div>
 
@@ -43,8 +43,6 @@ Hide the other accessories for your character in the same way, or just keep one 
 **Tip:** Game objects that are not active appeared greyed out in the Hierarchy Window
 
 ![Hierarchy Window with greyed out ConstructionGearMesh](images/greyed-out-mesh.png)
-
---- /task ---
 
 --- /task ---
 

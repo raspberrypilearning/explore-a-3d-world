@@ -104,9 +104,9 @@ You will be able to use WASD or arrow keys (players on mobile or console can use
         Debug.Log(speed);
     }
 
-A `float` is a decimal number.
-
 ```
+
+A `float` is a decimal number.
 
 Save your `PlayerController` script in your Script Editor then return to the Unity Editor. 
 
@@ -123,6 +123,8 @@ Click on your character in the Hierarchy window. Go to the Project window and dr
 --- task ---
 
 Click on the **Console** window tab to bring it to the front. 
+
+![The tab for the Console window highlighted in the bottom left section of the Unity editor.](images/console-window.png)
 
 **Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode. This will simulate your scene as it would be viewed and interacted with by a user.  
 
