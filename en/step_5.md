@@ -41,6 +41,10 @@ void Update() {
 --- task ---
 **Test:** Play your project and make sure you can see the animation change to Walk when you move forward and switch to Idle when you are not moving forward. 
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+The placement of a <span style="color: #0faeb0">virtual camera</span> in a 3d environment is key for creating the right perspective for users. Visibility levels from the camera lens effect the difficulty level and influence the atmosphere of a game. 
+</p>
+
 --- /task ---
 
 In games, the camera often follows the player. 
