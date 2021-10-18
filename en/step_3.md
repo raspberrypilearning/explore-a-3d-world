@@ -11,7 +11,7 @@ Add a Cat or Raccoon character.
 
 --- task ---
 
-Double click on the Models folder. A model describes what a 3D object looks like and can be created using 3D modelling tools. We have included some models that you can use. 
+Double click on the Models folder in the Project Window. A model describes what a 3D object looks like and can be created using 3D modelling tools. We have included some models that you can use. 
 
 Choose either the `Cat` or `Raccoon` model and drag it from the Projects Window to the Scene View.
 
@@ -22,29 +22,29 @@ Choose either the `Cat` or `Raccoon` model and drag it from the Projects Window 
 Your character will appear in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
 
 --- task ---
-Click on your character in the Scene view and tap the 'F' key. This will focus on your character. You can also use the scroll wheel on your mouse to zoom in and out. 
+Click on your character in the Scene view and tap the 'F' key. 
 
-**Tip:** If you get lost in the Scene view, you can click on your character (or another game object) in the Hierarchy window and then click 'Shift-F' to focus on your character in the Scene view.
+**Tip:** If you get lost in the Scene view, you can click on your character (or another Game object) in the Hierarchy window and then click 'Shift-F' to focus on your character in the Scene view.
 
 --- /task ---
-
 Hmm, your character is wearing multiple accessories. 
 
 --- task ---
-
 Click on your character in the Hierarchy. This will open the settings for the game object in the Inspector Window.
 
-Click on the arrow next to your Character in the hierarchy to see the 'child objects'. Click on 'ConstructionGearMesh' and uncheck the box next to it's name in the Inspector. This will hide the hat. 
+Click on the arrow next to your Character in the hierarchy to see the ‘child objects’. Click on ‘ConstructionGearMesh’ and uncheck the box next to it’s name in the Inspector. This will hide the hat.
 
 ![Inspector with ConstructionGearMesh active property highlighted and unchecked](images/uncheck-hat-active.png)
 
 ![The Scene view with ConstructionGearMesh removed from the Raccoon](images/no-hat-scene.png)
 
-Hide the other accessories for your character in the same way, or just keep one active. 
+Hide the other accessories for your character in the same way, or just keep one active.
 
 **Tip:** Game objects that are not active appeared greyed out in the Hierarchy Window
 
 ![Hierarchy Window with greyed out ConstructionGearMesh](images/greyed-out-mesh.png)
+
+--- /task ---
 
 --- /task ---
 
@@ -74,7 +74,7 @@ Unity uses X, Y and Z coordinates to position Game objects in 3D space.
 
 --- task ---
 
-Click on your character in the Hierarchy and then change its Transform settings so the Position is (0, 0, 0) - the centre of the world.
+Select your character (in the Hierarchy or Scene view) and then change its Transform settings so the Position is (0, 0, 0) - the centre of the world.
 
 ![Transform for character with position set to 0, 0, 0](images/transform-centre.png)
 
@@ -89,5 +89,6 @@ Rename your character to 'Player' in the Inspector. This will make it easy to fi
 
 ![Player name shown in Inspector.](images/player-name.png)
 --- /task ---
+
 
 --- save ---

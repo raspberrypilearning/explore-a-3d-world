@@ -1,6 +1,6 @@
 ## Introduction
 
-Create a 3D world in Unity and explore it with an animated 3D player character.
+Create a 3D world in Unity and explore it with an animated 3D player character. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**Unity**</span> is a development environment for making games, virtual environments, visual novels, digital animations and more. You can use Unity to develop 2D and 3D cross-platform games for PCs, consoles, mobile devices and the Web.

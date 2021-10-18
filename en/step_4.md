@@ -19,19 +19,22 @@ Click 'Add Component' and start to type 'char' in the Search box, click on the C
 
 ![The Add Component menu showing character controller](images/character-controller-add.png)
 
-This adds new features to your player Game object including a `Move` method. 
-
 ![The Character Controller in the Inspector window](images/character-controller.png)
 
 --- /task ---
 
+The CharacterController component adds new features to your player Game object including a `Move` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a Game object collides, or intersects, with another Game object. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a Game object.</p>
+
 --- task ---
 
-The Character Controller has a Height of `2` and a centre at `0, 0, 0` this means it is positioned half above and half below the plane. 
+The Character Controller collider has a Height of `2` and a centre at `0, 0, 0` this means it is positioned half above and half below the plane. 
 
 ![The scene view showing the character with a Character Controller capsule around the model](images/scene-char-controller.png)
 
-Your character has a height of `1` meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.5` and the Height to `1` to match the character. 
+Your character has a height of `1` meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.6` and the Height to `1` to match the character. 
 
 ![The scene view showing the character with a Character Controller capsule around the model](images/properties-controller.png)
 
