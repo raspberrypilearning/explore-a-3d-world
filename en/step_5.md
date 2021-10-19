@@ -7,6 +7,8 @@ Your player is moving around, but at the moment, it's stuck in a T-pose position
 --- task ---
 Drag the 'IdleWalk' Animator from the Animations folder in the Projects Window to the Controller property of the Animator component of your character.
 
+![The IdleWalk animator in the Animations folder of the project window.](images/idlewalk-animation.png)
+
 ![The animator component](images/animation-controller.png)
 
 This will add Idle and Walk animations to your character with an `isMoving` Boolean that you can use to control which animation plays.
@@ -15,6 +17,8 @@ This will add Idle and Walk animations to your character with an `isMoving` Bool
 
 --- task ---
 **Test:** Play your project and make sure you can see the Idle animation.
+
+![The character with IdleWalk animaton in game view.](images/idlewalk-animation.gif)
 --- /task ---
 
 --- task ---
@@ -40,6 +44,8 @@ void Update() {
 
 --- task ---
 **Test:** Play your project and make sure you can see the animation change to Walk when you move forward and switch to Idle when you are not moving forward. 
+
+![The character with Idle animation when standing still and Walk animation when moving forward.](images/idle-and-walk-animation.gif)
 
 --- /task ---
 

@@ -61,7 +61,7 @@ Right click on the `My Scripts` folder and go to the **Create** menu. Select **C
 --- /task ---
 
 --- task ---
-Double-click on the script to open it. The script will open in a separate editor. 
+Double-click on the script to open it. The script will open in a separate code editor. 
 
 ```
 using System.Collections;
@@ -108,7 +108,11 @@ You will be able to use WASD or arrow keys (players on mobile or console can use
 
 A `float` is a decimal number.
 
-Save your `PlayerController` script in your Script Editor then return to the Unity Editor. 
+**Save** your `PlayerController` script in your code editor, using 'Ctrl-S' (or 'Cmd-S'), then return to the Unity Editor.
+
+<mark>Do we want to be specific about the editor?</mark>
+
+**Tip:** You might finding it quicker to use 'Alt-Tab' (or 'Cmd-Tab') to switch between your Web browser with the project instructions, the Unity editor and your code editor.
 
 --- /task ---
 
@@ -130,10 +134,17 @@ Click on the **Console** window tab to bring it to the front.
 
 ![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png)
 
-Place your mouse pointer in the Game view and press keys `W` and `S`. Look at the values logged in the Console window as you press the keys. Each time you press `W` a positive number is logged, when you press `S` a negative number is logged.
+Unity takes a few seconds to start up, then you should start to see output in the Console. 
+
+Place your mouse pointer in the Game view and press keys `W` and `S`. Look at the values logged in the Console window as you press the keys. Each time you press `W` a positive number is logged, when you press `S` a negative number is logged. 
+
+The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a games controller). You can also use the up and down arrow keys.
+
+**Tip:** The output also appears in the bar at the bottom on the Unity editor. 
 
 --- /task ---
 
+It's easy to forget whether your game is running or not. 
 It is useful to add a colour tint to the editor whilst it is in Playmode. This makes it easier to tell whether your scene is running or not.
 
 ![Side my side image of the Unity editor without tint and with tint.](images/tint-no-tint.png)
