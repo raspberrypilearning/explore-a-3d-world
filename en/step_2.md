@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Create a 3D world with a floor and walls. 
+Create a 3D world, or 'map',  with a floor and walls. 
 </div>
 <div>
 ![The scene view showing a plane floor with two brick walls.](images/end-walls.png){:width="300px"}
@@ -10,7 +10,7 @@ Create a 3D world with a floor and walls.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">online virtual environments</span>. As well as playing games, people relax, explore, socialise, learn and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">metaverse</span>. Being able to design 3D worlds is an important skill.
+People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
 </p>
 
 --- task ---
@@ -206,20 +206,20 @@ Think of a 4x4 plane as 40 metres by 40 metres in the real world. Plenty of room
 
 --- /task ---
 
-<mark>Update autosave comment after testing the script</mark>
-
 --- task ---
 
-Unity does not autosave changes. When you have unsaved changes you will see a '*' next to your scene in the Hierarchy.
+When you have unsaved changes you will see a '*' next to your scene in the Hierarchy.
 
 Save your scene by clicking 'File' -> 'Save' or 'Ctrl-S'. 
 
 Also, save your project by clicking 'File' -> 'Save Project'.
 
+Unity does not normally autosave changes, but your starter project contains a script to autosave your project every 60 seconds. 
+
 --- /task ---
 
 You can navigate around your scene to see it from different angles. If you get lost just click on a wall in the hierarchy and then 'Shift-F' to focus and then zoom out. 
 
-[navigation ingredient]
+[[[unity-scene-navigation]]]
 
 --- save ---

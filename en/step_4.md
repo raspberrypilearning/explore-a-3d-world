@@ -34,7 +34,7 @@ The Character Controller collider has a Height of `2` and a centre at `0, 0, 0` 
 
 Your character has a height of `1` meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.6` and the Height to `1` to match the character. 
 
-![The scene view showing the character with a Character Controller capsule around the model](images/properties-controller.png){:width="300px"}
+![The Inspector window properties for the character controller component](images/properties-controller.png){:width="400px"}
 
 ![The scene view showing the character with a Character Controller capsule around the model](images/updated-char-controller.png){:width="300px"}
 

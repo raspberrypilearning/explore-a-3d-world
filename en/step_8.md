@@ -1,12 +1,14 @@
 ## What next?
 
-If you are following the [PathwayName](https://projects.raspberrypi.org/en/raspberrypi/pathway-name) pathway, you can move on to the [ProjectName](https://projects.raspberrypi.org/en/projects/project-name) project. In this project, you will make a (add description here).
+If you are following the [Introduction to Unity](https://projects.raspberrypi.org/en/raspberrypi/unity-intro) pathway, you can move on to the [Star Collector](https://projects.raspberrypi.org/en/projects/star-collector) project. In this project, you will make a minigame where you collect stars that are hidden around a 3D map.
 
 --- print-only ---
 
-![ProjectName project](images/projectname-project.png)
+![Star collector project](images/star-collector-project.png)
 
 --- /print-only ---
+
+<mark>Embed or link to Star Collector project when available.</mark>
 
 --- no-print ---
 
@@ -16,4 +18,3 @@ If you are following the [PathwayName](https://projects.raspberrypi.org/en/raspb
 
 --- /no-print ---
 
-If you want to have more fun exploring Scratch, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201).
