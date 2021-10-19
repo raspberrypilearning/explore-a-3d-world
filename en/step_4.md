@@ -114,9 +114,14 @@ A `float` is a decimal number.
 
 **Tip:** You might finding it quicker to use 'Alt-Tab' (or 'Cmd-Tab') to switch between your Web browser with the project instructions, the Unity editor and your code editor.
 
-**Debug:** Check the Console window for information. You may see:
+**Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
 + '; expected' - check for a semicolon `;` at the end of each line of code. 
++ 'Newline in constant' - you missed a quote `"` from the end of a text string.
++ '} expected' - you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
++ ') expected' - make sure there's a closing `)` at the end of each Method call, before the semicolon.
++ ''Input' does not contain a definition for 'getAxis'' - C# is case sensitive, it needs to be `GetAxis` with a capital `G`.
 
+Compare your code with the example code and make sure everything is exactly the same.
 --- /task ---
 
 --- task ---
@@ -139,7 +144,7 @@ Click on the **Console** window tab to bring it to the front.
 
 Unity takes a few seconds to start up, then you should start to see output in the Console. 
 
-Place your mouse pointer in the Game view and press keys `W` and `S`. Look at the values logged in the Console window as you press the keys. Each time you press `W` a positive number is logged, when you press `S` a negative number is logged. 
+Place your **mouse pointer in the Game view** and press keys `W` and `S`. Look at the values logged in the Console window as you press the keys. Each time you press `W` a positive number is logged, when you press `S` a negative number is logged. 
 
 The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a games controller). You can also use the up and down arrow keys.
 
@@ -188,7 +193,11 @@ Update your code to use the Vertical input value to move the player each frame. 
 --- task ---
 **Test:** Click Play to enter Playmode and try out your code. Use W/S or up and down arrow keys to glide forwards and backwards. 
 
-What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Playmode.
+Try and walk through the wall
+
+**Tip:** Make sure your mouse pointer is in the Game view.
+
+**Debug:** Remember to check the Console for helpful messages. Check brackets, semicolons and capital letters carefully.
 
 --- /task ---
 
@@ -255,6 +264,8 @@ Set their values to `3` and `1`:
 
 --- task ---
 **Test:** Play your scene and check if you are happy with the speed settings. 
+
+What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Playmode.
 
 **Tip:** You can use Playmode to try out different settings in but if you have changed them you will need to exit Playmode and set the values again in the Inspector to keep the settings you prefer.
 

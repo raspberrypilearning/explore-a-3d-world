@@ -75,10 +75,13 @@ You can adjust the position and rotation of the camera in the Scene view or the 
 
 Try these settings to get a 3rd person view of your Player, looking down from behind and above your player. 
 
-Position: X=0, Y=2.5, Z=2.5
-Rotation X=35
+![The transform component of the main camera with position x = 0, y = 2.5, z = -2.5 and rotation x = 35.](images/birdseye-transform.png)
+
+![The game view with new coordinates.](images/birdseye-game.png)
 
 You can position the camera in the Scene view using the Transform and Rotate tools if you prefer.
+
+![The scene view with transform and rotate tools highlighted and camera seleted with rotate x, y and z circles showing.](images/transform-rotate-scene.png)
 
 --- /task ---
 
