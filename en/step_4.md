@@ -19,8 +19,6 @@ Click 'Add Component' and start to type 'char' in the Search box, click on the C
 
 ![The Add Component menu showing character controller](images/character-controller-add.png)
 
-![The Character Controller in the Inspector window](images/character-controller.png)
-
 --- /task ---
 
 The CharacterController component adds new features to your player Game object including a `Move` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.

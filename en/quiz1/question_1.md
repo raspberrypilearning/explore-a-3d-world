@@ -8,8 +8,6 @@ Answer the three questions below to reflect on what you've learned.
 
 After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
 
-Have fun!
-
 --- question ---
 
 ---

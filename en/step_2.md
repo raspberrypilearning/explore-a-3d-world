@@ -99,8 +99,6 @@ You can create objects from 3D shapes.
 
 Right-click on your '3D World' scene in the Hierarchy and choose 'GameObject' -> '3D Object' -> 'Cube'. 
 
-![The expanded menu with cube object highlighted](images/add-cube.png)
-
 This will create a cube at the centre of the scene, at (0, 0, 0).
 
 --- /task ---

@@ -16,12 +16,14 @@ You will:
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Description of what to do or think about when looking at the example.
+Navigate the 3D world using WASD or arrow keys, what does the Cat do when standing still, how do they move when walking? Can you walk through the walls?
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/485673032/?autostart=false" frameborder="0"></iframe>
 </div>
 </div>
+
+<mark>Add link to online hosted project when available.</mark>
 --- /task ---
 --- /no-print ---
 
