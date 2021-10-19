@@ -1,11 +1,11 @@
-# explore-a-3d-world
+# explore-project-template
 
-![explore-a-3d-world](banner.png)
+![explore-project-template](banner.png)
 
-Find the project online at [projects.raspberrypi.org/en/projects/explore-a-3d-world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world)
+Find the project online at [projects.raspberrypi.org/en/projects/explore-project-template](https://projects.raspberrypi.org/en/projects/explore-project-template)
 
 ## Resources
-For project materials and solutions, see [en/resources](https://github.com/raspberrypilearning/explore-a-3d-world/tree/master/en/resources) and [en/solutions](https://github.com/raspberrypilearning/explore-a-3d-world/tree/master/en/solutions).
+For project materials and solutions, see [en/resources](https://github.com/raspberrypilearning/explore-project-template/tree/master/en/resources) and [en/solutions](https://github.com/raspberrypilearning/explore-project-template/tree/master/en/solutions).
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md)
