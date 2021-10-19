@@ -1,6 +1,8 @@
 ## Reflection
 
-Well done, you have learned a lot! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+You did it! You created your first Unity project and learned lots of new skills along the way. 
+
+Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
 
 Answer the three questions below to reflect on what you've learned.
 

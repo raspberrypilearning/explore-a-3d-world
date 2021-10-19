@@ -201,22 +201,19 @@ Try and walk through the wall. The `Move` Method from the `CharacterController` 
 
 You can pan around in the **Scene view** by holding your right-mouse button and dragging. Pan to get a better view of the wall as your character walks into it.
 
-![Scene and game view of character up against the wall.](images/player-wall.png)
+![Scene and game view of character up against the wall.](images/player-wall.gif)
 
 To move your player, move the mouse pointer back to the **Game view**.
 
 --- /task ---
 
 --- task ---
-Add another line so your character can rotate when the player presses A/D or the left and right arrow keys. 
+Add another line so your character can `Rotate` when the player presses A/D or the left and right arrow keys. 
 
 ```
-    // Update is called once per frame
-    void Update()
+void Update()
     {
-        // We need the CharacterController so we can use SimpleMove
-        CharacterController controller = GetComponent<CharacterController>();       
-        controller.SimpleMove(forward * speed);
+        float speed = Input.GetAxis("Vertical");
 
         // Rotate around y - axis
         transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
@@ -236,13 +233,13 @@ Save your code and switch back to the Unity editor. Unity will load your updated
 You can also control the speed of movement and rotation.
 
 --- task ---
-Open your `PlayerController` script and add variables for the `moveSpeed` and `rotateSpeed`. Making these variables `public` means that you can set them in the Unity Inspector.
+Open your `PlayerController` script and add variables for the `moveSpeed` and `rotateSpeed`. Making these variables `public` means that you can set them in the Unity Inspector and access them from other Game objects.
 
 ```
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed;
-    public float rotateSpeed;
+    public float moveSpeed = 2.0f;
+    public float rotateSpeed = 2.0f;
 ```
 --- /task ---
 
@@ -272,7 +269,9 @@ Set their values to `3` and `1`:
 --- task ---
 **Test:** Play your scene and check if you are happy with the speed settings. 
 
-**Tip:** You can use Playmode to try out different settings in but if you have changed them you will need to exit Playmode and set the values again in the Inspector to keep the settings you prefer.
+Make changes to the 'Move Speed' and 'Rotate Speed' in the **Inspector** until you are happy. 
+
+**Tip:** You can use Playmode to try out different settings but if you have changed them you will need to exit Playmode and set the values again in the Inspector to keep the settings you prefer.
 
 --- /task ---
 

@@ -26,19 +26,18 @@ Add code to the Update method of your script to make your character use a differ
 
 ```
 void Update() {
+        CharacterController controller = GetComponent<CharacterController>();  
+        Animator anim = gameObject.GetComponent<Animator>();
 
-    Animator anim = gameObject.GetComponent<Animator>();
-
-    if (Input.GetAxis("Vertical") > 0)
-    {
-        anim.SetBool("isMoving", true);
-        //Debug.Log("Walk");
-    }
-    else 
-    {
-        anim.SetBool("isMoving", false);
-        //Debug.Log("Idle");
-    }
+        if (Input.GetAxis("Vertical") > 0) // forwards
+        {
+            anim.SetBool("isMoving", true);
+            controller.SimpleMove(forward * speed * moveSpeed);
+        }
+        else // idle
+        {
+            anim.SetBool("isMoving", false);
+        }     
 ```
 --- /task ---
 
@@ -63,7 +62,7 @@ In the Hierarchy, drag the Main Camera to the Player GameObject, it will become 
 --- /task ---
 
 --- task ---
-**Test:** Play your project. The camera will now follow your character, but it's a bit far away. 
+**Test:** Play your project. The camera will now follow your character, but it's a bit far away and walls often come between the player and the camera. 
 
 ![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
 
@@ -72,8 +71,7 @@ In the Hierarchy, drag the Main Camera to the Player GameObject, it will become 
 You can adjust the position and rotation of the camera in the Scene view or the Inspector.
 
 --- task ---
-
-Try these settings to get a 3rd person view of your Player, looking down from behind and above your player. 
+Exit Playmode and try these settings to get a 3rd person view of your Player, looking down from behind and above your player. 
 
 ![The transform component of the main camera with position x = 0, y = 2.5, z = -2.5 and rotation x = 35.](images/birdseye-transform.png)
 
@@ -88,10 +86,15 @@ You can position the camera in the Scene view using the Transform and Rotate too
 --- task ---
 **Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
 
+Adjust the camera settings until you are happy with them.
+
+**Tip:** You can try settings out in Playmode but you need to exit Playmode and update the settings to keep them.
+
 What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Playmode.
 
 ![The game view with animated character moving through the environment and camera following with birdseye view.](images/birdseye-walkthrough.gif)
 
 --- /task ---
+
 
 --- save ---
