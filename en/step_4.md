@@ -94,6 +94,8 @@ You will be able to use WASD or arrow keys (players on mobile or console can use
 
 **Tip:** The lines starting with `//` are comments that explain the code. You don't need to type them.
 
+<mark>Add line numbers, filenames and highlights to code markdown.</mark>
+
 ```
    // Update is called once per frame
     void Update()
