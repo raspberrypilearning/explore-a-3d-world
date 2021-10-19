@@ -144,14 +144,13 @@ The numbers range between -1.0 and 1.0 and correspond to movement from the verti
 
 --- /task ---
 
-It's easy to forget whether your game is running or not. 
-It is useful to add a colour tint to the editor whilst it is in Playmode. This makes it easier to tell whether your scene is running or not.
+It's easy to forget whether your game is playing or not. A Playmode colour tint makes it easier to tell when your scene is playing.
 
 ![Side my side image of the Unity editor without tint and with tint.](images/tint-no-tint.png)
 
 --- task ---
 
-To set a tint, go to the **Unity Menu** and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
+To set a tint, go to the **Edit Menu** (or **Unity Menu**) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
 
 Click on the existing colour to see a colour wheel where you can choose a colour and opacity level.
 

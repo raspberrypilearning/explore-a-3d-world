@@ -5,7 +5,7 @@
 Add a Cat or Raccoon character.  
 </div>
 <div>
-![The scene view with character.](images/added-character.gif){:width="300px"}
+![The scene view with character.](images/added-character.png){:width="300px"}
 </div>
 </div>
 
