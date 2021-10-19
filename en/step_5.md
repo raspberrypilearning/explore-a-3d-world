@@ -22,7 +22,7 @@ This will add Idle and Walk animations to your character with an `isMoving` Bool
 --- /task ---
 
 --- task ---
-Add code to the Update method of your script to make your character use a different animation when moving forward.
+Change the code in the `Update` method of your script so that when the character is moving forward it uses a walking animation otherwise it uses an idle animation. Your character will no longer move backwards. 
 
 ```
 void Update() {
