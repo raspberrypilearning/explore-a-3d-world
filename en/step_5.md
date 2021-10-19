@@ -88,6 +88,8 @@ You can position the camera in the Scene view using the Transform and Rotate too
 --- task ---
 **Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
 
+![The game view with animated character moving through the environment and camera following with birdseye view.](images/birdseye-walkthrough.gif)
+
 --- /task ---
 
 --- save ---

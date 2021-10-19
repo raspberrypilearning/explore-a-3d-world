@@ -193,11 +193,17 @@ Update your code to use the Vertical input value to move the player each frame. 
 --- task ---
 **Test:** Click Play to enter Playmode and try out your code. Use W/S or up and down arrow keys to glide forwards and backwards. 
 
-Try and walk through the wall
-
-**Tip:** Make sure your mouse pointer is in the Game view.
-
 **Debug:** Remember to check the Console for helpful messages. Check brackets, semicolons and capital letters carefully.
+
+**Tip:** Make sure your mouse pointer is in the **Game view**.
+
+Try and walk through the wall. The `Move` Method from the `CharacterController` component stops you from being able to walk through objects that have a collider. A collider is automatically added when you create a 3D shape as you did for the Wall. 
+
+You can pan around in the **Scene view** by holding your right-mouse button and dragging. Pan to get a better view of the wall as your character walks into it.
+
+![Scene and game view of character up against the wall.](images/player-wall.png)
+
+To move your player, move the mouse pointer back to the **Game view**.
 
 --- /task ---
 
@@ -209,7 +215,8 @@ Add another line so your character can rotate when the player presses A/D or the
     void Update()
     {
         // We need the CharacterController so we can use SimpleMove
-        CharacterController controller = GetComponent<CharacterController>();
+        CharacterController controller = GetComponent<CharacterController>();       
+        controller.SimpleMove(forward * speed);
 
         // Rotate around y - axis
         transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
@@ -264,8 +271,6 @@ Set their values to `3` and `1`:
 
 --- task ---
 **Test:** Play your scene and check if you are happy with the speed settings. 
-
-What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Playmode.
 
 **Tip:** You can use Playmode to try out different settings in but if you have changed them you will need to exit Playmode and set the values again in the Inspector to keep the settings you prefer.
 
