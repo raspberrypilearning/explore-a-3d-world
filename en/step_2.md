@@ -133,6 +133,8 @@ Click on the Cube in the Scene view or Hierarchy to select it.
 
 --- /task ---
 
+**Tip:** If you make a mistake in the Unity editor you can use 'Ctrl-Z' ('Cmd-Z') to **undo** your last action. 
+
 --- task ---
 
 Now change the cube into a wall with the following Position and Scale settings. 
