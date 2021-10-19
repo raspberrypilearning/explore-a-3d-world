@@ -114,6 +114,9 @@ A `float` is a decimal number.
 
 **Tip:** You might finding it quicker to use 'Alt-Tab' (or 'Cmd-Tab') to switch between your Web browser with the project instructions, the Unity editor and your code editor.
 
+**Debug:** Check the Console window for information. You may see:
++ '; expected' - check for a semicolon `;` at the end of each line of code. 
+
 --- /task ---
 
 --- task ---
@@ -142,6 +145,8 @@ The numbers range between -1.0 and 1.0 and correspond to movement from the verti
 
 **Tip:** The output also appears in the bar at the bottom on the Unity editor. 
 
+Click the 'Play' button again to exit Playmode and the debug output will stop.
+
 --- /task ---
 
 It's easy to forget whether your game is playing or not. A Playmode colour tint makes it easier to tell when your scene is playing.
@@ -168,12 +173,12 @@ Update your code to use the Vertical input value to move the player each frame. 
 ```
     void Update()
     {
-        // We need the CharacterController so we can use SimpleMove
-        CharacterController controller = GetComponent<CharacterController>();
-
+        float speed = Input.GetAxis("Vertical");
         // forward is the forward direction for this character
         Vector3 forward = transform.TransformDirection(Vector3.forward);
-        float speed = Input.GetAxis("Vertical");
+
+        // We need the CharacterController so we can use SimpleMove
+        CharacterController controller = GetComponent<CharacterController>();       
         controller.SimpleMove(forward * speed);
     }
  ```
@@ -201,10 +206,15 @@ Add another line so your character can rotate when the player presses A/D or the
         transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
 ```
 
+Save your code and switch back to the Unity editor. Unity will load your updated Script.
+
 --- /task ---
 
 --- task ---
 **Test:** Click Play to enter Playmode and try out your code. Use A/D or left and right arrow keys to rotate. 
+
+**Debug:** If you are still seeing output to the console and movement isn't working, then make sure you have saved your script in the code editor.
+
 --- /task ---
 
 You can also control the speed of movement and rotation.

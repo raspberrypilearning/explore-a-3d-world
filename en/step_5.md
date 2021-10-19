@@ -65,6 +65,8 @@ In the Hierarchy, drag the Main Camera to the Player GameObject, it will become 
 --- task ---
 **Test:** Play your project. The camera will now follow your character, but it's a bit far away. 
 
+![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
+
 --- /task ---
 
 You can adjust the position and rotation of the camera in the Scene view or the Inspector.
