@@ -19,8 +19,6 @@ Click 'Add Component' and start to type 'char' in the Search box, click on the C
 
 ![The Add Component menu showing character controller](images/character-controller-add.png)
 
-![The Character Controller in the Inspector window](images/character-controller.png)
-
 --- /task ---
 
 The CharacterController component adds new features to your player Game object including a `Move` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
@@ -32,13 +30,13 @@ The CharacterController component adds new features to your player Game object i
 
 The Character Controller collider has a Height of `2` and a centre at `0, 0, 0` this means it is positioned half above and half below the plane. 
 
-![The scene view showing the character with a Character Controller capsule around the model](images/scene-char-controller.png)
+![The scene view showing the character with a Character Controller capsule around the model](images/scene-char-controller.png){:width="300px"}
 
 Your character has a height of `1` meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.6` and the Height to `1` to match the character. 
 
-![The scene view showing the character with a Character Controller capsule around the model](images/properties-controller.png)
+![The Inspector window properties for the character controller component](images/properties-controller.png){:width="400px"}
 
-![The scene view showing the character with a Character Controller capsule around the model](images/updated-char-controller.png)
+![The scene view showing the character with a Character Controller capsule around the model](images/updated-char-controller.png){:width="300px"}
 
 --- /task ---
 
@@ -48,7 +46,7 @@ Your character needs a script so that the player can move it around.
 
 Go to the Project Window and right-click on the `Assets` folder. From the **Create** menu choose **Folder**. Rename your folder to 'My Scripts'.
 
-![The Project Window with new My Scripts folder shown.](images/my-scripts-folder.png)
+![The Project Window with new My Scripts folder shown.](images/my-scripts-folder.png){:width="400px"}
 
 --- /task ---
 
@@ -56,7 +54,7 @@ Go to the Project Window and right-click on the `Assets` folder. From the **Crea
 
 Right click on the `My Scripts` folder and go to the **Create** menu. Select **C# Script** name your new script `PlayerController`.
 
-![The Project window with new PlayerController script shown.](images/PlayerController-script.png)
+![The Project window with new PlayerController script shown.](images/PlayerController-script.png){:width="300px"}
 
 --- /task ---
 
@@ -136,11 +134,11 @@ Click on your character in the Hierarchy window. Go to the Project window and dr
 
 Click on the **Console** window tab to bring it to the front. 
 
-![The tab for the Console window highlighted in the bottom left section of the Unity editor.](images/console-window.png)
+![The tab for the Console window highlighted in the bottom left section of the Unity editor.](images/console-window.png){:width="400px"}
 
 **Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode. This will simulate your scene as it would be viewed and interacted with by a user.  
 
-![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png)
+![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png){:width="400px"}
 
 Unity takes a few seconds to start up, then you should start to see output in the Console. 
 
@@ -164,7 +162,7 @@ To set a tint, go to the **Edit Menu** (or **Unity Menu**) and select **Preferen
 
 Click on the existing colour to see a colour wheel where you can choose a colour and opacity level.
 
-![The colour wheel pop up window with a blue medium opacity tint selected.](images/tint-colour-window.png)
+![The colour wheel pop up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
 
 Return to the Unity editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
 
@@ -201,7 +199,7 @@ Try and walk through the wall. The `Move` Method from the `CharacterController` 
 
 You can pan around in the **Scene view** by holding your right-mouse button and dragging. Pan to get a better view of the wall as your character walks into it.
 
-![Scene and game view of character up against the wall.](images/player-wall.gif)
+![Scene and game view of character up against the wall.](images/player-wall.gif){:width="500px"}
 
 To move your player, move the mouse pointer back to the **Game view**.
 
@@ -262,7 +260,7 @@ Save your script and return to the Unity editor. When your script has compiled, 
 
 Set their values to `3` and `1`:
 
-![Move Speed set to 3 and Rotate Speed set to 1 in the Inspector](images/inspector-variables.png)
+![Move Speed set to 3 and Rotate Speed set to 1 in the Inspector](images/inspector-variables.png){:width="400px"}
 
 --- /task ---
 

@@ -51,7 +51,7 @@ void Update() {
 In games, the camera often follows the player. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The placement of a <span style="color: #0faeb0">virtual camera</span> in a 3d environment is key for creating the right perspective for users. Visibility levels from the camera lens effect the difficulty level and influence the atmosphere of a game. 
+The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3D environment is key for creating the right perspective for users. Visibility levels from the camera lens effect the difficulty level and influence the atmosphere of a game. 
 </p>
 
 --- task ---
@@ -95,6 +95,5 @@ What happens if you go off the edge of the plane? Don't worry your character wil
 ![The game view with animated character moving through the environment and camera following with birdseye view.](images/birdseye-walkthrough.gif)
 
 --- /task ---
-
 
 --- save ---

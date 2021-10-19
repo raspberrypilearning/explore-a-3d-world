@@ -11,7 +11,7 @@ Add a Cat or Raccoon character.
 
 --- task ---
 
-Double click on the Models folder in the Project Window. A model describes what a 3D object looks like and can be created using 3D modelling tools. We have included some models that you can use. 
+Double click on the Models folder in the Project Window. A model describes what a 3D object looks like and can be created using 3D modelling tools such as Blender. We have included some models that you can use. 
 
 Choose either the `Cat` or `Raccoon` model and drag it from the Projects Window to the Scene View.
 
@@ -68,7 +68,7 @@ Drag the Game view tab to the right so that it appears next to the Scene view:
 
 Unity uses X, Y and Z coordinates to position Game objects in 3D space. 
 
-[unity-3d-coordinates]
+[[[unity-3D-coordinates]]]
 
 --- task ---
 

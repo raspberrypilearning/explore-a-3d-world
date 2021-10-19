@@ -19,6 +19,8 @@ You can:
 
 ![The scene view with new camera position, additional shapes and enlarged character with the construction mesh turned back on.](images/customised-project.png)
 
+<mark>Add link to completed project when available.</mark>
+
 --- collapse ---
 
 ---

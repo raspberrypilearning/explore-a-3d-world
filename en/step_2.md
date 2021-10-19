@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Create a 3D world with a floor and walls. 
+Create a 3D world, or 'map',  with a floor and walls. 
 </div>
 <div>
 ![The scene view showing a plane floor with two brick walls.](images/end-walls.png){:width="300px"}
@@ -10,7 +10,7 @@ Create a 3D world with a floor and walls.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">online virtual environments</span>. As well as playing games, people relax, explore, socialise, learn and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">metaverse</span>. Being able to design 3D worlds is an important skill.
+People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
 </p>
 
 --- task ---
@@ -99,8 +99,6 @@ You can create objects from 3D shapes.
 
 Right-click on your '3D World' scene in the Hierarchy and choose 'GameObject' -> '3D Object' -> 'Cube'. 
 
-![The expanded menu with cube object highlighted](images/add-cube.png)
-
 This will create a cube at the centre of the scene, at (0, 0, 0).
 
 --- /task ---
@@ -134,6 +132,8 @@ Click on the Cube in the Scene view or Hierarchy to select it.
 ![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
 
 --- /task ---
+
+**Tip:** If you make a mistake in the Unity editor you can use 'Ctrl-Z' ('Cmd-Z') to **undo** your last action. 
 
 --- task ---
 
@@ -206,20 +206,20 @@ Think of a 4x4 plane as 40 metres by 40 metres in the real world. Plenty of room
 
 --- /task ---
 
-<mark>Update autosave comment after testing the script</mark>
-
 --- task ---
 
-Unity does not autosave changes. When you have unsaved changes you will see a '*' next to your scene in the Hierarchy.
+When you have unsaved changes you will see a '*' next to your scene in the Hierarchy.
 
 Save your scene by clicking 'File' -> 'Save' or 'Ctrl-S'. 
 
 Also, save your project by clicking 'File' -> 'Save Project'.
 
+Unity does not normally autosave changes, but your starter project contains a script to autosave your project every 60 seconds. 
+
 --- /task ---
 
 You can navigate around your scene to see it from different angles. If you get lost just click on a wall in the hierarchy and then 'Shift-F' to focus and then zoom out. 
 
-[navigation ingredient]
+[[[unity-scene-navigation]]]
 
 --- save ---
