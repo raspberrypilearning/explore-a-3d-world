@@ -21,7 +21,7 @@ Click 'Add Component' and start to type 'char' in the Search box, click on the C
 
 --- /task ---
 
-The CharacterController component adds new features to your player Game object including a `Move` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
+The CharacterController component adds new features to your player Game object including a `SimpleMove` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
  A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a Game object collides, or intersects, with another Game object. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a Game object.</p>
@@ -175,6 +175,8 @@ The CharacterController component provides a `SimpleMove` method.
 --- task ---
 Update your code to use the Vertical input value to move the player each frame. (You can remove the `Debug` line.)
 
+A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the player is facing in. 
+
 ```
     void Update()
     {
@@ -188,6 +190,8 @@ Update your code to use the Vertical input value to move the player each frame. 
     }
  ```
  
+ <mark>Include ingredient on Vector3?</mark>
+
 --- /task ---
 
 --- task ---
@@ -197,7 +201,7 @@ Update your code to use the Vertical input value to move the player each frame. 
 
 **Tip:** Make sure your mouse pointer is in the **Game view**.
 
-Try and walk through the wall. The `Move` Method from the `CharacterController` component stops you from being able to walk through objects that have a collider. A collider is automatically added when you create a 3D shape as you did for the Wall. 
+Try and walk through the wall. The `SimpleMove` Method from the `CharacterController` component stops you from being able to walk through objects that have a collider. A collider is automatically added when you create a 3D shape as you did for the Wall. 
 
 You can pan around in the **Scene view** by holding your right-mouse button and dragging. Pan to get a better view of the wall as your character walks into it.
 
