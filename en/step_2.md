@@ -37,35 +37,35 @@ The Unity editor looks like this:
 title: The Unity Editor windows and views
 ---
 
-1. **The Unity Menu** - is used to import, open and save scenes and projects. You can amend your Unity Editor preferences and add new Game objects and components. 
+1. **The Unity Menu** - is used to import, open and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components. 
 
 2. **The Toolbar** - contains tools for navigating round in the Scene View, controlling play of the Game View and customising your Unity Editor layout. 
 
-3. **The Scene View** - is used to navigate and edit your Scene. You can select and position Game objects including characters, scenery, cameras and lights.
+3. **The Scene View** - is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras and lights.
 
-4. **The Game View** - shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter Play mode The Game View simulates your scene as it would be viewed by a user. 
+4. **The Game View** - shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter Playmode The Game View simulates your scene as it would be viewed by a user. 
 
-5. **The Hierarchy Window** - shows all the Game objects in your Scene and the structure between them. You can add and navigate the Game objects in your project. Game objects can had child objects that move with them.
+5. **The Hierarchy Window** - shows all the GameObjects in your Scene and the structure between them. You can add and navigate the GameObjects in your project. GameObjects can had child objects that move with them.
 
 6. **The Project Window** - shows a library of all the files included in your project. You can find Assets to use here.
 
 7. **The Console Window** - shows important messages. This is where you can see Compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
 
-8. **The Inspector Window** - allows you to view and edit the properties of Game objects. You can add other components to your Game objects and edit the values they use. 
+8. **The Inspector Window** - allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use. 
 
 --- /collapse ---
 
 --- task ---
 
-The **Projects Window** is where you can see all the files included in your project. You can find 'Assets' to use here.
+The **Project Window** is where you can see all the files included in your project. You can find 'Assets' to use here.
 
-Click on the Projects window and make sure you can see the Assets included in the starter project:
+Click on the Project window and make sure you can see the Assets included in the starter project:
 
 ![Project View selected with folders shown](images/project-view-folders.png)
 
 --- /task ---
 
-In Unity, a **Scene** contains Game objects. A game with multiple levels might have one scene per level. 
+In Unity, a **Scene** contains GameObjects. A game with multiple levels might have one scene per level. 
 
 --- task ---
 
@@ -83,7 +83,7 @@ Your world needs some ground.
 
 --- task ---
 
-Right-click on your scene (name '3D World') in the Hierachy and choose 'GameObject' -> '3D Object' -> 'Plane'. 
+Right-click on your scene (name '3D World') in the Hierachy and choose 'GameObject' -> '3D Object' -> 'Plane': 
 
 ![The 3D World scene with menu extended and plane highlighted](images/add-plane.png)
 
@@ -104,11 +104,11 @@ This will create a cube at the centre of the scene, at (0, 0, 0).
 --- /task ---
 
 --- task ---
-Click on the Cube in the Scene view or Hierarchy to select it.
+Click on the Cube in the Scene view or Hierarchy window to select it.
 
 Use 'Shift-F' (hold down the Shift key and tap F) to focus on the cube. 
 
-You can also use the scroll wheel on the mouse, or the up and down arrow keys, to zoom in and out.
+You can also use the scroll wheel on the mouse, or the up and down arrow keys, to zoom in and out:
 
 ![The cube in the centre of the scene view half above and half below the plane.](images/cube-scene-view.png)
 
@@ -118,16 +118,16 @@ You need to get the cube to sit on the plane.
 
 --- task ---
 
-Click on the Cube in the Scene view or Hierarchy to select it.
+Click on the Cube in the Scene view or Hierarchy window to select it.
 
 **Choose** You can either:
 
-+ Change the Y position in the Inspector to 0.5 (half the height of the cube) 
++ Change the Y position in the Inspector to 0.5 (half the height of the cube):
 
 ![The Transform component for the Cube with the y position coordinate set to 0.5](images/y-transform-cube.png)
 
 
-+ Drag the green arrow up until the cube sits on the plane.
++ Drag the green arrow up until the cube sits on the plane:
 
 ![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
 
@@ -137,7 +137,7 @@ Click on the Cube in the Scene view or Hierarchy to select it.
 
 --- task ---
 
-Now change the cube into a wall with the following Position and Scale settings. 
+Now change the cube into a wall with the following Position and Scale settings: 
 
 ![The transform component with updated position and scale properies, Position X=0, Y=1, Z=3, Scale X=5, Y=2, Z=0.25.](images/transform-cube-to-wall.png)
 
@@ -151,7 +151,7 @@ Zoom out to see your wall:
 
 --- task ---
 
-Drag the 'Red Brick' material from the Materials folder in the Project view to the wall in the scene. 
+Drag the 'Red Brick' material from the Materials folder in the Project window to the wall in the scene: 
 
 ![The scene view with red brick wall.](images/red-brick-wall.png)
 
@@ -159,23 +159,23 @@ Drag the 'Red Brick' material from the Materials folder in the Project view to t
 
 --- task ---
 
-In the Inspector, rename your object from Cube to Wall.
+In the Inspector window, rename your object from 'Cube' to `Wall`:
 
 ![Inspector showing Wall as the name.](images/name-wall.png)
 
-**Tip:** You can name a new Game object in the Hierarchy when you create it and you can change the name in the Inspector.
+**Tip:** You can name a new GameObject in the Hierarchy window when you create it and you can change the name in the Inspector window.
 
 --- /task ---
 
 --- task ---
 
-Right-click on your 'Wall' object in the Hierarchy and choose 'Duplicate' to create a copy of the wall. It will be in exactly the same place as your first wall. 
+Right-click on your 'Wall' object in the Hierarchy window and choose 'Duplicate' to create a copy of the wall. It will be in exactly the same place as your first wall. 
 
 --- /task ---
 
 --- task ---
 
-Change the Y rotation of the new wall to 90. 
+Change the Y rotation of the new wall to `90`: 
 
 ![The new wall transform component with rotate on the y axis showing 90 degrees ](images/transform-rotate-90.png)
 
@@ -187,7 +187,7 @@ Reposition the new wall to following position:
 
 ![Transform for new wall. Position X=4, Y=1, Z=-1.](images/new-wall-transform.png)
 
-You can either enter the values in the Inspector or drag the arrows in the scene - it doesn't matter if the position is exact.
+You can either enter the values in the Inspector window or drag the arrows in the scene - it doesn't matter if the position is exact.
 
 Your scene should look like this:
 
@@ -196,7 +196,8 @@ Your scene should look like this:
 --- /task ---
 
 --- task ---
-Change the Scale settings on the Plane to make it bigger so you have more room. 
+
+Change the 'Scale' settings on the Plane to make it bigger so you have more room: 
 
 ![The transform component with scale X and Z coordinates changed to 4](images/plane-scale-4-1-4.png)
 
@@ -208,7 +209,7 @@ Think of a 4x4 plane as 40 metres by 40 metres in the real world. Plenty of room
 
 --- task ---
 
-When you have unsaved changes you will see a '*' next to your scene in the Hierarchy.
+When you have unsaved changes you will see a '*' next to your scene in the Hierarchy window.
 
 Save your scene by clicking 'File' -> 'Save' or 'Ctrl-S'. 
 
@@ -218,7 +219,7 @@ Unity does not normally autosave changes, but your starter project contains a sc
 
 --- /task ---
 
-You can navigate around your scene to see it from different angles. If you get lost just click on a wall in the hierarchy and then 'Shift-F' to focus and then zoom out. 
+You can navigate around your scene to see it from different angles. If you get lost just click on a wall in the Hierarchy window and then 'Shift-F' to focus and then zoom out: 
 
 [[[unity-scene-navigation]]]
 

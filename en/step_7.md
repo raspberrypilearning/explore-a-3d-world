@@ -10,12 +10,12 @@ Now you can make your 3D world just the way you want it.
 </div>
 
 You can: 
-+ add more 3D objects to your world, try Spheres and Capsule, 
-+ try different colours and materials,
-+ change the Scale settings for the Transform for your character to make it bigger or smaller, you'll need to change all three values to keep it in proportion,
-+ enable and disable different accessories in the Inspector to get the look you want,
-+ adjust the player movement and rotation speed,
-+ adjust the position of the camera.
++ add more 3D objects to your world, try Spheres and Capsule 
++ try different colours and materials
++ change the Scale settings for the Transform for your character to make it bigger or smaller - you'll need to change all three values to keep it in proportion
++ enable and disable different accessories in the Inspector window to get the look you want
++ adjust the player movement and rotation speed
++ adjust the position of the camera
 
 ![The scene view with new camera position, additional shapes and enlarged character with the construction mesh turned back on.](images/customised-project.png)
 

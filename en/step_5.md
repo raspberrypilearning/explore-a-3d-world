@@ -5,7 +5,7 @@ Your player is moving around, but at the moment, it's stuck in a T-pose position
 ![The game view with the character moving around with animation](images/animated-char.gif)
 
 --- task ---
-Drag the 'IdleWalk' Animator from the Animations folder in the Projects Window to the Controller property of the Animator component of your character.
+Drag the 'IdleWalk' Animator from the 'Animations' folder in the Project window to the Controller property of the 'Animator' component of your character:
 
 ![The IdleWalk animator in the Animations folder of the project window.](images/idlewalk-animation.png)
 
@@ -16,13 +16,13 @@ This will add Idle and Walk animations to your character with an `isMoving` Bool
 --- /task ---
 
 --- task ---
-**Test:** Play your project and make sure you can see the Idle animation.
+**Test:** Play your project and make sure you can see the Idle animation:
 
 ![The character with IdleWalk animaton in game view.](images/idlewalk-animation.gif)
 --- /task ---
 
 --- task ---
-Change the code in the `Update` method of your script so that when the character is moving forward it uses a walking animation otherwise it uses an idle animation. Your character will no longer move backwards. 
+Change the code in the `Update` method of your script so that when the character is moving forward it uses a walking animation otherwise it uses an idle animation. Your character will no longer move backwards: 
 
 ```
 void Update() {
@@ -42,7 +42,7 @@ void Update() {
 --- /task ---
 
 --- task ---
-**Test:** Play your project and make sure you can see the animation change to Walk when you move forward and switch to Idle when you are not moving forward. 
+**Test:** Play your project and make sure you can see the animation change to Walk when you move forward and switch to Idle when you are not moving forward: 
 
 ![The character with Idle animation when standing still and Walk animation when moving forward.](images/idle-and-walk-animation.gif)
 
@@ -55,7 +55,7 @@ The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3
 </p>
 
 --- task ---
-In the Hierarchy, drag the Main Camera to the Player GameObject, it will become a child of the Player and will follow the player around. 
+In the Hierarchy window, drag the 'Main Camera' to the 'Player' GameObject, it will become a child of the 'Player' and will follow the player around. 
 
 ![The hierarchy window with main camera positioned inside the player as a child game object](images/child-camera.png)
 
@@ -68,16 +68,16 @@ In the Hierarchy, drag the Main Camera to the Player GameObject, it will become 
 
 --- /task ---
 
-You can adjust the position and rotation of the camera in the Scene view or the Inspector.
+You can adjust the position and rotation of the camera in the Scene view or the Inspector window.
 
 --- task ---
-Exit Playmode and try these settings to get a 3rd person view of your Player, looking down from behind and above your player. 
+Exit Playmode and try these settings to get a 3rd person view of your Player, looking down from behind and above your player: 
 
 ![The transform component of the main camera with position x = 0, y = 2.5, z = -2.5 and rotation x = 35.](images/birdseye-transform.png)
 
 ![The game view with new coordinates.](images/birdseye-game.png)
 
-You can position the camera in the Scene view using the Transform and Rotate tools if you prefer.
+You can position the camera in the Scene view using the Transform and Rotate tools if you prefer:
 
 ![The scene view with transform and rotate tools highlighted and camera seleted with rotate x, y and z circles showing.](images/transform-rotate-scene.png)
 
@@ -90,7 +90,7 @@ Adjust the camera settings until you are happy with them.
 
 **Tip:** You can try settings out in Playmode but you need to exit Playmode and update the settings to keep them.
 
-What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Playmode.
+What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Playmode:
 
 ![The game view with animated character moving through the environment and camera following with birdseye view.](images/birdseye-walkthrough.gif)
 
