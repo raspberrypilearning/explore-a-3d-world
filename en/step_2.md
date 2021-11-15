@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Create a 3D world, or 'map',  with a floor and walls. 
+Your 3D world,  or 'map', needs a floor and walls. 
 </div>
 <div>
 ![The scene view showing a plane floor with two brick walls.](images/end-walls.png){:width="300px"}
@@ -13,21 +13,30 @@ Create a 3D world, or 'map',  with a floor and walls.
 People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
 </p>
 
+A Unity project needs graphics and sound 'Assets'.  
+
+Download the [Unity starter package](http://rpf.io/unity-starter){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
+--- /task ---
+
 --- task ---
 
-Download the [Unity starter project](http://rpf.io/unity-starter){:target="_blank"} to your computer. 
+Launch the Unity Hub and click 'Projects' then select 'New project':
 
-Unzip/extract the downloaded file on your computer, choose a sensible location such as your Documents folder. 
+![The 'New project' button on the top right of the unity hub.](images/new-project.png)
 
-Launch the Unity Hub and click 'Open' then choose the folder you extracted the downloaded starter project to: 
+From the list of templates, select '3D Core': 
 
-![The Unity hub with Open Button highlighted](images/unity-hub.png)
+![A list of templates. The one called '3D' selected, it has a subheading of 'Core' underneath.](images/3D-core.png)
 
-Your project will open in the Unity Editor.
+Edit the Project Settings to give your project a sensible name and save it to a sensible location. Then click 'Create project':
+
+![The projects settings area with 'Create project' button highlgihted in the bottom right corner.](images/create-project.png)
+
+Your new project will open in the Unity Editor.
 
 --- /task ---
 
-The Unity editor looks like this:
+The Unity editor looks like this (your Scene View and Game View might not be side-by-side):
 
 ![Unity editor with Windows annotated](images/unity-editor.png)
 
@@ -57,19 +66,31 @@ title: The Unity Editor windows and views
 
 --- task ---
 
-The **Project Window** is where you can see all the files included in your project. You can find 'Assets' to use here.
+The 'Unity starter package' you downloaded contains a number of Assets to use in your project. 
 
-Click on the Project window and make sure you can see the Assets included in the starter project:
+To import them into your new project, click on the 'Assets' menu and select 'Import package' > 'Custom Package...' then navigate to the downloaded 'Unity starter package'.
+
+--- /task ---
+
+--- task ---
+
+The **Project Window** is where you can see all the files included in your project. 
+
+Click on the Project window and make sure you can see the Assets included in the 'Unity starter package':
 
 ![Project View selected with folders shown](images/project-view-folders.png)
 
 --- /task ---
 
-In Unity, a **Scene** contains GameObjects. A game with multiple levels might have one scene per level. 
+In Unity, a **Scene** contains GameObjects. A Unity project with multiple game levels might have one scene per level. 
 
 --- task ---
 
-Click 'File -> Save As' and name your Scene '3D World'. Leave the folder set to your Assets folder for this project:
+Right-click on 'Default Scene' in the Hierarchy and choose 'Save Scene As'. 
+
+![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
+
+In the popup window, name your Scene '3D World'. Leave the folder set to your Assets folder for this project:
 
 ![The save as popup window with Scenes folder selected](images/save-scene.png)
 
@@ -103,6 +124,10 @@ This will create a cube at the centre of the scene, at (0, 0, 0).
 
 --- /task ---
 
+You can see the cube in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
+
+**Tip:** Click on the 'Scene' tab to make sure you can see the Scene view. 
+
 --- task ---
 Click on the Cube in the Scene view or Hierarchy window to select it.
 
@@ -126,7 +151,6 @@ Click on the Cube in the Scene view or Hierarchy window to select it.
 
 ![The Transform component for the Cube with the y position coordinate set to 0.5](images/y-transform-cube.png)
 
-
 + Drag the green arrow up until the cube sits on the plane:
 
 ![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
@@ -145,13 +169,29 @@ You can either enter the values in the Transform for the Cube or drag the arrows
 
 Zoom out to see your wall:
 
-![The new positioned and scaled wall in the scene view ](images/scene-cube-wall.png)
+![The new positioned and scaled wall in the scene view.](images/scene-cube-wall.png)
 
 --- /task ---
 
+The **material** of a GameObject controls how it looks. A material can have a colour and a texture and there are lots of properties that you can adjust to get different effects. A **texture** is a 2D image that can be created in an image editor.
+
 --- task ---
 
-Drag the 'Red Brick' material from the Materials folder in the Project window to the wall in the scene: 
+In the Model view, navigate to ‘My Assets’ then right-click and choose ‘Create’ -> ‘Material’. Give the material a descriptive name:
+
+![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
+
+Click on the colour next to ‘Base Map’ in the Inspector and choose a colour for your material:
+
+![The coloured bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
+
+Add a texture by clicking on the circle to the left of ‘Base Map’ and selecting 'BrickWallAlbedo' texture from the list: 
+
+![The popup window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
+
+Drag your new material from the Project window to your wall in the Scene view:
+
+![The red brick material in the Project window.](images/brick-material.png)
 
 ![The scene view with red brick wall.](images/red-brick-wall.png)
 
@@ -169,7 +209,11 @@ In the Inspector window, rename your object from 'Cube' to `Wall`:
 
 --- task ---
 
-Right-click on your 'Wall' object in the Hierarchy window and choose 'Duplicate' to create a copy of the wall. It will be in exactly the same place as your first wall. 
+To create a copy of your wall you can either:
++ Right-click on your 'Wall' object in the Hierarchy window and choose 'Duplicate'. 
++ Select your wall in the Scene view and use 'Ctrl-D' (or 'Cmd-D') to duplicate.
+
+Your new wall will be in exactly the same place as your first wall. 
 
 --- /task ---
 
@@ -222,5 +266,7 @@ Unity does not normally autosave changes, but your starter project contains a sc
 You can navigate around your scene to see it from different angles. If you get lost just click on a wall in the Hierarchy window and then 'Shift-F' to focus and then zoom out: 
 
 [[[unity-scene-navigation]]]
+
+Remember, if you navigate around then you will be looking at your scene from a different perspective so your view won't look exactly the same as our examples.
 
 --- save ---

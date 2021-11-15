@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add a Cat or Raccoon character.  
+The player in your world will be a Cat or Raccoon character. 
 </div>
 <div>
 ![The scene view with character.](images/added-character.png){:width="300px"}
@@ -19,7 +19,7 @@ Choose either the `Cat` or `Raccoon` model and drag it from the Project window t
 
 --- /task ---
 
-Your character will appear in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
+Your character will appear in the Scene view. 
 
 --- task ---
 
@@ -49,7 +49,7 @@ Hide the other accessories for your character in the same way, or just keep one 
 
 --- /task ---
 
-The player will see the game through the 'Main Camera' which is shown as a video camera icon in the scene:
+The player will see the game through the 'Main Camera' which is shown as a video camera icon in the scene. Select the camera to see the embedded camera view:
 
 ![Camera selected in scene view](images/camera-in-scene.png)
 

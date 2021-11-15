@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Get your player moving with WASD or arrow keys. 
+Your player will move with WASD or arrow keys. 
 </div>
 <div>
 ![The scene in Game view with character moving around the scene.](images/moving-character.gif){:width="300px"}
@@ -10,12 +10,12 @@ Get your player moving with WASD or arrow keys.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Unity uses the <span style="color: #0faeb0">**C#**</span> (say C sharp) programming language which is used by professional software developers. C# is an object-oriented language with **classes** that define behaviour for similar objects and **methods** which are functions that belong to a class. In Unity, a **script** defines a class with variables and methods. You can add the same script to multiple GameObjects if they need the same features.</p>
+Unity uses the <span style="color: #0faeb0">**C#**</span> (pronounced C sharp) programming language which is used by professional software developers. C# is an object-oriented language with **classes** that define behaviour for similar objects and **methods** which are functions that belong to a class. In Unity, a **script** defines a class with variables and methods. You can add the same script to multiple GameObjects if they need the same features.</p>
 
 --- task ---
 Click on your character in the Hierarchy window or Scene view so you can see its properties in the Inspector window. 
 
-Click 'Add Component' and start to type `char` in the Search box, click on the 'CharacterController' component when it appears: 
+Click 'Add Component' and start to type `character` in the Search box, click on the 'CharacterController' component when it appears: 
 
 ![The Add Component menu showing character controller](images/character-controller-add.png)
 
@@ -44,17 +44,11 @@ Your character needs a script so that the player can move it around.
 
 --- task ---
 
-Go to the Project window and right-click on the 'Assets' folder. From the **Create** menu choose **Folder**. Rename your folder to 'My Scripts':
+Go to the Inspector window for the Player and click on the 'Add Component' button. Type 'script' and select 'New Script'. Name your new script `PlayerController`.
 
-![The Project Window with new My Scripts folder shown.](images/my-scripts-folder.png){:width="400px"}
+The new script will be saved in the 'Assets' folder:
 
---- /task ---
-
---- task ---
-
-Right click on the 'My Scripts' folder and go to the **Create** menu. Select **C# Script** name your new script `PlayerController`:
-
-![The Project window with new PlayerController script shown.](images/PlayerController-script.png){:width="300px"}
+![The Project Window with new My Scripts folder shown.](images/new-script-project.png){:width="400px"}
 
 --- /task ---
 
@@ -87,7 +81,27 @@ public class PlayerController : MonoBehaviour
 
 --- /task ---
 
-Unity creates the effect of movement by quickly drawing images to the screen. Each image is a 'frame'. 
+The `Start` method is called once when you play your scene. 
+
+--- task ---
+Use the `Debug.Log()` method
+
+
+```
+    void Start()
+    {
+        Debug.Log("Player started");
+    }
+```
+
+--- /task ---
+
+--- task ---
+
+--- /task ---
+
+
+Unity creates the effect of movement by quickly drawing images to the screen. Each image is a **frame**. The `Update` method is called once every frame.
 
 --- task ---
 
