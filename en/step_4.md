@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Get your player moving with WASD or arrow keys. 
+Your player will move with WASD or arrow keys. 
 </div>
 <div>
 ![The scene in Game view with character moving around the scene.](images/moving-character.gif){:width="300px"}
@@ -10,29 +10,29 @@ Get your player moving with WASD or arrow keys.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Unity uses the <span style="color: #0faeb0">**C#**</span> (say C sharp) programming language which is used by professional software developers. C# is an object-oriented language with **classes** that define behaviour for similar objects and **methods** which are functions that belong to a class. In Unity, a **script** defines a class with variables and methods. You can add the same script to multiple game objects if they need the same features.</p>
+Unity uses the <span style="color: #0faeb0">**C#**</span> (pronounced C sharp) programming language which is used by professional software developers. C# is an object-oriented language with **classes** that define behaviour for similar objects and **methods** which are functions that belong to a class. In Unity, a **script** defines a class with variables and methods. You can add the same script to multiple GameObjects if they need the same features.</p>
 
 --- task ---
-Click on your character in the Hierarchy or Scene view so you can see its properties in the Inspector. 
+Click on your character in the Hierarchy window or Scene view so you can see its properties in the Inspector window. 
 
-Click 'Add Component' and start to type 'char' in the Search box, click on the CharacterController component when it appears. 
+Click 'Add Component' and start to type `character` in the Search box, click on the 'CharacterController' component when it appears: 
 
 ![The Add Component menu showing character controller](images/character-controller-add.png)
 
 --- /task ---
 
-The CharacterController component adds new features to your player Game object including a `SimpleMove` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
+The CharacterController component adds new features to your Player GameObject including a `SimpleMove` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a Game object collides, or intersects, with another Game object. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a Game object.</p>
+ A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a GameObject collides, or intersects, with another GameObject. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a GameObject.</p>
 
 --- task ---
 
-The Character Controller collider has a Height of `2` and a centre at `0, 0, 0` this means it is positioned half above and half below the plane. 
+The Character Controller collider has a Height of `2` and a centre at `0, 0, 0` this means it is positioned half above and half below the plane: 
 
 ![The scene view showing the character with a Character Controller capsule around the model](images/scene-char-controller.png){:width="300px"}
 
-Your character has a height of `1` meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.6` and the Height to `1` to match the character. 
+Your character has a height of `1` meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.6` and the Height to `1` to match the character: 
 
 ![The Inspector window properties for the character controller component](images/properties-controller.png){:width="400px"}
 
@@ -44,22 +44,17 @@ Your character needs a script so that the player can move it around.
 
 --- task ---
 
-Go to the Project Window and right-click on the `Assets` folder. From the **Create** menu choose **Folder**. Rename your folder to 'My Scripts'.
+Go to the Inspector window for the Player and click on the 'Add Component' button. Type 'script' and select 'New Script'. Name your new script `PlayerController`.
 
-![The Project Window with new My Scripts folder shown.](images/my-scripts-folder.png){:width="400px"}
+The new script will be saved in the 'Assets' folder:
 
---- /task ---
-
---- task ---
-
-Right click on the `My Scripts` folder and go to the **Create** menu. Select **C# Script** name your new script `PlayerController`.
-
-![The Project window with new PlayerController script shown.](images/PlayerController-script.png){:width="300px"}
+![The Project Window with new My Scripts folder shown.](images/new-script-project.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
-Double-click on the script to open it. The script will open in a separate code editor. 
+
+Double-click on the script to open it. The script will open in a separate code editor and have this code: 
 
 ```
 using System.Collections;
@@ -82,17 +77,38 @@ public class PlayerController : MonoBehaviour
 }
 ```
 
-**Debug:** Check that the name after `class` is `PlayerController` and matches the name of your script file. If you rename the file after creating it then you will need to change the class name in the script.
+**Debug:** Check that the name after 'class' is `PlayerController` and matches the name of your script file. If you rename the file after creating it then you will need to change the class name in the script.
 
 --- /task ---
 
-Unity creates the effect of movement by quickly drawing images to the screen. Each image is a 'frame'. 
+The `Start` method is called once when you play your scene. 
+
+--- task ---
+Use the `Debug.Log()` method
+
+
+```
+    void Start()
+    {
+        Debug.Log("Player started");
+    }
+```
+
+--- /task ---
 
 --- task ---
 
-You will be able to use WASD or arrow keys (players on mobile or console can use different inputs without you changing your code.)
+--- /task ---
+
+
+Unity creates the effect of movement by quickly drawing images to the screen. Each image is a **frame**. The `Update` method is called once every frame.
+
+--- task ---
+
+You will be able to use WASD or arrow keys (players on mobile or console can use different inputs without you changing your code.)   
 
 **Tip:** The lines starting with `//` are comments that explain the code. You don't need to type them.
+
 
 <mark>Add line numbers, filenames and highlights to code markdown.</mark>
 
@@ -108,7 +124,7 @@ You will be able to use WASD or arrow keys (players on mobile or console can use
 
 A `float` is a decimal number.
 
-**Save** your `PlayerController` script in your code editor, using 'Ctrl-S' (or 'Cmd-S'), then return to the Unity Editor.
+**Save** your 'PlayerController' script in your code editor, using 'Ctrl-S' (or 'Cmd-S'), then return to the Unity Editor.
 
 <mark>Do we want to be specific about the editor?</mark>
 
@@ -126,7 +142,7 @@ Compare your code with the example code and make sure everything is exactly the 
 
 --- task ---
 
-Click on your character in the Hierarchy window. Go to the Project window and drag the `PlayerController` script across to the Inspector window.
+Click on your character in the Hierarchy window. Go to the Project window and drag the 'PlayerController' script across to the Inspector window:
 
 ![An animated gif showing the dragging of the PlayerController script from the Project window to the Inspector window](images/drag-script.gif)
 
@@ -134,11 +150,11 @@ Click on your character in the Hierarchy window. Go to the Project window and dr
 
 --- task ---
 
-Click on the **Console** window tab to bring it to the front. 
+Click on the Console window tab to bring it to the front:
 
 ![The tab for the Console window highlighted in the bottom left section of the Unity editor.](images/console-window.png){:width="400px"}
 
-**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode. This will simulate your scene as it would be viewed and interacted with by a user.  
+**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Playmode. This will simulate your scene as it would be viewed and interacted with by a user:  
 
 ![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png){:width="400px"}
 
@@ -154,28 +170,28 @@ Click the 'Play' button again to exit Playmode and the debug output will stop.
 
 --- /task ---
 
-It's easy to forget whether your game is playing or not. A Playmode colour tint makes it easier to tell when your scene is playing.
+It's easy to forget whether your game is playing or not. A Playmode colour tint makes it easier to tell when your scene is playing:
 
 ![Side my side image of the Unity editor without tint and with tint.](images/tint-no-tint.png)
 
 --- task ---
 
-To set a tint, go to the **Edit Menu** (or **Unity Menu**) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
+To set a tint, go to the 'Edit Menu' (or 'Unity Menu') and select 'Preferences'. Choose the 'Colours' menu and find the property called 'Playmode tint'.
 
-Click on the existing colour to see a colour wheel where you can choose a colour and opacity level.
+Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
 
 ![The colour wheel pop up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
 
-Return to the Unity editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
+Return to the Unity editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Playmode.
 
 --- /task ---
 
-The CharacterController component provides a `SimpleMove` method.
+The 'CharacterController' component provides a `SimpleMove` method.
 
 --- task ---
-Update your code to use the Vertical input value to move the player each frame. (You can remove the `Debug` line.)
+Update your code to use the Vertical input value to move the player each frame. (You can remove the 'Debug' line.)
 
-A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the player is facing in. 
+A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the player is facing in:
 
 ```
     void Update()
@@ -197,13 +213,13 @@ A Unity `Vector3` is used to store 3D points or directions. The `forward` variab
 --- task ---
 **Test:** Click Play to enter Playmode and try out your code. Use W/S or up and down arrow keys to glide forwards and backwards. 
 
-**Debug:** Remember to check the Console for helpful messages. Check brackets, semicolons and capital letters carefully.
+**Debug:** Remember to check the Console window for helpful messages. Check brackets, semicolons and capital letters in your code carefully.
 
 **Tip:** Make sure your mouse pointer is in the **Game view**.
 
-Try and walk through the wall. The `SimpleMove` Method from the `CharacterController` component stops you from being able to walk through objects that have a collider. A collider is automatically added when you create a 3D shape as you did for the Wall. 
+Try and walk through the wall. The `SimpleMove` Method from the `CharacterController` component stops you from being able to walk through GameObjects that have a collider. A collider is automatically added when you create a 3D shape as you did for the Wall. 
 
-You can pan around in the **Scene view** by holding your right-mouse button and dragging. Pan to get a better view of the wall as your character walks into it.
+You can pan around in the **Scene view** by holding your right-mouse button and dragging. Pan to get a better view of the wall as your character walks into it:
 
 ![Scene and game view of character up against the wall.](images/player-wall.gif){:width="500px"}
 
@@ -212,7 +228,7 @@ To move your player, move the mouse pointer back to the **Game view**.
 --- /task ---
 
 --- task ---
-Add another line so your character can `Rotate` when the player presses A/D or the left and right arrow keys. 
+Add another line so your character can `Rotate` when the player presses A/D or the left and right arrow keys: 
 
 ```
 void Update()
@@ -228,7 +244,7 @@ Save your code and switch back to the Unity editor. Unity will load your updated
 --- /task ---
 
 --- task ---
-**Test:** Click Play to enter Playmode and try out your code. Use A/D or left and right arrow keys to rotate. 
+**Test:** Click 'Play' to enter Playmode and try out your code. Use A/D or left and right arrow keys to rotate. 
 
 **Debug:** If you are still seeing output to the console and movement isn't working, then make sure you have saved your script in the code editor.
 
@@ -237,7 +253,7 @@ Save your code and switch back to the Unity editor. Unity will load your updated
 You can also control the speed of movement and rotation.
 
 --- task ---
-Open your `PlayerController` script and add variables for the `moveSpeed` and `rotateSpeed`. Making these variables `public` means that you can set them in the Unity Inspector and access them from other Game objects.
+Open your 'PlayerController' script and add variables for the `moveSpeed` and `rotateSpeed`. Making these variables `public` means that you can set them in the Unity Inspector window and access them from other GameObjects:
 
 ```
 public class PlayerController : MonoBehaviour
@@ -262,7 +278,7 @@ and,
 --- /task ---
 
 --- task ---
-Save your script and return to the Unity editor. When your script has compiled, click on your character in the Hierarchy. You should be able to see your new variables in the Inspector. 
+Save your script and return to the Unity editor. When your script has compiled, click on your character in the Hierarchy window. You should be able to see your new variables in the Inspector window. 
 
 Set their values to `3` and `1`:
 
@@ -273,9 +289,9 @@ Set their values to `3` and `1`:
 --- task ---
 **Test:** Play your scene and check if you are happy with the speed settings. 
 
-Make changes to the 'Move Speed' and 'Rotate Speed' in the **Inspector** until you are happy. 
+Make changes to 'Move Speed' and 'Rotate Speed' in the Inspector window until you are happy. 
 
-**Tip:** You can use Playmode to try out different settings but if you have changed them you will need to exit Playmode and set the values again in the Inspector to keep the settings you prefer.
+**Tip:** You can use Playmode to try out different settings but if you have changed them you will need to exit Playmode and set the values again in the Inspector window to keep the settings you prefer.
 
 --- /task ---
 
