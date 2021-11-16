@@ -86,7 +86,7 @@ In Unity, a **Scene** contains GameObjects. A Unity project with multiple game l
 
 --- task ---
 
-Right-click on 'Default Scene' in the Hierarchy and choose 'Save Scene As'. 
+Right-click on 'SampleScene' in the Hierarchy and choose 'Save Scene As'. 
 
 ![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
 

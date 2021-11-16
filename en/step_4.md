@@ -81,45 +81,71 @@ public class PlayerController : MonoBehaviour
 
 --- /task ---
 
-The `Start` method is called once when you play your scene. 
+The 'Start' method is called once when you play your scene. Add code to print the message `Player started` when your project starts running.
 
 --- task ---
-Use the `Debug.Log()` method
 
+Use the `Debug.Log()` method to print a message when the Player GameObject's `Start` method is called. The message will appear in the bar at the bottom of the Unity editor and in the Console window:
 
 ```
+    // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Player started");
     }
 ```
 
+**Tip:** The lines starting with // are comments that explain the code. You don’t need to type them.
+
+**Save** your 'PlayerController' script in your code editor, using 'Ctrl-S' (or 'Cmd-S'), then return to the Unity Editor.
+
 --- /task ---
 
 --- task ---
 
+Click on the Console window tab to bring it to the front:
+
+![The tab for the Console window highlighted in the bottom left section of the Unity editor.](images/console-window.png){:width="400px"}
+
 --- /task ---
 
+--- task ---
+
+**Test:**  Play your project and check the Console window to make sure you see the `Debug.Log()` 'Player started' message:
+
+![The console window with the time stamped 'Player started' message as a comment.](images/player-started.png)
+
+**Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
++ '; expected' - check for a semicolon `;` at the end of each line of code. 
++ 'Newline in constant' - you missed a quote `"` from the end of a text string.
++ '} expected' - you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
++ ') expected' - make sure there's a closing `)` at the end of each Method call, before the semicolon.
++ 'Debug' does not contain a definition for 'log'' - C# is case sensitive, it needs to be `Log` with a capital `L`.
+
+Compare your code with the example code and make sure everything is exactly the same.
+
+--- /task ---
 
 Unity creates the effect of movement by quickly drawing images to the screen. Each image is a **frame**. The `Update` method is called once every frame.
 
 --- task ---
 
-You will be able to use WASD or arrow keys (players on mobile or console can use different inputs without you changing your code.)   
+You will be able to use WASD or arrow keys (players on mobile or console can use different inputs without you changing your code.)
 
-**Tip:** The lines starting with `//` are comments that explain the code. You don't need to type them.
-
+`Input.GetAxis("Vertical")` takes input from 'W'/'S' or up/down arrow keys and returns a number between '1' and '-1' which we will use for forwards/backwards movement. 
 
 <mark>Add line numbers, filenames and highlights to code markdown.</mark>
 
 ```
-   // Update is called once per frame
-    void Update()
-    {
+void Update()
+{
         float speed = Input.GetAxis("Vertical");
-        Debug.Log(speed);
-    }
 
+        if (speed != 0) // Player moving
+        {
+            Debug.Log(speed);
+        }
+}
 ```
 
 A `float` is a decimal number.
@@ -130,29 +156,9 @@ A `float` is a decimal number.
 
 **Tip:** You might finding it quicker to use 'Alt-Tab' (or 'Cmd-Tab') to switch between your Web browser with the project instructions, the Unity editor and your code editor.
 
-**Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
-+ '; expected' - check for a semicolon `;` at the end of each line of code. 
-+ 'Newline in constant' - you missed a quote `"` from the end of a text string.
-+ '} expected' - you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
-+ ') expected' - make sure there's a closing `)` at the end of each Method call, before the semicolon.
-+ ''Input' does not contain a definition for 'getAxis'' - C# is case sensitive, it needs to be `GetAxis` with a capital `G`.
-
-Compare your code with the example code and make sure everything is exactly the same.
 --- /task ---
 
---- task ---
-
-Click on your character in the Hierarchy window. Go to the Project window and drag the 'PlayerController' script across to the Inspector window:
-
-![An animated gif showing the dragging of the PlayerController script from the Project window to the Inspector window](images/drag-script.gif)
-
---- /task ---
-
---- task ---
-
-Click on the Console window tab to bring it to the front:
-
-![The tab for the Console window highlighted in the bottom left section of the Unity editor.](images/console-window.png){:width="400px"}
+--- task --
 
 **Test:** Go to the Toolbar and click on the **Play** button to put your scene into Playmode. This will simulate your scene as it would be viewed and interacted with by a user:  
 
