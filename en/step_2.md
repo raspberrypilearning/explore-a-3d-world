@@ -15,7 +15,7 @@ People are spending more time in <span style="color: #0faeb0">**online virtual e
 
 A Unity project needs graphics and sound 'Assets'.  
 
-Download the [Unity starter package](http://rpf.io/unity-starter){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
+Download the [Unity starter package](https://rpf.io/unity-starter){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
 --- /task ---
 
 --- task ---

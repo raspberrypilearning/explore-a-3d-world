@@ -302,7 +302,9 @@ Return to the Unity editor and press the **Play** button to see your new tint in
 
 **Test:** Play your scene and check if you are happy with the speed settings. 
 
-**Tip:** You can comment out the `Debug.Log()` line by putting `//` at the beginning of the line. 
+Make changes to 'moveSpeed' and 'rotateSpeed' in your script until you are happy. 
+
+**Tip:** You can comment out the `Debug.Log()` lines by putting `//` at the beginning of the line. 
 You can also comment out multiple lines using `/*` and `*/`:
 ```
         /*if (speed != 0) // Player moving
@@ -310,10 +312,6 @@ You can also comment out multiple lines using `/*` and `*/`:
             Debug.Log(speed);
         }*/
 ```
-
-Make changes to 'moveSpeed' and 'rotateSpeed' in your script until you are happy. 
-
-**Tip:** You can use Playmode to try out different settings but if you have changed them you will need to exit Playmode and set the values again in the Inspector window to keep the settings you prefer.
 
 Click the 'Play' button again to exit Playmode.
 

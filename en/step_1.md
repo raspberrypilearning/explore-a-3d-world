@@ -17,7 +17,7 @@ This project is suitable for learners with previous coding experience, such as [
 ### You will need
 This project requires the Unity Editor which can be installed from the Unity Hub. This is a large download and install so we recommend you install it before starting this project. 
 
-You may also wish to download the [Unity intro starter package](http://rpf.io/unity-starter){:target="_blank"} of assets before starting. 
+You may also wish to download the [Unity intro starter package](https://rpf.io/unity-starter){:target="_blank"} of assets before starting. 
 
 --- collapse ---
 
