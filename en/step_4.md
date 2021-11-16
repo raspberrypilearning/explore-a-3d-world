@@ -13,6 +13,7 @@ Your player will move with WASD or arrow keys.
 Unity uses the <span style="color: #0faeb0">**C#**</span> (pronounced C sharp) programming language which is used by professional software developers. C# is an object-oriented language with **classes** that define behaviour for similar objects and **methods** which are functions that belong to a class. In Unity, a **script** defines a class with variables and methods. You can add the same script to multiple GameObjects if they need the same features.</p>
 
 --- task ---
+
 Click on your character in the Hierarchy window or Scene view so you can see its properties in the Inspector window. 
 
 Click 'Add Component' and start to type `character` in the Search box, click on the 'CharacterController' component when it appears: 
@@ -32,7 +33,7 @@ The Character Controller collider has a Height of `2` and a centre at `0, 0, 0` 
 
 ![The scene view showing the character with a Character Controller capsule around the model](images/scene-char-controller.png){:width="300px"}
 
-Your character has a height of `1` meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.6` and the Height to `1` to match the character: 
+Your character has a height of `1` meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.5` and the Height to `1` to match the character: 
 
 ![The Inspector window properties for the character controller component](images/properties-controller.png){:width="400px"}
 
@@ -44,7 +45,7 @@ Your character needs a script so that the player can move it around.
 
 --- task ---
 
-Go to the Inspector window for the Player and click on the 'Add Component' button. Type 'script' and select 'New Script'. Name your new script `PlayerController`.
+Go to the Inspector window for the Player and click on the 'Add Component' button. Type `script` and select 'New Script'. Name your new script `PlayerController`.
 
 The new script will be saved in the 'Assets' folder:
 
@@ -111,9 +112,15 @@ Click on the Console window tab to bring it to the front:
 
 --- task ---
 
-**Test:**  Play your project and check the Console window to make sure you see the `Debug.Log()` 'Player started' message:
+**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Playmode. This will simulate your scene as it would be viewed and interacted with by a user:  
+
+![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png){:width="400px"}
+
+Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Player started' output in the Console. 
 
 ![The console window with the time stamped 'Player started' message as a comment.](images/player-started.png)
+
+Click the 'Play' button again to exit Playmode and the debug output will stop.
 
 **Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
 + '; expected' - check for a semicolon `;` at the end of each line of code. 
@@ -158,17 +165,15 @@ A `float` is a decimal number.
 
 --- /task ---
 
---- task --
+--- task ---
 
-**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Playmode. This will simulate your scene as it would be viewed and interacted with by a user:  
-
-![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png){:width="400px"}
-
-Unity takes a few seconds to start up, then you should start to see output in the Console. 
+**Test:**  Go to the Toolbar and click on the 'Play' button to put your scene into Playmode.
 
 Place your **mouse pointer in the Game view** and press keys `W` and `S`. Look at the values logged in the Console window as you press the keys. Each time you press `W` a positive number is logged, when you press `S` a negative number is logged. 
 
 The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a games controller). You can also use the up and down arrow keys.
+
+![The Console window with 5 log entries that have values between -1 and 1.](images/console-values.png)
 
 **Tip:** The output also appears in the bar at the bottom on the Unity editor. 
 
@@ -176,25 +181,10 @@ Click the 'Play' button again to exit Playmode and the debug output will stop.
 
 --- /task ---
 
-It's easy to forget whether your game is playing or not. A Playmode colour tint makes it easier to tell when your scene is playing:
-
-![Side my side image of the Unity editor without tint and with tint.](images/tint-no-tint.png)
-
---- task ---
-
-To set a tint, go to the 'Edit Menu' (or 'Unity Menu') and select 'Preferences'. Choose the 'Colours' menu and find the property called 'Playmode tint'.
-
-Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
-
-![The colour wheel pop up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
-
-Return to the Unity editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Playmode.
-
---- /task ---
-
 The 'CharacterController' component provides a `SimpleMove` method.
 
 --- task ---
+
 Update your code to use the Vertical input value to move the player each frame. (You can remove the 'Debug' line.)
 
 A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the player is facing in:
@@ -202,7 +192,8 @@ A Unity `Vector3` is used to store 3D points or directions. The `forward` variab
 ```
     void Update()
     {
-        float speed = Input.GetAxis("Vertical");
+        float speed = Input.GetAxis("Vertical");        
+        
         // forward is the forward direction for this character
         Vector3 forward = transform.TransformDirection(Vector3.forward);
 
@@ -231,6 +222,8 @@ You can pan around in the **Scene view** by holding your right-mouse button and 
 
 To move your player, move the mouse pointer back to the **Game view**.
 
+Click the 'Play' button again to exit Playmode.
+
 --- /task ---
 
 --- task ---
@@ -254,22 +247,26 @@ Save your code and switch back to the Unity editor. Unity will load your updated
 
 **Debug:** If you are still seeing output to the console and movement isn't working, then make sure you have saved your script in the code editor.
 
+Click the 'Play' button again to exit Playmode.
+
 --- /task ---
 
 You can also control the speed of movement and rotation.
 
 --- task ---
-Open your 'PlayerController' script and add variables for the `moveSpeed` and `rotateSpeed`. Making these variables `public` means that you can set them in the Unity Inspector window and access them from other GameObjects:
+
+Open your 'PlayerController' script and add variables for the `moveSpeed` and `rotateSpeed`:
 
 ```
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 2.0f;
-    public float rotateSpeed = 2.0f;
+    float moveSpeed = 4.0f; // f at the end of the number says it is a floating point number
+    float rotateSpeed = 1.5f;
 ```
 --- /task ---
 
 --- task ---
+
 Update the code to `Rotate` and `SimpleMove` your character to multiple by the new variables:
 
 ```
@@ -283,21 +280,42 @@ and,
 ```
 --- /task ---
 
+It's easy to forget whether your game is playing or not. A Playmode colour tint makes it easier to tell when your scene is playing:
+
+![Side my side image of the Unity editor without tint and with tint.](images/tint-no-tint.png)
+
 --- task ---
-Save your script and return to the Unity editor. When your script has compiled, click on your character in the Hierarchy window. You should be able to see your new variables in the Inspector window. 
 
-Set their values to `3` and `1`:
+To set a tint, go to the 'Edit Menu' (or 'Unity Menu') and select 'Preferences'. Choose the 'Colours' menu and find the property called 'Playmode tint'.
 
-![Move Speed set to 3 and Rotate Speed set to 1 in the Inspector](images/inspector-variables.png){:width="400px"}
+Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
+
+![The colour wheel pop up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
+
+**Tip:** Try a light colour so that you can still clearly see the text in the editor when the scene is running. 
+
+Return to the Unity editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Playmode.
 
 --- /task ---
 
 --- task ---
+
 **Test:** Play your scene and check if you are happy with the speed settings. 
 
-Make changes to 'Move Speed' and 'Rotate Speed' in the Inspector window until you are happy. 
+**Tip:** You can comment out the `Debug.Log()` line by putting `//` at the beginning of the line. 
+You can also comment out multiple lines using `/*` and `*/`:
+```
+        /*if (speed != 0) // Player moving
+        {
+            Debug.Log(speed);
+        }*/
+```
+
+Make changes to 'moveSpeed' and 'rotateSpeed' in your script until you are happy. 
 
 **Tip:** You can use Playmode to try out different settings but if you have changed them you will need to exit Playmode and set the values again in the Inspector window to keep the settings you prefer.
+
+Click the 'Play' button again to exit Playmode.
 
 --- /task ---
 

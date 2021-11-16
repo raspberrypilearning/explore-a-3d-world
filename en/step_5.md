@@ -11,7 +11,7 @@ Drag the 'IdleWalk' Animator from the 'Animations' folder in the Project window 
 
 ![The animator component](images/animation-controller.png)
 
-This will add Idle and Walk animations to your character with an `isMoving` Boolean that you can use to control which animation plays.
+This will add Idle and Walk animations to your character with a `forward` Boolean parameter that you can use to control which animation plays.
 
 --- /task ---
 
@@ -25,19 +25,22 @@ This will add Idle and Walk animations to your character with an `isMoving` Bool
 Change the code in the `Update` method of your script so that when the character is moving forward it uses a walking animation otherwise it uses an idle animation. Your character will no longer move backwards: 
 
 ```
-void Update() {
-        CharacterController controller = GetComponent<CharacterController>();  
+        /*if (speed != 0) // Player moving
+        {
+            Debug.Log(speed);
+        }*/
+      
         Animator anim = gameObject.GetComponent<Animator>();
 
         if (Input.GetAxis("Vertical") > 0) // forwards
         {
-            anim.SetBool("isMoving", true);
-            controller.SimpleMove(forward * speed * moveSpeed);
+            anim.SetBool("forward", true);
         }
         else // idle
         {
-            anim.SetBool("isMoving", false);
-        }     
+            anim.SetBool("forward", false);
+        }
+
 ```
 --- /task ---
 
