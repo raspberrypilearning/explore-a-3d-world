@@ -24,8 +24,6 @@ You may also wish to download the [Unity intro starter package](https://rpf.io/u
 ---
 title: Installing the Unity Editor
 ---
-
-
 --- /collapse ---
 
 --- no-print ---
@@ -34,11 +32,6 @@ title: Installing the Unity Editor
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 Navigate the 3D world using WASD or arrow keys, what does the Cat do when standing still, how do they move when walking? Can you walk through the walls?
-</div>
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/485673032/?autostart=false" frameborder="0"></iframe>
-</div>
-</div>
 
 <mark>Add link to online hosted project when available.</mark>
 --- /task ---
