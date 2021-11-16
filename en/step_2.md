@@ -115,6 +115,30 @@ This will create a 'Ground' for your World.
 
 The default size for the plane is 10m x 10m. Unity uses metres as the unit of measurement. 
 
+![The Scene view with a large white plane.](images/plane-floor.png)
+
+--- /task ---
+
+Give the plane a different colour material.
+
+--- task ---
+
+In the Project window, navigate to ‘Materials’ then right-click and choose ‘Create’ -> ‘Material’. Give the material a descriptive name:
+
+![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
+
+Click on the colour next to ‘Base Map’ in the Inspector and choose a colour for your material (we used grey):
+
+![The coloured bar to the right of 'Albedo' is filled in grey.](images/grey-plane-material.png)
+
+Drag your new material from the Project window to your plane in the Scene view:
+
+![The grey material in the Project window.](images/grey-material.png)
+
+<mark>redo this image to show a grey plane in the scene view</mark>
+
+![The scene view with grey plane.](images/red-brick-wall.png)
+
 --- /task ---
 
 You can create objects from 3D shapes. 
@@ -138,6 +162,8 @@ Use 'Shift-F' (hold down the Shift key and tap F) to focus on the cube.
 
 You can also use the scroll wheel on the mouse, or the up and down arrow keys, to zoom in and out:
 
+<mark> redo this image with grey plane and white cube as no longer using URP</mark>
+
 ![The cube in the centre of the scene view half above and half below the plane.](images/cube-scene-view.png)
 
 --- /task ---
@@ -156,6 +182,9 @@ Click on the Cube in the Scene view or Hierarchy window to select it.
 
 + Drag the green arrow up until the cube sits on the plane:
 
+
+<mark> redo this gif with grey plane and white cube as no longer using URP</mark>
+
 ![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
 
 --- /task ---
@@ -172,6 +201,8 @@ You can either enter the values in the Transform for the Cube or drag the arrows
 
 Zoom out to see your wall:
 
+<mark> redo this image with grey plane and white cube as no longer using URP</mark>
+
 ![The new positioned and scaled wall in the scene view.](images/scene-cube-wall.png)
 
 --- /task ---
@@ -180,7 +211,7 @@ The **material** of a GameObject controls how it looks. A material can have a co
 
 --- task ---
 
-In the Model view, navigate to ‘My Assets’ then right-click and choose ‘Create’ -> ‘Material’. Give the material a descriptive name:
+In the Project window, navigate to ‘Materials’ then right-click and choose ‘Create’ -> ‘Material’. Give the material a descriptive name:
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 

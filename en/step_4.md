@@ -55,7 +55,7 @@ The new script will be saved in the 'Assets' folder:
 
 --- task ---
 
-Double-click on the script to open it. The script will open in a separate code editor and have this code: 
+Double-click on 'PlayerController' in the script component in the Inspector. The script will open in a separate code editor and have this code: 
 
 ```
 using System.Collections;
@@ -98,7 +98,7 @@ Use the `Debug.Log()` method to print a message when the Player GameObject's `St
 
 **Tip:** The lines starting with // are comments that explain the code. You don’t need to type them.
 
-**Save** your 'PlayerController' script in your code editor, using 'Ctrl-S' (or 'Cmd-S'), then return to the Unity Editor.
+**Save** your 'PlayerController' script in your code editor, using 'Ctrl-S' (or 'Cmd-S'), then return to the Unity Editor. The Unity Editor will load your script to get it ready to run, this may take a few seconds. 
 
 --- /task ---
 
