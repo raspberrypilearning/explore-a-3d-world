@@ -5,13 +5,13 @@ Your player is moving around, but at the moment, it's stuck in a T-pose position
 ![The game view with the character moving around with animation](images/animated-char.gif)
 
 --- task ---
-Drag the 'IdleWalk' Animator from the 'Animations' folder in the Project window to the Controller property of the 'Animator' component of your character:
+Drag the 'IdleWalk' Animator from the 'Animation' folder in the Project window to the Controller property of the 'Animator' component of your character:
 
 ![The IdleWalk animator in the Animations folder of the project window.](images/idlewalk-animation.png)
 
 ![The animator component](images/animation-controller.png)
 
-This will add Idle and Walk animations to your character with an `isMoving` Boolean that you can use to control which animation plays.
+This will add Idle and Walk animations to your character with a `forward` Boolean parameter that you can use to control which animation plays.
 
 --- /task ---
 
@@ -22,26 +22,30 @@ This will add Idle and Walk animations to your character with an `isMoving` Bool
 --- /task ---
 
 --- task ---
-Change the code in the `Update` method of your script so that when the character is moving forward it uses a walking animation otherwise it uses an idle animation. Your character will no longer move backwards: 
+Change the code in the `Update` method of your script so that when the character is moving forward it uses a walking animation otherwise it uses an idle animation: 
 
 ```
-void Update() {
-        CharacterController controller = GetComponent<CharacterController>();  
+        /*if (speed != 0) // Player moving
+        {
+            Debug.Log(speed);
+        }*/
+      
         Animator anim = gameObject.GetComponent<Animator>();
 
         if (Input.GetAxis("Vertical") > 0) // forwards
         {
-            anim.SetBool("isMoving", true);
-            controller.SimpleMove(forward * speed * moveSpeed);
+            anim.SetBool("forward", true);
         }
         else // idle
         {
-            anim.SetBool("isMoving", false);
-        }     
+            anim.SetBool("forward", false);
+        }
+
 ```
 --- /task ---
 
 --- task ---
+
 **Test:** Play your project and make sure you can see the animation change to Walk when you move forward and switch to Idle when you are not moving forward: 
 
 ![The character with Idle animation when standing still and Walk animation when moving forward.](images/idle-and-walk-animation.gif)

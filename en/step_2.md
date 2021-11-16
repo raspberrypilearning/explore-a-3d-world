@@ -15,7 +15,10 @@ People are spending more time in <span style="color: #0faeb0">**online virtual e
 
 A Unity project needs graphics and sound 'Assets'.  
 
-Download the [Unity starter package](http://rpf.io/unity-starter){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
+--- task ---
+
+Download the [Unity starter package](https://rpf.io/unity-starter){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
+
 --- /task ---
 
 --- task ---
@@ -86,7 +89,7 @@ In Unity, a **Scene** contains GameObjects. A Unity project with multiple game l
 
 --- task ---
 
-Right-click on 'Default Scene' in the Hierarchy and choose 'Save Scene As'. 
+Right-click on 'SampleScene' in the Hierarchy and choose 'Save Scene As'. 
 
 ![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
 
