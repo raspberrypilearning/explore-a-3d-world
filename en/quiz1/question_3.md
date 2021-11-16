@@ -55,7 +55,7 @@ That's not it. Forgetting to add a semi-colon ';' to the end of a line is a comm
 
   --- /feedback ---
 
-- (x) Move the `Debug.Log` line to the `Update` method
+- (x) Move the code in the `Start` method to the `Update` method
 
   --- feedback ---
 
