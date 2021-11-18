@@ -15,16 +15,11 @@ You will:
 This project is suitable for learners with previous coding experience, such as [Scratch](https://projects.raspberrypi.org/en/pathways/scratch-intro) or [Python](https://projects.raspberrypi.org/en/pathways/python-intro), who are comfortable typing text-based code. 
 
 ### You will need
-This project requires the Unity Editor which can be installed from the Unity Hub. This is a large download and install so we recommend you install it before starting this project. 
+This project requires the Unity Editor which can be installed from the Unity Hub. This is a large download and install so we recommend you install it before starting this project.
 
-You may also wish to download the [Unity intro starter package](https://rpf.io/unity-starter){:target="_blank"} of assets before starting. 
+You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/unity-guide) to install Unity Hub and the Unity Editor for your operating system.
 
---- collapse ---
-
----
-title: Installing the Unity Editor
----
---- /collapse ---
+You may also wish to download the [Unity intro starter package](rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} of assets before starting. 
 
 --- no-print ---
 --- task ---

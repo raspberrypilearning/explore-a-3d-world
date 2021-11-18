@@ -17,7 +17,7 @@ A Unity project needs graphics and sound 'Assets'.
 
 --- task ---
 
-Download the [Unity starter package](https://rpf.io/unity-starter){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
+Download the [Unity starter package](rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
 
 --- /task ---
 
@@ -55,13 +55,13 @@ title: The Unity Editor windows and views
 
 3. **The Scene View** - is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras and lights.
 
-4. **The Game View** - shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter Playmode The Game View simulates your scene as it would be viewed by a user. 
+4. **The Game View** - can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter Playmode The Game View simulates your scene as it would be viewed by a user. 
 
 5. **The Hierarchy Window** - shows all the GameObjects in your Scene and the structure between them. You can add and navigate the GameObjects in your project. GameObjects can had child objects that move with them.
 
 6. **The Project Window** - shows a library of all the files included in your project. You can find Assets to use here.
 
-7. **The Console Window** - shows important messages. This is where you can see Compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
+7. **The Console Window** - can be accessed by clicking on **Console** tab. It shows important messages. This is where you can see Compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
 
 8. **The Inspector Window** - allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use. 
 
@@ -75,11 +75,11 @@ To import them into your new project, click on the 'Assets' menu and select 'Imp
 
 --- /task ---
 
+[[[unity-importing-a-package]]]
+
 --- task ---
 
-The **Project Window** is where you can see all the files included in your project. 
-
-Click on the Project window and make sure you can see the Assets included in the 'Unity starter package':
+The **Project Window** is where you can see all the files included in your project. Click on the **Models** folder in the to see the models you have imported.
 
 ![Project View selected with folders shown](images/project-view-folders.png)
 
@@ -93,7 +93,7 @@ Right-click on 'SampleScene' in the Hierarchy and choose 'Save Scene As'.
 
 ![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
 
-In the popup window, name your Scene '3D World'. Leave the folder set to your Assets folder for this project:
+In the popup window, name your Scene '3D World':
 
 ![The save as popup window with Scenes folder selected](images/save-scene.png)
 
@@ -107,7 +107,7 @@ Your world needs some ground.
 
 --- task ---
 
-Right-click on your scene (name '3D World') in the Hierachy and choose 'GameObject' -> '3D Object' -> 'Plane': 
+Right-click on your scene (name '3D World') in the Hierarchy and choose 'GameObject' -> '3D Object' -> 'Plane': 
 
 ![The 3D World scene with menu extended and plane highlighted](images/add-plane.png)
 
@@ -123,9 +123,13 @@ Give the plane a different colour material.
 
 --- task ---
 
-In the Project window, navigate to ‘Materials’ then right-click and choose ‘Create’ -> ‘Material’. Give the material a descriptive name:
+In the Project window, navigate to ‘Materials’ then right-click and choose ‘Create’ -> ‘Material’.
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
+
+A new material should appear, and you can give this a descriptive name
+
+![icon for a new material with the name highlighted](images/new_material.png)
 
 Click on the colour next to ‘Base Map’ in the Inspector and choose a colour for your material (we used grey):
 
@@ -137,7 +141,7 @@ Drag your new material from the Project window to your plane in the Scene view:
 
 <mark>redo this image to show a grey plane in the scene view</mark>
 
-![The scene view with grey plane.](images/red-brick-wall.png)
+![The scene view with grey plane.](images/gray_plane.png)
 
 --- /task ---
 
@@ -148,6 +152,8 @@ You can create objects from 3D shapes.
 Right-click on your '3D World' scene in the Hierarchy and choose 'GameObject' -> '3D Object' -> 'Cube'. 
 
 This will create a cube at the centre of the scene, at (0, 0, 0).
+
+![small cube in centre of the plane](images/new_cube.png)
 
 --- /task ---
 
@@ -161,8 +167,6 @@ Click on the Cube in the Scene view or Hierarchy window to select it.
 Use 'Shift-F' (hold down the Shift key and tap F) to focus on the cube. 
 
 You can also use the scroll wheel on the mouse, or the up and down arrow keys, to zoom in and out:
-
-<mark> redo this image with grey plane and white cube as no longer using URP</mark>
 
 ![The cube in the centre of the scene view half above and half below the plane.](images/cube-scene-view.png)
 
@@ -183,8 +187,6 @@ Click on the Cube in the Scene view or Hierarchy window to select it.
 + Drag the green arrow up until the cube sits on the plane:
 
 
-<mark> redo this gif with grey plane and white cube as no longer using URP</mark>
-
 ![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
 
 --- /task ---
@@ -201,8 +203,6 @@ You can either enter the values in the Transform for the Cube or drag the arrows
 
 Zoom out to see your wall:
 
-<mark> redo this image with grey plane and white cube as no longer using URP</mark>
-
 ![The new positioned and scaled wall in the scene view.](images/scene-cube-wall.png)
 
 --- /task ---
@@ -215,7 +215,7 @@ In the Project window, navigate to ‘Materials’ then right-click and choose �
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 
-Click on the colour next to ‘Base Map’ in the Inspector and choose a colour for your material:
+Click on the colour next to ‘Albedo’ in the Inspector and choose a colour for your material:
 
 ![The coloured bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
 
