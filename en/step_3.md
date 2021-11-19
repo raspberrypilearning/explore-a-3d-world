@@ -35,7 +35,7 @@ Hmm, your character is wearing multiple accessories.
 
 Click on your character in the Hierarchy window. This will open the settings for the game object in the Inspector window.
 
-Click on the arrow next to your Character in the Hierarchy window to see the ‘child objects’. Click on ‘ConstructionGearMesh’ and uncheck the box next to it’s name in the Inspector window. This will hide the hat:
+Click on the arrow next to your Character in the Hierarchy window to see the ‘child objects’. Click on ‘ConstructionGearMesh’ and uncheck the box next to it’s name in the Inspector window. This will hide the hard hat and high-vis vest:
 
 ![Inspector with ConstructionGearMesh active property highlighted and unchecked](images/uncheck-hat-active.png)
 
@@ -49,7 +49,7 @@ Hide the other accessories for your character in the same way, or just keep one 
 
 --- /task ---
 
-The player will see the game through the 'Main Camera' which is shown as a video camera icon in the scene. Select the camera to see the embedded camera view:
+The player will see the game through the 'Main Camera' which is shown as a video camera icon in the scene. Select the camera in the Hierarchy window to see the embedded camera view:
 
 ![Camera selected in scene view](images/camera-in-scene.png)
 

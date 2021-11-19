@@ -41,11 +41,13 @@ Your character has a height of `1` meaning their centre on the y-axis is at `0.5
 
 --- /task ---
 
-Your character needs a script so that the player can move it around.
+Your character needs a script so that the player can move it around. You'll need a code editor installed on your computer, to edit this script.
 
 --- task ---
 
-Go to the Inspector window for the Player and click on the 'Add Component' button. Type `script` and select 'New Script'. Name your new script `PlayerController`.
+[[[unity-visual-studio]]]
+
+Go to the Inspector window for the Player and click on the 'Add Component' button. Type `script` and select 'New Script'. Name your new script `PlayerController`, then press 'Enter'.
 
 The new script will be saved in the 'Assets' folder:
 
@@ -57,7 +59,14 @@ The new script will be saved in the 'Assets' folder:
 
 Double-click on 'PlayerController' in the script component in the Inspector. The script will open in a separate code editor and have this code: 
 
-```
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 
+line_highlights: 
+---
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -76,7 +85,7 @@ public class PlayerController : MonoBehaviour
         
     }
 }
-```
+--- /code ---
 
 **Debug:** Check that the name after 'class' is `PlayerController` and matches the name of your script file. If you rename the file after creating it then you will need to change the class name in the script.
 
@@ -88,13 +97,20 @@ The 'Start' method is called once when you play your scene. Add code to print th
 
 Use the `Debug.Log()` method to print a message when the Player GameObject's `Start` method is called. The message will appear in the bar at the bottom of the Unity editor and in the Console window:
 
-```
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 7
+line_highlights: 10
+---
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Player started");
+        Debug.Log("Player started");        
     }
-```
+--- /code ---
 
 **Tip:** The lines starting with // are comments that explain the code. You don’t need to type them.
 
@@ -123,11 +139,11 @@ Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Pl
 Click the 'Play' button again to exit Playmode and the debug output will stop.
 
 **Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
-+ '; expected' - check for a semicolon `;` at the end of each line of code. 
-+ 'Newline in constant' - you missed a quote `"` from the end of a text string.
-+ '} expected' - you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
-+ ') expected' - make sure there's a closing `)` at the end of each Method call, before the semicolon.
-+ 'Debug' does not contain a definition for 'log'' - C# is case sensitive, it needs to be `Log` with a capital `L`.
++ `; expected` - check for a semicolon `;` at the end of each line of code. 
++ `Newline in constant` - you missed a quote `"` from the end of a text string.
++ `} expected` - you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
++ `) expected` - make sure there's a closing `)` at the end of each Method call, before the semicolon.
++ `Debug` does not contain a definition for 'log'' - C# is case sensitive, it needs to be `Log` with a capital `L`.
 
 Compare your code with the example code and make sure everything is exactly the same.
 
@@ -141,25 +157,28 @@ You will be able to use WASD or arrow keys (players on mobile or console can use
 
 `Input.GetAxis("Vertical")` takes input from 'W'/'S' or up/down arrow keys and returns a number between '1' and '-1' which we will use for forwards/backwards movement. 
 
-<mark>Add line numbers, filenames and highlights to code markdown.</mark>
-
-```
-void Update()
-{
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 14
+line_highlights: 16-21
+---
+    void Update()
+    {
         float speed = Input.GetAxis("Vertical");
 
         if (speed != 0) // Player moving
         {
             Debug.Log(speed);
         }
-}
-```
+    }
+--- /code ---
 
 A `float` is a decimal number.
 
 **Save** your 'PlayerController' script in your code editor, using 'Ctrl-S' (or 'Cmd-S'), then return to the Unity Editor.
-
-<mark>Do we want to be specific about the editor?</mark>
 
 **Tip:** You might finding it quicker to use 'Alt-Tab' (or 'Cmd-Tab') to switch between your Web browser with the project instructions, the Unity editor and your code editor.
 
@@ -189,22 +208,27 @@ Update your code to use the Vertical input value to move the player each frame. 
 
 A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the player is facing in:
 
-```
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 14
+line_highlights: 18-23
+---
     void Update()
     {
-        float speed = Input.GetAxis("Vertical");        
-        
+        float speed = Input.GetAxis("Vertical");
+
         // forward is the forward direction for this character
         Vector3 forward = transform.TransformDirection(Vector3.forward);
 
         // We need the CharacterController so we can use SimpleMove
-        CharacterController controller = GetComponent<CharacterController>();       
+        CharacterController controller = GetComponent<CharacterController>();
         controller.SimpleMove(forward * speed);
     }
- ```
+--- /code ---
  
- <mark>Include ingredient on Vector3?</mark>
-
 --- /task ---
 
 --- task ---
@@ -229,14 +253,21 @@ Click the 'Play' button again to exit Playmode.
 --- task ---
 Add another line so your character can `Rotate` when the player presses A/D or the left and right arrow keys: 
 
-```
-void Update()
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 14
+line_highlights: 18-19
+---
+    void Update()
     {
-        float speed = Input.GetAxis("Vertical");
-
+        float speed = Input.GetAxis("Vertical") * 10;
+        
         // Rotate around y - axis
         transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
-```
+--- /code ---
 
 Save your code and switch back to the Unity editor. Unity will load your updated Script.
 
@@ -257,27 +288,53 @@ You can also control the speed of movement and rotation.
 
 Open your 'PlayerController' script and add variables for the `moveSpeed` and `rotateSpeed`:
 
-```
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 5
+line_highlights: 7-8
+---
 public class PlayerController : MonoBehaviour
 {
     float moveSpeed = 4.0f; // f at the end of the number says it is a floating point number
     float rotateSpeed = 1.5f;
-```
+--- /code ---
+
 --- /task ---
 
 --- task ---
 
 Update the code to `Rotate` and `SimpleMove` your character to multiple by the new variables:
 
-```
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 21
+line_highlights: 22
+---
+        // Rotate around y - axis
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
-```
+--- /code ---
 
 and,
 
-```
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 27
+line_highlights: 29
+---
+        // We need the CharacterController so we can use SimpleMove
+        CharacterController controller = GetComponent<CharacterController>();
         controller.SimpleMove(forward * speed * moveSpeed);
-```
+--- /code ---
+
 --- /task ---
 
 It's easy to forget whether your game is playing or not. A Playmode colour tint makes it easier to tell when your scene is playing:

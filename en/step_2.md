@@ -139,8 +139,6 @@ Drag your new material from the Project window to your plane in the Scene view:
 
 ![The grey material in the Project window.](images/grey-material.png)
 
-<mark>redo this image to show a grey plane in the scene view</mark>
-
 ![The scene view with grey plane.](images/gray_plane.png)
 
 --- /task ---
@@ -219,7 +217,7 @@ Click on the colour next to ‘Albedo’ in the Inspector and choose a colour fo
 
 ![The coloured bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
 
-Add a texture by clicking on the circle to the left of ‘Base Map’ and selecting 'BrickWallAlbedo' texture from the list: 
+Add a texture by clicking on the circle to the left of ‘Albedo’ and selecting 'BrickWallAlbedo' texture from the list: 
 
 ![The popup window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
 
@@ -233,7 +231,7 @@ Drag your new material from the Project window to your wall in the Scene view:
 
 --- task ---
 
-In the Inspector window, rename your object from 'Cube' to `Wall`:
+In the Inspector window, right click on your cube, choose 'Rename' from the menu and rename your object from 'Cube' to `Wall`:
 
 ![Inspector showing Wall as the name.](images/name-wall.png)
 
