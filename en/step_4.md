@@ -41,11 +41,13 @@ Your character has a height of `1` meaning their centre on the y-axis is at `0.5
 
 --- /task ---
 
-Your character needs a script so that the player can move it around.
+Your character needs a script so that the player can move it around. You'll need a code editor installed on your computer, to edit this script.
 
 --- task ---
 
-Go to the Inspector window for the Player and click on the 'Add Component' button. Type `script` and select 'New Script'. Name your new script `PlayerController`.
+[[[unity-visual-studio]]]
+
+Go to the Inspector window for the Player and click on the 'Add Component' button. Type `script` and select 'New Script'. Name your new script `PlayerController`, then press 'Enter'.
 
 The new script will be saved in the 'Assets' folder:
 
@@ -57,7 +59,14 @@ The new script will be saved in the 'Assets' folder:
 
 Double-click on 'PlayerController' in the script component in the Inspector. The script will open in a separate code editor and have this code: 
 
-```
+--- code ---
+---
+language: c#
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 
+line_highlights: 
+---
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -76,7 +85,7 @@ public class PlayerController : MonoBehaviour
         
     }
 }
-```
+--- /code ---
 
 **Debug:** Check that the name after 'class' is `PlayerController` and matches the name of your script file. If you rename the file after creating it then you will need to change the class name in the script.
 
