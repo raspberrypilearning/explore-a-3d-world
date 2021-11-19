@@ -27,7 +27,11 @@ You can:
 title: Completed project
 ---
 
-You can view the [completed project here](){:target="_blank"}.
+You can view the completed project below.
+
+<div style="margin-left: 15px;">
+  <iframe allowtransparency="true" width="485" height="402" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
+</div>
 
 --- /collapse ---
 

@@ -27,9 +27,12 @@ You may also wish to download the [Unity intro starter package](rpf.io/p/en/expl
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 Navigate the 3D world using WASD or arrow keys, what does the Cat do when standing still, how do they move when walking? Can you walk through the walls?
+<iframe allowtransparency="true" width="485" height="402" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
+</div>
+</div>
 
-<mark>Add link to online hosted project when available.</mark>
 --- /task ---
+
 --- /no-print ---
 
 --- print-only ---
