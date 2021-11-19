@@ -5,31 +5,40 @@ Your player is moving around, but at the moment, it's stuck in a T-pose position
 ![The game view with the character moving around with animation](images/animated-char.gif)
 
 --- task ---
+
 Drag the 'IdleWalk' Animator from the 'Animation' folder in the Project window to the Controller property of the 'Animator' component of your character:
 
-![The IdleWalk animator in the Animations folder of the project window.](images/idlewalk-animation.png)
-
-![The animator component](images/animation-controller.png)
+![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
 
 This will add Idle and Walk animations to your character with a `forward` Boolean parameter that you can use to control which animation plays.
 
 --- /task ---
 
 --- task ---
+
 **Test:** Play your project and make sure you can see the Idle animation:
 
 ![The character with IdleWalk animaton in game view.](images/idlewalk-animation.gif)
+
 --- /task ---
 
 --- task ---
+
 Change the code in the `Update` method of your script so that when the character is moving forward it uses a walking animation otherwise it uses an idle animation: 
 
-```
-        /*if (speed != 0) // Player moving
-        {
-            Debug.Log(speed);
-        }*/
-      
+--- code ---
+---
+language: cs
+filename: PlayerController.cs
+line_numbers: true
+line_number_start: 17
+line_highlights: 21-31
+---
+    void Update()
+    {
+        float speed = Input.GetAxis("Vertical");
+
+        //Set animations
         Animator anim = gameObject.GetComponent<Animator>();
 
         if (Input.GetAxis("Vertical") > 0) // forwards
@@ -40,8 +49,8 @@ Change the code in the `Update` method of your script so that when the character
         {
             anim.SetBool("forward", false);
         }
+--- /code ---
 
-```
 --- /task ---
 
 --- task ---
@@ -59,6 +68,7 @@ The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3
 </p>
 
 --- task ---
+
 In the Hierarchy window, drag the 'Main Camera' to the 'Player' GameObject, it will become a child of the 'Player' and will follow the player around. 
 
 ![The hierarchy window with main camera positioned inside the player as a child game object](images/child-camera.png)
@@ -66,6 +76,7 @@ In the Hierarchy window, drag the 'Main Camera' to the 'Player' GameObject, it w
 --- /task ---
 
 --- task ---
+
 **Test:** Play your project. The camera will now follow your character, but it's a bit far away and walls often come between the player and the camera. 
 
 ![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
@@ -75,7 +86,8 @@ In the Hierarchy window, drag the 'Main Camera' to the 'Player' GameObject, it w
 You can adjust the position and rotation of the camera in the Scene view or the Inspector window.
 
 --- task ---
-Exit Playmode and try these settings to get a 3rd person view of your Player, looking down from behind and above your player: 
+
+Exit Playmode and select the main camera in the Hierarchy. Adjust its Transform settings to get a 3rd person view of your Player, looking down from behind and above your player: 
 
 ![The transform component of the main camera with position x = 0, y = 2.5, z = -2.5 and rotation x = 35.](images/birdseye-transform.png)
 
@@ -88,6 +100,7 @@ You can position the camera in the Scene view using the Transform and Rotate too
 --- /task ---
 
 --- task ---
+
 **Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
 
 Adjust the camera settings until you are happy with them.

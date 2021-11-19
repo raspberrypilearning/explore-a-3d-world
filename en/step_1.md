@@ -22,16 +22,20 @@ You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/un
 You may also wish to download the [Unity intro starter package](rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} of assets before starting. 
 
 --- no-print ---
+
 --- task ---
 ### Try it
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 175px; flex-grow: 1">  
+
 Navigate the 3D world using WASD or arrow keys, what does the Cat do when standing still, how do they move when walking? Can you walk through the walls?
 
-<mark>Add link to online hosted project when available.</mark>
+<iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
+
 --- /task ---
+
 --- /no-print ---
 
 --- print-only ---
+
 ![Completed project](images/showcase_static.png)
+
 --- /print-only ---

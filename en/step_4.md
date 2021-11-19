@@ -43,9 +43,9 @@ Your character has a height of `1` meaning their centre on the y-axis is at `0.5
 
 Your character needs a script so that the player can move it around. You'll need a code editor installed on your computer, to edit this script.
 
---- task ---
-
 [[[unity-visual-studio]]]
+
+--- task ---
 
 Go to the Inspector window for the Player and click on the 'Add Component' button. Type `script` and select 'New Script'. Name your new script `PlayerController`, then press 'Enter'.
 
