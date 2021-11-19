@@ -22,6 +22,7 @@ You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/un
 You may also wish to download the [Unity intro starter package](rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} of assets before starting. 
 
 --- no-print ---
+
 --- task ---
 ### Try it
 
@@ -34,5 +35,7 @@ Navigate the 3D world using WASD or arrow keys, what does the Cat do when standi
 --- /no-print ---
 
 --- print-only ---
+
 ![Completed project](images/showcase_static.png)
+
 --- /print-only ---

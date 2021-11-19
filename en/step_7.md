@@ -29,9 +29,7 @@ title: Completed project
 
 You can view the completed project below.
 
-<div style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="600" height="400" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
-</div>
+<iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-extended.rpfilt.repl.co" frameborder="0"></iframe>
 
 --- /collapse ---
 
