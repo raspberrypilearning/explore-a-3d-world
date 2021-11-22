@@ -8,11 +8,9 @@ If you are following the [Introduction to Unity](https://projects.raspberrypi.or
 
 --- /print-only ---
 
-<mark>Embed or link to Star Collector project when available.</mark>
-
 --- no-print ---
 
-<iframe allowtransparency="true" width="710" height="450" src="URL HERE" frameborder="0"></iframe>
+<iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
 --- /no-print ---
 
