@@ -19,7 +19,7 @@ You can:
 
 ![The scene view with new camera position, additional shapes and enlarged character with the construction mesh turned back on.](images/customised-project.png)
 
-You can download the basic and extended projects as packages along with the zipped WebGL projects from the zipped solutions directory at [https://rpf.io/p/en/explore-a-3d-world-get](https://rpf.io/p/en/explore-a-3d-world-get)
+You can download the basic and extended projects as packages along with the WebGL projects from the zipped solutions directory at [https://rpf.io/p/en/explore-a-3d-world-get](https://rpf.io/p/en/explore-a-3d-world-get)
 
 --- collapse ---
 
