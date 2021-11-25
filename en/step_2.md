@@ -39,7 +39,7 @@ Your new project will open in the Unity Editor.
 
 --- /task ---
 
-The Unity editor looks like this (your Scene View and Game View might not be side-by-side):
+The Unity editor looks like this:
 
 ![Unity editor with Windows annotated](images/unity-editor.png)
 
@@ -119,19 +119,19 @@ The default size for the plane is 10m x 10m. Unity uses metres as the unit of me
 
 --- /task ---
 
-Give the plane a different colour material.
+The **material** of a GameObject controls how it looks. Give the plane a different colour material.
 
 --- task ---
 
-In the Project window, navigate to ‘Materials’ then right-click and choose ‘Create’ -> ‘Material’.
+In the Project window, right-click on the ‘Materials’ folder and choose ‘Create’ -> ‘Material’.
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 
-A new material should appear, and you can give this a descriptive name
+A new material should appear. Decide what colour you will use for your floor and name your new material:
 
 ![icon for a new material with the name highlighted](images/new_material.png)
 
-Click on the colour next to ‘Base Map’ in the Inspector and choose a colour for your material (we used grey):
+Click on the colour next to ‘Albedo’ in the Inspector window and choose a colour for your material (we used grey):
 
 ![The coloured bar to the right of 'Albedo' is filled in grey.](images/grey-plane-material.png)
 
@@ -147,7 +147,7 @@ You can create objects from 3D shapes.
 
 --- task ---
 
-Right-click on your '3D World' scene in the Hierarchy and choose 'GameObject' -> '3D Object' -> 'Cube'. 
+Right-click on your '3D World' scene in the Hierarchy window and choose 'GameObject' -> '3D Object' -> 'Cube'. 
 
 This will create a cube at the centre of the scene, at (0, 0, 0).
 
@@ -160,6 +160,7 @@ You can see the cube in the Scene view. This is the behind-the-scenes view of yo
 **Tip:** Click on the 'Scene' tab to make sure you can see the Scene view. 
 
 --- task ---
+
 Click on the Cube in the Scene view or Hierarchy window to select it.
 
 Use 'Shift-F' (hold down the Shift key and tap F) to focus on the cube. 
@@ -205,15 +206,15 @@ Zoom out to see your wall:
 
 --- /task ---
 
-The **material** of a GameObject controls how it looks. A material can have a colour and a texture and there are lots of properties that you can adjust to get different effects. A **texture** is a 2D image that can be created in an image editor.
+A material can have a colour and a texture and there are lots of properties that you can adjust to get different effects. A **texture** is a 2D image that can be created in an image editor.
 
 --- task ---
 
-In the Project window, navigate to ‘Materials’ then right-click and choose ‘Create’ -> ‘Material’. Give the material a descriptive name:
+In the Project window, right-click on the ‘Materials’ folder and choose ‘Create’ -> ‘Material’. You are going to create a coloured brick wall. Give the material a descriptive name:
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 
-Click on the colour next to ‘Albedo’ in the Inspector and choose a colour for your material:
+Click on the colour next to ‘Albedo’ in the Inspector window and choose a colour for your material:
 
 ![The coloured bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
 
@@ -273,7 +274,7 @@ Your scene should look like this:
 
 --- task ---
 
-Change the 'Scale' settings on the Plane to make it bigger so you have more room: 
+Click on your Plane. Change the 'Scale' settings on the Plane to make it bigger so you have more room: 
 
 ![The transform component with scale X and Z coordinates changed to 4](images/plane-scale-4-1-4.png)
 
