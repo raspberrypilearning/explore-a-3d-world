@@ -101,8 +101,7 @@ Use the `Debug.Log()` method to print a message when the Player GameObject's `St
 ---
 language: cs
 filename: PlayerController.cs
-line_numbers: true
-line_number_start: 7
+line_numbers: false
 line_highlights: 10
 ---
     // Start is called before the first frame update
