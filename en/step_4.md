@@ -57,7 +57,7 @@ The new script will be saved in the 'Assets' folder:
 
 --- task ---
 
-Double-click on 'PlayerController' in the script component in the Inspector window. The script will open in a separate code editor and have this code: 
+Double-click on 'PlayerController' in the script component in the Inspector. The script will open in a separate code editor and have this code: 
 
 --- code ---
 ---
@@ -94,8 +94,6 @@ public class PlayerController : MonoBehaviour
 The 'Start' method is called once when you play your scene. Add code to print the message `Player started` when your project starts running.
 
 --- task ---
-
-Double-click on 'PlayerController' in the script component in the Inspector window again to go to the code editor.
 
 Use the `Debug.Log()` method to print a message when the Player GameObject's `Start` method is called. The message will appear in the bar at the bottom of the Unity editor and in the Console window:
 
@@ -265,7 +263,7 @@ line_highlights: 18-19
 ---
     void Update()
     {
-        float speed = Input.GetAxis("Vertical");
+        float speed = Input.GetAxis("Vertical") * 10;
         
         // Rotate around y - axis
         transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
@@ -363,7 +361,7 @@ Return to the Unity editor and press the **Play** button to see your new tint in
 
 Make changes to 'moveSpeed' and 'rotateSpeed' in your script until you are happy. 
 
-**Tip:** If you still have the `Debug.Log()` lines in your code, you can comment them out by putting `//` at the beginning of the line. 
+**Tip:** You can comment out the `Debug.Log()` lines by putting `//` at the beginning of the line. 
 You can also comment out multiple lines using `/*` and `*/`:
 ```
         /*if (speed != 0) // Player moving
