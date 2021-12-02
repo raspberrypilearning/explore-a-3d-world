@@ -17,7 +17,7 @@ A Unity project needs graphics and sound 'Assets'.
 
 --- task ---
 
-Download the [Unity starter package](rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
+Download the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
 
 --- /task ---
 
