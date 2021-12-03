@@ -298,8 +298,8 @@ line_highlights: 7-8
 ---
 public class PlayerController : MonoBehaviour
 {
-    float moveSpeed = 4.0f; // f at the end of the number says it is a floating point number
-    float rotateSpeed = 1.5f;
+    public float moveSpeed = 4.0f; // f at the end of the number says it is a floating point number
+    public float rotateSpeed = 1.5f;
 --- /code ---
 
 --- /task ---
