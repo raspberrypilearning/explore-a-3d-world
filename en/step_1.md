@@ -26,7 +26,7 @@ You may also wish to download the [Unity intro starter package](rpf.io/p/en/expl
 --- task ---
 ### Try it
 
-Click on the embedded project. Navigate the 3D world using WASD or arrow keys, what does the Raccoon do when standing still, how do they move when walking? Can you walk through the walls?
+**Click on the embedded project.** Navigate the 3D world using WASD or arrow keys, what does the Raccoon do when standing still, how do they move when walking? Can you walk through the walls?
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
