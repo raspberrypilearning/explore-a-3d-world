@@ -10,7 +10,7 @@ Your 3D world,  or 'map', needs a floor and walls.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
+People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn, and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
 </p>
 
 A Unity project needs graphics and sound 'Assets'.  
@@ -23,25 +23,25 @@ Download the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){
 
 --- task ---
 
-Launch the Unity Hub and click 'Projects' then select 'New project':
+Launch the Unity Hub and click **Projects** then select **New project**:
 
 ![The 'New project' button on the top right of the unity hub.](images/new-project.png)
 
-From the list of templates, select '3D Core': 
+From the list of templates, select **3D Core**: 
 
-![A list of templates. The one called '3D' selected, it has a subheading of 'Core' underneath.](images/3D-core.png)
+![A list of templates. The one called '3D' is selected; it has a subheading of 'Core' underneath.](images/3D-core.png)
 
-Edit the Project Settings to give your project a sensible name and save it to a sensible location. Then click 'Create project':
+Edit the Project Settings to give your project a sensible name and save it to a sensible location. Then click **Create project**:
 
-![The projects settings area with 'Create project' button highlgihted in the bottom right corner.](images/create-project.png)
+![The project's settings area with 'Create project' button highlighted in the bottom right corner.](images/create-project.png)
 
 Your new project will open in the Unity Editor.
 
 --- /task ---
 
-The Unity editor looks like this:
+The Unity Editor looks like this:
 
-![Unity editor with Windows annotated](images/unity-editor.png)
+![Unity Editor with Windows annotated.](images/unity-editor.png)
 
 --- collapse ---
 
@@ -49,29 +49,29 @@ The Unity editor looks like this:
 title: The Unity Editor windows and views
 ---
 
-1. **The Unity Menu** - is used to import, open and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components. 
+1. **The Unity Menu** is used to import, open, and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components. 
 
-2. **The Toolbar** - contains tools for navigating round in the Scene View, controlling play of the Game View and customising your Unity Editor layout. 
+2. **The Toolbar** contains tools for navigating round in the Scene View, controlling play in the Game View, and customising your Unity Editor layout. 
 
-3. **The Scene View** - is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras and lights.
+3. **The Scene View** is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras, and lights.
 
-4. **The Game View** - can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the Play button to enter Playmode The Game View simulates your scene as it would be viewed by a user. 
+4. **The Game View** can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the **Play** button to enter Playmode, the Game View simulates your scene as it would be viewed by a user. 
 
-5. **The Hierarchy Window** - shows all the GameObjects in your Scene and the structure between them. You can add and navigate the GameObjects in your project. GameObjects can had child objects that move with them.
+5. **The Hierarchy Window** shows all the GameObjects in your Scene and the structure between them. You can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
 
-6. **The Project Window** - shows a library of all the files included in your project. You can find Assets to use here.
+6. **The Project Window** shows a library of all the files included in your project. You can find the Assets you want to use here.
 
-7. **The Console Window** - can be accessed by clicking on **Console** tab. It shows important messages. This is where you can see Compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
+7. **The Console Window** can be accessed by clicking on the **Console** tab. It shows important messages. This is where you can see Compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
 
-8. **The Inspector Window** - allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use. 
+8. **The Inspector Window** allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use. 
 
 --- /collapse ---
 
 --- task ---
 
-The 'Unity starter package' you downloaded contains a number of Assets to use in your project. 
+The 'Unity starter package' you downloaded contains a number of Assets for you to use in your project. 
 
-To import them into your new project, click on the 'Assets' menu and select 'Import package' > 'Custom Package...' then navigate to the downloaded 'Unity starter package'.
+To import them into your new project, click on the **Assets** menu and select **Import package** > **Custom Package...** then navigate to the downloaded 'Unity starter package'.
 
 --- /task ---
 
@@ -79,9 +79,9 @@ To import them into your new project, click on the 'Assets' menu and select 'Imp
 
 --- task ---
 
-The **Project Window** is where you can see all the files included in your project. Click on the **Models** folder in the to see the models you have imported.
+The **Project Window** is where you can see all the files included in your project. Click on the **Models** folder in the Assets option to see the models you have imported.
 
-![Project View selected with folders shown](images/project-view-folders.png)
+![Project View selected with folders shown.](images/project-view-folders.png)
 
 --- /task ---
 
@@ -89,17 +89,17 @@ In Unity, a **Scene** contains GameObjects. A Unity project with multiple game l
 
 --- task ---
 
-Right-click on 'SampleScene' in the Hierarchy and choose 'Save Scene As'. 
+Right-click on **SampleScene** in the Hierarchy and choose **Save Scene As**. 
 
 ![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
 
 In the popup window, name your Scene '3D World':
 
-![The save as popup window with Scenes folder selected](images/save-scene.png)
+![The 'Save As' popup window with Scenes folder selected.](images/save-scene.png)
 
 A new file will appear in the Project Window:
 
-![Projects Window with 3D World scene in the Assets folder](images/3dworld-scene.png)
+![Projects Window with 3D World scene in the Assets folder.](images/3dworld-scene.png)
 
 --- /task ---
 
@@ -107,13 +107,13 @@ Your world needs some ground.
 
 --- task ---
 
-Right-click on your scene (name '3D World') in the Hierarchy and choose 'GameObject' -> '3D Object' -> 'Plane': 
+Right-click on your scene (name '3D World') in the Hierarchy and choose **GameObject** > **3D Object** > **Plane**: 
 
-![The 3D World scene with menu extended and plane highlighted](images/add-plane.png)
+![The 3D World scene with menu extended and 'Plane' highlighted.](images/add-plane.png)
 
 This will create a 'Ground' for your World. 
 
-The default size for the plane is 10m x 10m. Unity uses metres as the unit of measurement. 
+The default size for the plane is 10m × 10m. Unity uses metres as the unit of measurement. 
 
 ![The Scene view with a large white plane.](images/plane-floor.png)
 
@@ -123,23 +123,23 @@ The **material** of a GameObject controls how it looks. Give the plane a differe
 
 --- task ---
 
-In the Project window, right-click on the ‘Materials’ folder and choose ‘Create’ -> ‘Material’.
+In the Project Window, right-click on the **Materials** folder and choose **Create** > **Material**.
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 
 A new material should appear. Decide what colour you will use for your floor and name your new material:
 
-![icon for a new material with the name highlighted](images/new_material.png)
+![Icon for a new material with the name highlighted.](images/new_material.png)
 
-Click on the colour next to ‘Albedo’ in the Inspector window and choose a colour for your material (we used grey):
+Click on the colour next to 'Albedo' in the Inspector Window and choose a colour for your material (we used grey):
 
-![The coloured bar to the right of 'Albedo' is filled in grey.](images/grey-plane-material.png)
+![The colour bar to the right of 'Albedo' is filled in grey.](images/grey-plane-material.png)
 
-Drag your new material from the Project window to your plane in the Scene view:
+Drag your new material from the Project Window to your plane in the Scene View:
 
-![The grey material in the Project window.](images/grey-material.png)
+![The grey material in the Project Window.](images/grey-material.png)
 
-![The scene view with grey plane.](images/gray_plane.png)
+![The Scene View with a grey plane.](images/gray_plane.png)
 
 --- /task ---
 
