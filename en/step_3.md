@@ -11,11 +11,11 @@ The player in your world will be a Cat or Raccoon character.
 
 --- task ---
 
-Click on the 'Models' folder in the Project window. A model describes what a 3D object looks like and can be created using 3D modelling tools such as Blender. We have included some models that you can use. 
+Click on the **Models** folder in the Project window. A model describes what a 3D object looks like and can be created using 3D modelling tools such as Blender. We have included some models that you can use. 
 
 Choose either the `Cat` or `Raccoon` model and drag it from the Project window to the Scene view:
 
-![Animation of Raccoon being dragged from Project Window to Scene View](images/drag-character.gif)
+![Animation of 'Raccoon' being dragged from Project window to Scene view.](images/drag-character.gif)
 
 --- /task ---
 
@@ -23,9 +23,9 @@ Your character will appear in the Scene view.
 
 --- task ---
 
-Click on your character in the Scene view and tap the 'F' key. 
+Click on your character in the Scene view and tap the <kbd>F</kbd> key. 
 
-**Tip:** If you get lost in the Scene view, you can click on your character (or another GameObject) in the Hierarchy window and then click 'Shift-F' to focus on your character in the Scene view.
+**Tip:** If you get lost in the Scene view, you can click on your character (or another GameObject) in the Hierarchy window and then click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on your character in the Scene view.
 
 --- /task ---
 
@@ -33,27 +33,27 @@ Hmm, your character is wearing multiple accessories.
 
 --- task ---
 
-Click on your character in the Hierarchy window. This will open the settings for the game object in the Inspector window.
+Click on your character in the Hierarchy window. This will open the settings for the GameObject in the Inspector window.
 
-Click on the arrow next to your Character in the Hierarchy window to see the ‘child objects’. Click on ‘ConstructionGearMesh’ and uncheck the box next to it’s name in the Inspector window. This will hide the hard hat and high-vis vest:
+Click on the arrow next to your character in the Hierarchy window to see the 'child objects'. Click on **ConstructionGearMesh** and uncheck the box next to its name in the Inspector window. This will hide the hard hat and high-vis vest:
 
-![Inspector with ConstructionGearMesh active property highlighted and unchecked](images/uncheck-hat-active.png)
+![Inspector with 'ConstructionGearMesh' property highlighted and unchecked.](images/uncheck-hat-active.png)
 
-![The Scene view with ConstructionGearMesh removed from the Raccoon](images/no-hat-scene.png)
+![The Scene view with 'ConstructionGearMesh' removed from the Raccoon.](images/no-hat-scene.png)
 
 Hide the other accessories for your character in the same way, or just keep one active.
 
-**Tip:** GameObjects that are not active appeared greyed out in the Hierarchy window:
+**Tip:** GameObjects that are not active appear greyed out in the Hierarchy window:
 
-![Hierarchy Window with greyed out ConstructionGearMesh](images/greyed-out-mesh.png)
+![Hierarchy Window with greyed out 'ConstructionGearMesh'.](images/greyed-out-mesh.png)
 
 --- /task ---
 
-The player will see the game through the 'Main Camera' which is shown as a video camera icon in the scene. Select the camera in the Hierarchy window to see the embedded camera view:
+The player will see the game through the 'Main Camera', which is shown as a video camera icon in the Scene. Select the camera in the Hierarchy window to see the embedded camera view:
 
-![Camera selected in scene view](images/camera-in-scene.png)
+![Camera selected in Scene view.](images/camera-in-scene.png)
 
-The Game view shows what your project will look like to a Player.
+The Game view shows what your project will look like to a player.
 
 --- task ---
 
@@ -61,36 +61,36 @@ Click on the Game view tab. Your character will be in whatever position you drag
 
 --- /task ---
 
-If you have enough room on your screen then it's really useful to see the Scene view and the Game view at the same time. 
+If you have enough room on your screen, then it's really useful to see the Scene view and the Game view at the same time. 
 
 --- task ---
 
 Drag the Game view tab to the right so that it appears next to the Scene view:
 
-![Dragging Game view tab to position the Game view to the right of the Scene view](images/side-by-side-views.gif)
+![Dragging Game view tab to position the Game view to the right of the Scene view.](images/side-by-side-views.gif)
 
 --- /task ---
 
-Unity uses X, Y and Z coordinates to position GameObjects in 3D space: 
+Unity uses x, y, and z coordinates to position GameObjects in 3D space: 
 
 [[[unity-3D-coordinates]]]
 
 --- task ---
 
-Select your character (in the Hierarchy window or Scene view) and then change its 'Transform' settings so the 'Position' is (0, 0, 0) - the centre of the world:
+Select your character (in the Hierarchy window or Scene view) and then change its 'Transform' settings so the 'Position' is (0, 0, 0) — the centre of the world:
 
-![Transform for character with position set to 0, 0, 0](images/transform-centre.png)
+![Transform for the selected character with position set to 0, 0, 0.](images/transform-centre.png)
 
 Your character will move to the centre in the Scene view and the Game view:
 
-![The Scene view with character at 0, 0, 0 in the middle of the plane](images/transform-centre-scene-view.png)
+![The Scene view with the character at 0, 0, 0 in the middle of the plane.](images/transform-centre-scene-view.png)
 
 --- /task ---
 
 --- task ---
 Rename your character to 'Player' in the Inspector window. This will make it easy to find if you add more GameObjects.
 
-![Player name shown in Inspector.](images/player-name.png)
+![Player name shown in the Inspector window.](images/player-name.png)
 --- /task ---
 
 

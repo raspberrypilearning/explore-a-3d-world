@@ -3,7 +3,7 @@
 Create a 3D world in Unity and explore it with an animated 3D player character. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Unity**</span> is a development environment for making games, virtual environments, visual novels, digital animations and more. You can use Unity to develop 2D and 3D cross-platform games for PCs, consoles, mobile devices and the Web.
+<span style="color: #0faeb0">**Unity**</span> is a development environment for making games, virtual environments, visual novels, digital animations, and more. You can use Unity to develop 2D and 3D cross-platform games for PCs, consoles, mobile devices, and the internet.
 </p>
 
 You will:
@@ -15,7 +15,7 @@ You will:
 This project is suitable for learners with previous coding experience, such as [Scratch](https://projects.raspberrypi.org/en/pathways/scratch-intro) or [Python](https://projects.raspberrypi.org/en/pathways/python-intro), who are comfortable typing text-based code. 
 
 ### You will need
-This project requires the Unity Editor which can be installed from the Unity Hub. This is a large download and install so we recommend you install it before starting this project.
+This project requires the Unity Editor, which can be installed from the Unity Hub. This is a large download and install, so we recommend you install it before starting this project.
 
 You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/unity-guide) to install Unity Hub and the Unity Editor for your operating system.
 
@@ -26,7 +26,7 @@ You may also wish to download the [Unity starter package](https://rpf.io/p/en/ex
 --- task ---
 ### Try it
 
-**Click on the embedded project.** Navigate the 3D world using WASD or arrow keys, what does the Raccoon do when standing still, how do they move when walking? Can you walk through the walls?
+**Click on the embedded project.** Navigate the 3D world using the WASD or arrow keys. What does the raccoon do when standing still? How do they move when walking? Can you walk through the walls?
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
@@ -36,6 +36,6 @@ You may also wish to download the [Unity starter package](https://rpf.io/p/en/ex
 
 --- print-only ---
 
-![Completed project](images/showcase_static.png)
+![Completed project.](images/showcase_static.png)
 
 --- /print-only ---
