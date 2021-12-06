@@ -12,12 +12,12 @@ You will:
 + Create a player character with animations that can move around
 
 ### Recommended previous experience
-This project is suitable for learners with previous coding experience, such as [Scratch](https://projects.raspberrypi.org/en/pathways/scratch-intro) or [Python](https://projects.raspberrypi.org/en/pathways/python-intro), who are comfortable typing text-based code. 
+This project is suitable for learners with previous coding experience, such as [Scratch](https://projects.raspberrypi.org/en/pathways/scratch-intro){:target="_blank"} or [Python](https://projects.raspberrypi.org/en/pathways/python-intro){:target="_blank"}, who are comfortable typing text-based code. 
 
 ### You will need
 This project requires the Unity Editor, which can be installed from the Unity Hub. This is a large download and install, so we recommend you install it before starting this project.
 
-You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/unity-guide) to install Unity Hub and the Unity Editor for your operating system.
+You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/unity-guide){:target="_blank"} to install Unity Hub and the Unity Editor for your operating system.
 
 You will also need to download the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} of assets before starting. 
 
