@@ -41,7 +41,7 @@ Your new project will open in the Unity Editor.
 
 The Unity Editor looks like this:
 
-![Unity Editor with Windows annotated.](images/unity-editor.png)
+![Unity Editor with windows annotated.](images/unity-editor.png)
 
 --- collapse ---
 
@@ -49,21 +49,21 @@ The Unity Editor looks like this:
 title: The Unity Editor windows and views
 ---
 
-1. **The Unity Menu** is used to import, open, and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components. 
+1. **The Unity menu** is used to import, open, and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components. 
 
-2. **The Toolbar** contains tools for navigating round in the Scene View, controlling play in the Game View, and customising your Unity Editor layout. 
+2. **The Toolbar** contains tools for navigating round in the Scene view, controlling play in the Game view, and customising your Unity Editor layout. 
 
-3. **The Scene View** is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras, and lights.
+3. **The Scene view** is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras, and lights.
 
-4. **The Game View** can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the **Play** button to enter Playmode, the Game View simulates your scene as it would be viewed by a user. 
+4. **The Game view** can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the **Play** button to enter Playmode, the Game view simulates your scene as it would be viewed by a user. 
 
-5. **The Hierarchy Window** shows all the GameObjects in your Scene and the structure between them. You can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
+5. **The Hierarchy window** shows all the GameObjects in your Scene and the structure between them. You can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
 
-6. **The Project Window** shows a library of all the files included in your project. You can find the Assets you want to use here.
+6. **The Project window** shows a library of all the files included in your project. You can find the Assets you want to use here.
 
-7. **The Console Window** can be accessed by clicking on the **Console** tab. It shows important messages. This is where you can see Compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
+7. **The Console window** can be accessed by clicking on the **Console** tab. It shows important messages. This is where you can see compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
 
-8. **The Inspector Window** allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use. 
+8. **The Inspector window** allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use. 
 
 --- /collapse ---
 
@@ -79,7 +79,7 @@ To import them into your new project, click on the **Assets** menu and select **
 
 --- task ---
 
-The **Project Window** is where you can see all the files included in your project. Click on the **Models** folder in the Assets option to see the models you have imported.
+The **Project window** is where you can see all the files included in your project. Click on the **Models** folder in the Assets folder to see the models you have imported.
 
 ![Project View selected with folders shown.](images/project-view-folders.png)
 
@@ -93,13 +93,13 @@ Right-click on **SampleScene** in the Hierarchy and choose **Save Scene As**.
 
 ![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
 
-In the popup window, name your Scene '3D World':
+In the pop-up window, name your Scene '3D World':
 
-![The 'Save As' popup window with Scenes folder selected.](images/save-scene.png)
+![The 'Save As' pop-up window with Scenes folder selected.](images/save-scene.png)
 
-A new file will appear in the Project Window:
+A new file will appear in the Project window:
 
-![Projects Window with 3D World scene in the Assets folder.](images/3dworld-scene.png)
+![Project window with 3D World scene in the Assets folder.](images/3dworld-scene.png)
 
 --- /task ---
 
@@ -111,7 +111,7 @@ Right-click on your scene (name '3D World') in the Hierarchy and choose **GameOb
 
 ![The 3D World scene with menu extended and 'Plane' highlighted.](images/add-plane.png)
 
-This will create a 'Ground' for your World. 
+This will create a 'ground' for your world. 
 
 The default size for the plane is 10m × 10m. Unity uses metres as the unit of measurement. 
 
@@ -123,7 +123,7 @@ The **material** of a GameObject controls how it looks. Give the plane a differe
 
 --- task ---
 
-In the Project Window, right-click on the **Materials** folder and choose **Create** > **Material**.
+In the Project window, right-click on the **Materials** folder and choose **Create** > **Material**.
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 
@@ -131,15 +131,15 @@ A new material should appear. Decide what colour you will use for your floor and
 
 ![Icon for a new material with the name highlighted.](images/new_material.png)
 
-Click on the colour next to 'Albedo' in the Inspector Window and choose a colour for your material (we used grey):
+Click on the colour next to 'Albedo' in the Inspector window and choose a colour for your material (we used grey):
 
 ![The colour bar to the right of 'Albedo' is filled in grey.](images/grey-plane-material.png)
 
-Drag your new material from the Project Window to your plane in the Scene View:
+Drag your new material from the Project window to your plane in the Scene view:
 
-![The grey material in the Project Window.](images/grey-material.png)
+![The grey material in the Project window.](images/grey-material.png)
 
-![The Scene View with a grey plane.](images/gray_plane.png)
+![The Scene view with a grey plane.](images/gray_plane.png)
 
 --- /task ---
 
@@ -147,27 +147,27 @@ You can create objects from 3D shapes.
 
 --- task ---
 
-Right-click on your '3D World' scene in the Hierarchy window and choose 'GameObject' -> '3D Object' -> 'Cube'. 
+Right-click on your **3D World** scene in the Hierarchy window and choose **GameObject** > **3D Object** > **Cube**. 
 
 This will create a cube at the centre of the scene, at (0, 0, 0).
 
-![small cube in centre of the plane](images/new_cube.png)
+![A small cube located in centre of the plane.](images/new_cube.png)
 
 --- /task ---
 
 You can see the cube in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
 
-**Tip:** Click on the 'Scene' tab to make sure you can see the Scene view. 
+**Tip:** Click on the **Scene** tab to make sure you can see the Scene view. 
 
 --- task ---
 
-Click on the Cube in the Scene view or Hierarchy window to select it.
+Click on the cube in the Scene view or Hierarchy window to select it.
 
-Use 'Shift-F' (hold down the Shift key and tap F) to focus on the cube. 
+Use <kbd>Shift</kbd>+<kbd>F</kbd> (hold down the <kbd>Shift</kbd> key and tap <kbd>F</kbd>) to focus on the cube. 
 
 You can also use the scroll wheel on the mouse, or the up and down arrow keys, to zoom in and out:
 
-![The cube in the centre of the scene view half above and half below the plane.](images/cube-scene-view.png)
+![The cube in the centre of the Scene view, half above and half below the plane.](images/cube-scene-view.png)
 
 --- /task ---
 
@@ -175,13 +175,13 @@ You need to get the cube to sit on the plane.
 
 --- task ---
 
-Click on the Cube in the Scene view or Hierarchy window to select it.
+Click on the cube in the Scene view or Hierarchy window to select it.
 
 **Choose** You can either:
 
-+ Change the Y position in the Inspector to 0.5 (half the height of the cube):
++ Change the y position in the Inspector window to 0.5 (half the height of the cube):
 
-![The Transform component for the Cube with the y position coordinate set to 0.5](images/y-transform-cube.png)
+![The Transform component for the cube with the y position coordinate set to 0.5.](images/y-transform-cube.png)
 
 + Drag the green arrow up until the cube sits on the plane:
 
@@ -190,19 +190,19 @@ Click on the Cube in the Scene view or Hierarchy window to select it.
 
 --- /task ---
 
-**Tip:** If you make a mistake in the Unity editor you can use 'Ctrl-Z' ('Cmd-Z') to **undo** your last action. 
+**Tip:** If you make a mistake in the Unity Editor, you can use <kbd>Ctrl</kbd>+<kbd>Z</kbd> (or <kbd>Cmd</kbd>+<kbd>Z</kbd>) to **undo** your last action. 
 
 --- task ---
 
 Now change the cube into a wall with the following Position and Scale settings: 
 
-![The transform component with updated position and scale properies, Position X=0, Y=1, Z=3, Scale X=5, Y=2, Z=0.25.](images/transform-cube-to-wall.png)
+![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png)
 
-You can either enter the values in the Transform for the Cube or drag the arrows (this will update the Transform values.)
+You can either enter the values in the Transform area for the cube or drag the arrows (this will update the Transform values.)
 
 Zoom out to see your wall:
 
-![The new positioned and scaled wall in the scene view.](images/scene-cube-wall.png)
+![The new positioned and scaled wall in the Scene view.](images/scene-cube-wall.png)
 
 --- /task ---
 
@@ -210,31 +210,31 @@ A material can have a colour and a texture and there are lots of properties that
 
 --- task ---
 
-In the Project window, right-click on the ‘Materials’ folder and choose ‘Create’ -> ‘Material’. You are going to create a coloured brick wall. Give the material a descriptive name:
+In the Project window, right-click on the **Materials** folder and choose **Create** > **Material**. You are going to create a coloured brick wall. Give the material a descriptive name:
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 
-Click on the colour next to ‘Albedo’ in the Inspector window and choose a colour for your material:
+Click on the colour next to 'Albedo' in the Inspector window and choose a colour for your material:
 
-![The coloured bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
+![The colour bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
 
-Add a texture by clicking on the circle to the left of ‘Albedo’ and selecting 'BrickWallAlbedo' texture from the list: 
+Add a texture by clicking on the circle to the left of 'Albedo' and selecting 'BrickWallAlbedo' texture from the list: 
 
-![The popup window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
+![The pop-up window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
 
 Drag your new material from the Project window to your wall in the Scene view:
 
 ![The red brick material in the Project window.](images/brick-material.png)
 
-![The scene view with red brick wall.](images/red-brick-wall.png)
+![The Scene view with red brick wall.](images/red-brick-wall.png)
 
 --- /task ---
 
 --- task ---
 
-In the Inspector window, right click on your cube, choose 'Rename' from the menu and rename your object from 'Cube' to `Wall`:
+In the Inspector window, right click on your cube, choose **Rename** from the menu and rename your object from 'Cube' to `Wall`:
 
-![Inspector showing Wall as the name.](images/name-wall.png)
+![Inspector window showing 'Wall' as the name.](images/name-wall.png)
 
 **Tip:** You can name a new GameObject in the Hierarchy window when you create it and you can change the name in the Inspector window.
 
@@ -242,9 +242,9 @@ In the Inspector window, right click on your cube, choose 'Rename' from the menu
 
 --- task ---
 
-To create a copy of your wall you can either:
-+ Right-click on your 'Wall' object in the Hierarchy window and choose 'Duplicate'. 
-+ Select your wall in the Scene view and use 'Ctrl-D' (or 'Cmd-D') to duplicate.
+To create a copy of your wall, you can either:
++ Right-click on your 'Wall' object in the Hierarchy window and choose **Duplicate**. 
++ Select your wall in the Scene view and use <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd><kbd>D</kbd>) to duplicate.
 
 Your new wall will be in exactly the same place as your first wall. 
 
@@ -252,21 +252,21 @@ Your new wall will be in exactly the same place as your first wall.
 
 --- task ---
 
-Change the Y rotation of the new wall to `90`: 
+Change the y rotation of the new wall to `90`: 
 
-![The new wall transform component with rotate on the y axis showing 90 degrees ](images/transform-rotate-90.png)
+![The new wall Transform component with rotate on the y axis showing 90 degrees.](images/transform-rotate-90.png)
 
 --- /task ---
 
 --- task ---
 
-Reposition the new wall to following position:
+Reposition the new wall to the following position: x=4, y=1, z=-1.
 
-![Transform for new wall. Position X=4, Y=1, Z=-1.](images/new-wall-transform.png)
+![Transform for new wall. Position x=4, y=1, z=-1.](images/new-wall-transform.png)
 
-You can either enter the values in the Inspector window or drag the arrows in the scene - it doesn't matter if the position is exact.
+You can either enter the values in the Inspector window or drag the arrows in the scene — it doesn't matter if the position is exact.
 
-Your scene should look like this:
+Your Scene should look like this:
 
 ![Scene with two red brick walls.](images/scene-with-walls.png)
 
@@ -276,27 +276,27 @@ Your scene should look like this:
 
 Click on your Plane. Change the 'Scale' settings on the Plane to make it bigger so you have more room: 
 
-![The transform component with scale X and Z coordinates changed to 4](images/plane-scale-4-1-4.png)
+![The Transform component with scale x and z coordinates changed to 4.](images/plane-scale-4-1-4.png)
 
-![The Scene view showing the larger plane](images/new-resized-plane.png)
+![The Scene view showing the larger plane.](images/new-resized-plane.png)
 
-Think of a 4x4 plane as 40 metres by 40 metres in the real world. Plenty of room for your character to move around.
+Think of a 4×4 plane as 40 metres by 40 metres in the real world: plenty of room for your character to move around.
 
 --- /task ---
 
 --- task ---
 
-When you have unsaved changes you will see a '*' next to your scene in the Hierarchy window.
+When you have unsaved changes, you will see a '*' next to your Scene in the Hierarchy window.
 
-Save your scene by clicking 'File' -> 'Save' or 'Ctrl-S'. 
+Save your Scene by clicking **File** > **Save**. Or use <kbd>Ctrl</kbd>+<kbd>S</kbd>. 
 
-Also, save your project by clicking 'File' -> 'Save Project'.
+Also, save your project by clicking **File** > **Save Project**.
 
 Unity does not normally autosave changes, but your starter project contains a script to autosave your project every 60 seconds. 
 
 --- /task ---
 
-You can navigate around your scene to see it from different angles. If you get lost just click on a wall in the Hierarchy window and then 'Shift-F' to focus and then zoom out: 
+You can navigate around your scene to see it from different angles. If you get lost, just click on a wall in the Hierarchy window and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus and then zoom out: 
 
 [[[unity-scene-navigation]]]
 
