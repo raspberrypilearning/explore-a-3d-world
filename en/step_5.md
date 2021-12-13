@@ -49,6 +49,9 @@ line_highlights: 21-31
         {
             anim.SetBool("forward", false);
         }
+
+        // Rotate around y-axis
+        transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
 --- /code ---
 
 --- /task ---
