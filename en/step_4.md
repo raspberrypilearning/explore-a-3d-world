@@ -14,7 +14,11 @@ Unity uses the <span style="color: #0faeb0">**C#**</span> (pronounced C sharp) p
 
 --- task ---
 
-Click on your character in the Hierarchy window or Scene view so you can see its properties in the Inspector window. 
+Click on the **Player** GameObject in the Hierarchy window or Scene view so you can see its properties in the Inspector window. 
+
+![The Player Game Object selected in the Hierarchy.](images/player-selected.png){:width="300px"}
+
+**Tip:** Make sure you have the **Player** selected and not one of its child objects.
 
 Click **Add Component** and start to type `character` in the Search box, then click on the **Character Controller** component when it appears: 
 
@@ -25,7 +29,7 @@ Click **Add Component** and start to type `character` in the Search box, then cl
 The Character Controller component adds new features to your Player GameObject including a `SimpleMove` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a GameObject collides, or intersects, with another GameObject. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a GameObject.</p>
+ A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a GameObject collides, or intersects, with another GameObject. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a GameObject. A **hitbox** is a kind of collider. </p>
 
 --- task ---
 
@@ -136,8 +140,6 @@ Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Pl
 
 ![The Console window with the time-stamped 'Player started' message as a comment.](images/player-started.png)
 
-Click the **Play** button again to exit Play mode and the debug output will stop.
-
 **Debug:** Your Scene won't play if there are errors in your code. Check the Console window for information. You may see:
 + `; expected` – check for a semicolon `;` at the end of each line of code. 
 + `Newline in constant` – you missed a quote `"` from the end of a text string.
@@ -146,6 +148,14 @@ Click the **Play** button again to exit Play mode and the debug output will stop
 + `Debug` does not contain a definition for 'log'' – C# is case sensitive, so it needs to be `Log` with a capital `L`.
 
 Compare your code with the example code and make sure everything is exactly the same.
+
+--- /task ---
+
+--- task ---
+
+Click the **Play** button again to exit Play mode and the debug output will stop.
+
+**Tip:** Changes made in Play mode are lost when you exit Play mode. Make sure you exit Play mode when you finish testing. 
 
 --- /task ---
 
@@ -200,6 +210,24 @@ Click the **Play** button again to exit Play mode and the debug output will stop
 
 --- /task ---
 
+It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your Scene is playing:
+
+![Side-by-side images of the Unity Editor without tint and with tint to indicate the game is playing.](images/tint-no-tint.png)
+
+--- task ---
+
+To set a tint, go to the 'Edit Menu' (or 'Unity Menu') and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
+
+Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
+
+![The colour wheel pop-up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
+
+**Tip:** Try a light colour so that you can still clearly see the text in the editor when the scene is running. 
+
+Return to the Unity Editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
+
+--- /task ---
+
 The Character Controller component provides a `SimpleMove` method.
 
 --- task ---
@@ -232,6 +260,7 @@ line_highlights: 18-23
 --- /task ---
 
 --- task ---
+
 **Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys to glide forwards and backwards. 
 
 **Debug:** Remember to check the Console window for helpful messages. Check brackets, semicolons, and capital letters in your code carefully.
@@ -251,6 +280,7 @@ Click the **Play** button again to exit Play mode.
 --- /task ---
 
 --- task ---
+
 Add another line so your character can `Rotate` when the player presses the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys: 
 
 --- code ---
@@ -263,10 +293,18 @@ line_highlights: 18-19
 ---
     void Update()
     {
-        float speed = Input.GetAxis("Vertical") * 10;
+        float speed = Input.GetAxis("Vertical");
         
         // Rotate around y-axis
         transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
+
+        // Forward is the forward direction for this character
+        Vector3 forward = transform.TransformDirection(Vector3.forward);
+
+        // We need the Character Controller so we can use SimpleMove
+        CharacterController controller = GetComponent<CharacterController>();
+        controller.SimpleMove(forward * speed);
+    }
 --- /code ---
 
 Save your code and switch back to the Unity Editor. Unity will load your updated Script.
@@ -274,6 +312,7 @@ Save your code and switch back to the Unity Editor. Unity will load your updated
 --- /task ---
 
 --- task ---
+
 **Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys to rotate. 
 
 **Debug:** If you are still seeing output to the Console and movement isn't working, then make sure you have saved your script in the code editor.
@@ -286,7 +325,7 @@ You can also control the speed of movement and rotation.
 
 --- task ---
 
-Open your 'PlayerController' script and add variables for the `moveSpeed` and `rotateSpeed`:
+Open your 'PlayerController' script and add variables for the `moveSpeed` and `rotateSpeed`.
 
 --- code ---
 ---
@@ -300,6 +339,10 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 4.0f; //The f at the end of the number says it is a floating-point number
     public float rotateSpeed = 1.5f;
+
+    // Start is called before the first frame update
+    void Start()
+    {
 --- /code ---
 
 --- /task ---
@@ -334,24 +377,6 @@ line_highlights: 29
         CharacterController controller = GetComponent<CharacterController>();
         controller.SimpleMove(forward * speed * moveSpeed);
 --- /code ---
-
---- /task ---
-
-It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your Scene is playing:
-
-![Side-by-side images of the Unity Editor without tint and with tint to indicate the game is playing.](images/tint-no-tint.png)
-
---- task ---
-
-To set a tint, go to the 'Edit Menu' (or 'Unity Menu') and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
-
-Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
-
-![The colour wheel pop-up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
-
-**Tip:** Try a light colour so that you can still clearly see the text in the editor when the scene is running. 
-
-Return to the Unity Editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
 
 --- /task ---
 
