@@ -17,7 +17,7 @@ A Unity project needs graphics and sound 'Assets'.
 
 --- task ---
 
-Download the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
+Download and unzip the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder. 
 
 --- /task ---
 
@@ -27,7 +27,7 @@ Launch the Unity Hub and click **Projects** then select **New project**:
 
 ![The 'New project' button on the top right of the unity hub.](images/new-project.png)
 
-From the list of templates, select **3D Core**: 
+From the list choose **All templates** then select **3D Core**: 
 
 ![A list of templates. The one called '3D' is selected; it has a subheading of 'Core' underneath.](images/3D-core.png)
 
@@ -35,7 +35,7 @@ Edit the Project Settings to give your project a sensible name and save it to a 
 
 ![The project's settings area with 'Create project' button highlighted in the bottom right corner.](images/create-project.png)
 
-Your new project will open in the Unity Editor.
+Your new project will open in the Unity Editor. It may take some time to load.
 
 --- /task ---
 
@@ -97,7 +97,7 @@ In the pop-up window, name your Scene '3D World':
 
 ![The 'Save As' pop-up window with Scenes folder selected.](images/save-scene.png)
 
-A new file will appear in the Project window:
+A new file will appear in the 'Assets' folder in the Project window:
 
 ![Project window with 3D World scene in the Assets folder.](images/3dworld-scene.png)
 
@@ -127,7 +127,7 @@ In the Project window, right-click on the **Materials** folder and choose **Crea
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 
-A new material should appear. Decide what colour you will use for your floor and name your new material:
+A new material should appear in the Materials folder. Decide what colour you will use for your floor and name your new material:
 
 ![Icon for a new material with the name highlighted.](images/new_material.png)
 
@@ -183,8 +183,9 @@ Click on the cube in the Scene view or Hierarchy window to select it.
 
 ![The Transform component for the cube with the y position coordinate set to 0.5.](images/y-transform-cube.png)
 
-+ Drag the green arrow up until the cube sits on the plane:
++ Use the Move tool to drag the green arrow up until the cube sits on the plane:
 
+![The move tool icon with four outwardly facing arrows.](images/move-tool.png)
 
 ![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
 
@@ -198,7 +199,9 @@ Now change the cube into a wall with the following Position and Scale settings:
 
 ![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png)
 
-You can either enter the values in the Transform area for the cube or drag the arrows (this will update the Transform values.)
+You can either enter the values in the Transform component for the cube or click on the Scale tool and drag the handles in the Scene view (this will update the Transform values.)
+
+![The scale tool icon with square and arrow pointing diagonally up from the bottom left corner.](images/scale-tool.png)
 
 Zoom out to see your wall:
 

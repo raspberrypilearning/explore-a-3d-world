@@ -19,7 +19,11 @@ Choose either the `Cat` or `Raccoon` model and drag it from the Project window t
 
 --- /task ---
 
-Your character will appear in the Scene view. 
+Your character will appear in the Scene view in a T-pose. 
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+The <span style="color: #0faeb0">**T-pose**</span> is the default position for a game character before it has been animated.
+</p>
 
 --- task ---
 
@@ -49,9 +53,13 @@ Hide the other accessories for your character in the same way, or just keep one 
 
 --- /task ---
 
+--- task ---
+
 The player will see the game through the 'Main Camera', which is shown as a video camera icon in the Scene. Select the camera in the Hierarchy window to see the embedded camera view:
 
 ![Camera selected in Scene view.](images/camera-in-scene.png)
+
+--- /task ---
 
 The Game view shows what your project will look like to a player.
 
@@ -88,9 +96,11 @@ Your character will move to the centre in the Scene view and the Game view:
 --- /task ---
 
 --- task ---
+
 Rename your character to 'Player' in the Inspector window. This will make it easy to find if you add more GameObjects.
 
 ![Player name shown in the Inspector window.](images/player-name.png)
+
 --- /task ---
 
 
