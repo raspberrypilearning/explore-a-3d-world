@@ -24,12 +24,12 @@ This will add Idle and Walk animations to your character with a `forward` Boolea
 
 --- task ---
 
-Change the code in the `Update` method of your script so that when the character is moving forward it uses a walking animation, otherwise it uses an idle animation: 
+Add code to the `Update` method of your script so that when the character is moving forward it uses a walking animation, otherwise it uses an idle animation: 
 
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: PlayerController.cs - Update()
 line_numbers: true
 line_number_start: 17
 line_highlights: 21-31
