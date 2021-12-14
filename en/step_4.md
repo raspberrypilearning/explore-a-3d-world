@@ -104,7 +104,7 @@ Use the `Debug.Log()` method to print a message when the `Start` method is calle
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: PlayerController.cs - Start()
 line_numbers: true
 line_number_start: 7
 line_highlights: 10
@@ -132,7 +132,7 @@ Click on the Console window tab to bring it to the front:
 
 --- task ---
 
-**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode. This will simulate your scene as it would be viewed and interacted with by a user:  
+**Test:** Go to the Toolbar and click once on the **Play** button to put your scene into Play mode. This will simulate your scene as it would be viewed and interacted with by a user:  
 
 ![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png){:width="400px"}
 
@@ -153,7 +153,7 @@ Compare your code with the example code and make sure everything is exactly the 
 
 --- task ---
 
-Click the **Play** button again to exit Play mode and the debug output will stop.
+Click once on the **Play** button again to exit Play mode and the debug output will stop.
 
 **Tip:** Changes made in Play mode are lost when you exit Play mode. Make sure you exit Play mode when you finish testing. 
 
@@ -170,7 +170,7 @@ You will be able to use the WASD or arrow keys (players on a mobile or console c
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: PlayerController.cs - Update()
 line_numbers: true
 line_number_start: 14
 line_highlights: 16-21
@@ -232,14 +232,16 @@ The Character Controller component provides a `SimpleMove` method.
 
 --- task ---
 
-Update your code to use the Vertical input value to move the player each frame. (You can remove the 'Debug' line.)
+**Add** code to use the Vertical input value to move the player each frame. 
+
+You can **remove** the 'Debug' code.
 
 A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the player is facing:
 
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: PlayerController.cs - Update()
 line_numbers: true
 line_number_start: 14
 line_highlights: 18-23
@@ -286,7 +288,7 @@ Add another line so your character can `Rotate` when the player presses the <kbd
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: PlayerController.cs - Update()
 line_numbers: true
 line_number_start: 14
 line_highlights: 18-19
@@ -354,7 +356,7 @@ Update the code to `Rotate` and `SimpleMove` your character to multiply them by 
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: PlayerController.cs - Update()
 line_numbers: true
 line_number_start: 21
 line_highlights: 22
@@ -368,7 +370,7 @@ and
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: PlayerController.cs - Update()
 line_numbers: true
 line_number_start: 27
 line_highlights: 29

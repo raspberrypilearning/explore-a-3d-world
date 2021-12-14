@@ -127,7 +127,7 @@ In the Project window, right-click on the **Materials** folder and choose **Crea
 
 ![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
 
-A new material should appear. Decide what colour you will use for your floor and name your new material:
+A new material should appear in the Materials folder. Decide what colour you will use for your floor and name your new material:
 
 ![Icon for a new material with the name highlighted.](images/new_material.png)
 
