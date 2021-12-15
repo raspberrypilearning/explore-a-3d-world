@@ -20,6 +20,8 @@ You can download the basic and extended projects as packages along with the WebG
 title: Completed project
 ---
 
+You can download the [completed project here](https://rpf.io/p/en/explore-a-3d-world-get){:target="_blank"}.
+
 You can view the completed project below.
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-extended.rpfilt.repl.co" frameborder="0"></iframe>

@@ -31,7 +31,7 @@ From the list choose **All templates** then select **3D Core**:
 
 ![A list of templates. The one called '3D' is selected; it has a subheading of 'Core' underneath.](images/3D-core.png)
 
-Edit the Project Settings to give your project a sensible name and save it to a sensible location. Then click **Create project**:
+Edit the project settings to give your project a sensible name and save it to a sensible location. Then click **Create project**:
 
 ![The project's settings area with 'Create project' button highlighted in the bottom right corner.](images/create-project.png)
 
@@ -51,13 +51,13 @@ title: The Unity Editor windows and views
 
 1. **The Unity menu** is used to import, open, and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components. 
 
-2. **The Toolbar** contains tools for navigating round in the Scene view, controlling play in the Game view, and customising your Unity Editor layout. 
+2. **The Toolbar** contains tools for navigating in the Scene view, controlling play in the Game view, and customising your Unity Editor layout. 
 
 3. **The Scene view** is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras, and lights.
 
-4. **The Game view** can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the **Play** button to enter Playmode, the Game view simulates your scene as it would be viewed by a user. 
+4. **The Game view** can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the **Play** button to enter Play mode, the Game view simulates your scene as it would be viewed by a user. 
 
-5. **The Hierarchy window** shows all the GameObjects in your Scene and the structure between them. You can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
+5. **The Hierarchy window** shows all the GameObjects in your Scene and the structure between them. Here, you can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
 
 6. **The Project window** shows a library of all the files included in your project. You can find the Assets you want to use here.
 
@@ -69,9 +69,9 @@ title: The Unity Editor windows and views
 
 --- task ---
 
-The 'Unity starter package' you downloaded contains a number of Assets for you to use in your project. 
+The Unity starter package you downloaded contains a number of Assets for you to use in your project. 
 
-To import them into your new project, click on the **Assets** menu and select **Import package** > **Custom Package...** then navigate to the downloaded 'Unity starter package'.
+To import them into your new project, click on the **Assets** menu and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
 
 --- /task ---
 
@@ -93,25 +93,25 @@ Right-click on **SampleScene** in the Hierarchy and choose **Save Scene As**.
 
 ![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
 
-In the pop-up window, name your Scene '3D World':
+In the pop-up window, name your Scene `3D World`:
 
 ![The 'Save As' pop-up window with Scenes folder selected.](images/save-scene.png)
 
-A new file will appear in the 'Assets' folder in the Project window:
+A new file will appear in the Assets folder in the Project window:
 
 ![Project window with 3D World scene in the Assets folder.](images/3dworld-scene.png)
 
 --- /task ---
 
-Your world needs some ground. 
+First, your world needs some ground. 
 
 --- task ---
 
-Right-click on your scene (name '3D World') in the Hierarchy and choose **GameObject** > **3D Object** > **Plane**: 
+Right-click on your scene (name 3D World) in the Hierarchy window and choose **GameObject** > **3D Object** > **Plane**: 
 
 ![The 3D World scene with menu extended and 'Plane' highlighted.](images/add-plane.png)
 
-This will create a 'ground' for your world. 
+This will create a ground for your world. 
 
 The default size for the plane is 10m × 10m. Unity uses metres as the unit of measurement. 
 
@@ -177,7 +177,8 @@ You need to get the cube to sit on the plane.
 
 Click on the cube in the Scene view or Hierarchy window to select it.
 
-**Choose** You can either:
+**Choose**   
+You can either:
 
 + Change the y position in the Inspector window to 0.5 (half the height of the cube):
 
@@ -221,7 +222,7 @@ Click on the colour next to 'Albedo' in the Inspector window and choose a colour
 
 ![The colour bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
 
-Add a texture by clicking on the circle to the left of 'Albedo' and selecting 'BrickWallAlbedo' texture from the list: 
+Add a texture by clicking on the circle to the left of 'Albedo' and selecting **BrickWallAlbedo** texture from the list: 
 
 ![The pop-up window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
 
@@ -235,7 +236,7 @@ Drag your new material from the Project window to your wall in the Scene view:
 
 --- task ---
 
-In the Inspector window, right click on your cube, choose **Rename** from the menu and rename your object from 'Cube' to `Wall`:
+In the Inspector window, right-click on your cube, choose **Rename** from the menu and rename your object from `Cube` to `Wall`:
 
 ![Inspector window showing 'Wall' as the name.](images/name-wall.png)
 
@@ -246,8 +247,8 @@ In the Inspector window, right click on your cube, choose **Rename** from the me
 --- task ---
 
 To create a copy of your wall, you can either:
-+ Right-click on your 'Wall' object in the Hierarchy window and choose **Duplicate**. 
-+ Select your wall in the Scene view and use <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd><kbd>D</kbd>) to duplicate.
++ Right-click on your Wall object in the Hierarchy window and choose **Duplicate** 
++ Select your wall in the Scene view and use <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd>+<kbd>D</kbd>) to duplicate
 
 Your new wall will be in exactly the same place as your first wall. 
 
@@ -263,11 +264,11 @@ Change the y rotation of the new wall to `90`:
 
 --- task ---
 
-Reposition the new wall to the following position: x=4, y=1, z=-1.
+Reposition the new wall to the following position: x = 4, y = 1, z = -1.
 
-![Transform for new wall. Position x=4, y=1, z=-1.](images/new-wall-transform.png)
+![Transform for new wall. Position x = 4, y = 1, z = -1.](images/new-wall-transform.png)
 
-You can either enter the values in the Inspector window or drag the arrows in the scene — it doesn't matter if the position is exact.
+You can either enter the values in the Inspector window or drag the arrows in your Scene — it doesn't matter if the position is exact.
 
 Your Scene should look like this:
 
@@ -277,7 +278,7 @@ Your Scene should look like this:
 
 --- task ---
 
-Click on your Plane. Change the 'Scale' settings on the Plane to make it bigger so you have more room: 
+Click on your Plane. Change the Scale settings on the Plane to make it bigger so you have more room: 
 
 ![The Transform component with scale x and z coordinates changed to 4.](images/plane-scale-4-1-4.png)
 
