@@ -53,7 +53,7 @@ Your character needs a script so that the player can move it around. You'll need
 
 Go to the Inspector window for the Player and click on the **Add Component** button. Type `script` and select **New Script**. Name your new script `PlayerController`, then press <kbd>Enter</kbd>.
 
-The new script will be saved in the 'Assets' folder:
+The new script will be saved in the Assets folder:
 
 ![The Project window with new 'My Scripts' folder shown.](images/new-script-project.png){:width="400px"}
 
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
 
 --- /task ---
 
-The 'Start' method is called once when you play your scene. Add code to print the message `Player started` when your project starts running.
+The Start method is called once when you play your scene. Add code to print the message `Player started` when your project starts running.
 
 --- task ---
 
@@ -118,7 +118,7 @@ line_highlights: 10
 
 **Tip:** The lines starting with // are comments that explain the code. You don’t need to type them.
 
-**Save** your 'PlayerController' script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor. The Unity Editor will load your script to get it ready to run; this may take a few seconds. 
+**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor. The Unity Editor will load your script to get it ready to run; this may take a few seconds. 
 
 --- /task ---
 
@@ -140,12 +140,12 @@ Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Pl
 
 ![The Console window with the time-stamped 'Player started' message as a comment.](images/player-started.png)
 
-**Debug:** Your Scene won't play if there are errors in your code. Check the Console window for information. You may see:
+**Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
 + `; expected` – check for a semicolon `;` at the end of each line of code. 
 + `Newline in constant` – you missed a quote `"` from the end of a text string.
 + `} expected` – you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
 + `) expected` – make sure there's a closing `)` at the end of each method call, before the semicolon.
-+ `Debug` does not contain a definition for 'log'' – C# is case sensitive, so it needs to be `Log` with a capital `L`.
++ `Debug` does not contain a definition for 'log' – C# is case sensitive, so it needs to be `Log` with a capital `L`.
 
 Compare your code with the example code and make sure everything is exactly the same.
 
@@ -188,9 +188,9 @@ line_highlights: 16-21
 
 A `float` is a decimal number.
 
-**Save** your 'PlayerController' script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
+**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
 
-**Tip:** You might finding it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor and your code editor.
+**Tip:** You might finding it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
 
 --- /task ---
 
@@ -210,13 +210,13 @@ Click the **Play** button again to exit Play mode and the debug output will stop
 
 --- /task ---
 
-It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your Scene is playing:
+It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your scene is playing:
 
 ![Side-by-side images of the Unity Editor without tint and with tint to indicate the game is playing.](images/tint-no-tint.png)
 
 --- task ---
 
-To set a tint, go to the 'Edit Menu' (or 'Unity Menu') and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
+To set a tint, go to the **Edit Menu** (or Unity Menu) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
 
 Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
 
@@ -232,11 +232,11 @@ The Character Controller component provides a `SimpleMove` method.
 
 --- task ---
 
-**Add** code to use the Vertical input value to move the player each frame. 
+**Add** code to use the vertical input value to move the Player each frame. 
 
-You can **remove** the 'Debug' code.
+You can **remove** the Debug code.
 
-A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the player is facing:
+A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
 
 --- code ---
 ---
@@ -253,7 +253,7 @@ line_highlights: 18-23
         // Forward is the forward direction for this character
         Vector3 forward = transform.TransformDirection(Vector3.forward);
 
-        // We need the Character Controller so we can use SimpleMove
+        // You need the Character Controller so you can use SimpleMove
         CharacterController controller = GetComponent<CharacterController>();
         controller.SimpleMove(forward * speed);
     }
@@ -269,7 +269,7 @@ line_highlights: 18-23
 
 **Tip:** Make sure your mouse pointer is in the **Game view**.
 
-Try and walk through the wall. The `SimpleMove` method from the `CharacterController` component stops you from being able to walk through GameObjects that have a collider. A collider is automatically added when you create a 3D shape as you did for the wall. 
+Try and walk through the wall. The `SimpleMove` method from the Character Controller component stops you from being able to walk through GameObjects that have a collider. A collider is automatically added when you create a 3D shape as you did for the wall. 
 
 You can pan around in the Scene view by holding your right mouse button and dragging. Pan to get a better view of the wall as your character walks into it:
 
@@ -303,13 +303,13 @@ line_highlights: 18-19
         // Forward is the forward direction for this character
         Vector3 forward = transform.TransformDirection(Vector3.forward);
 
-        // We need the Character Controller so we can use SimpleMove
+        // You need the Character Controller so you can use SimpleMove
         CharacterController controller = GetComponent<CharacterController>();
         controller.SimpleMove(forward * speed);
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor. Unity will load your updated Script.
+Save your code and switch back to the Unity Editor. Unity will load your updated script.
 
 --- /task ---
 
@@ -327,7 +327,7 @@ You can also control the speed of movement and rotation.
 
 --- task ---
 
-Open your 'PlayerController' script and add variables for the `moveSpeed` and `rotateSpeed`.
+Open your PlayerController script and add variables for the `moveSpeed` and `rotateSpeed`.
 
 --- code ---
 ---
@@ -375,7 +375,7 @@ line_numbers: true
 line_number_start: 27
 line_highlights: 29
 ---
-        // We need the Character Controller so we can use SimpleMove
+        // You need the Character Controller so you can use SimpleMove
         CharacterController controller = GetComponent<CharacterController>();
         controller.SimpleMove(forward * speed * moveSpeed);
 --- /code ---
@@ -384,7 +384,7 @@ line_highlights: 29
 
 --- task ---
 
-**Test:** Play your Scene and check if you are happy with the speed settings. 
+**Test:** Play your scene and check if you are happy with the speed settings. 
 
 Make changes to `moveSpeed` and `rotateSpeed` in your script until you are happy. 
 
