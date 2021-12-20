@@ -9,7 +9,7 @@ steps:
   - title: Introduction
   - title: Set the 3D scene
   - title: Add a Player character
-  - title: Get the Player moving
+  - title: Add character movement
   - title: Animation and camera position
   - title: Reflection
     knowledge_quiz:
