@@ -17,6 +17,10 @@ Choose either the `Cat` or `Raccoon` model and drag it from the Project window t
 
 ![Animation of 'Raccoon' being dragged from Project window to Scene view.](images/drag-character.gif)
 
+**Tip:** If you have accidentally added 'CatBase' or 'RaccoonBase' models, or if you want to change your character at this point, you can delete the model from the scene. Right-click on the model GameObject in the Hierarchy window and select 'Delete'.
+
+![The Hierarchy window with right-click menu for the model and 'Delete' highlighted.](images/delete-model.png)
+
 --- /task ---
 
 Your character will appear in the Scene view in a T-pose. 
