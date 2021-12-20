@@ -5,7 +5,7 @@ Now you can make your 3D world just the way you want it.
 You can: 
 + Add more 3D objects to your world, try Spheres and Capsules 
 + Try different colours and materials
-+ Change the Scale settings for the Transform for your character to make it bigger or smaller — you'll need to change all three values to keep it in proportion
++ Change the Scale settings or the Transform values for your character to make it bigger or smaller — you'll need to change all three values to keep it in proportion
 + Enable and disable different accessories in the Inspector window to get the look you want
 + Adjust the Player movement and rotation speed
 + Adjust the position of the camera

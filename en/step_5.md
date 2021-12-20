@@ -1,12 +1,12 @@
 ## Animation and camera angle
 
-Your player is moving around, but at the moment, it's stuck in a T-pose position. You can improve this by using animations. 
+Your Player is moving around, but at the moment, it's stuck in a T-pose position. You can improve this by using animations. 
 
 ![The Game view with the character moving around with animation.](images/animated-char.gif)
 
 --- task ---
 
-Drag the 'IdleWalk' animator from the 'Animation' folder in the Project window to the Controller property of the 'Animator' component of your character:
+Drag the **IdleWalk** animator from the Animation folder in the Project window to the Controller property of the Animator component of your character:
 
 ![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
 
@@ -64,7 +64,7 @@ line_highlights: 21-31
 
 --- /task ---
 
-In games, the camera often follows the player. 
+In games, the camera often follows the Player. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3D environment is key for creating the right perspective for users. Visibility levels from the camera lens affect the difficulty level and influence the atmosphere of a game. 
@@ -72,15 +72,15 @@ The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3
 
 --- task ---
 
-In the Hierarchy window, drag the 'Main Camera' to the 'Player' GameObject; it will become a 'child' of the 'Player' and will follow the player around. 
+In the Hierarchy window, drag the **Main Camera** to the Player GameObject; it will become a 'child' of the Player and will follow the Player around. 
 
-![The Hierarchy window with main camera positioned inside the player as a child game object.](images/child-camera.png)
+![The Hierarchy window with main camera positioned inside the Player as a child game object.](images/child-camera.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. The camera will now follow your character, but it's a bit far away and walls often come between the player and the camera. 
+**Test:** Play your project. The camera will now follow your character, but it's a bit far away and walls often come between the Player and the camera. 
 
 ![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
 
@@ -90,7 +90,7 @@ You can adjust the position and rotation of the camera in the Scene view or the 
 
 --- task ---
 
-Exit Play mode and select the main camera in the Hierarchy. Adjust its Transform settings to get a third-person view of your Player, looking down from behind and above your player: 
+Exit Play mode and select the **Main Camera** in the Hierarchy window. Adjust its Transform settings to get a third-person view of your Player, looking down from behind and above your Player: 
 
 ![The Transform component of the main camera with position x = 0, y = 2.5, z = -2.5, and rotation x = 35.](images/birdseye-transform.png)
 
