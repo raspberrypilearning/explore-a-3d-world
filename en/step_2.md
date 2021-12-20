@@ -198,7 +198,7 @@ You can either:
 
 Now change the cube into a wall with the following Position and Scale settings: 
 
-![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png)
+![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
 You can either enter the values in the Transform component for the cube or click on the Scale tool and drag the handles in the Scene view (this will update the Transform values.)
 
