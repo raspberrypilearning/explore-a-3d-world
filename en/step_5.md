@@ -1,4 +1,4 @@
-## Animation and camera angle
+## Animation and camera position
 
 Your Player is moving around, but at the moment, it's stuck in a T-pose position. You can improve this by using animations. 
 
