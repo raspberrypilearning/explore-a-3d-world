@@ -2,8 +2,8 @@ title: Explore a 3D world
 hero_image: images/banner.png
 description: Create a 3D world in Unity and explore it with an animated 3D player character
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
