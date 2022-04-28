@@ -14,6 +14,8 @@ Forward is the forward direction for this character
 
 You need the Character Controller so you can use SimpleMove
 
+The f at the end of the number says it is a floating-point number
+
 Set animations
 
 Forwards
