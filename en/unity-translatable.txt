@@ -1,0 +1,17 @@
+Player started
+
+speed
+
+Vertical
+
+forward
+
+controller
+
+moveSpeed
+
+rotateSpeed
+
+Horizontal
+
+anim
