@@ -42,7 +42,9 @@ public class PlayerController : MonoBehaviour
 - ( ) Add a semi-colon to the end of the `Debug` line
 
 
-  --- feedback --- That's not it. Forgetting to add a semi-colon `;` to the end of a line is a common mistake in C#, but this code does have a semi-colon at the end of the line.
+  --- feedback ---
+
+That's not it. Forgetting to add a semi-colon `;` to the end of a line is a common mistake in C#, but this code does have a semi-colon at the end of the line.
 
   --- /feedback ---
 
