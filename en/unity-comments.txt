@@ -13,3 +13,17 @@ Set animations
 Forwards
 
 Idle
+
+Explore 3D world
+
+3D world
+
+Grey
+
+Red brick
+
+Wall
+
+Player
+
+PlayerController
