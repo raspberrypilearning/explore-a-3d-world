@@ -6,9 +6,9 @@ Je speler beweegt, maar zit op dit moment vast in een T-pose-positie. Je kunt di
 
 --- task ---
 
-Drag the **IdleWalk** animator from the **Animation** > **Animators** folder in the Project window to the Controller property of the Animator component of your character:
+Sleep de **IdleWalk** animator van de **Animation** > **animators** map in het Project venster naar de eigenschap Controller van de Animator-component van je personage:
 
-![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
+![De IdleWalk-animator in de Animations die naar de controller wijst.](images/move_idlewalk.png)
 
 Hiermee worden de animatie Idle and Walk aan je personage toegevoegd met een `forward` Booleaanse parameter die je kunt gebruiken om te bepalen welke animatie wordt afgespeeld.
 
@@ -16,9 +16,9 @@ Hiermee worden de animatie Idle and Walk aan je personage toegevoegd met een `fo
 
 --- task ---
 
-**Test:** Play your project and make sure you can see the Idle animation:
+**Test:** Speel je project en zorg ervoor dat je de Idle animatie ziet:
 
-![The character with IdleWalk animaton in Game view.](images/idlewalk-animation.gif)
+![Het personage met IdleWalk-animatie in de Game view.](images/idlewalk-animation.gif)
 
 --- /task ---
 
@@ -56,23 +56,23 @@ line_highlights: 21-31
 
 --- task ---
 
-**Test:** Play your project and make sure you can see the animation change to walk when you move forward and switch to idle when you are not moving forward:
+**Test:** Speel je project en zorg ervoor dat je de animatie ziet veranderen om te lopen wanneer je vooruit gaat en overschakelt naar idle (inactief) wanneer je niet vooruit gaat:
 
-![The character with Idle animation when standing still and Walk animation when moving forward.](images/idle-and-walk-animation.gif)
+![Het personage met idle animatie wanneer je stil staat en loop animatie wanneer je vooruit gaat.](images/idle-and-walk-animation.gif)
 
 --- /task ---
 
 In games volgt de camera vaak de speler.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-De plaatsing van een <span style="color: #0faeb0">**virtuele camera**</span> in een 3D-omgeving is cruciaal voor het maken van het juiste perspectief voor gebruikers. Visibility levels from the camera lens affect the difficulty level and influence the atmosphere of a game. 
+De plaatsing van een <span style="color: #0faeb0">**virtuele camera**</span> in een 3D-omgeving is cruciaal voor het maken van het juiste perspectief voor gebruikers. De zichtbaarheidsniveaus van de cameralens beïnvloeden het moeilijkheidsniveau en de sfeer van een spel. 
 </p>
 
 --- task ---
 
-In the Hierarchy window, drag the **Main Camera** to the Player GameObject; it will become a 'child' of the Player and will follow the Player around.
+Sleep in het venster Hierarchy de **Main Camera** naar het Player GameObject; het wordt een 'kind' van de speler en volgt de speler.
 
-![The Hierarchy window with main camera positioned inside the Player as a child game object.](images/child-camera.png)
+![Het venster Hierarchy met de main camera in de speler als een onderliggend game object.](images/child-camera.png)
 
 --- /task ---
 
@@ -80,7 +80,7 @@ In the Hierarchy window, drag the **Main Camera** to the Player GameObject; it w
 
 **Test:** Speel je project. De camera zal nu je personage volgen, maar het is een beetje ver weg en muren komen vaak tussen de speler en de camera.
 
-![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
+![Het personage beweegt in het speelveld met de camera die hem volgt.](images/camera-follow-player.gif)
 
 --- /task ---
 
@@ -88,29 +88,29 @@ Je kunt de positie en rotatie van de camera aanpassen in de Scene view of het In
 
 --- task ---
 
-Exit Play mode and select the **Main Camera** in the Hierarchy window. Adjust its Transform settings to get a third-person view of your Player, looking down from behind and above your Player:
+Verlaat de afspeelmodus en selecteer de **Main Camera** in het venster Hierarchy. Pas de Transform-instellingen aan om een third-person weergave van je speler te krijgen, je kijkt dan van achter en boven je speler:
 
-![The Transform component of the main camera with position x = 0, y = 2.5, z = -2.5, and rotation x = 35.](images/birdseye-transform.png)
+![Het Transform-onderdeel van de main camera met positie x = 0, y = 2.5, z = -2.5, en rotatie x = 35.](images/birdseye-transform.png)
 
-![The Game view with new coordinates.](images/birdseye-game.png)
+![De Game view met nieuwe coördinaten.](images/birdseye-game.png)
 
-You can position the camera in the Scene view using the Transform and Rotate tools if you prefer:
+Je kunt de camera in de Scene view plaatsen met de Transform en Rotate tools als je dat wilt:
 
-![The Scene view with Transform and Rotate tools highlighted and the camera selected with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
+![De Scène view met Transform en Rotate tools gemarkeerd en de camera geselecteerd met Rotate x, y en z cirkels zichtbaar.](images/transform-rotate-scene.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Speel je project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
+**Test:** Speel je project. De camera volgt nu je personage met de camera net achter en boven je personage en kijkt naar beneden onder een hoek.
 
 Pas de camera-instellingen aan totdat je er tevreden mee bent.
 
-**Tip:** You can try settings out in Play mode but you need to exit Play mode and update the settings to keep them.
+**Tip:** je kunt instellingen uitproberen in de Play mode, maar je moet de Play mode verlaten en de instellingen bij te werken en ze te behouden.
 
-What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Play mode:
+Wat gebeurt er als je van de rand van het vlak gaat? Maak je geen zorgen, je personage gaat weer naar het midden de volgende keer dat je de Play mode opent:
 
-![The Game view with animated character moving through the environment and the camera following with a birdseye view.](images/birdseye-walkthrough.gif)
+![De Game view met een bewegend personage dat door de omgeving beweegt, de camera volgt met een birdseye-weergave.](images/birdseye-walkthrough.gif)
 
 --- /task ---
 
