@@ -1,77 +1,77 @@
-## Set the 3D scene
+## Mise en place de la scène 3D
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your 3D world,  or 'map', needs a floor and walls. 
+Ton monde 3D, ou « map », a besoin d'un sol et de murs. 
 </div>
 <div>
-![The scene view showing a plane floor with two brick walls.](images/end-walls.png){:width="300px"}
+![La vue de la scène montrant un sol plat avec deux murs de briques.](images/end-walls.png){:width="300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn, and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
+Les gens passent plus de temps dans l'<span style="color: #0faeb0">**environnements virtuels en ligne**</span>. En plus de jouer à des jeux, les gens se détendent, explorent, socialisent, apprennent et participent à des divertissements interactifs. Certaines personnes appellent l'avenir de ces environnements le <span style="color: #0faeb0">**métaverse**</span>. Être capable de concevoir des mondes en 3D est une compétence importante.
 </p>
 
-A Unity project needs graphics and sound 'Assets'.
+Un projet Unity a besoin d'« Assets » graphiques et sonores.
 
 --- task ---
 
-Download and unzip the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder.
+Télécharge et décompresse le [package de démarrage Unity](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} sur ton ordinateur. Choisis un emplacement judicieux, tel que ton dossier Documents.
 
 --- /task ---
 
 --- task ---
 
-Launch the Unity Hub and click **Projects** then select **New project**:
+Lance le Unity Hub et clique sur **Projects** puis sélectionne **New project** :
 
-![The 'New project' button on the top right of the unity hub.](images/new-project.png)
+![Le bouton « New project » en haut à droite du hub Unity.](images/new-project.png)
 
-From the list choose **All templates** then select **3D Core**:
+Dans la liste choisis **All templates** puis sélectionne **3D Core** :
 
-![A list of templates. The one called '3D' is selected; it has a subheading of 'Core' underneath.](images/3D-core.png)
+![Une liste de modèles. Celui appelé "3D" est sélectionné ; il a un sous-titre de "Core" en dessous.](images/3D-core.png)
 
-Edit the project settings to give your project a sensible name and save it to a sensible location. Then click **Create project**:
+Modifie les paramètres du projet pour donner à ton projet un nom approprié et enregistre-le dans un emplacement approprié. Clique ensuite sur **Create project** :
 
-![The project's settings area with 'Create project' button highlighted in the bottom right corner.](images/create-project.png)
+![La zone des paramètres du projet avec le bouton "Create project" en surbrillance dans le coin inférieur droit.](images/create-project.png)
 
-Your new project will open in the Unity Editor. It may take some time to load.
+Ton nouveau projet s'ouvrira dans l'éditeur Unity. Le chargement peut prendre un certain temps.
 
 --- /task ---
 
-The Unity Editor looks like this:
+L'éditeur Unity ressemble à ceci :
 
-![Unity Editor with windows annotated.](images/unity-editor.png)
+![Éditeur Unity avec fenêtres annotées.](images/unity-editor.png)
 
 --- collapse ---
 
 ---
-title: The Unity Editor windows and views
+title: Les fenêtres et les vues de l'éditeur Unity
 ---
 
-1. **The Unity menu** is used to import, open, and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components.
+1. **Le menu Unity** est utilisé pour importer, ouvrir et enregistrer des scènes et des projets. Tu peux modifier les préférences de ton éditeur Unity et ajouter de nouveaux GameObjects et composants.
 
-2. **The Toolbar** contains tools for navigating in the Scene view, controlling play in the Game view, and customising your Unity Editor layout.
+2. **La barre d'outils** contient des outils permettant de naviguer dans la vue Scene, de contrôler le joueur dans la vue Game et de personnaliser la disposition de ton éditeur Unity.
 
-3. **The Scene view** is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras, and lights.
+3. **La vue Scene** est utilisée pour naviguer et éditer ta scène. Tu peux sélectionner et positionner des GameObjects, y compris des personnages, des décors, des caméras et des lumières.
 
-4. **The Game view** can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the **Play** button to enter Play mode, the Game view simulates your scene as it would be viewed by a user.
+4. **La vue Game** est accessible en cliquant sur l'onglet **Game**. Elle montre la scène telle qu'elle apparaît à travers l'objectif de tes caméras. Lorsque tu cliques sur le bouton **Play** pour entrer en mode Play, la vue Game simule ta scène telle qu'elle serait vue par un utilisateur.
 
-5. **The Hierarchy window** shows all the GameObjects in your Scene and the structure between them. Here, you can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
+5. **La fenêtre Hierarchy** affiche tous les GameObjects de ta scène et la structure entre eux. Ici, tu peux ajouter et parcourir les GameObjects dans ton projet. Les GameObjects peuvent avoir des « objets enfants » qui se déplacent avec eux.
 
-6. **The Project window** shows a library of all the files included in your project. You can find the Assets you want to use here.
+6. **La fenêtre Project** affiche une bibliothèque de tous les fichiers inclus dans ton projet. Tu peux trouver les assets que tu souhaites utiliser ici.
 
-7. **The Console window** can be accessed by clicking on the **Console** tab. It shows important messages. This is where you can see compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
+7. **La fenêtre Console** est accessible en cliquant sur l'onglet **Console**. Elle affiche des messages importants. C'est là que tu peux voir les erreurs du compilateur (erreurs dans ton script) et les messages que tu imprimes en utilisant `Debug.Log()`.
 
-8. **The Inspector window** allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use.
+8. **La fenêtre Inspector** te permet de visualiser et de modifier les propriétés des GameObjects. Tu peux ajouter d'autres composants à tes GameObjects et modifier les valeurs qu'ils utilisent.
 
 --- /collapse ---
 
 --- task ---
 
-The Unity starter package you downloaded contains a number of Assets for you to use in your project.
+Le package de démarrage Unity que tu as téléchargé contient un certain nombre d'assets que tu peux utiliser dans ton projet.
 
-To import them into your new project, click on the **Assets** menu and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
+Pour les importer dans ton nouveau projet, clique sur le menu **Assets** et sélectionne **Import package** > **Custom Package...** puis accède au **package de démarrage Unity** téléchargé.
 
 --- /task ---
 
@@ -79,231 +79,231 @@ To import them into your new project, click on the **Assets** menu and select **
 
 --- task ---
 
-The **Project window** is where you can see all the files included in your project. Click on the **Models** folder in the Assets folder to see the models you have imported.
+La **fenêtre Project** est l'endroit où tu peux voir tous les fichiers inclus dans ton projet. Clique sur le dossier **Models** dans le dossier Assets pour voir les modèles que tu as importés.
 
-![Project View selected with folders shown.](images/project-view-folders.png)
-
---- /task ---
-
-In Unity, a **Scene** contains GameObjects. A Unity project with multiple game levels might have one scene per level.
-
---- task ---
-
-Right-click on **SampleScene** in the Hierarchy and choose **Save Scene As**.
-
-![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
-
-In the pop-up window, name your Scene `3D World`:
-
-![The 'Save As' pop-up window with Scenes folder selected.](images/save-scene.png)
-
-A new file will appear in the Assets folder in the Project window:
-
-![Project window with 3D World scene in the Assets folder.](images/3dworld-scene.png)
+![Vue Project sélectionnée avec les dossiers affichés.](images/project-view-folders.png)
 
 --- /task ---
 
-First, your world needs some ground.
+Dans Unity, une **Scène** contient des GameObjects. Un projet Unity avec plusieurs niveaux de jeu peut avoir une scène par niveau.
 
 --- task ---
 
-Right-click on your scene (name 3D World) in the Hierarchy window and choose **GameObject** > **3D Object** > **Plane**:
+Fais un clic droit sur **SampleScene** dans la hiérarchie et choisis **Save Scene As**.
 
-![The 3D World scene with menu extended and 'Plane' highlighted.](images/add-plane.png)
+![L'icône de la scène dans la fenêtre Hierarchy avec le menu contextuel développé.](images/right-click-scene.png)
 
-This will create a ground for your world.
+Dans la fenêtre pop-up, nomme ta scène `Monde 3D` :
 
-The default size for the plane is 10m × 10m. Unity uses metres as the unit of measurement.
+![La fenêtre contextuelle "Save As" avec le dossier Scenes sélectionné.](images/save-scene.png)
 
-![The Scene view with a large white plane.](images/plane-floor.png)
+Un nouveau fichier apparaîtra dans le dossier Assets de la fenêtre Project :
+
+![Fenêtre Project avec la scène Monde 3D dans le dossier Assets.](images/3dworld-scene.png)
 
 --- /task ---
 
-The **material** of a GameObject controls how it looks. Give the plane a different colour material.
+D'abord, ton monde a besoin d'un terrain.
 
 --- task ---
 
-In the Project window, right-click on the **Materials** folder and choose **Create** > **Material**.
+Fais un clic droit sur ta scène (nom Monde 3D) dans la fenêtre Hierarchy et choisis **GameObject** > **3D Object** > **Plane** :
 
-![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
+![La scène Monde 3D avec menu étendu et "Plane" en surbrillance.](images/add-plane.png)
 
-A new material should appear in the Materials folder. Decide what colour you will use for your floor and name your new material:
+Cela créera un terrain pour ton monde.
 
-![Icon for a new material with the name highlighted.](images/new_material.png)
+La taille par défaut du plane est de 10 m × 10 m. Unity utilise les mètres comme unité de mesure.
 
-Click on the colour next to 'Albedo' in the Inspector window and choose a colour for your material (we used grey):
-
-![The colour bar to the right of 'Albedo' is filled in grey.](images/grey-plane-material.png)
-
-Drag your new material from the Project window to your plane in the Scene view:
-
-![The grey material in the Project window.](images/grey-material.png)
-
-![The Scene view with a grey plane.](images/gray_plane.png)
+![La vue Scene avec un grand plane blanc.](images/plane-floor.png)
 
 --- /task ---
 
-You can create objects from 3D shapes.
+Le **matériau** d'un GameObject contrôle son apparence. Donne au plane un matériau de couleur différente.
 
 --- task ---
 
-Right-click on your **3D World** scene in the Hierarchy window and choose **GameObject** > **3D Object** > **Cube**.
+Dans la fenêtre Project, fais un clic droit sur le dossier **Materials** et choisis **Create** > **Material**.
 
-This will create a cube at the centre of the scene, at (0, 0, 0).
+![Le menu "Create" montrant "Material" en surbrillance.](images/create-material.png)
 
-![A small cube located in centre of the plane.](images/new_cube.png)
+Un nouveau matériau devrait apparaître dans le dossier Materials. Décide de la couleur que tu utiliseras pour ton sol et nomme ton nouveau matériau :
+
+![Icône d'un nouveau matériau avec le nom en surbrillance.](images/new_material.png)
+
+Clique sur la couleur à côté de « Albedo » dans la fenêtre Inspector et choisis une couleur pour ton matériau (nous avons utilisé le gris) :
+
+![La barre de couleur à droite de "Albedo" est remplie en gris.](images/grey-plane-material.png)
+
+Fais glisser ton nouveau matériau de la fenêtre Project vers ton plane dans la vue Scene :
+
+![Le matériau gris dans la fenêtre Project.](images/grey-material.png)
+
+![La vue Scene avec un plane gris.](images/gray_plane.png)
 
 --- /task ---
 
-You can see the cube in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
-
-**Tip:** Click on the **Scene** tab to make sure you can see the Scene view.
+Tu peux créer des objets à partir de formes 3D.
 
 --- task ---
 
-Click on the cube in the Scene view or Hierarchy window to select it.
+Fais un clic droit sur ta scène **Monde 3D** dans la fenêtre Hierarchy et choisis **GameObject** > **3D Object** > **Cube**.
 
-Use <kbd>Shift</kbd>+<kbd>F</kbd> (hold down the <kbd>Shift</kbd> key and tap <kbd>F</kbd>) to focus on the cube.
+Cela créera un cube au centre de la scène, à (0, 0, 0).
 
-You can also use the scroll wheel on the mouse, or the up and down arrow keys, to zoom in and out:
-
-![The cube in the centre of the Scene view, half above and half below the plane.](images/cube-scene-view.png)
+![Un petit cube situé au centre du plane.](images/new_cube.png)
 
 --- /task ---
 
-You need to get the cube to sit on the plane.
+Tu peux voir le cube dans la vue Scene. C'est la vue des coulisses de ton jeu où tu mets tout en place.
+
+**Astuce :** Clique sur l'onglet **Scene** pour t'assurer que tu peux voir la vue Scene.
 
 --- task ---
 
-Click on the cube in the Scene view or Hierarchy window to select it.
+Clique sur le cube dans la vue Scene ou la fenêtre Hierarchy pour le sélectionner.
 
-**Choose**   
-You can either:
+Utilise <kbd>Maj</kbd>+<kbd>F</kbd> (maintiens la touche <kbd>Maj</kbd> enfoncée et appuie sur <kbd>F</kbd>) pour centrer la vue sur le cube.
 
-+ Change the y position in the Inspector window to 0.5 (half the height of the cube):
+Tu peux également utiliser la molette de défilement de la souris ou les touches fléchées haut et bas pour effectuer un zoom avant et arrière :
 
-![The Transform component for the cube with the y position coordinate set to 0.5.](images/y-transform-cube.png)
-
-+ Use the Move tool to drag the green arrow up until the cube sits on the plane:
-
-![The move tool icon with four outwardly facing arrows.](images/move-tool.png)
-
-![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
+![Le cube au centre de la vue Scene, moitié au-dessus et moitié en dessous du plane.](images/cube-scene-view.png)
 
 --- /task ---
 
-**Tip:** If you make a mistake in the Unity Editor, you can use <kbd>Ctrl</kbd>+<kbd>Z</kbd> (or <kbd>Cmd</kbd>+<kbd>Z</kbd>) to **undo** your last action.
+Tu dois poser le cube sur le plane.
 
 --- task ---
 
-Now change the cube into a wall with the following Position and Scale settings:
+Clique sur le cube dans la vue Scene ou la fenêtre Hierarchy pour le sélectionner.
 
-![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+**Choisis**   
+Tu peux soit :
 
-You can either enter the values in the Transform component for the cube or click on the Scale tool and drag the handles in the Scene view (this will update the Transform values.)
++ Modifier la position y dans la fenêtre Inspector sur 0.5 (la moitié de la hauteur du cube) :
 
-![The scale tool icon with square and arrow pointing diagonally up from the bottom left corner.](images/scale-tool.png)
+![Le composant Transform pour le cube avec la coordonnée de position y définie sur 0.5.](images/y-transform-cube.png)
 
-Zoom out to see your wall:
++ Utiliser l'outil Move pour faire glisser la flèche verte vers le haut jusqu'à ce que le cube se pose sur le plane :
 
-![The new positioned and scaled wall in the Scene view.](images/scene-cube-wall.png)
+![L'icône de l'outil de déplacement avec quatre flèches tournées vers l'extérieur.](images/move-tool.png)
+
+![Un gif animé montrant les flèches de déplacement sur le cube avec le pointeur de la souris faisant glisser l'axe y pour que le cube se lève et se pose sur le plane.](images/drag-y-axis.gif)
 
 --- /task ---
 
-A material can have a colour and a texture and there are lots of properties that you can adjust to get different effects. A **texture** is a 2D image that can be created in an image editor.
+**Astuce :** Si tu fais une erreur dans l'éditeur Unity, tu peux utiliser <kbd>Ctrl</kbd>+<kbd>Z</kbd> (ou <kbd>Cmd</kbd>+<kbd>Z</kbd>) pour **annuler** ta dernière action.
 
 --- task ---
 
-In the Project window, right-click on the **Materials** folder and choose **Create** > **Material**. You are going to create a coloured brick wall. Give the material a descriptive name:
+Transforme maintenant le cube en mur avec les paramètres de position et d'échelle suivants :
 
-![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
+![Le composant Transform avec des propriétés de position et d'échelle mises à jour. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
-Click on the colour next to 'Albedo' in the Inspector window and choose a colour for your material:
+Tu peux soit entrer les valeurs dans le composant Transform pour le cube, soit cliquer sur l'outil Scale et faire glisser les poignées dans la vue Scene (cela mettra à jour les valeurs de transformation.)
 
-![The colour bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
+![L'icône de l'outil Scale avec un carré et une flèche pointant en diagonale vers le haut depuis le coin inférieur gauche.](images/scale-tool.png)
 
-Add a texture by clicking on the circle to the left of 'Albedo' and selecting **BrickWallAlbedo** texture from the list:
+Fais un zoom arrière pour voir ton mur :
 
-![The pop-up window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
-
-Drag your new material from the Project window to your wall in the Scene view:
-
-![The red brick material in the Project window.](images/brick-material.png)
-
-![The Scene view with red brick wall.](images/red-brick-wall.png)
+![Le nouveau mur positionné et mis à l'échelle dans la vue Scene.](images/scene-cube-wall.png)
 
 --- /task ---
 
+Un matériau peut avoir une couleur et une texture et il existe de nombreuses propriétés que tu peux ajuster pour obtenir différents effets. Une **texture** est une image 2D qui peut être créée dans un éditeur d'images.
+
 --- task ---
 
-In the Inspector window, right-click on your cube, choose **Rename** from the menu and rename your object from `Cube` to `Wall`:
+Dans la fenêtre Project, fais un clic droit sur le dossier **Materials** et choisis **Create** > **Material**. Tu vas créer un mur de briques colorées. Donne un nom descriptif au matériau :
 
-![Inspector window showing 'Wall' as the name.](images/name-wall.png)
+![Le menu "Create" montrant "Material" en surbrillance.](images/create-material.png)
 
-**Tip:** You can name a new GameObject in the Hierarchy window when you create it and you can change the name in the Inspector window.
+Clique sur la couleur à côté de « Albedo » dans la fenêtre Inspector et choisis une couleur pour ton matériau :
+
+![La barre de couleur à droite de "Albedo" est remplie en rouge.](images/red-colour.png)
+
+Ajoute une texture en cliquant sur le cercle à gauche de « Albedo » et en sélectionnant la texture **BrickWallAlbedo** dans la liste :
+
+![La fenêtre pop-up pour sélectionner une texture avec "BrickWallAlbedo" en surbrillance.](images/add-texture.png)
+
+Fais glisser ton nouveau matériau de la fenêtre Project vers ton mur dans la vue Scene :
+
+![Le matériau brique rouge dans la fenêtre Project.](images/brick-material.png)
+
+![La vue Scene avec un mur de briques rouges.](images/red-brick-wall.png)
 
 --- /task ---
 
 --- task ---
 
-To create a copy of your wall, you can either:
-+ Right-click on your Wall object in the Hierarchy window and choose **Duplicate**
-+ Select your wall in the Scene view and use <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd>+<kbd>D</kbd>) to duplicate
+Dans la fenêtre Inspector, fais un clic droit sur ton cube, choisis **Rename** dans le menu et renomme ton objet de `Cube` à `Mur` :
 
-Your new wall will be in exactly the same place as your first wall.
+![Fenêtre Inspector affichant "Mur" comme nom.](images/name-wall.png)
 
---- /task ---
-
---- task ---
-
-Change the y rotation of the new wall to `90`:
-
-![The new wall Transform component with rotate on the y axis showing 90 degrees.](images/transform-rotate-90.png)
+**Astuce :** Tu peux nommer un nouveau GameObject dans la fenêtre Hierarchy lorsque tu le crées et tu peux modifier le nom dans la fenêtre Inspector.
 
 --- /task ---
 
 --- task ---
 
-Reposition the new wall to the following position: x = 4, y = 1, z = -1.
+Pour créer une copie de ton mur, tu peux soit :
++ Faire un clic droit sur ton objet Mur dans la fenêtre Hierarchy et choisir **Duplicate**
++ Sélectionner ton mur dans la vue Scene et utiliser <kbd>Ctrl</kbd>+<kbd>D</kbd> (ou <kbd>Cmd</kbd>+<kbd>D</kbd>) pour dupliquer
 
-![Transform for new wall. Position x = 4, y = 1, z = -1.](images/new-wall-transform.png)
-
-You can either enter the values in the Inspector window or drag the arrows in your Scene — it doesn't matter if the position is exact.
-
-Your Scene should look like this:
-
-![Scene with two red brick walls.](images/scene-with-walls.png)
+Ton nouveau mur sera exactement au même endroit que ton premier mur.
 
 --- /task ---
 
 --- task ---
 
-Click on your Plane. Change the Scale settings on the Plane to make it bigger so you have more room:
+Change la rotation y du nouveau mur en `90` :
 
-![The Transform component with scale x and z coordinates changed to 4.](images/plane-scale-4-1-4.png)
-
-![The Scene view showing the larger plane.](images/new-resized-plane.png)
-
-Think of a 4×4 plane as 40 metres by 40 metres in the real world: plenty of room for your character to move around.
+![Le nouveau composant Transform du mur avec rotation sur l'axe y indiquant 90 degrés.](images/transform-rotate-90.png)
 
 --- /task ---
 
 --- task ---
 
-When you have unsaved changes, you will see a '*' next to your Scene in the Hierarchy window.
+Repositionne le nouveau mur à la position suivante : x = 4, y = 1, z = -1.
 
-Save your Scene by clicking **File** > **Save**. Or use <kbd>Ctrl</kbd>+<kbd>S</kbd>.
+![Transform pour le nouveau mur. Position x = 4, y = 1, z = -1.](images/new-wall-transform.png)
 
-Also, save your project by clicking **File** > **Save Project**.
+Tu peux soit entrer les valeurs dans la fenêtre Inspector, soit faire glisser les flèches dans ta scène, peu importe si la position est exacte.
 
-Unity does not normally autosave changes, but your starter project contains a script to autosave your project every 60 seconds.
+Ta scène devrait ressembler à ceci :
+
+![Scène avec deux murs de briques rouges.](images/scene-with-walls.png)
 
 --- /task ---
 
-You can navigate around your scene to see it from different angles. If you get lost, just click on a wall in the Hierarchy window and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus and then zoom out:
+--- task ---
+
+Clique sur ton plane. Modifie les paramètres Scale sur le plane pour l'agrandir afin d'avoir plus d'espace :
+
+![Le composant Transform avec les coordonnées de scale x et z est passé à 4.](images/plane-scale-4-1-4.png)
+
+![La vue Scene montrant le plane le plus grand.](images/new-resized-plane.png)
+
+Considère un plane de 4×4 comme 40 mètres sur 40 mètres dans le monde réel : beaucoup d'espace pour que ton personnage puisse se déplacer.
+
+--- /task ---
+
+--- task ---
+
+Lorsque tu as des modifications non enregistrées, tu verras un "*" à côté de ta scène dans la fenêtre Hierarchy.
+
+Enregistre ta scène en cliquant sur **File** > **Save**. Ou utilise <kbd>Ctrl</kbd>+<kbd>S</kbd>.
+
+Enregistre également ton projet en cliquant sur **File** > **Save Project**.
+
+Normalement, Unity n'enregistre pas automatiquement les modifications, mais ton projet de démarrage contient un script pour enregistrer automatiquement ton projet toutes les 60 secondes.
+
+--- /task ---
+
+Tu peux te déplacer dans ta scène pour la voir sous différents angles. Si tu te perds, clique simplement sur un mur dans la fenêtre Hierarchy, puis utilise <kbd>Maj</kbd>+<kbd>F</kbd> pour centrer la vue, puis fais un zoom arrière :
 
 [[[unity-scene-navigation]]]
 
-Remember, if you navigate around then you will be looking at your scene from a different perspective so your view won't look exactly the same as our examples.
+N'oublie pas que si tu te déplaces, tu regarderas ta scène sous un angle différent, de sorte que ta vue ne sera pas exactement la même que nos exemples.
 
 --- save ---
