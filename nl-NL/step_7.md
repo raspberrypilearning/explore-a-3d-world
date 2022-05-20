@@ -3,26 +3,26 @@
 Nu kun je je 3D-wereld precies zo maken als je wilt.
 
 Jij kunt:
-+ Add more 3D objects to your world, try Spheres and Capsules
-+ Try different colours and materials
++ Meer 3D-objecten toevoegen aan je wereld, probeer Spheres en Capsules
++ Verschillende kleuren en materialen proberen
 + De Scale instellingen of de Transform-waarden wijvoor je personage om het groter of kleiner te maken. Je moet alle drie de waarden wijzigen om het in verhouding te houden
-+ Enable and disable different accessories in the Inspector window to get the look you want
-+ Adjust the Player movement and rotation speed
-+ Adjust the position of the camera
++ Schakel verschillende accessoires in en uit in het venster Inspector om het gewenste uiterlijk te krijgen
++ Pas de beweging van de speler en de rotatiesnelheid aan
++ Pas de positie van de camera aan
 
-![The scene view with new camera position, additional shapes, and enlarged character with the construction mesh turned back on.](images/customised-project.png)
+![De scèneweergave met nieuwe camerapositie, extra vormen en een vergroot personage met de bouwhelm weer ingeschakeld.](images/customised-project.png)
 
-You can download the basic and extended projects as packages along with the WebGL projects from the zipped solutions directory at [https://rpf.io/p/en/explore-a-3d-world-get](https://rpf.io/p/en/explore-a-3d-world-get)
+Je kan de basis- en uitgebreide projecten als pakketten downloaden, samen met de WebGL-projecten uit de gezipte oplossingenmap op [https://rpf.io/p/en/explore-a-3d-world-get](https://rpf.io/p/en/explore-a-3d-world-get)
 
 --- collapse ---
 
 ---
-title: Completed project
+title: Voltooid project
 ---
 
-You can download the [completed project here](https://rpf.io/p/en/explore-a-3d-world-get){:target="_blank"}.
+Je kunt het [voltooide project hier downloaden](https://rpf.io/p/en/explore-a-3d-world-get){:target="_blank"}.
 
-You can view the completed project below.
+Je kunt het voltooide project hieronder bekijken.
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-extended.rpfilt.repl.co" frameborder="0"></iframe>
 
