@@ -1,26 +1,26 @@
 ---
-title: Explore a 3D world
+title: Verken een 3D-wereld
 hero_image: images/banner.png
-description: Create a 3D world in Unity and explore it with an animated 3D player character
+description: Maak een 3D-wereld in Unity en verken deze met een geanimeerd 3D-persoon
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: Inleiding
   - 
-    title: Set the 3D scene
+    title: Stel de 3D-scène in
   - 
-    title: Add a Player character
+    title: Voeg een Speler toe
     completion: engaged
   - 
-    title: Add character movement
+    title: Voeg een beweging toe
   - 
-    title: Animation and camera position
+    title: Animatie en camerapositie
     completion: internal
   - 
-    title: Reflection
+    title: Reflectie
     completion: external
     knowledge_quiz:
       path: quiz1
@@ -28,6 +28,6 @@ steps:
       questions: 3
       passing_score: 3
   - 
-    title: Upgrade your project
+    title: Verbeter je project
   - 
-    title: What next?
+    title: Wat kun je verder nog doen?
