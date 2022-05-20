@@ -17,13 +17,13 @@ Een Unity-project heeft graphics en geluid 'Assets' nodig.
 
 --- task ---
 
-Download and unzip the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Kies een geschikte locatie, zoals de map documenten.
+Download en pak het [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} uit op je computer. Kies een geschikte locatie, zoals de map documenten.
 
 --- /task ---
 
 --- task ---
 
-Launch the Unity Hub and click **Projects** then select **New project**:
+Start de Unity Hub en klik op **Projects** en selecteer vervolgens **New project**:
 
 ![De knop 'New project' rechtsboven op de Unity-hub.](images/new-project.png)
 
@@ -69,9 +69,9 @@ title: De vensters en weergaven van de Unity Editor
 
 --- task ---
 
-The Unity starter package you downloaded contains a number of Assets for you to use in your project.
+Het Unity-starter package dat je hebt gedownload bevat een aantal elementen die je in je project kunt gebruiken.
 
-To import them into your new project, click on the **Assets** menu and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
+Om ze in je nieuwe project te importeren, klik je op het **Assets** menu en selecteer je **Import package** > **Custom Package...** en navigeer je vervolgens naar het gedownloade **Unity starter package**.
 
 --- /task ---
 
@@ -79,7 +79,7 @@ To import them into your new project, click on the **Assets** menu and select **
 
 --- task ---
 
-The **Project window** is where you can see all the files included in your project. Klik op de map **Models** in de map Assets om de modellen te bekijken die je hebt geïmporteerd.
+In het **Project venster** kun je alle bestanden in je project zien. Klik op de map **Models** in de map Assets om de modellen te bekijken die je hebt geïmporteerd.
 
 ![Projectweergave geselecteerd met weergegeven mappen.](images/project-view-folders.png)
 
@@ -93,112 +93,112 @@ Klik met de rechtermuisknop op **SampleScene** in de hiërarchie en kies **Save 
 
 ![Het scènepictogram in het venster hiërarchie met het snelmenu uitgevouwen.](images/right-click-scene.png)
 
-In the pop-up window, name your Scene `3D World`:
+Geef in het pop-upvenster de naam van je scene `3D World`:
 
-![The 'Save As' pop-up window with Scenes folder selected.](images/save-scene.png)
+![Het pop-upvenster 'Save as' met de map Scenes geselecteerd.](images/save-scene.png)
 
-A new file will appear in the Assets folder in the Project window:
+Er verschijnt een nieuw bestand in de map Assets in het Project venster:
 
-![Project window with 3D World scene in the Assets folder.](images/3dworld-scene.png)
-
---- /task ---
-
-First, your world needs some ground.
-
---- task ---
-
-Right-click on your scene (name 3D World) in the Hierarchy window and choose **GameObject** > **3D Object** > **Plane**:
-
-![The 3D World scene with menu extended and 'Plane' highlighted.](images/add-plane.png)
-
-This will create a ground for your world.
-
-The default size for the plane is 10m × 10m. Unity uses metres as the unit of measurement.
-
-![The Scene view with a large white plane.](images/plane-floor.png)
+![Projectvenster met 3D World-scene in de map Assets.](images/3dworld-scene.png)
 
 --- /task ---
 
-The **material** of a GameObject controls how it looks. Give the plane a different colour material.
+Ten eerste heeft je wereld wat grond nodig.
 
 --- task ---
 
-In the Project window, right-click on the **Materials** folder and choose **Create** > **Material**.
+Klik met de rechtermuisknop op je scène (naam 3D World) in het Hierarchy venster en kies **GameObject** > **3D object** > **Plane**:
 
-![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
+![De 3D wereld scene met menu uitgebreid en 'vlak' gemarkeerd.](images/add-plane.png)
 
-A new material should appear in the Materials folder. Decide what colour you will use for your floor and name your new material:
+Dit zal een basis voor jouw wereld creëren.
 
-![Icon for a new material with the name highlighted.](images/new_material.png)
+Het standaardformaat voor het vlak is 10m × 10m. Unity gebruikt meters als maateenheid.
 
-Click on the colour next to 'Albedo' in the Inspector window and choose a colour for your material (we used grey):
-
-![The colour bar to the right of 'Albedo' is filled in grey.](images/grey-plane-material.png)
-
-Drag your new material from the Project window to your plane in the Scene view:
-
-![The grey material in the Project window.](images/grey-material.png)
-
-![The Scene view with a grey plane.](images/gray_plane.png)
+![De Scèneweergave met een groot wit vlak.](images/plane-floor.png)
 
 --- /task ---
 
-You can create objects from 3D shapes.
+Het **materiaal** van een GameObject bepaalt hoe het eruitziet. Geef het vlak een ander kleur materiaal.
 
 --- task ---
 
-Right-click on your **3D World** scene in the Hierarchy window and choose **GameObject** > **3D Object** > **Cube**.
+Klik in het Project venster met de rechtermuisknop op de map **Materials** en kies **Create** > **Material**.
 
-This will create a cube at the centre of the scene, at (0, 0, 0).
+![Het menu 'Create' met 'Material' gemarkeerd.](images/create-material.png)
 
-![A small cube located in centre of the plane.](images/new_cube.png)
+Er zou een nieuw materiaal moeten verschijnen in de materialen map. Bepaal welke kleur je voor je vloer gaat gebruiken en geef je nieuwe materiaal een naam:
+
+![Pictogram voor een nieuw materiaal met de naam gemarkeerd.](images/new_material.png)
+
+Klik op de kleur naast 'Albedo' in het Inspector venster en kies een kleur voor je materiaal (we hebben grijs gebruikt):
+
+![De kleurenbalk rechts van 'Albedo' wordt grijs weergegeven.](images/grey-plane-material.png)
+
+Sleep je nieuwe materiaal van het Project venster naar je vlak in de scèneweergave:
+
+![Het grijze materiaal in het Project venster.](images/grey-material.png)
+
+![De scèneweergave met een grijs vlak.](images/gray_plane.png)
 
 --- /task ---
 
-You can see the cube in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
-
-**Tip:** Click on the **Scene** tab to make sure you can see the Scene view.
+Je kunt objecten maken van 3D-vormen.
 
 --- task ---
 
-Click on the cube in the Scene view or Hierarchy window to select it.
+Klik met de rechtermuisknop op je **3D World**-scène in het venster Hierarchy en kies **GameObject** > **3D-object** > **Cube**.
 
-Use <kbd>Shift</kbd>+<kbd>F</kbd> (hold down the <kbd>Shift</kbd> key and tap <kbd>F</kbd>) to focus on the cube.
+Hiermee wordt een kubus gemaakt in het midden van de scène, op (0, 0, 0).
 
-You can also use the scroll wheel on the mouse, or the up and down arrow keys, to zoom in and out:
-
-![The cube in the centre of the Scene view, half above and half below the plane.](images/cube-scene-view.png)
+![Een kleine kubus in het midden van het vlak.](images/new_cube.png)
 
 --- /task ---
 
-You need to get the cube to sit on the plane.
+Je kunt de kubus zien in de scèneweergave. Dit is de achter de schermen weergave van je spel waar je alles instelt.
+
+**Tip:** Klik op het tabblad **Scene** om ervoor te zorgen dat je de scèneweergave kunt zien.
 
 --- task ---
 
-Click on the cube in the Scene view or Hierarchy window to select it.
+Klik op de kubus in de scèneweergave of het venster Hierarchy om deze te selecteren.
 
-**Choose**   
-You can either:
+Gebruik <kbd>Shift</kbd>+<kbd>F</kbd> (houd de <kbd>Shift</kbd> toets ingedrukt en tik op <kbd>F</kbd>) om scherp te stellen op de kubus.
 
-+ Change the y position in the Inspector window to 0.5 (half the height of the cube):
+Je kunt ook het scrollwiel op de muis of de pijltjestoetsen omhoog en omlaag gebruiken om in en uit te zoomen:
 
-![The Transform component for the cube with the y position coordinate set to 0.5.](images/y-transform-cube.png)
-
-+ Use the Move tool to drag the green arrow up until the cube sits on the plane:
-
-![The move tool icon with four outwardly facing arrows.](images/move-tool.png)
-
-![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
+![De kubus in het midden van de scèneweergave, half boven en half onder het vlak.](images/cube-scene-view.png)
 
 --- /task ---
 
-**Tip:** If you make a mistake in the Unity Editor, you can use <kbd>Ctrl</kbd>+<kbd>Z</kbd> (or <kbd>Cmd</kbd>+<kbd>Z</kbd>) to **undo** your last action.
+Je moet de kubus op de grond plaatsen.
 
 --- task ---
 
-Now change the cube into a wall with the following Position and Scale settings:
+Klik op de kubus in de scèneweergave of het venster Hierarchy om deze te selecteren.
 
-![The Transform component with updated position and scale properies. Positie x=0, y=1, z=3. Schaal x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+**Kies**   
+je kunt:
+
++ De y-positie in het Inspector-venster wijzigen in 0.5 (de helft van de hoogte van de kubus):
+
+![De Transform-component voor de kubus met de y-positie coördinaat ingesteld op 0.5.](images/y-transform-cube.png)
+
++ Het gereedschap verplaatsen gebruiken om de groene pijl omhoog te slepen totdat de kubus op het grondvlak zit:
+
+![Het pictogram verplaatsen met vier naar buiten gerichte pijlen.](images/move-tool.png)
+
+![Een geanimeerde gif die de verplaatsingspijltjes op de kubus laat zien met de muisaanwijzer die de y-as omhoog trekt zodat de kubus op het vlak komt te staan.](images/drag-y-axis.gif)
+
+--- /task ---
+
+**Tip:** als je een fout maakt in de Unity Editor, kun je <kbd>Ctrl</kbd>+<kbd>Z</kbd> (of <kbd>Cmd</kbd>+<kbd>Z</kbd>) gebruiken om je laatste actie **ongedaan te maken (undo)</kbd>. </p>
+
+--- task ---
+
+Verander nu de kubus in een muur met de volgende positie- en schaalinstellingen:
+
+![De Transform-component met bijgewerkte positie- en schaaleigenschappen. Positie x=0, y=1, z=3. Schaal x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
 Je kunt de waarden invoeren in de Transform-component voor de kubus of op de Scale-tool klikken en de handvatten in de Scene-weergave slepen (hiermee worden de Transform-waarden bijgewerkt.)
 
@@ -214,7 +214,7 @@ Een materiaal kan een kleur en een structuur hebben en er zijn veel eigenschappe
 
 --- task ---
 
-Klik in het Project venster met de rechtermuisknop op de map **Materials** en kies **Create** > **Material**. Je gaat een gekleurde stenen muur maken. Give the material a descriptive name:
+Klik in het Project venster met de rechtermuisknop op de map **Materials** en kies **Create** > **Material**. Je gaat een gekleurde stenen muur maken. Geef het materiaal een duidelijke naam:
 
 ![Het menu 'Create' met 'Material' gemarkeerd.](images/create-material.png)
 
@@ -266,7 +266,7 @@ Wijzig de y-rotatie van de nieuwe muur in `90`:
 
 Verplaats de nieuwe muur naar de volgende positie: X = 4, y = 1, z = -1.
 
-![Transform for new wall. Positie x = 4, y = 1, z = -1.](images/new-wall-transform.png)
+![Transformeer naar een nieuwe muur. Positie x = 4, y = 1, z = -1.](images/new-wall-transform.png)
 
 Je kunt de waarden in het Inspector venster invoeren of de pijlen in je Scène slepen — het maakt niet uit of de positie exact is.
 
@@ -284,17 +284,17 @@ Klik op je vlak. Wijzig de schaalinstellingen op het vlak om deze groter te make
 
 ![De scèneweergave toont het grotere vlak.](images/new-resized-plane.png)
 
-Think of a 4×4 plane as 40 metres by 40 metres in the real world: plenty of room for your character to move around.
+Denk aan een 4×4 grondvlak als 40 meter bij 40 meter in de echte wereld: Veel ruimte voor je personage om rond te lopen.
 
 --- /task ---
 
 --- task ---
 
-When you have unsaved changes, you will see a '*' next to your Scene in the Hierarchy window.
+Als je niet-opgeslagen wijzigingen hebt, zie je een '*' naast je Scène in het venster Hierarchy.
 
-Save your Scene by clicking **File** > **Save**. Of gebruik <kbd>Ctrl</kbd>+<kbd>S</kbd>.
+Sla je scène op door op **File** > **Save** te klikken. Of gebruik <kbd>Ctrl</kbd>+<kbd>S</kbd>.
 
-Also, save your project by clicking **File** > **Save Project**.
+Je kan je project op ook slaan door op **File** > **Save Project** te klikken.
 
 Unity slaat gewoonlijk geen wijzigingen op, maar je startersproject bevat een script om je project elke 60 seconden automatisch op te slaan.
 
