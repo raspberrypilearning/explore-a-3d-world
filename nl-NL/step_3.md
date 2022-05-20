@@ -17,9 +17,9 @@ Kies het `Cat` of `Raccoon` model en sleep het van het Project venster naar de S
 
 ![Animatie van 'Wasbeer' die van het projectvenster naar de scèneweergave wordt gesleept.](images/drag-character.gif)
 
-**Tip:** als je per ongeluk 'CatBase'- of 'RaccoonBase'-modellen hebt toegevoegd, of als je je personage op dit punt wilt wijzigen, kun je het model uit de scène verwijderen. Right-click on the model GameObject in the Hierarchy window and select 'Delete'.
+**Tip:** als je per ongeluk 'CatBase'- of 'RaccoonBase'-modellen hebt toegevoegd, of als je je personage op dit punt wilt wijzigen, kun je het model uit de scène verwijderen. Klik met de rechtermuisknop op het model GameObject in het venster hiërarchie en selecteer 'Delete'.
 
-![The Hierarchy window with right-click menu for the model and 'Delete' highlighted.](images/delete-model.png)
+![Het venster Hierarchy met het snelmenu voor het model en 'Delete' gemarkeerd.](images/delete-model.png)
 
 --- /task ---
 
@@ -33,7 +33,7 @@ De <span style="color: #0faeb0">**T-pose**</span> is de standaardpositie voor ee
 
 Klik op je personage in de scèneweergave en tik op de <kbd>F</kbd> toets.
 
-**Tip:** If you get lost in the Scene view, you can click on your character (or another GameObject) in the Hierarchy window and then click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on your character in the Scene view.
+**Tip:** als je verdwaald raakt in de scèneweergave, kun je in het Hierarchy venster op je personage (of een ander GameObject) klikken en vervolgens op <kbd>Shift</kbd>+<kbd>F</kbd> klikken om te centreren op je personage in de scèneweergave.
 
 --- /task ---
 
@@ -41,25 +41,25 @@ Hmm, je personage draagt meerdere accessoires.
 
 --- task ---
 
-Click on your character in the Hierarchy window. Hiermee worden de instellingen voor het GameObject geopend in het Inspector venster.
+Klik op je personage in het venster Hierarchy. Hiermee worden de instellingen voor het GameObject geopend in het Inspector venster.
 
-Click on the arrow next to your character in the Hierarchy window to see the 'child objects'. Click on **ConstructionGearMesh** and uncheck the box next to its name in the Inspector window. Dit verbergt de helm en het veiligheidsvest:
+Klik op de pijl naast je personage in het Hierarchy venster om de 'onderliggende objecten' te bekijken. Klik op **ConstructieGearMesh** en schakel het selectievakje naast de naam uit in het venster Inspector. Dit verbergt de helm en het veiligheidsvest:
 
 ![Inspector met de eigenschap 'ConstructieGearMesh' gemarkeerd en uitgeschakeld.](images/uncheck-hat-active.png)
 
-![The Scene view with 'ConstructionGearMesh' removed from the Raccoon.](images/no-hat-scene.png)
+![De Scèneweergave met 'ConstructieGearMesh' verwijderd uit de Wasbeer (Raccoon).](images/no-hat-scene.png)
 
 Verberg de andere accessoires voor je personage op dezelfde manier, of houd er gewoon een actief.
 
-**Tip:** GameObjects that are not active appear greyed out in the Hierarchy window:
+**Tip:** Gameobjecten die niet actief zijn, worden grijs weergegeven in het venster Hierarchy:
 
-![Hierarchy Window with greyed out 'ConstructionGearMesh'.](images/greyed-out-mesh.png)
+![Hierarchy venster met 'ConstructieGearMesh' grijs weergegeven.](images/greyed-out-mesh.png)
 
 --- /task ---
 
 --- task ---
 
-The player will see the game through the 'Main Camera', which is shown as a video camera icon in the Scene. Select the camera in the Hierarchy window to see the embedded camera view:
+De speler ziet het spel via de 'Main Camera', die in de scène wordt weergegeven als een videocamera-pictogram. Selecteer de camera in het venster Hierarchy om de ingesloten cameraweergave te bekijken:
 
 ![Camera geselecteerd in scèneweergave.](images/camera-in-scene.png)
 
@@ -89,13 +89,13 @@ Unity gebruikt x-, y- en z-coördinaten om GameObjects in de 3D-ruimte te positi
 
 --- task ---
 
-Select your character (in the Hierarchy window or Scene view) and then change its 'Transform' settings so the 'Position' is (0, 0, 0) — the centre of the world:
+Selecteer je personage (in het venster Hierarchy of de scèneweergave) en wijzig vervolgens de 'Transform'-instellingen zodat de 'positie' (0, 0, 0) is — het centrum van de wereld:
 
-![Transform for the selected character with position set to 0, 0, 0.](images/transform-centre.png)
+![Transformatie voor het geselecteerde personage met positie ingesteld op 0, 0, 0.](images/transform-centre.png)
 
 Je personage beweegt naar het midden in de scèneweergave en de spelweergave:
 
-![The Scene view with the character at 0, 0, 0 in the middle of the plane.](images/transform-centre-scene-view.png)
+![De scèneweergave met het personage op 0, 0, 0 in het midden van het vlak.](images/transform-centre-scene-view.png)
 
 --- /task ---
 
