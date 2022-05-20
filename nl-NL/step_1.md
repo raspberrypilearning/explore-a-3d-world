@@ -1,34 +1,34 @@
-## Introduction
+## Inleiding
 
-Create a 3D world in Unity and explore it with an animated 3D player character.
+Maak een 3D-wereld in Unity en verken deze met een geanimeerd 3D-personage.
 
-This project is brought to you with generous support from [Unity Technologies](https://unity.com/){:target="_blank"}.  These [projects](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} offer young people the opportunity to take their first steps in creating virtual worlds using Real-Time 3D.
+This project is brought to you with generous support from [Unity Technologies](https://unity.com/){:target="_blank"}.  Deze [projecten](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} bieden jongeren de kans om hun eerste stappen te zetten in het maken van virtuele werelden met gebruik van Real-Time 3D.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Unity**</span> is a development environment for making games, virtual environments, visual novels, digital animations, and more. You can use Unity to develop 2D and 3D cross-platform games for PCs, consoles, mobile devices, and the internet.
+<span style="color: #0faeb0">**Unity**</span> is een ontwikkelomgeving voor het maken van games, virtuele omgevingen, visuele vehalen, digitale animaties en meer. Je kunt Unity gebruiken om 2D en 3D cross-platform games te ontwikkelen voor pc's, consoles, mobiele apparaten en het internet.
 </p>
 
-You will:
-+ Understand the Unity environment including the Scene editor
-+ Add 3D objects with materials as scenery
-+ Create a player character with animations that can move around
+Je gaat:
++ De Unity-omgeving, inclusief de Scene-editor begrijpen
++ 3D-objecten toevoegen met materialen als landschap
++ Een personage maken met animaties die kunnen bewegen
 
-### Recommended previous experience
-This project is suitable for learners with previous coding experience, such as [Scratch](https://projects.raspberrypi.org/en/pathways/scratch-intro){:target="_blank"} or [Python](https://projects.raspberrypi.org/en/pathways/python-intro){:target="_blank"}, who are comfortable typing text-based code.
+### Aanbevolen ervaring
+Dit project is geschikt voor cursisten met eerdere coderingservaringen, zoals [Scratch](https://projects.raspberrypi.org/en/pathways/scratch-intro){:target="_blank"} of [Python](https://projects.raspberrypi.org/en/pathways/python-intro){:target="_blank"}, die bekend zijn met het typen van tekstcode.
 
-### You will need
-This project requires the Unity Editor, which can be installed from the Unity Hub. This is a large download and install, so we recommend you install it before starting this project.
+### Je hebt nodig
+Voor dit project is de Unity Editor nodig, die kan worden geïnstalleerd vanaf de Unity Hub. Dit is een grote download en installatie, dus we raden je aan het te installeren voordat je met dit project begint.
 
-You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/unity-guide){:target="_blank"} to install Unity Hub and the Unity Editor for your operating system.
+Je kunt onze [Unity guide](https://projects.raspberrypi.org/en/projects/unity-guide){:target="_blank"} volgen om Unity Hub en de Unity Editor voor je besturingssysteem te installeren.
 
-You will also need to download the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} of assets before starting.
+Je moet ook het [Unity starterspakket](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} downloaden voordat je begint.
 
 --- no-print ---
 
 --- task ---
-### Try it
+### Probeer het uit
 
-**Click on the embedded project.** Navigate the 3D world using the WASD or arrow keys. What does the raccoon do when standing still? How do they move when walking? Can you walk through the walls?
+**Klik op het project.** Navigeer door de 3D-wereld met behulp van de WASD- of pijltjestoetsen. Wat doet de wasbeer wanneer hij stilstaat? Hoe bewegen ze tijdens het lopen? Kun je door de muren lopen?
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
@@ -38,6 +38,6 @@ You will also need to download the [Unity starter package](https://rpf.io/p/en/e
 
 --- print-only ---
 
-![Completed project.](images/showcase_static.png)
+![Voltooid project.](images/showcase_static.png)
 
 --- /print-only ---
