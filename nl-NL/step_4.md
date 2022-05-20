@@ -1,67 +1,67 @@
-## Add character movement
+## Voeg een beweging toe
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your player will move with the WASD or arrow keys. 
+Je speler beweegt met de WASD- of pijltjestoetsen. 
 </div>
 <div>
-![The scene in Game view with character moving around the scene.](images/moving-character.gif){:width="300px"}
+![de scène in Spelweergave met personage dat door de scène beweegt.](images/moving-character.gif){:width="300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Unity uses the <span style="color: #0faeb0">**C#**</span> (pronounced C sharp) programming language, which is used by professional software developers. C# is an object-oriented language with **classes** that define behaviour for similar objects and **methods**, which are functions that belong to a class. In Unity, a **script** defines a class with variables and methods. You can add the same script to multiple GameObjects if they need the same features.</p>
+Unity werkt met de <span style="color: #0faeb0">**C#**</span> (uitgesproken als C Sharp) programmeertaal, die wordt gebruikt door professionele software-ontwikkelaars. C# is een object-georiënteerde taal met **classes** die gedrag voor vergelijkbare objecten definiëren en met **methods**, wat functies zijn die tot een class behoren. In Unity definieert een **script** een class met variabelen en methods. Je kunt hetzelfde script aan meerdere GameObjects toevoegen als ze dezelfde functies nodig hebben.</p>
 
 --- task ---
 
 Click on the **Player** GameObject in the Hierarchy window or Scene view so you can see its properties in the Inspector window.
 
-![The Player Game Object selected in the Hierarchy.](images/player-selected.png){:width="300px"}
+![Het Player Game Object geselecteerd in de hiërarchie.](images/player-selected.png){:width="300px"}
 
 **Tip:** Make sure you have the **Player** selected and not one of its child objects.
 
-Click **Add Component** and start to type `character` in the Search box, then click on the **Character Controller** component when it appears:
+Klik op **Add Component** en typ `character` in het zoekvak en klik vervolgens op de **Character Controller** component wanneer deze verschijnt:
 
-![The 'Add Component' menu showing the character controller.](images/character-controller-add.png)
+![Het menu 'Add Component' met de character controller.](images/character-controller-add.png)
 
 --- /task ---
 
-The Character Controller component adds new features to your Player GameObject including a `SimpleMove` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
+The Character Controller component adds new features to your Player GameObject including a `SimpleMove` method and a **collider**. Colliders kunnen worden gebruikt om te zorgen dat je personage niet door vaste voorwerpen loopt en om te detecteren wanneer botsingen plaatsvinden.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a GameObject collides, or intersects, with another GameObject. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a GameObject. A **hitbox** is a kind of collider. </p>
+ Een <span style="color: #0faeb0">**collider**</span> is een vorm die wordt gebruikt om te detecteren wanneer een GameObject botst of kruist met een ander GameObject. De computer kan veel sneller controleren op botsingen met een eenvoudige botsvorm dan met de complexe vorm van een GameObject. Een **hitbox** is een soort botsing. </p>
 
 --- task ---
 
-The Character Controller collider has a height of `2` and a centre at `0, 0, 0`; this means it is positioned half above and half below the plane:
+De Character Controller Collider heeft een hoogte van `2` en een middelpunt op `0, 0, 0`; dit betekent dat deze half boven en half onder het vlak is geplaatst:
 
-![The Scene view showing the character with a Character Controller capsule around the model.](images/scene-char-controller.png){:width="300px"}
+![De scèneweergave toont het personage met een Character Controller-capsule rond het model.](images/scene-char-controller.png){:width="300px"}
 
-Your character has a height of `1`, meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.5` and the height to `1` to match the character:
+Your character has a height of `1`, meaning their centre on the y-axis is at `0.5`. Wijzig de waarde in het centrum van de y-as van de Character Controller in `0.5` en de hoogte in `1` om het aan te passen aan je personage:
 
-![The Inspector window properties of the Character Controller component.](images/properties-controller.png){:width="400px"}
+![De eigenschappen van het Inspector venster van de Character Controller component.](images/properties-controller.png){:width="400px"}
 
-![The Scene view showing the character with a Character Controller capsule around the model.](images/updated-char-controller.png){:width="300px"}
+![De scèneweergave toont het personage met een Character Controller capsule rond het model.](images/updated-char-controller.png){:width="300px"}
 
 --- /task ---
 
-Your character needs a script so that the player can move it around. You'll need a code editor installed on your computer to edit this script.
+Je personage heeft een script nodig zodat de speler het kan verplaatsen. Je hebt een code-editor nodig die op je computer is geïnstalleerd om dit script te kunnen bewerken.
 
 [[[unity-visual-studio]]]
 
 --- task ---
 
-Go to the Inspector window for the Player and click on the **Add Component** button. Type `script` and select **New Script**. Name your new script `PlayerController`, then press <kbd>Enter</kbd>.
+Go to the Inspector window for the Player and click on the **Add Component** button. Typ `script` en selecteer **New Script**. Geef je nieuwe script een naam `PlayerController` en druk vervolgens op <kbd>Enter</kbd>.
 
-The new script will be saved in the Assets folder:
+Het nieuwe script wordt opgeslagen in de map Assets:
 
-![The Project window with new 'My Scripts' folder shown.](images/new-script-project.png){:width="400px"}
+![Het Project venster met de nieuwe 'My Scripts' map wordt weergegeven.](images/new-script-project.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-Double-click on **PlayerController** in the script component in the Inspector window. The script will open in a separate code editor and have this code:
+Dubbelklik op **PlayerController** in het script-onderdeel in het Inspector-venster. Het script wordt geopend in een aparte code-editor en heeft deze code:
 
 --- code ---
 ---
@@ -83,15 +83,15 @@ public class PlayerController : MonoBehaviour
     }
 } --- /code ---
 
-**Debug:** Check that the name after 'class' is `PlayerController` and this matches the name of your script file: if you rename the file after creating it, then you will need to change the class name in the script.
+**Debug:** Controleer of de naam na 'class' `PlayerController` is en dit overeenkomt met de naam van je scriptbestand: Als je het bestand een andere naam geeft nadat je het hebt gemaakt, moet je de class name in het script wijzigen.
 
 --- /task ---
 
-The Start method is called once when you play your scene. Add code to print the message `Player started` when your project starts running.
+De Start methode wordt eenmaal aangeroepen wanneer je de scène afspeelt. Add code to print the message `Player started` when your project starts running.
 
 --- task ---
 
-Use the `Debug.Log()` method to print a message when the `Start` method is called for the Player GameObject. The message will appear in the bar at the bottom of the Unity Editor and in the Console window:
+Gebruik de `Debug.Log()` methode om een bericht te tonen wanneer de `Start` methode wordt aangeroepen voor het Player Gameobject. Het bericht verschijnt in de balk onder aan de Unity Editor en in het Console-venster:
 
 --- code ---
 ---
@@ -106,31 +106,31 @@ line_highlights: 10
     }
 --- /code ---
 
-**Tip:** The lines starting with // are comments that explain the code. You don’t need to type them.
+**Tip:** de regels die beginnen met // zijn opmerkingen die de code toelichten. Je hoeft ze niet te typen.
 
-**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor. The Unity Editor will load your script to get it ready to run; this may take a few seconds.
-
---- /task ---
-
---- task ---
-
-Click on the Console window tab to bring it to the front:
-
-![The tab for the Console window highlighted in the bottom left section of the Unity Editor.](images/console-window.png){:width="400px"}
+**Sla het PlayerController script op** met <kbd>Ctrl</kbd>+<kbd>S</kbd> (of <kbd>Cmd</kbd>+<kbd>S</kbd>) en keer vervolgens terug naar de Unity Editor. De Unity Editor zal je script laden om het klaar te maken voor gebruik; dit kan een paar seconden duren.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Go to the Toolbar and click once on the **Play** button to put your scene into Play mode. This will simulate your scene as it would be viewed and interacted with by a user:
+Klik op het tabblad van het consolevenster om het naar voren te brengen:
 
-![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png){:width="400px"}
+![Het tabblad voor het Console venster dat linksonder in de Unity Editor is gemarkeerd.](images/console-window.png){:width="400px"}
+
+--- /task ---
+
+--- task ---
+
+**Test:** Ga naar de werkbalk en klik eenmaal op de knop **Play** om de scène in de afspeelmodus te zetten. Dit zal je scène simuleren zoals het zou worden bekeken en interactief toegepast door een gebruiker:
+
+![De werkbalk bovenaan de Unity Editor met de knop Play gemarkeerd.](images/play-button.png){:width="400px"}
 
 Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Player started' output in the Console.
 
 ![The Console window with the time-stamped 'Player started' message as a comment.](images/player-started.png)
 
-**Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
+**Debug:** je scène wordt niet afgespeeld als er fouten in je code zijn. Controleer het Console-venster voor informatie. You may see:
 + `; expected` – check for a semicolon `;` at the end of each line of code.
 + `Newline in constant` – you missed a quote `"` from the end of a text string.
 + `} expected` – you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
@@ -249,15 +249,15 @@ line_highlights: 18-23
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys to glide forwards and backwards.
+**Test:** Klik op **Play** om de afspeelmodus te openen en je code uit te proberen. Gebruik de <kbd>W</kbd> en <kbd>S</kbd> toetsen of de pijltjestoetsen omhoog en omlaag om naar voren en naar achteren te schuiven.
 
-**Debug:** Remember to check the Console window for helpful messages. Check brackets, semicolons, and capital letters in your code carefully.
+**Debug:** Vergeet niet om het Console venster te controleren op nuttige berichten. Controleer zorgvuldig haakjes, puntkomma's en hoofdletters in de code.
 
 **Tip:** Make sure your mouse pointer is in the **Game view**.
 
-Try and walk through the wall. The `SimpleMove` method from the Character Controller component stops you from being able to walk through GameObjects that have a collider. A collider is automatically added when you create a 3D shape as you did for the wall.
+Try and walk through the wall. De `SimpleMove` methode van de Character Controller component zorgt ervoor dat je niet door GameObjects kunt lopen die een collider hebben. Een collider wordt automatisch toegevoegd wanneer je een 3D-vorm maakt zoals je dat deed voor de muur.
 
-You can pan around in the Scene view by holding your right mouse button and dragging. Pan to get a better view of the wall as your character walks into it:
+Je kunt in de scèneweergave "pannen" door de rechtermuisknop ingedrukt te houden en te verslepen. Pan om een beter zicht op de muur te krijgen terwijl je personage er tegenaan loopt:
 
 ![Scene and Game views of the character stopped at the wall.](images/player-wall.gif){:width="500px"}
 
@@ -269,7 +269,7 @@ Click the **Play** button again to exit Play mode.
 
 --- task ---
 
-Add another line so your character can `Rotate` when the player presses the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys:
+Voeg nog een regel toe zodat je personage kan `draaien` wanneer de speler op de toetsen <kbd>A</kbd> en <kbd>D</kbd> of de pijltjestoetsen links en rechts drukt:
 
 --- code ---
 ---
@@ -293,25 +293,25 @@ line_highlights: 18-19
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor. Unity will load your updated script.
+Sla je code op en schakel terug naar de Unity Editor. Unity zal je bijgewerkte script laden.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys to rotate.
+**Test:** Click **Play** to enter Play mode and try out your code. Gebruik de <kbd>A</kbd> en <kbd>D</kbd> toetsen of de linker- en rechterpijltjestoetsen om je personage te laten draaien.
 
-**Debug:** If you are still seeing output to the Console and movement isn't working, then make sure you have saved your script in the code editor.
+**Debug:** als je nog steeds uitvoer naar de console ziet en beweging niet werkt, zorg er dan voor dat je het script in de code-editor hebt opgeslagen.
 
 Click the **Play** button again to exit Play mode.
 
 --- /task ---
 
-You can also control the speed of movement and rotation.
+Je kunt ook de snelheid van beweging en rotatie regelen.
 
 --- task ---
 
-Open your PlayerController script and add variables for the `moveSpeed` and `rotateSpeed`.
+Open je PlayerController script en voeg variabelen toe voor `moveSpeed` en `rotateSpeed`.
 
 --- code ---
 ---
@@ -330,7 +330,7 @@ public class PlayerController : MonoBehaviour
 
 --- task ---
 
-Update the code to `Rotate` and `SimpleMove` your character to multiply them by the new variables:
+Update de code voor `Rotate` en `SimpleMove` om de nieuwe variabelen te gebruiken:
 
 --- code ---
 ---
@@ -359,11 +359,11 @@ line_highlights: 29
 
 --- task ---
 
-**Test:** Play your scene and check if you are happy with the speed settings.
+**Test:** Speel je scène en controleer of je tevreden bent met de snelheidsinstellingen.
 
-Make changes to `moveSpeed` and `rotateSpeed` in your script until you are happy.
+Breng wijzigingen aan in `moveSpeed` en `rotateSpeed` in je script totdat je tevreden bent.
 
-**Tip:** You can mask the `Debug.Log()` lines by putting `//` at the beginning of the line. You can also mask multiple lines using `/*` and `*/`:
+**Tip:** je kunt de `Debug.Log()` regels verbergen door `//` aan het begin van de regel te zetten. Je kunt ook meerdere regels verbergen met `/*` en `*/`:
 ```
         /*if (speed != 0) // Player moving
         {
