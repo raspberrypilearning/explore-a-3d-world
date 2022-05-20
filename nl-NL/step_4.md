@@ -14,11 +14,11 @@ Unity werkt met de <span style="color: #0faeb0">**C#**</span> (uitgesproken als 
 
 --- task ---
 
-Click on the **Player** GameObject in the Hierarchy window or Scene view so you can see its properties in the Inspector window.
+Klik op het **Player** GameObject in het venster Hierarchy of de scèneweergave, zodat je de eigenschappen kunt zien in het venster Inspector.
 
 ![Het Player Game Object geselecteerd in de hiërarchie.](images/player-selected.png){:width="300px"}
 
-**Tip:** Make sure you have the **Player** selected and not one of its child objects.
+**Tip:** Zorg ervoor dat de **Player** is geselecteerd en niet een van de onderliggende objecten.
 
 Klik op **Add Component** en typ `character` in het zoekvak en klik vervolgens op de **Character Controller** component wanneer deze verschijnt:
 
@@ -26,7 +26,7 @@ Klik op **Add Component** en typ `character` in het zoekvak en klik vervolgens o
 
 --- /task ---
 
-The Character Controller component adds new features to your Player GameObject including a `SimpleMove` method and a **collider**. Colliders kunnen worden gebruikt om te zorgen dat je personage niet door vaste voorwerpen loopt en om te detecteren wanneer botsingen plaatsvinden.
+De Character Controller-component voegt nieuwe functies toe aan je Player Gameobject, waaronder een `SimpleMove`-methode en een **collider**. Colliders kunnen worden gebruikt om te zorgen dat je personage niet door vaste voorwerpen loopt en om te detecteren wanneer botsingen plaatsvinden.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
  Een <span style="color: #0faeb0">**collider**</span> is een vorm die wordt gebruikt om te detecteren wanneer een GameObject botst of kruist met een ander GameObject. De computer kan veel sneller controleren op botsingen met een eenvoudige botsvorm dan met de complexe vorm van een GameObject. Een **hitbox** is een soort botsing. </p>
@@ -37,7 +37,7 @@ De Character Controller Collider heeft een hoogte van `2` en een middelpunt op `
 
 ![De scèneweergave toont het personage met een Character Controller-capsule rond het model.](images/scene-char-controller.png){:width="300px"}
 
-Your character has a height of `1`, meaning their centre on the y-axis is at `0.5`. Wijzig de waarde in het centrum van de y-as van de Character Controller in `0.5` en de hoogte in `1` om het aan te passen aan je personage:
+Je personage heeft een hoogte van `1`, wat betekent dat het midden op de y-as op `0.5` staat. Wijzig de waarde in het centrum van de y-as van de Character Controller in `0.5` en de hoogte in `1` om het aan te passen aan je personage:
 
 ![De eigenschappen van het Inspector venster van de Character Controller component.](images/properties-controller.png){:width="400px"}
 
@@ -51,7 +51,7 @@ Je personage heeft een script nodig zodat de speler het kan verplaatsen. Je hebt
 
 --- task ---
 
-Go to the Inspector window for the Player and click on the **Add Component** button. Typ `script` en selecteer **New Script**. Geef je nieuwe script een naam `PlayerController` en druk vervolgens op <kbd>Enter</kbd>.
+Ga naar het venster Inspector voor de Player en klik op de knop **Add Component**. Typ `script` en selecteer **New Script**. Geef je nieuwe script een naam `PlayerController` en druk vervolgens op <kbd>Enter</kbd>.
 
 Het nieuwe script wordt opgeslagen in de map Assets:
 
@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
 --- /task ---
 
-De Start methode wordt eenmaal aangeroepen wanneer je de scène afspeelt. Add code to print the message `Player started` when your project starts running.
+De Start methode wordt eenmaal aangeroepen wanneer je de scène afspeelt. Voeg code toe om het bericht `Player started` te tonen wanneer je project begint.
 
 --- task ---
 
@@ -126,36 +126,36 @@ Klik op het tabblad van het consolevenster om het naar voren te brengen:
 
 ![De werkbalk bovenaan de Unity Editor met de knop Play gemarkeerd.](images/play-button.png){:width="400px"}
 
-Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Player started' output in the Console.
+Unity vergt een paar seconden om op te starten, dan zou je de `Debug.Log()` 'Player started' uitvoer in de console moeten zien.
 
-![The Console window with the time-stamped 'Player started' message as a comment.](images/player-started.png)
+![Het Console venster met het bericht 'Player started' als een opmerking.](images/player-started.png)
 
-**Debug:** je scène wordt niet afgespeeld als er fouten in je code zijn. Controleer het Console-venster voor informatie. You may see:
-+ `; expected` – check for a semicolon `;` at the end of each line of code.
-+ `Newline in constant` – you missed a quote `"` from the end of a text string.
-+ `} expected` – you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
-+ `) expected` – make sure there's a closing `)` at the end of each method call, before the semicolon.
-+ `Debug` does not contain a definition for 'log' – C# is case sensitive, so it needs to be `Log` with a capital `L`.
+**Debug:** je scène wordt niet afgespeeld als er fouten in je code zijn. Controleer het Console-venster voor informatie. Je ziet mogelijk:
++ `; expected` – controleer of er een puntkomma `;` aan het einde van elke regel code staat.
++ `Newline in constant` – je hebt een aanhalingsteken `"` gemist aan het einde van een tekenreeks.
++ `} expected` – je zou een paar open en dichte accolades `{}` moeten hebben rond elke method en rond de class. Controleer of de accolades bij elkaar horen.
++ `) expected` – zorg ervoor dat er een afsluitende `)` is aan het einde van elke method-aanroep, vóór de puntkomma.
++ `Debug` does not contain a definition for 'log' – C# is hoofdlettergevoelig, dus het moet `Log` zijn met een hoofdletter `L`.
 
-Compare your code with the example code and make sure everything is exactly the same.
+Vergelijk je code met de voorbeeldcode en zorg ervoor dat alles precies hetzelfde is.
 
 --- /task ---
 
 --- task ---
 
-Click once on the **Play** button again to exit Play mode and the debug output will stop.
+Klik nogmaals op de knop **Play** om de afspeelmodus te verlaten en de foutopsporing stopt.
 
-**Tip:** Changes made in Play mode are lost when you exit Play mode. Make sure you exit Play mode when you finish testing.
+**Tip:** Wijzigingen die in de afspeelmodus worden aangebracht, gaan verloren wanneer je de afspeelmodus afsluit. Zorg ervoor dat je de afspeelmodus afsluit wanneer je klaar bent met testen.
 
 --- /task ---
 
-Unity creates the effect of movement by quickly drawing images to the screen. Each image is a **frame**. The `Update` method is called once every frame.
+Unity creëert het effect van beweging door snel afbeeldingen op het scherm te tonen. Elke afbeelding is een **frame**. De `Update` method wordt eenmaal per frame aangeroepen.
 
 --- task ---
 
-You will be able to use the WASD or arrow keys (players on a mobile or console can use different inputs without you changing your code.)
+Je kunt de WASD- of pijltjestoetsen gebruiken (spelers op een mobiel of console kunnen verschillende invoer gebruiken zonder dat je de code hoeft te wijzigen)
 
-`Input.GetAxis("Vertical")` takes input from the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys, and returns a number between 1 and -1, which it uses for forwards and backwards movement.
+`Input.GetAxis("Vertical")` neemt input van de <kbd>W</kbd> en <kbd>S</kbd> toetsen of de pijltjestoetsen omhoog en omlaag, en retourneert een getal tussen 1 en -1, dat wordt gebruikt voor vooruit- en achterwaartse beweging.
 
 --- code ---
 ---
@@ -174,57 +174,57 @@ line_highlights: 16-21
     }
 --- /code ---
 
-A `float` is a decimal number.
+Een `float` is een decimaal getal.
 
-**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
+**Save** je PlayerController script met <kbd>Ctrl</kbd>+<kbd>S</kbd> (of <kbd>Cmd</kbd>+<kbd>S</kbd>) en keer vervolgens terug naar de Unity Editor.
 
-**Tip:** You might finding it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
+**Tip:** je kunt ook <kbd>Alt</kbd>+<kbd>Tab</kbd> (of <kbd>Cmd</kbd>+<kbd>Tab</kbd>) gebruiken om te schakelen tussen je webbrowser met de projectinstructies, de Unity Editor en je code-editor.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode.
+**Test:** Ga naar de werkbalk en klik op de knop **Play** om de scène in de afspeelmodus te zetten.
 
-Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged.
+Plaats de **muisaanwijzer in de spelweergave** en druk op de toetsen <kbd>W</kbd> en <kbd>S</kbd>. Kijk naar de waarden die in het Console-venster worden getoond terwijl je op de toetsen drukt. Elke keer dat je op <kbd>W</kbd> drukt, wordt er een positief getal geregistreerd, wanneer je op <kbd>S</kbd> drukt, wordt er een negatief getal geregistreerd.
 
-The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a game controller). You can also use the up and down arrow keys.
+De getallen lopen tussen -1,0 en 1.0 en komen overeen met de bewegingen van de verticale knoppen op het toetsenbord (of een spelcontroller). Je kunt ook de pijltjestoetsen omhoog en omlaag gebruiken.
 
-![The Console window with five log entries that have values between -1 and 1.](images/console-values.png)
+![Het Console venster met vijf logboekitems met waarden tussen -1 en 1.](images/console-values.png)
 
-**Tip:** The output also appears in the bar at the bottom of the Unity Editor.
+**Tip:** de uitvoer verschijnt ook in de balk onder aan de Unity Editor.
 
-Click the **Play** button again to exit Play mode and the debug output will stop.
-
---- /task ---
-
-It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your scene is playing:
-
-![Side-by-side images of the Unity Editor without tint and with tint to indicate the game is playing.](images/tint-no-tint.png)
-
---- task ---
-
-To set a tint, go to the **Edit Menu** (or Unity Menu) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
-
-Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
-
-![The colour wheel pop-up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
-
-**Tip:** Try a light colour so that you can still clearly see the text in the editor when the scene is running.
-
-Return to the Unity Editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
+Klik opnieuw op de knop **Play** om de afspeelmodus te verlaten en de uitvoer van foutopsporing stopt.
 
 --- /task ---
 
-The Character Controller component provides a `SimpleMove` method.
+Je kunt eenvoudig over het hoofd zien of het spel loopt of niet. Een kleurtint voor de afspeelmodus maakt het gemakkelijker om te zien wanneer je scène wordt afgespeeld:
+
+![Naast elkaar geplaatste afbeeldingen van de Unity Editor zonder tint en met tint om aan te geven dat het spel wordt gespeeld.](images/tint-no-tint.png)
 
 --- task ---
 
-**Add** code to use the vertical input value to move the Player each frame.
+Om een tint in te stellen, ga je naar het **Edit Menu** (of Unity Menu) en selecteer je **Preferences**. Kies het menu **Colours** en zoek de eigenschap **Playmode tint**.
 
-You can **remove** the Debug code.
+Klik op de bestaande kleur om een kleurenwiel te zien waar je een kleur en transparantie niveau kunt kiezen:
 
-A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
+![Het kleurenwiel pop-up venster met een blauwe, gemiddelde transparantie tint geselecteerd.](images/tint-colour-window.png){:width="400px"}
+
+**Tip:** Probeer een lichte kleur zodat je de tekst in de editor nog steeds goed kunt zien wanneer de scène wordt uitgevoerd.
+
+Ga terug naar de Unity Editor en druk op de **Play** knop om je nieuwe tint in actie te zien. Wanneer je tevreden bent met de tint die je hebt gekozen, druk je opnieuw op de **Play** knop om de afspeelmodus te verlaten.
+
+--- /task ---
+
+De Character Controller component biedt een `SimpleMove` methode.
+
+--- task ---
+
+**Voeg** code toe om de verticale invoerwaarde te gebruiken om de speler elk frame te verplaatsen.
+
+Je kunt de Debug code **verwijderen**.
+
+Een Unity `Vector3` wordt gebruikt om 3D-punten of -richtingen op te slaan. De `forward` variabele slaat de richting op waar de Player naar kijkt:
 
 --- code ---
 ---
@@ -253,17 +253,17 @@ line_highlights: 18-23
 
 **Debug:** Vergeet niet om het Console venster te controleren op nuttige berichten. Controleer zorgvuldig haakjes, puntkomma's en hoofdletters in de code.
 
-**Tip:** Make sure your mouse pointer is in the **Game view**.
+**Tip:** Zorg ervoor dat de muisaanwijzer zich in de **Game view** bevindt.
 
-Try and walk through the wall. De `SimpleMove` methode van de Character Controller component zorgt ervoor dat je niet door GameObjects kunt lopen die een collider hebben. Een collider wordt automatisch toegevoegd wanneer je een 3D-vorm maakt zoals je dat deed voor de muur.
+Probeer eens door de muur te lopen. De `SimpleMove` methode van de Character Controller component zorgt ervoor dat je niet door GameObjects kunt lopen die een collider hebben. Een collider wordt automatisch toegevoegd wanneer je een 3D-vorm maakt zoals je dat deed voor de muur.
 
 Je kunt in de scèneweergave "pannen" door de rechtermuisknop ingedrukt te houden en te verslepen. Pan om een beter zicht op de muur te krijgen terwijl je personage er tegenaan loopt:
 
-![Scene and Game views of the character stopped at the wall.](images/player-wall.gif){:width="500px"}
+![Scene en Game Views van het personage gestopt aan de muur.](images/player-wall.gif){:width="500px"}
 
-To move your Player, move the mouse pointer back to the **Game view**.
+Om je Player te verplaatsen, beweeg je de muisaanwijzer terug naar de **Game view**.
 
-Click the **Play** button again to exit Play mode.
+Klik nogmaals op de knop **Play** om de Play mode te verlaten.
 
 --- /task ---
 
@@ -299,11 +299,11 @@ Sla je code op en schakel terug naar de Unity Editor. Unity zal je bijgewerkte s
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Gebruik de <kbd>A</kbd> en <kbd>D</kbd> toetsen of de linker- en rechterpijltjestoetsen om je personage te laten draaien.
+**Test:** Klik op **Play** om de Play mode te openen en je code uit te proberen. Gebruik de <kbd>A</kbd> en <kbd>D</kbd> toetsen of de linker- en rechterpijltjestoetsen om je personage te laten draaien.
 
 **Debug:** als je nog steeds uitvoer naar de console ziet en beweging niet werkt, zorg er dan voor dat je het script in de code-editor hebt opgeslagen.
 
-Click the **Play** button again to exit Play mode.
+Klik nogmaals op de knop **Play** om de Play mode te verlaten.
 
 --- /task ---
 
@@ -371,7 +371,7 @@ Breng wijzigingen aan in `moveSpeed` en `rotateSpeed` in je script totdat je tev
         }*/
 ```
 
-Click the **Play** button again to exit Play mode.
+Klik nogmaals op de knop **Play** om de Play mode te verlaten.
 
 --- /task ---
 
