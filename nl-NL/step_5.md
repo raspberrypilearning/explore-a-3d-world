@@ -1,8 +1,8 @@
-## Animation and camera position
+## Animatie en camerapositie
 
-Your Player is moving around, but at the moment, it's stuck in a T-pose position. You can improve this by using animations.
+Je speler beweegt, maar zit op dit moment vast in een T-pose-positie. Je kunt dit verbeteren door animaties te gebruiken.
 
-![The Game view with the character moving around with animation.](images/animated-char.gif)
+![De Game-weergave met het personage dat beweegt met animatie.](images/animated-char.gif)
 
 --- task ---
 
@@ -10,7 +10,7 @@ Drag the **IdleWalk** animator from the **Animation** > **Animators** folder in 
 
 ![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
 
-This will add Idle and Walk animations to your character with a `forward` Boolean parameter that you can use to control which animation plays.
+Hiermee worden de animatie Idle and Walk aan je personage toegevoegd met een `forward` Booleaanse parameter die je kunt gebruiken om te bepalen welke animatie wordt afgespeeld.
 
 --- /task ---
 
@@ -24,7 +24,7 @@ This will add Idle and Walk animations to your character with a `forward` Boolea
 
 --- task ---
 
-Add code to the `Update` method of your script so that when the character is moving forward it uses a walking animation, otherwise it uses an idle animation:
+Voeg code toe aan de `Update` methode van je script zodat wanneer het personage vooruit beweegt een loopanimatie gebruikt, anders gebruikt het een idle animatie:
 
 --- code ---
 ---
@@ -62,10 +62,10 @@ line_highlights: 21-31
 
 --- /task ---
 
-In games, the camera often follows the Player.
+In games volgt de camera vaak de speler.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3D environment is key for creating the right perspective for users. Visibility levels from the camera lens affect the difficulty level and influence the atmosphere of a game. 
+De plaatsing van een <span style="color: #0faeb0">**virtuele camera**</span> in een 3D-omgeving is cruciaal voor het maken van het juiste perspectief voor gebruikers. Visibility levels from the camera lens affect the difficulty level and influence the atmosphere of a game. 
 </p>
 
 --- task ---
@@ -78,13 +78,13 @@ In the Hierarchy window, drag the **Main Camera** to the Player GameObject; it w
 
 --- task ---
 
-**Test:** Play your project. The camera will now follow your character, but it's a bit far away and walls often come between the Player and the camera.
+**Test:** Speel je project. De camera zal nu je personage volgen, maar het is een beetje ver weg en muren komen vaak tussen de speler en de camera.
 
 ![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
 
 --- /task ---
 
-You can adjust the position and rotation of the camera in the Scene view or the Inspector window.
+Je kunt de positie en rotatie van de camera aanpassen in de Scene view of het Inspector venster.
 
 --- task ---
 
@@ -96,15 +96,15 @@ Exit Play mode and select the **Main Camera** in the Hierarchy window. Adjust it
 
 You can position the camera in the Scene view using the Transform and Rotate tools if you prefer:
 
-![The Scene view with Transform and Rotate tools highlighted and the camera seleted with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
+![The Scene view with Transform and Rotate tools highlighted and the camera selected with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
+**Test:** Speel je project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
 
-Adjust the camera settings until you are happy with them.
+Pas de camera-instellingen aan totdat je er tevreden mee bent.
 
 **Tip:** You can try settings out in Play mode but you need to exit Play mode and update the settings to keep them.
 
