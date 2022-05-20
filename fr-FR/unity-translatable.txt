@@ -1,9 +1,9 @@
-Player started
+Le joueur a commencé
 
-speed
+vitesse
 
-controller
+contrôleur
 
-moveSpeed
+Vitessedéplacement
 
-rotateSpeed
+Vitesserotation
