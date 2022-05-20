@@ -1,10 +1,10 @@
-## What next?
+## Wat kun je verder nog doen?
 
-If you are following the [Introduction to Unity](https://projects.raspberrypi.org/en/raspberrypi/unity-intro){:target="_blank"} pathway, you can move on to the [Star collector](https://projects.raspberrypi.org/en/projects/star-collector){:target="_blank"} project. In this project, you will make a minigame where you collect stars that are hidden around a 3D map.
+Als je het [Introduction to Unity](https://projects.raspberrypi.org/en/raspberrypi/unity-intro){:target="_blank"} pad volgt, kun je naar het [Star collector](https://projects.raspberrypi.org/en/projects/star-collector){:target="_blank"} project gaan. In dit project maak je een minigame waar je sterren verzamelt die verborgen zijn rond een 3D-kaart.
 
 --- print-only ---
 
-![Star collector project](images/star-collector-project.png)
+![Star Collector project](images/star-collector-project.png)
 
 --- /print-only ---
 
