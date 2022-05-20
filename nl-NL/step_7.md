@@ -1,11 +1,11 @@
-## Upgrade your project
+## Verbeter je project
 
-Now you can make your 3D world just the way you want it.
+Nu kun je je 3D-wereld precies zo maken als je wilt.
 
-You can:
+Jij kunt:
 + Add more 3D objects to your world, try Spheres and Capsules
 + Try different colours and materials
-+ Change the Scale settings or the Transform values for your character to make it bigger or smaller — you'll need to change all three values to keep it in proportion
++ De Scale instellingen of de Transform-waarden wijvoor je personage om het groter of kleiner te maken. Je moet alle drie de waarden wijzigen om het in verhouding te houden
 + Enable and disable different accessories in the Inspector window to get the look you want
 + Adjust the Player movement and rotation speed
 + Adjust the position of the camera
