@@ -1,7 +1,7 @@
 ---
-title: Explore a 3D world
+title: Explorer un monde en 3D
 hero_image: images/banner.png
-description: Create a 3D world in Unity and explore it with an animated 3D player character
+description: Crée un monde en 3D dans Unity et explore-le avec un personnage joueur 3D animé
 version: 4
 listed: true
 copyedit: true
@@ -10,17 +10,17 @@ steps:
   - 
     title: Introduction
   - 
-    title: Set the 3D scene
+    title: Mise en place de la scène 3D
   - 
-    title: Add a Player character
+    title: Ajouter un personnage joueur
     completion: engaged
   - 
-    title: Add character movement
+    title: Ajouter un mouvement de personnage
   - 
-    title: Animation and camera position
+    title: Animation et position de la caméra
     completion: internal
   - 
-    title: Reflection
+    title: Réflexion
     completion: external
     knowledge_quiz:
       path: quiz1
@@ -28,6 +28,6 @@ steps:
       questions: 3
       passing_score: 3
   - 
-    title: Upgrade your project
+    title: Améliorer ton projet
   - 
-    title: What next?
+    title: Et ensuite ?
