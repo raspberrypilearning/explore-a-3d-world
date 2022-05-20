@@ -1,26 +1,26 @@
 ---
-title: Explore a 3D world
+title: اكتشف العالم الثلاثي الأبعاد
 hero_image: images/banner.png
-description: Create a 3D world in Unity and explore it with an animated 3D player character
+description: قم بإنشاء عالم ثلاثي الأبعاد في Unity واستكشفه بشخصية مشغل ثلاثي الأبعاد متحرك
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: المقدمة
   - 
-    title: Set the 3D scene
+    title: اضبط المشهد ثلاثي الأبعاد
   - 
-    title: Add a Player character
+    title: أضف شخصية ألاعب
     completion: engaged
   - 
-    title: Add character movement
+    title: أضف الحركة الشخصية
   - 
-    title: Animation and camera position
+    title: الرسوم المتحركة وموضع الكاميرا
     completion: internal
   - 
-    title: Reflection
+    title: تفكير
     completion: external
     knowledge_quiz:
       path: quiz1
@@ -28,6 +28,6 @@ steps:
       questions: 3
       passing_score: 3
   - 
-    title: Upgrade your project
+    title: قم بتطوير مشروعك
   - 
-    title: What next?
+    title: ما هي الخطوة التالية؟
