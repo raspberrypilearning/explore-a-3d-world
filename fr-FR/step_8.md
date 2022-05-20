@@ -1,10 +1,10 @@
-## What next?
+## Et ensuite ?
 
-If you are following the [Introduction to Unity](https://projects.raspberrypi.org/en/raspberrypi/unity-intro){:target="_blank"} pathway, you can move on to the [Star collector](https://projects.raspberrypi.org/en/projects/star-collector){:target="_blank"} project. In this project, you will make a minigame where you collect stars that are hidden around a 3D map.
+Si tu suis le parcours [Introduction à Unity](https://projects.raspberrypi.org/en/raspberrypi/unity-intro){:target="_blank"}, tu peux passer au projet [Collectionneur d'étoiles](https://projects.raspberrypi.org/en/projects/star-collector){:target="_blank"}. Dans ce projet, tu créeras un mini-jeu dans lequel tu collecteras des étoiles cachées autour d'une carte 3D.
 
 --- print-only ---
 
-![Star collector project](images/star-collector-project.png)
+![Projet Collectionneur d'étoiles](images/star-collector-project.png)
 
 --- /print-only ---
 
