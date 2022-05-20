@@ -1,53 +1,53 @@
-## Reflection
+## انعكاس
 
-You did it! You created your first Unity project and learned lots of new skills along the way.
+لقد فعلتها! لقد انشأت مشروعك الاول ضمن مشروع unity وتعلمت العديد من المهارات الجديدة على طول الطريق.
 
-Now it's time to reflect — this will make sure you have understood and help you to remember what you have learnt.
+حان الان وقت التفكير - هذا سيجعلك قادر على الفهم ومساعدتك على تذكر ماذا تعلمت.
 
-Answer the three questions. After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want.
+اجب على الاسئلة الثلاثة. بعد كل سؤال، اضغط على إرسال. سيتم توجيهك نحو الإجابة الصحيحة. يمكنك القيام بهذا النشاط عدة مرات كما تريد.
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+السؤال 1 من 3
 ---
 
-The Unity Editor has several different windows. Which window is shown here?
+محرر unity يمتلك نوافذ متعددة. أي نافذة تظهر هنا؟
 
-![Image showing the object selected and arrows to drag.](images/object-move-view.png)
+![صورة تظهر الكائن المحدد والأسهم المراد سحبها.](images/object-move-view.png)
 
 
 --- choices ---
 
-- ( ) Project window
+- () نافذة المشروع
 
   --- feedback ---
 
-  No, the Project window shows a library of all the files included in your project. In the Project window you can find Assets to use in your Scene by naviagting the project file structure.
+  لا, نافذة المشروع تضهر مكتبة لكل ملفات الذي يتضمنها مشروعك. في نافذة المشروع ، يمكنك العثور على الموجودات لاستخدامها في المشهد الخاص بك بواسطة التنقل في هيكل مِلَفّ المشروع.
 
   --- /feedback ---
 
-- ( ) Game view
+- () عرض اللعبة
 
   --- feedback ---
 
-  Not quite, the window shown in the question looks a bit like the Game view but the Game view shows the Scene as it would be viewed by a user, through the lens of a camera.
+  ليس تمامًا ، فالنافذة المعروضة في السؤال تشبه إلى حد ما عرض اللعبة ولكن عرض اللعبة يُظهر المشهد كما يراه المستخدم ب عدسة الكاميرا.
 
   --- /feedback ---
 
-- (x) Scene view
+- (x) عرض المشهد
 
   --- feedback ---
 
-  That's right! This is the Scene view and it is used to navigate and edit your Scene. Here, you can select, position, rotate, and scale GameObjects including characters, scenery, cameras, and lights.
+  هذا صحيح! هذا هو عرض المشهد ويتم استخدامه للتنقل وتحرير المشهد الخاص بك. هنا ، يمكنك تحديد ، ووضع ، وتدوير ، وقياس كائنات اللعبة بما في ذلك الشخصيات ، والمناظر الطبيعية ، والكاميرات ، والأضواء.
 
   --- /feedback ---
 
-- ( ) Hierarchy window
+- () نافذة التسلسل الهرمي
 
   --- feedback ---
 
-  No, the Hierarchy window shows all the GameObjects in your Scene and how they are organised. In the Hierarchy window, you can add and navigate the GameObjects and child GameObjects in your project.
+  لا ، تعرض نافذة التسلسل الهرمي جميع كائنات اللعبة في المشهد الخاص بك وكيفية تنظيمها. في نافذة التسلسل الهرمي، يمكنك إضافة و عرض كائنات اللعبة وكائنات اللعبة للطفل في مشروعك.
 
   --- /feedback ---
 
