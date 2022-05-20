@@ -98,7 +98,7 @@ Exit Play mode and select the **Main Camera** in the Hierarchy window. Adjust it
 
 You can position the camera in the Scene view using the Transform and Rotate tools if you prefer:
 
-![The Scene view with Transform and Rotate tools highlighted and the camera seleted with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
+![The Scene view with Transform and Rotate tools highlighted and the camera selected with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
 
 --- /task ---
 
