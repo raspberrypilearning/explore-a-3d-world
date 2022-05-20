@@ -1,55 +1,55 @@
-## Add a player character
+## Voeg een personage toe
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The player in your world will be a Cat or Raccoon character. 
+De speler in je wereld zal een kat- of wasbeer-personage zijn. 
 </div>
 <div>
-![The scene view with character.](images/added-character.png){:width="300px"}
+![de scèneweergave met personage.](images/added-character.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Click on the **Models** folder in the Project window. A model describes what a 3D object looks like and can be created using 3D modelling tools such as Blender. We have included some models that you can use.
+Klik op de map **Models** in het Project venster. Een model beschrijft hoe een 3D-object eruit ziet en kan worden gemaakt met 3D-modelleringstools zoals Blender. We hebben enkele modellen toegevoegd die je kunt gebruiken.
 
-Choose either the `Cat` or `Raccoon` model and drag it from the Project window to the Scene view:
+Kies het `Cat` of `Raccoon` model en sleep het van het Project venster naar de Scene weergave:
 
-![Animation of 'Raccoon' being dragged from Project window to Scene view.](images/drag-character.gif)
+![Animatie van 'Wasbeer' die van het projectvenster naar de scèneweergave wordt gesleept.](images/drag-character.gif)
 
-**Tip:** If you have accidentally added 'CatBase' or 'RaccoonBase' models, or if you want to change your character at this point, you can delete the model from the scene. Right-click on the model GameObject in the Hierarchy window and select 'Delete'.
+**Tip:** als je per ongeluk 'CatBase'- of 'RaccoonBase'-modellen hebt toegevoegd, of als je je personage op dit punt wilt wijzigen, kun je het model uit de scène verwijderen. Right-click on the model GameObject in the Hierarchy window and select 'Delete'.
 
 ![The Hierarchy window with right-click menu for the model and 'Delete' highlighted.](images/delete-model.png)
 
 --- /task ---
 
-Your character will appear in the Scene view in a T-pose.
+Je personage verschijnt in de scèneweergave in een T-pose.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">**T-pose**</span> is the default position for a game character before it has been animated.
+De <span style="color: #0faeb0">**T-pose**</span> is de standaardpositie voor een spelpersonage voordat het is geanimeerd.
 </p>
 
 --- task ---
 
-Click on your character in the Scene view and tap the <kbd>F</kbd> key.
+Klik op je personage in de scèneweergave en tik op de <kbd>F</kbd> toets.
 
 **Tip:** If you get lost in the Scene view, you can click on your character (or another GameObject) in the Hierarchy window and then click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on your character in the Scene view.
 
 --- /task ---
 
-Hmm, your character is wearing multiple accessories.
+Hmm, je personage draagt meerdere accessoires.
 
 --- task ---
 
-Click on your character in the Hierarchy window. This will open the settings for the GameObject in the Inspector window.
+Click on your character in the Hierarchy window. Hiermee worden de instellingen voor het GameObject geopend in het Inspector venster.
 
-Click on the arrow next to your character in the Hierarchy window to see the 'child objects'. Click on **ConstructionGearMesh** and uncheck the box next to its name in the Inspector window. This will hide the hard hat and high-vis vest:
+Click on the arrow next to your character in the Hierarchy window to see the 'child objects'. Click on **ConstructionGearMesh** and uncheck the box next to its name in the Inspector window. Dit verbergt de helm en het veiligheidsvest:
 
-![Inspector with 'ConstructionGearMesh' property highlighted and unchecked.](images/uncheck-hat-active.png)
+![Inspector met de eigenschap 'ConstructieGearMesh' gemarkeerd en uitgeschakeld.](images/uncheck-hat-active.png)
 
 ![The Scene view with 'ConstructionGearMesh' removed from the Raccoon.](images/no-hat-scene.png)
 
-Hide the other accessories for your character in the same way, or just keep one active.
+Verberg de andere accessoires voor je personage op dezelfde manier, of houd er gewoon een actief.
 
 **Tip:** GameObjects that are not active appear greyed out in the Hierarchy window:
 
@@ -61,29 +61,29 @@ Hide the other accessories for your character in the same way, or just keep one 
 
 The player will see the game through the 'Main Camera', which is shown as a video camera icon in the Scene. Select the camera in the Hierarchy window to see the embedded camera view:
 
-![Camera selected in Scene view.](images/camera-in-scene.png)
+![Camera geselecteerd in scèneweergave.](images/camera-in-scene.png)
 
 --- /task ---
 
-The Game view shows what your project will look like to a player.
+De spelweergave laat zien hoe je project er voor een speler uit zal zien.
 
 --- task ---
 
-Click on the Game view tab. Your character will be in whatever position you dragged it to in the Scene view (you might not be able to see it).
+Klik op het Game view tabblad. Je personage bevindt zich in de positie waarnaar je het hebt gesleept in de scèneweergave (je kunt het misschien niet zien).
 
 --- /task ---
 
-If you have enough room on your screen, then it's really useful to see the Scene view and the Game view at the same time.
+Als je genoeg ruimte op je scherm hebt, is het echt handig om de scèneweergave en de spelweergave tegelijkertijd in beeld te hebben.
 
 --- task ---
 
-Drag the Game view tab to the right so that it appears next to the Scene view:
+Sleep het Game view tabblad naar rechts zodat het naast de scèneweergave verschijnt:
 
-![Dragging Game view tab to position the Game view to the right of the Scene view.](images/side-by-side-views.gif)
+![Sleep het Game view tabblad om de spelweergave rechts van de scèneweergave te plaatsen.](images/side-by-side-views.gif)
 
 --- /task ---
 
-Unity uses x, y, and z coordinates to position GameObjects in 3D space:
+Unity gebruikt x-, y- en z-coördinaten om GameObjects in de 3D-ruimte te positioneren:
 
 [[[unity-3D-coordinates]]]
 
@@ -93,7 +93,7 @@ Select your character (in the Hierarchy window or Scene view) and then change it
 
 ![Transform for the selected character with position set to 0, 0, 0.](images/transform-centre.png)
 
-Your character will move to the centre in the Scene view and the Game view:
+Je personage beweegt naar het midden in de scèneweergave en de spelweergave:
 
 ![The Scene view with the character at 0, 0, 0 in the middle of the plane.](images/transform-centre-scene-view.png)
 
@@ -101,9 +101,9 @@ Your character will move to the centre in the Scene view and the Game view:
 
 --- task ---
 
-Rename your character to 'Player' in the Inspector window. This will make it easy to find if you add more GameObjects.
+Wijzig de naam van je personage in 'Speler' in het Inspector venster. Dit maakt het makkelijk om meer GameObjects toe te voegen.
 
-![Player name shown in the Inspector window.](images/player-name.png)
+![De naam van de speler wordt weergegeven in het venster Inspector.](images/player-name.png)
 
 --- /task ---
 
