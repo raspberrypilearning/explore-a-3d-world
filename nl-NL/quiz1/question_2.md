@@ -5,7 +5,7 @@
 legend: Vraag 2 van 3
 ---
 
-This GameObject is partly underneath a Plane. Which property should you change to get it to sit on top of the Plane?
+Dit GameObject bevindt zich gedeeltelijk onder een vlak. Welke eigenschap moet je veranderen om het boven op het vlak te laten zitten?
 
 ![De scèneweergave met een kubus die zich gedeeltelijk onder het vlak bevindt.](images/cube-scene-view-q2.png)
 
@@ -35,7 +35,7 @@ This GameObject is partly underneath a Plane. Which property should you change t
 
   --- feedback ---
 
-  Nee, door deze eigenschap aan te passen beweegt het GameObject horizontaal, en dus niet omhoog. Think about which coordinate sets the position on the up/down axis.
+  Nee, door deze eigenschap aan te passen beweegt het GameObject horizontaal, en dus niet omhoog. Bedenk welke coördinaat de positie op de omhoog/omlaag-as instelt.
 
   In 2D heb je alleen x- en y-coördinaten. 3D voegt een z-coördinaat toe, die je kunt voorstellen als van voren naar achteren.
 
