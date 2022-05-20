@@ -2,42 +2,42 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Question 2 sur 3
 ---
 
-This GameObject is partly underneath a Plane. Which property should you change to get it to sit on top of the Plane?
+Ce GameObject est en partie sous un Plane. Quelle propriété dois-tu modifier pour qu'il soit placé au-dessus du Plane ?
 
-![The Scene view showing a cube situated partly underneath the plane.](images/cube-scene-view-q2.png)
+![La vue Scene montrant un cube situé en partie sous le plane.](images/cube-scene-view-q2.png)
 
 --- choices ---
 
-- () The x position
+- () La position x
 
   --- feedback ---
 
-  No, adjusting this property would move the GameObject horizontally, not make the GameObject move up. Think about which coordinate sets the position on the up/down axis.
+  Non, l'ajustement de cette propriété déplacerait le GameObject horizontalement, et ne le ferait pas monter. Réfléchis à la coordonnée qui définit la position sur l'axe haut/bas.
 
-  You can think of the x coordinate as across in the same way as you would when working with 2D coordinates.
+  Tu peux considérer la coordonnée x comme transversale de la même manière que tu le ferais lorsque tu travailles avec des coordonnées 2D.
 
   --- /feedback ---
 
-- (x) The y position
+- (x) La position y
 
   --- feedback ---
 
-  That's right! The y coordinate sets the GameObject's position on the up/down axis and needs to be increased to move the GameObject up.
+  C'est exact ! La coordonnée y définit la position du GameObject sur l'axe haut/bas et doit être augmentée pour déplacer le GameObject vers le haut.
 
-  When working with 2D coordinates y is the up/down direction, and it's the same in Unity.
+  Lorsque tu travailles avec des coordonnées 2D, la coordonnée y est la direction haut/bas, et c'est la même chose dans Unity.
 
   --- /feedback ---
 
-- ( ) The z position
+- ( ) La position z
 
   --- feedback ---
 
-  No, adjusting this propery would move the GameObject horizontally, not make the GameObject move up. Think about which coordinate sets the position on the up/down axis.
+  Non, l'ajustement de cette propriété déplacerait le GameObject horizontalement, ne ferait pas monter le GameObject. Réfléchis à la coordonnée qui définit la position sur l'axe haut/bas.
 
-  In 2D, you just have x and y coordinates. 3D adds a z coordinate, which you can think of as front to back.
+  En 2D, tu n'as que les coordonnées x et y. La 3D ajoute une coordonnée z, que tu peux considérer comme d'avant en arrière.
 
   --- /feedback ---
 
