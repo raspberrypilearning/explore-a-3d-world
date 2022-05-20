@@ -1,29 +1,29 @@
-Player moving
+Speler beweegt
 
-Forward is the forward direction for this character
+Forward is de voorwaartse richting voor dit personage
 
-You need the Character Controller so you can use SimpleMove
+Je hebt de CharacterController nodig om SimpleMove te kunnen gebruiken
 
-Rotate around y-axis
+Draai rond de y-as
 
-The f at the end of the number says it is a floating-point number
+De f aan het einde van het getal zegt dat het een getal met drijvende komma is
 
-Set animations
+Animaties instellen
 
-Forwards
+Vooruit
 
-Idle
+Inactief
 
-Explore 3D world
+Verken de 3D-wereld
 
-3D world
+3D-wereld
 
-Grey
+Grijs
 
-Red brick
+Rode baksteen
 
-Wall
+Muur
 
-Player
+Speler
 
-PlayerController
+SpelerController
