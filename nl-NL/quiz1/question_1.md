@@ -1,6 +1,6 @@
 ## Wat nu?
 
-You did it! Je hebt je eerste Unity-project gemaakt en zo veel nieuwe vaardigheden geleerd.
+Goed gedaan! Je hebt je eerste Unity-project gemaakt en zo veel nieuwe vaardigheden geleerd.
 
 Nu is het tijd om na te denken: Dit zorgt ervoor dat je begrijpt wat je hebt geleerd en helpt je om te onthouden.
 
