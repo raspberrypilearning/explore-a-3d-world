@@ -1,34 +1,34 @@
 ## Introduction
 
-Create a 3D world in Unity and explore it with an animated 3D player character.
+Crée un monde en 3D dans Unity et explore-le avec un personnage joueur 3D animé.
 
-This project is brought to you with generous support from [Unity Technologies](https://unity.com/){:target="_blank"}.  These [projects](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} offer young people the opportunity to take their first steps in creating virtual worlds using Real-Time 3D.
+Ce projet t'est présenté grâce au soutien généreux de [Unity Technologies](https://unity.com/){:target="_blank"}.  Ces [projets](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} proposent aux jeunes de faire leurs premiers pas dans la création de mondes virtuels en 3D temps réel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Unity**</span> is a development environment for making games, virtual environments, visual novels, digital animations, and more. You can use Unity to develop 2D and 3D cross-platform games for PCs, consoles, mobile devices, and the internet.
+<span style="color: #0faeb0">**Unity**</span> est un environnement de développement permettant de créer des jeux, des environnements virtuels, des romans visuels, des animations numériques, etc. Tu peux utiliser Unity pour développer des jeux multiplateformes 2D et 3D pour PC, consoles, appareils mobiles et Internet.
 </p>
 
-You will:
-+ Understand the Unity environment including the Scene editor
-+ Add 3D objects with materials as scenery
-+ Create a player character with animations that can move around
+Tu vas :
++ Comprendre l'environnement Unity, y compris l'éditeur de scène
++ Ajouter des objets 3D avec des matériaux comme décor
++ Créer un personnage joueur avec des animations de déplacement
 
-### Recommended previous experience
-This project is suitable for learners with previous coding experience, such as [Scratch](https://projects.raspberrypi.org/en/pathways/scratch-intro){:target="_blank"} or [Python](https://projects.raspberrypi.org/en/pathways/python-intro){:target="_blank"}, who are comfortable typing text-based code.
+### Expérience précédente recommandée
+Ce projet convient aux apprenants ayant déjà une expérience de codage, tels que [Scratch](https://projects.raspberrypi.org/en/pathways/scratch-intro){:target="_blank"} ou [Python](https://projects.raspberrypi.org/en/pathways/python-intro){:target="_blank"}, qui sont à l'aise avec la saisie de code textuel.
 
-### You will need
-This project requires the Unity Editor, which can be installed from the Unity Hub. This is a large download and install, so we recommend you install it before starting this project.
+### Tu auras besoin de :
+Ce projet nécessite l'éditeur Unity, qui peut être installé à partir de Unity Hub. Il s'agit d'un téléchargement et d'une installation volumineux, nous te recommandons donc de l'installer avant de commencer ce projet.
 
-You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/unity-guide){:target="_blank"} to install Unity Hub and the Unity Editor for your operating system.
+Tu peux suivre notre [guide Unity](https://projects.raspberrypi.org/en/projects/unity-guide){:target="_blank"} pour installer Unity Hub et l'éditeur Unity pour ton système d'exploitation.
 
-You will also need to download the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} of assets before starting.
+Tu devras également télécharger le [package de démarrage Unity](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} d'assets avant de commencer.
 
 --- no-print ---
 
 --- task ---
-### Try it
+### Essaie-le
 
-**Click on the embedded project.** Navigate the 3D world using the WASD or arrow keys. What does the raccoon do when standing still? How do they move when walking? Can you walk through the walls?
+**Clique sur le projet intégré.** Navigue dans le monde 3D à l'aide des touches WASD (clavier QWERTY) ou des touches fléchées. Que fait le raton laveur lorsqu'il est immobile ? Comment se déplacent-ils en marchant ? Peux-tu traverser les murs ?
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
@@ -38,6 +38,6 @@ You will also need to download the [Unity starter package](https://rpf.io/p/en/e
 
 --- print-only ---
 
-![Completed project.](images/showcase_static.png)
+![Projet terminé.](images/showcase_static.png)
 
 --- /print-only ---
