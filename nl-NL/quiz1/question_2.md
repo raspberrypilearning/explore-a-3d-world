@@ -2,42 +2,42 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Vraag 2 van 3
 ---
 
 This GameObject is partly underneath a Plane. Which property should you change to get it to sit on top of the Plane?
 
-![The Scene view showing a cube situated partly underneath the plane.](images/cube-scene-view-q2.png)
+![De scèneweergave met een kubus die zich gedeeltelijk onder het vlak bevindt.](images/cube-scene-view-q2.png)
 
 --- choices ---
 
-- () The x position
+- () de x-positie
 
   --- feedback ---
 
-  No, adjusting this property would move the GameObject horizontally, not make the GameObject move up. Think about which coordinate sets the position on the up/down axis.
+  Nee, door deze eigenschap aan te passen beweegt het GameObject horizontaal, en dus niet omhoog. Bedenk welke coördinaat de positie op de omhoog/omlaag-as instelt.
 
-  You can think of the x coordinate as across in the same way as you would when working with 2D coordinates.
+  Je kunt de x-coördinaat op dezelfde manier voorstellen als je zou doen bij het werken met 2D-coördinaten.
 
   --- /feedback ---
 
-- (x) The y position
+- (X) de y-positie
 
   --- feedback ---
 
-  That's right! The y coordinate sets the GameObject's position on the up/down axis and needs to be increased to move the GameObject up.
+  Dat klopt! De y-coördinaat stelt de positie van het GameObject op de omhoog/omlaag-as in en moet worden verhoogd om het GameObject omhoog te bewegen.
 
-  When working with 2D coordinates y is the up/down direction, and it's the same in Unity.
+  Bij het werken met 2D-coördinaten is y de richting omhoog/omlaag, en dat is hetzelfde in Unity.
 
   --- /feedback ---
 
-- ( ) The z position
+- ( ) de z-positie
 
   --- feedback ---
 
-  No, adjusting this propery would move the GameObject horizontally, not make the GameObject move up. Think about which coordinate sets the position on the up/down axis.
+  Nee, door deze eigenschap aan te passen beweegt het GameObject horizontaal, en dus niet omhoog. Think about which coordinate sets the position on the up/down axis.
 
-  In 2D, you just have x and y coordinates. 3D adds a z coordinate, which you can think of as front to back.
+  In 2D heb je alleen x- en y-coördinaten. 3D voegt een z-coördinaat toe, die je kunt voorstellen als van voren naar achteren.
 
   --- /feedback ---
 
