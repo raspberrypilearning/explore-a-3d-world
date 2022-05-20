@@ -1,53 +1,53 @@
-## Reflection
+## Réflexion
 
-You did it! You created your first Unity project and learned lots of new skills along the way.
+Tu as réussi ! Tu as créé ton premier projet Unity et acquis de nouvelles compétences en même temps.
 
-Now it's time to reflect — this will make sure you have understood and help you to remember what you have learnt.
+Prends le temps de réfléchir, cela te permettra de t'assurer que tu as bien compris et t'aidera à te souvenir de ce que tu as appris.
 
-Answer the three questions. After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want.
+Réponds aux trois questions. Après chaque question, appuie sur Soumettre. Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de fois que tu le souhaites.
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Question 1 sur 3
 ---
 
-The Unity Editor has several different windows. Which window is shown here?
+L'éditeur Unity comporte plusieurs fenêtres différentes. Quelle fenêtre est représentée ici ?
 
-![Image showing the object selected and arrows to drag.](images/object-move-view.png)
+![Image montrant l'objet sélectionné et les flèches pour le faire glisser.](images/object-move-view.png)
 
 
 --- choices ---
 
-- ( ) Project window
+- ( ) Fenêtre Project
 
   --- feedback ---
 
-  No, the Project window shows a library of all the files included in your project. In the Project window you can find Assets to use in your Scene by naviagting the project file structure.
+  Non, la fenêtre Project affiche une bibliothèque de tous les fichiers inclus dans ton projet. Dans la fenêtre Project, tu peux trouver les assets à utiliser dans ta scène en naviguant dans la structure du fichier du projet.
 
   --- /feedback ---
 
-- ( ) Game view
+- ( ) Vue Game
 
   --- feedback ---
 
-  Not quite, the window shown in the question looks a bit like the Game view but the Game view shows the Scene as it would be viewed by a user, through the lens of a camera.
+  Pas tout à fait, la fenêtre affichée dans la question ressemble un peu à la vue Game mais la vue Game montre la scène telle qu'elle serait vue par un utilisateur, à travers l'objectif d'une caméra.
 
   --- /feedback ---
 
-- (x) Scene view
+- (x) Vue Scene
 
   --- feedback ---
 
-  That's right! This is the Scene view and it is used to navigate and edit your Scene. Here, you can select, position, rotate, and scale GameObjects including characters, scenery, cameras, and lights.
+  C'est exact ! Il s'agit de la vue Scene et elle est utilisée pour naviguer et éditer ta scène. Ici, tu peux sélectionner, positionner, faire pivoter et mettre à l'échelle les GameObjects, y compris les personnages, les décors, les caméras et les lumières.
 
   --- /feedback ---
 
-- ( ) Hierarchy window
+- ( ) Fenêtre Hierarchy
 
   --- feedback ---
 
-  No, the Hierarchy window shows all the GameObjects in your Scene and how they are organised. In the Hierarchy window, you can add and navigate the GameObjects and child GameObjects in your project.
+  Non, la fenêtre Hierarchy affiche tous les GameObjects de ta scène et comment ils sont organisés. Dans la fenêtre Hierarchy, tu peux ajouter et parcourir les GameObjects et les GameObjects enfants de ton projet.
 
   --- /feedback ---
 
