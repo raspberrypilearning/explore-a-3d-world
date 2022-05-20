@@ -1,23 +1,23 @@
-## Set the 3D scene
+## Stel de 3D-scène in
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your 3D world,  or 'map', needs a floor and walls. 
+Je 3D-wereld, of 'toegangspunt', heeft een vloer en muren nodig. 
 </div>
 <div>
-![The scene view showing a plane floor with two brick walls.](images/end-walls.png){:width="300px"}
+![de scèneweergave met een vlakke vloer met twee bakstenen muren.](images/end-walls.png){:width="300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn, and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
+Mensen brengen meer tijd door in <span style="color: #0faeb0">**online virtuele omgevingen**</span>. Naast het spelen van games, ontspannen, verkennen, socialiseren en leren mensen en nemen deel aan interactief entertainment. Sommige mensen noemen de toekomst van deze omgevingen de <span style="color: #0faeb0">**metaverse**</span>. Het kunnen ontwerpen van 3D-werelden is een belangrijke vaardigheid.
 </p>
 
-A Unity project needs graphics and sound 'Assets'.
+Een Unity-project heeft graphics en geluid 'Assets' nodig.
 
 --- task ---
 
-Download and unzip the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder.
+Download and unzip the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Kies een geschikte locatie, zoals de map documenten.
 
 --- /task ---
 
@@ -25,45 +25,45 @@ Download and unzip the [Unity starter package](https://rpf.io/p/en/explore-a-3d-
 
 Launch the Unity Hub and click **Projects** then select **New project**:
 
-![The 'New project' button on the top right of the unity hub.](images/new-project.png)
+![De knop 'New project' rechtsboven op de Unity-hub.](images/new-project.png)
 
-From the list choose **All templates** then select **3D Core**:
+Kies uit de lijst **All templates** en selecteer vervolgens **3D Core**:
 
-![A list of templates. The one called '3D' is selected; it has a subheading of 'Core' underneath.](images/3D-core.png)
+![Een lijst met sjablonen. De naam '3D' wordt geselecteerd; er is een subtitel van 'Core'.](images/3D-core.png)
 
-Edit the project settings to give your project a sensible name and save it to a sensible location. Then click **Create project**:
+Bewerk de projectinstellingen om jouw project een zinnige naam te geven en bewaar het op een goede locatie. Klik vervolgens op **Create project**:
 
-![The project's settings area with 'Create project' button highlighted in the bottom right corner.](images/create-project.png)
+![Het instellingengebied van het project met de knop 'Create project' gemarkeerd in de rechterbenedenhoek.](images/create-project.png)
 
-Your new project will open in the Unity Editor. It may take some time to load.
+Je nieuwe project wordt geopend in de Unity Editor. Het laden kan enige tijd duren.
 
 --- /task ---
 
-The Unity Editor looks like this:
+De Unity Editor ziet er als volgt uit:
 
-![Unity Editor with windows annotated.](images/unity-editor.png)
+![Unity Editor met geannoteerde vensters.](images/unity-editor.png)
 
 --- collapse ---
 
 ---
-title: The Unity Editor windows and views
+title: De vensters en weergaven van de Unity Editor
 ---
 
-1. **The Unity menu** is used to import, open, and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components.
+1. **het Unity-menu** wordt gebruikt om scènes en projecten te importeren, openen en op te slaan. Je kunt de voorkeuren van de Unity Editor aanpassen en nieuwe GameObjects en componenten toevoegen.
 
-2. **The Toolbar** contains tools for navigating in the Scene view, controlling play in the Game view, and customising your Unity Editor layout.
+2. **De werkbalk** bevat hulpmiddelen voor het navigeren in de scèneweergave, het besturen van het spel in de spelweergave en het aanpassen van de lay-out van de Unity Editor.
 
-3. **The Scene view** is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras, and lights.
+3. **de Scene view** wordt gebruikt om te navigeren en je scène te bewerken. Je kunt GameObjects selecteren en positioneren, inclusief personages, landschappen, camera's en lichten.
 
-4. **The Game view** can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the **Play** button to enter Play mode, the Game view simulates your scene as it would be viewed by a user.
+4. **de Game view** is toegankelijk door op het tabblad **Game** te klikken. Het laat de scène zien terwijl deze door de lens van je camera kijkt. Wanneer je op de knop **Play** klikt om de afspeelmodus te openen, simuleert de spelweergave je scène zoals deze door een gebruiker zou worden gezien.
 
-5. **The Hierarchy window** shows all the GameObjects in your Scene and the structure between them. Here, you can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
+5. **het Hierarchy venster** toont alle GameObjects in je scene en de structuur ertussen. Hier kun je de GameObjecten in je project toevoegen en navigeren. GameObjecten kunnen 'onderliggende objecten' hebben die mee bewegen.
 
-6. **The Project window** shows a library of all the files included in your project. You can find the Assets you want to use here.
+6. **het Project venster** toont een bibliotheek met alle bestanden in je project. Je kunt hier de elementen (assets) vinden die je wilt gebruiken.
 
-7. **The Console window** can be accessed by clicking on the **Console** tab. It shows important messages. This is where you can see compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
+7. **het console venster** kan worden geopend door op het tabblad **Console** te klikken. Het toont belangrijke boodschappen. Hier kun je compiler-fouten (fouten in je script) en berichten zien die je kunt tonen met `Debug.Log()`.
 
-8. **The Inspector window** allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use.
+8. **in het Inspector venster** kun je de eigenschappen van GameObjects bekijken en bewerken. Je kunt andere onderdelen aan je GameObjecten toevoegen en de waarden die ze gebruiken bewerken.
 
 --- /collapse ---
 
@@ -79,19 +79,19 @@ To import them into your new project, click on the **Assets** menu and select **
 
 --- task ---
 
-The **Project window** is where you can see all the files included in your project. Click on the **Models** folder in the Assets folder to see the models you have imported.
+The **Project window** is where you can see all the files included in your project. Klik op de map **Models** in de map Assets om de modellen te bekijken die je hebt geïmporteerd.
 
-![Project View selected with folders shown.](images/project-view-folders.png)
+![Projectweergave geselecteerd met weergegeven mappen.](images/project-view-folders.png)
 
 --- /task ---
 
-In Unity, a **Scene** contains GameObjects. A Unity project with multiple game levels might have one scene per level.
+In Unity bevat een **Scene** GameObjects. Een Unity-project met meerdere spelniveaus kan één scène per niveau hebben.
 
 --- task ---
 
-Right-click on **SampleScene** in the Hierarchy and choose **Save Scene As**.
+Klik met de rechtermuisknop op **SampleScene** in de hiërarchie en kies **Save Scene as**.
 
-![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
+![Het scènepictogram in het venster hiërarchie met het snelmenu uitgevouwen.](images/right-click-scene.png)
 
 In the pop-up window, name your Scene `3D World`:
 
@@ -198,91 +198,91 @@ You can either:
 
 Now change the cube into a wall with the following Position and Scale settings:
 
-![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+![The Transform component with updated position and scale properies. Positie x=0, y=1, z=3. Schaal x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
-You can either enter the values in the Transform component for the cube or click on the Scale tool and drag the handles in the Scene view (this will update the Transform values.)
+Je kunt de waarden invoeren in de Transform-component voor de kubus of op de Scale-tool klikken en de handvatten in de Scene-weergave slepen (hiermee worden de Transform-waarden bijgewerkt.)
 
-![The scale tool icon with square and arrow pointing diagonally up from the bottom left corner.](images/scale-tool.png)
+![Het pictogram van het schaalgereedschap met vierkant en pijl die diagonaal naar boven wijzen vanuit de linkerbenedenhoek.](images/scale-tool.png)
 
-Zoom out to see your wall:
+Zoom uit om je muur te zien:
 
-![The new positioned and scaled wall in the Scene view.](images/scene-cube-wall.png)
-
---- /task ---
-
-A material can have a colour and a texture and there are lots of properties that you can adjust to get different effects. A **texture** is a 2D image that can be created in an image editor.
-
---- task ---
-
-In the Project window, right-click on the **Materials** folder and choose **Create** > **Material**. You are going to create a coloured brick wall. Give the material a descriptive name:
-
-![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
-
-Click on the colour next to 'Albedo' in the Inspector window and choose a colour for your material:
-
-![The colour bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
-
-Add a texture by clicking on the circle to the left of 'Albedo' and selecting **BrickWallAlbedo** texture from the list:
-
-![The pop-up window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
-
-Drag your new material from the Project window to your wall in the Scene view:
-
-![The red brick material in the Project window.](images/brick-material.png)
-
-![The Scene view with red brick wall.](images/red-brick-wall.png)
+![De nieuwe gepositioneerde en geschaalde muur in de scèneweergave.](images/scene-cube-wall.png)
 
 --- /task ---
 
+Een materiaal kan een kleur en een structuur hebben en er zijn veel eigenschappen die je kunt aanpassen om verschillende effecten te krijgen. Een **structuur** is een 2D-afbeelding die kan worden gemaakt in een beeldeditor.
+
 --- task ---
 
-In the Inspector window, right-click on your cube, choose **Rename** from the menu and rename your object from `Cube` to `Wall`:
+Klik in het Project venster met de rechtermuisknop op de map **Materials** en kies **Create** > **Material**. Je gaat een gekleurde stenen muur maken. Give the material a descriptive name:
 
-![Inspector window showing 'Wall' as the name.](images/name-wall.png)
+![Het menu 'Create' met 'Material' gemarkeerd.](images/create-material.png)
 
-**Tip:** You can name a new GameObject in the Hierarchy window when you create it and you can change the name in the Inspector window.
+Klik op de kleur naast 'Albedo' in het Inspector venster en kies een kleur voor je materiaal:
+
+![De kleurenbalk rechts van 'Albedo' is rood gevuld.](images/red-colour.png)
+
+Voeg een textuur toe door op de cirkel links van 'Albedo' te klikken en **BrickWallAlbedo** texture te selecteren in de lijst:
+
+![Het pop-upvenster om een structuur te selecteren met 'BrickWallAlbedo' gemarkeerd.](images/add-texture.png)
+
+Sleep je nieuwe materiaal van het Project venster naar je muur in de scèneweergave:
+
+![Het rode baksteen materiaal in het Project venster.](images/brick-material.png)
+
+![De Scèneweergave met rode bakstenen muur.](images/red-brick-wall.png)
 
 --- /task ---
 
 --- task ---
 
-To create a copy of your wall, you can either:
-+ Right-click on your Wall object in the Hierarchy window and choose **Duplicate**
-+ Select your wall in the Scene view and use <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd>+<kbd>D</kbd>) to duplicate
+Klik in het Inspector venster met de rechtermuisknop op je kubus, kies **Rename** in het menu en wijzig de naam van je object van `Cube` naar `Wall`:
 
-Your new wall will be in exactly the same place as your first wall.
+![Inspector venster met 'Wall' als de naam.](images/name-wall.png)
 
---- /task ---
-
---- task ---
-
-Change the y rotation of the new wall to `90`:
-
-![The new wall Transform component with rotate on the y axis showing 90 degrees.](images/transform-rotate-90.png)
+**Tip:** je kunt een nieuw GameObject een naam geven in het hiërarchie venster als je het maakt en je kunt de naam wijzigen in het venster Inspector.
 
 --- /task ---
 
 --- task ---
 
-Reposition the new wall to the following position: x = 4, y = 1, z = -1.
+Om een kopie van je muur te maken, kun je:
++ Met de rechtermuisknop op het prikbord-object in het venster hiërarchie klikken en kies **Duplicate**
++ Je muur in de scèneweergave selecteren en <kbd>Ctrl</kbd>+<kbd>D</kbd> (of <kbd>Cmd</kbd>+<kbd>D</kbd>) gebruiken om te dupliceren
 
-![Transform for new wall. Position x = 4, y = 1, z = -1.](images/new-wall-transform.png)
-
-You can either enter the values in the Inspector window or drag the arrows in your Scene — it doesn't matter if the position is exact.
-
-Your Scene should look like this:
-
-![Scene with two red brick walls.](images/scene-with-walls.png)
+Je nieuwe muur zal op precies dezelfde plaats staan als je eerste muur.
 
 --- /task ---
 
 --- task ---
 
-Click on your Plane. Change the Scale settings on the Plane to make it bigger so you have more room:
+Wijzig de y-rotatie van de nieuwe muur in `90`:
 
-![The Transform component with scale x and z coordinates changed to 4.](images/plane-scale-4-1-4.png)
+![De nieuwe muur Transform-component met rotatie op de y-as die 90 graden aangeeft.](images/transform-rotate-90.png)
 
-![The Scene view showing the larger plane.](images/new-resized-plane.png)
+--- /task ---
+
+--- task ---
+
+Verplaats de nieuwe muur naar de volgende positie: X = 4, y = 1, z = -1.
+
+![Transform for new wall. Positie x = 4, y = 1, z = -1.](images/new-wall-transform.png)
+
+Je kunt de waarden in het Inspector venster invoeren of de pijlen in je Scène slepen — het maakt niet uit of de positie exact is.
+
+Je scène zou er als volgt uit moeten zien:
+
+![Scène met twee rode bakstenen muren.](images/scene-with-walls.png)
+
+--- /task ---
+
+--- task ---
+
+Klik op je vlak. Wijzig de schaalinstellingen op het vlak om deze groter te maken zodat je meer ruimte hebt:
+
+![De Transform-component met schaal x- en z-coördinaten is gewijzigd in 4.](images/plane-scale-4-1-4.png)
+
+![De scèneweergave toont het grotere vlak.](images/new-resized-plane.png)
 
 Think of a 4×4 plane as 40 metres by 40 metres in the real world: plenty of room for your character to move around.
 
@@ -292,18 +292,18 @@ Think of a 4×4 plane as 40 metres by 40 metres in the real world: plenty of roo
 
 When you have unsaved changes, you will see a '*' next to your Scene in the Hierarchy window.
 
-Save your Scene by clicking **File** > **Save**. Or use <kbd>Ctrl</kbd>+<kbd>S</kbd>.
+Save your Scene by clicking **File** > **Save**. Of gebruik <kbd>Ctrl</kbd>+<kbd>S</kbd>.
 
 Also, save your project by clicking **File** > **Save Project**.
 
-Unity does not normally autosave changes, but your starter project contains a script to autosave your project every 60 seconds.
+Unity slaat gewoonlijk geen wijzigingen op, maar je startersproject bevat een script om je project elke 60 seconden automatisch op te slaan.
 
 --- /task ---
 
-You can navigate around your scene to see it from different angles. If you get lost, just click on a wall in the Hierarchy window and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus and then zoom out:
+Je kunt door je scène navigeren om het vanuit verschillende hoeken te bekijken. Als je verdwaalt, klik je op een muur in het venster hiërarchie en gebruik je <kbd>Shift</kbd>+<kbd>F</kbd> om scherp te stellen en vervolgens uit te zoomen:
 
 [[[unity-scene-navigation]]]
 
-Remember, if you navigate around then you will be looking at your scene from a different perspective so your view won't look exactly the same as our examples.
+Vergeet niet dat als je navigeert, je naar je scène kijkt vanuit een ander perspectief, zodat je beeld er niet precies hetzelfde uitziet als onze voorbeelden.
 
 --- save ---
