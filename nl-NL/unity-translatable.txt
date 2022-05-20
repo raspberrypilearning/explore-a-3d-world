@@ -1,9 +1,9 @@
-Player started
+Speler is gestart
 
-speed
+snelheid
 
 controller
 
-moveSpeed
+bewegingssnelheid
 
-rotateSpeed
+draaisnelheid
