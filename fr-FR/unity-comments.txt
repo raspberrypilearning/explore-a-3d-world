@@ -1,29 +1,29 @@
-Player moving
+Déplacement du joueur
 
-Forward is the forward direction for this character
+Forward est la direction d'avancement de ce personnage
 
-You need the Character Controller so you can use SimpleMove
+Tu as besoin du Character Controller pour pouvoir utiliser SimpleMove
 
-Rotate around y-axis
+Rotation autour de l'axe y
 
-The f at the end of the number says it is a floating-point number
+Le f à la fin du nombre indique qu'il s'agit d'un nombre à virgule flottante
 
-Set animations
+Définir les animations
 
-Forwards
+Avants
 
-Idle
+Attente
 
-Explore 3D world
+Explorer un monde en 3D
 
-3D world
+Monde 3D
 
-Grey
+Gris
 
-Red brick
+Brique rouge
 
-Wall
+Mur
 
-Player
+Joueur
 
-PlayerController
+ContrôleurJoueur
