@@ -2,7 +2,7 @@
 
 Maak een 3D-wereld in Unity en verken deze met een geanimeerd 3D-personage.
 
-This project is brought to you with generous support from [Unity Technologies](https://unity.com/){:target="_blank"}.  Deze [projecten](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} bieden jongeren de kans om hun eerste stappen te zetten in het maken van virtuele werelden met gebruik van Real-Time 3D.
+Dit project wordt je aangeboden met steun van [Unity Technologies](https://unity.com/){:target="_blank"}.  Deze [projecten](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} bieden jongeren de kans om hun eerste stappen te zetten in het maken van virtuele werelden met gebruik van Real-Time 3D.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**Unity**</span> is een ontwikkelomgeving voor het maken van games, virtuele omgevingen, visuele vehalen, digitale animaties en meer. Je kunt Unity gebruiken om 2D en 3D cross-platform games te ontwikkelen voor pc's, consoles, mobiele apparaten en het internet.
