@@ -1,29 +1,29 @@
-Player moving
+ألاعب يتحرك
 
-Forward is the forward direction for this character
+إلى الأمام هو الاتجاه الأمامي لهذه الشخصية
 
-You need the Character Controller so you can use SimpleMove
+أنت بحاجة إلى أداة التحكم في الرموز حتى تتمكن من استخدام SimpleMove
 
-Rotate around y-axis
+التفاف حول المحور Y
 
-The f at the end of the number says it is a floating-point number
+تشير f في نهاية الرَّقَم إلى أنه رَقَم ذو فاصلة عائمة
 
-Set animations
+تعيين الرسوم المتحركة
 
-Forwards
+إلى الأمام
 
-Idle
+متوقف
 
-Explore 3D world
+اكتشفوا العالم الثلاثي الأبعاد
 
-3D world
+عالم ثلاثي الأبعاد
 
-Grey
+رمادي
 
-Red brick
+الطوب الاحمر
 
-Wall
+حائط
 
-Player
+اللاعب
 
-PlayerController
+التحكم بالاعب
