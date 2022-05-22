@@ -1,30 +1,30 @@
-## Animation and camera position
+## الرسوم المتحركة وموضع الكاميرا
 
-Your Player is moving around, but at the moment, it's stuck in a T-pose position. You can improve this by using animations.
+يتحرك لاعبون ، لكنه عالق في وضع على شكل حرف T في الوقت الحالي. يمكنك تحسين ذلك باستخدام الرسوم المتحركة.
 
-![The Game view with the character moving around with animation.](images/animated-char.gif)
+![عرض اللعبة مع الشخصية التي تتحرك مع الرسوم المتحركة.](images/animated-char.gif)
 
 --- task ---
 
-Drag the **IdleWalk** animator from the **Animation** > **Animators** folder in the Project window to the Controller property of the Animator component of your character:
+اسحب **IdleWalk** animator من مجلد **Animation** > **Animators** في نافذة Project إلى خاصية Controller لمكون Animator في شخصيتك:
 
-![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
+![يشير صانع IdleWalk في الرسوم المتحركة إلى وحدة التحكم.](images/move_idlewalk.png)
 
-This will add Idle and Walk animations to your character with a `forward` Boolean parameter that you can use to control which animation plays.
+سيؤدي هذا إلى إضافة الرسوم المتحركة الخمول والمشي إلى شخصيتك باستخدام معلمة `إلى الأمام` منطقية يمكنك استخدامها للتحكم في الرسوم المتحركة التي يتم تشغيلها.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project and make sure you can see the Idle animation:
+**اختبار:** قم بتشغيل مشروعك وتأكد من أنه يمكنك رؤية الرسوم المتحركة الخمول:
 
-![The character with IdleWalk animaton in Game view.](images/idlewalk-animation.gif)
+![الشخصية مع IdleWalk animaton في عرض اللعبة.](images/idlewalk-animation.gif)
 
 --- /task ---
 
 --- task ---
 
-Add code to the `Update` method of your script so that when the character is moving forward it uses a walking animation, otherwise it uses an idle animation:
+أضف رمزًا إلى طريقة `Update` من البرنامج النصي الخاص بك بحيث عندما تتحرك الشخصية للأمام ، فإنها تستخدم رسمًا متحركًا مشيًا ، وإلا فإنها تستخدم رسمًا متحركًا خاملًا:
 
 --- code ---
 ---
@@ -56,61 +56,61 @@ line_highlights: 21-31
 
 --- task ---
 
-**Test:** Play your project and make sure you can see the animation change to walk when you move forward and switch to idle when you are not moving forward:
+**اختبار:** قم بتشغيل مشروعك وتأكد من أنه يمكنك رؤية تغيير الرسوم المتحركة للمشي عند المضي قدمًا والتبديل إلى وضع الخمول عندما لا تمضي قدمًا:
 
-![The character with Idle animation when standing still and Walk animation when moving forward.](images/idle-and-walk-animation.gif)
+![الشخصية ذات الرسوم المتحركة الخاملة عند الوقوف ثابتة و حركة السير عند التحرك للأمام.](images/idle-and-walk-animation.gif)
 
 --- /task ---
 
-In games, the camera often follows the Player.
+في الألعاب ، غالبًا ما تتبع الكاميرا المشغل.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3D environment is key for creating the right perspective for users. Visibility levels from the camera lens affect the difficulty level and influence the atmosphere of a game. 
+يعد وضع كاميرا افتراضية <span style="color: #0faeb0">** افتراضية **</span> في بيئة ثلاثية الأبعاد أمرًا أساسيًا لإنشاء المنظور الصحيح للمستخدمين. تؤثر مستويات الرؤية من عدسة الكاميرا على مستوى الصعوبة وتؤثر على جو اللعبة. 
 </p>
 
 --- task ---
 
-In the Hierarchy window, drag the **Main Camera** to the Player GameObject; it will become a 'child' of the Player and will follow the Player around.
+في نافذة التسلسل الهرمي ، اسحب **الكاميرا الرئيسية** إلى Player GameObject ؛ سيصبح "ابنًا" للاعب وسيتبع اللاعب في جميع الأنحاء.
 
-![The Hierarchy window with main camera positioned inside the Player as a child game object.](images/child-camera.png)
-
---- /task ---
-
---- task ---
-
-**Test:** Play your project. The camera will now follow your character, but it's a bit far away and walls often come between the Player and the camera.
-
-![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
-
---- /task ---
-
-You can adjust the position and rotation of the camera in the Scene view or the Inspector window.
-
---- task ---
-
-Exit Play mode and select the **Main Camera** in the Hierarchy window. Adjust its Transform settings to get a third-person view of your Player, looking down from behind and above your Player:
-
-![The Transform component of the main camera with position x = 0, y = 2.5, z = -2.5, and rotation x = 35.](images/birdseye-transform.png)
-
-![The Game view with new coordinates.](images/birdseye-game.png)
-
-You can position the camera in the Scene view using the Transform and Rotate tools if you prefer:
-
-![The Scene view with Transform and Rotate tools highlighted and the camera selected with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
+![نافذة التسلسل الهرمي مع وضع الكاميرا الرئيسية داخل "المشغل" ككائن لعبة فرعي.](images/child-camera.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
+**اختبار:** قم بتشغيل مشروعك. ستتبع الكاميرا الآن شخصيتك ، لكنها بعيدة بعض الشيء وغالبًا ما تكون الجدران بين الاعب والكاميرا.
 
-Adjust the camera settings until you are happy with them.
+![الشخصية تتحرك حول المسرح والكاميرا تتبعهم.](images/camera-follow-player.gif)
 
-**Tip:** You can try settings out in Play mode but you need to exit Play mode and update the settings to keep them.
+--- /task ---
 
-What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Play mode:
+يمكنك ضبط موضع الكاميرا وتدويرها في عرض المشهد أو نافذة المفتش.
 
-![The Game view with animated character moving through the environment and the camera following with a birdseye view.](images/birdseye-walkthrough.gif)
+--- task ---
+
+اخرج من وضع التشغيل وحدد **الكاميرا الرئيسية** في نافذة التسلسل الهرمي. اضبط إعدادات التحويل الخاصة به للحصول على عرض منظور الشخص الثالث للاعب الخاص بك ، والنظر لأسفل من خلف المشغل وفوقه:
+
+![مكون التحويل للكاميرا الرئيسية مع الموضع x = 0 ، y = 2.5 ، z = -2.5 ، والدوران x = 35.](images/birdseye-transform.png)
+
+![عرض اللعبة بإحداثيات جديدة.](images/birdseye-game.png)
+
+يمكنكم وضع الكاميرا في عرض المشهد باستخدام أداتي التحويل والتدوير إذا كنت تفضل:
+
+![تم تمييز عرض المشهد باستخدام أدوات التحويل والتدوير وتم تحديد الكاميرا مع إظهار دوائر x و y و z.](images/transform-rotate-scene.png)
+
+--- /task ---
+
+--- task ---
+
+**اختبار:** قم بتشغيل مشروعك. ستتبع الكاميرا الآن شخصيتك بالكاميرا خلف شخصيتك وفوقها مباشرة وتنظر إلى أسفل بزاوية.
+
+اضبط إعدادات الكاميرا حتى تصبح سعيد معهم
+
+**نصيحة:** يمكنك تجربة الإعدادات في وضع التشغيل ولكنك تحتاج إلى الخروج من وضع التشغيل وتحديث الإعدادات للاحتفاظ بها.
+
+ماذا يحدث إذا خرجت من حافة الطائرة؟ لا تقلق من أن شخصيتك ستعود إلى المركز في المرة التالية التي تدخل فيها وضع التشغيل:
+
+![عرض اللعبة بشخصية متحركة تتحرك عبر البيئة وتتبع الكاميرا منظر عين الطائر.](images/birdseye-walkthrough.gif)
 
 --- /task ---
 
