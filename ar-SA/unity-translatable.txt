@@ -1,9 +1,9 @@
-Player started
+بدأ اللاعب
 
-speed
+سرعة
 
-controller
+المتحكم
 
-moveSpeed
+سرعة الحركة
 
-rotateSpeed
+سرعة الالتفاف
