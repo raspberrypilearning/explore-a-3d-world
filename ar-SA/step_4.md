@@ -1,67 +1,67 @@
-## Add character movement
+## أضيفوا  حركة الشخصية
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your player will move with the WASD or arrow keys. 
+سيتحرك لاعبك باستخدام WASD أو مفاتيح الأسهم. 
 </div>
 <div>
-![The scene in Game view with character moving around the scene.](images/moving-character.gif){:width="300px"}
+! [المشهد في عرض اللعبة مع شخصية تتحرك حول المشهد.] (images / Moving-character.gif) {: width = "300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Unity uses the <span style="color: #0faeb0">**C#**</span> (pronounced C sharp) programming language, which is used by professional software developers. C# is an object-oriented language with **classes** that define behaviour for similar objects and **methods**, which are functions that belong to a class. In Unity, a **script** defines a class with variables and methods. You can add the same script to multiple GameObjects if they need the same features.</p>
+تستخدم Unity لغة البرمجة <span style="color: #0faeb0">** C # **</span> (تُنطق C حادًا) ، والتي يستخدمها مطورو البرامج المحترفون. C # هي لغة موجهة للكائنات مع ** فئات ** تحدد سلوك كائنات مماثلة و ** طرق ** ، وهي وظائف تنتمي إلى فئة. في Unity ، يعرّف ** script ** فئة ذات متغيرات وطرق. يمكنكم إضافة نفس البرنامج النصي إلى عدة كائنات GameObjects إذا كانت بحاجة إلى نفس الميزات.</p>
 
 --- task ---
 
-Click on the **Player** GameObject in the Hierarchy window or Scene view so you can see its properties in the Inspector window.
+انقروا فوق كائن **Player** GameObject في نافذة التسلسل الهرمي أو عرض المشهد حتى تتمكن من رؤية خصائصه في نافذة المفتش.
 
-![The Player Game Object selected in the Hierarchy.](images/player-selected.png){:width="300px"}
+![كائن لعبة اللاعب المحدد في التسلسل الهرمي.](images/player-selected.png){:width="300px"}
 
-**Tip:** Make sure you have the **Player** selected and not one of its child objects.
+**نصيحة:** تأكد من تحديد **Player** وليس أحد الكائنات الفرعية الخاصة به.
 
-Click **Add Component** and start to type `character` in the Search box, then click on the **Character Controller** component when it appears:
+انقروا فوق **إضافة مكون** وابدأ في كتابة حرف `` في مربع البحث ، ثم انقر فوق مكون **Character Controller** عندما يظهر:
 
-![The 'Add Component' menu showing the character controller.](images/character-controller-add.png)
+![تعرض قائمة "إضافة مكون" وحدة التحكم في الأحرف.](images/character-controller-add.png)
 
 --- /task ---
 
-The Character Controller component adds new features to your Player GameObject including a `SimpleMove` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
+يضيف مكون Character Controller ميزات جديدة إلى Player GameObject بما في ذلك طريقة `</strong>` ومصادم **. يمكن استخدام المصادمات لمنع شخصيتكم من السير عبر الأجسام الصلبة واكتشاف وقت حدوث الاصطدامات.</p>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a GameObject collides, or intersects, with another GameObject. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a GameObject. A **hitbox** is a kind of collider. </p>
+ المصادم <span style="color: #0faeb0">** **</span> هو شكل يُستخدم لاكتشاف متى يصطدم كائن GameObject أو يتقاطع مع كائن GameObject آخر. إنه أسرع بكثير بالنسبة للكمبيوتر في التحقق من الاصطدامات مع شكل مصادم بسيط من الشكل المعقد لكائن GameObject. ** hitbox ** هو نوع من المصادم. </p>
 
 --- task ---
 
-The Character Controller collider has a height of `2` and a centre at `0, 0, 0`; this means it is positioned half above and half below the plane:
+يبلغ ارتفاع مصادم التحكم في الأحرف `2` والمركز عند `0 ، 0 ، 0`؛ هذا يعني أنه تم وضعه نصف أعلى ونصف أسفل المستوى:
 
-![The Scene view showing the character with a Character Controller capsule around the model.](images/scene-char-controller.png){:width="300px"}
+![يُظهر عرض المشهد الشخصية مع كبسولة تحكم الأحرف حول النموذج.](images/scene-char-controller.png){:width="300px"}
 
-Your character has a height of `1`, meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.5` and the height to `1` to match the character:
+يبلغ ارتفاع شخصيتكم `1`، مما يعني أن مركزها على المحور ص هو `0.5`. غيّر القيمة في مركز محور y لـ Character Controller إلى `0.5` والارتفاع إلى `1` لمطابقة الحرف:
 
-![The Inspector window properties of the Character Controller component.](images/properties-controller.png){:width="400px"}
+![خصائص نافذة المفتش لمكون التحكم الشخصي.](images/properties-controller.png){:width="400px"}
 
-![The Scene view showing the character with a Character Controller capsule around the model.](images/updated-char-controller.png){:width="300px"}
+![يُظهر عرض المشهد الشخصية مع كبسولة تحكم الأحرف حول النموذج.](images/updated-char-controller.png){:width="300px"}
 
 --- /task ---
 
-Your character needs a script so that the player can move it around. You'll need a code editor installed on your computer to edit this script.
+تحتاج شخصيتكم إلى نص حتى يتمكن اللاعب من تحريكها. ستحتاج إلى محرر رمز مثبتًا على جهاز الكمبيوتر الخاص بكم لتحرير هذا البرنامج النصي.
 
 [[[unity-visual-studio]]]
 
 --- task ---
 
-Go to the Inspector window for the Player and click on the **Add Component** button. Type `script` and select **New Script**. Name your new script `PlayerController`, then press <kbd>Enter</kbd>.
+انتقل إلى نافذة المفتش الخاصة بالمشغل وانقر فوق الزر **إضافة مكون**. اكتب `script` وحدد **New Script**. قم بتسمية البرنامج النصي الجديد الخاص بك `PlayerController`، ثم اضغط على <kbd>Enter</kbd>.
 
-The new script will be saved in the Assets folder:
+سيتم حفظ البرنامج النصي الجديد في مجلد الأصول:
 
-![The Project window with new 'My Scripts' folder shown.](images/new-script-project.png){:width="400px"}
+![تظهر نافذة المشروع مع مجلد "البرامج النصية" الجديد.](images/new-script-project.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-Double-click on **PlayerController** in the script component in the Inspector window. The script will open in a separate code editor and have this code:
+انقروا نقرًا مزدوجًا فوق **PlayerController** في مكون البرنامج النصي في نافذة المفتش. سيفتح البرنامج النصي في محرر كود منفصل وسيحتوي على هذا الرمز:
 
 --- code ---
 ---
@@ -83,15 +83,15 @@ public class PlayerController : MonoBehaviour
     }
 } --- /code ---
 
-**Debug:** Check that the name after 'class' is `PlayerController` and this matches the name of your script file: if you rename the file after creating it, then you will need to change the class name in the script.
+**التصحيح:** تحقق من أن الاسم بعد "class" هو `PlayerController` وهذا يطابق اسم ملف البرنامج النصي الخاص بكم إذا أعدت تسمية الملف بعد إنشائه ، فستحتاج إلى تغيير اسم الفئة في البرنامج النصي.
 
 --- /task ---
 
-The Start method is called once when you play your scene. Add code to print the message `Player started` when your project starts running.
+يتم استدعاء طريقة البدء مرة واحدة عند تشغيل المشهد الخاص بكم. أضيفوا رمزًا لطباعة الرسالة `بدأ Player` عند بدء تشغيل مشروعكم .
 
 --- task ---
 
-Use the `Debug.Log()` method to print a message when the `Start` method is called for the Player GameObject. The message will appear in the bar at the bottom of the Unity Editor and in the Console window:
+استخدم الأسلوب `Debug.Log ()` لطباعة رسالة عندما يتم استدعاء طريقة `Start` لـ Player GameObject. ستظهر الرسالة في الشريط أسفل محرر الوحدة وفي نافذة وحدة التحكم:
 
 --- code ---
 ---
@@ -106,56 +106,56 @@ line_highlights: 10
     }
 --- /code ---
 
-**Tip:** The lines starting with // are comments that explain the code. You don’t need to type them.
+**نصيحة:** الأسطر التي تبدأ بـ // هي تعليقات تشرح الكود. لست بحاجة إلى كتابتها.
 
-**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor. The Unity Editor will load your script to get it ready to run; this may take a few seconds.
-
---- /task ---
-
---- task ---
-
-Click on the Console window tab to bring it to the front:
-
-![The tab for the Console window highlighted in the bottom left section of the Unity Editor.](images/console-window.png){:width="400px"}
+**احفظ** نص برنامج PlayerController الخاص بكم في محرر الكود الخاص بكم ، باستخدام <kbd>Ctrl</kbd>+<kbd>S</kbd> (أو <kbd>Cmd</kbd>+<kbd>S</kbd>) ، ثم ارجع إلى Unity Editor. سيقوم محرر الوحدة بتحميل البرنامج النصي الخاص بكم  ليكون جاهزًا للتشغيل ؛ وهذا قد يستغرق بضع ثوان.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Go to the Toolbar and click once on the **Play** button to put your scene into Play mode. This will simulate your scene as it would be viewed and interacted with by a user:
+انقر فوق علامة تبويب نافذة وحدة التحكم لإحضاره إلى المقدمة:
 
-![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png){:width="400px"}
-
-Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Player started' output in the Console.
-
-![The Console window with the time-stamped 'Player started' message as a comment.](images/player-started.png)
-
-**Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
-+ `; expected` – check for a semicolon `;` at the end of each line of code.
-+ `Newline in constant` – you missed a quote `"` from the end of a text string.
-+ `} expected` – you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
-+ `) expected` – make sure there's a closing `)` at the end of each method call, before the semicolon.
-+ `Debug` does not contain a definition for 'log' – C# is case sensitive, so it needs to be `Log` with a capital `L`.
-
-Compare your code with the example code and make sure everything is exactly the same.
+![تم تمييز علامة التبويب الخاصة بنافذة وحدة التحكم في الجزء السفلي الأيسر من محرر الوحدة.](images/console-window.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-Click once on the **Play** button again to exit Play mode and the debug output will stop.
+**اختبار:** انتقل إلى شريط الأدوات وانقر مرة واحدة على الزر **Play** لوضع مشهدك في وضع التشغيل. سيؤدي ذلك إلى محاكاة المشهد الخاص بكم  حيث سيتم عرضه والتفاعل معه بواسطة المستخدم:
 
-**Tip:** Changes made in Play mode are lost when you exit Play mode. Make sure you exit Play mode when you finish testing.
+![شريط الأدوات الموجود أعلى Unity Editor مع تمييز الزر "تشغيل".](images/play-button.png){:width="400px"}
+
+يستغرق بدء تشغيل الوحدة بضع ثوانٍ ، ثم يجب أن تشاهد `Debug.Log ()` إخراج "بدء اللاعب" في وحدة التحكم.
+
+![نافذة وحدة التحكم مع رسالة "بدء المشغل" المختومة بالوقت كتعليق.](images/player-started.png)
+
+**التصحيح:** لن يتم تشغيل المشهد الخاص بك إذا كانت هناك أخطاء في التعليمات البرمجية الخاصة بك. تحقق من نافذة وحدة التحكم للحصول على معلومات. قد ترى:
++ `؛ متوقع` - تحقق من وجود فاصلة منقوطة `؛` في نهاية كل سطر من التعليمات البرمجية.
++ `سطر جديد في الثابت` - فاتك اقتباس `"` من نهاية سلسلة نصية.
++ `} المتوقع` - يجب أن يكون لديكم زوج من الأقواس المتعرجة المفتوحة والمغلقة `{}` حول كل طريقة وحول الفصل. تحقق من تطابق الأقواس المتعرجة.
++ `) المتوقع` - تأكد من وجود إغلاق `)` في نهاية كل استدعاء طريقة ، قبل الفاصلة المنقوطة.
++ `التصحيح` لا يحتوي على تعريف لـ "السجل" - C # حساس لحالة الأحرف ، لذلك يجب أن يكون `Log` برأس مال `L`.
+
+قارن الكود الخاص بكم  مع رمز المثال وتأكد من أن كل شيء متماثل تمامًا.
 
 --- /task ---
 
-Unity creates the effect of movement by quickly drawing images to the screen. Each image is a **frame**. The `Update` method is called once every frame.
+--- task ---
+
+انقر مرة واحدة على الزر **Play** مرة أخرى للخروج من وضع التشغيل وسيتوقف إخراج التصحيح.
+
+**نصيحة:** تفقد التغييرات التي تم إجراؤها في وضع التشغيل عند الخروج من وضع التشغيل. تأكد من الخروج من وضع التشغيل عند الانتهاء من الاختبار.
+
+--- /task ---
+
+تخلق الوحدة تأثير الحركة عن طريق رسم الصور بسرعة على الشاشة. كل صورة عبارة عن **إطار**. يتم استدعاء طريقة `Update` مرة واحدة في كل إطار.
 
 --- task ---
 
-You will be able to use the WASD or arrow keys (players on a mobile or console can use different inputs without you changing your code.)
+ستتمكن من استخدام WASD أو مفاتيح الأسهم (يمكن للاعبين على الهاتف المحمول أو وحدة التحكم استخدام مدخلات مختلفة دون تغيير الرمز الخاص بك.)
 
-`Input.GetAxis("Vertical")` takes input from the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys, and returns a number between 1 and -1, which it uses for forwards and backwards movement.
+`Input.GetAxis ("عمودي")` يأخذ الإدخال من مفتاحي <kbd>W</kbd> و <kbd>S</kbd> أو مفاتيح الأسهم لأعلى ولأسفل ، ويعيد رقمًا بين 1 و -1 ، والذي يستخدمه للحركة للأمام وللخلف.
 
 --- code ---
 ---
@@ -174,57 +174,57 @@ line_highlights: 16-21
     }
 --- /code ---
 
-A `float` is a decimal number.
+`عائم` هو رقم عشري.
 
-**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
+**احفظ** نص برنامج PlayerController الخاص بكم في محرر الكود الخاص بكم ، باستخدام <kbd>Ctrl</kbd>+<kbd>S</kbd> (أو <kbd>Cmd</kbd>+<kbd>S</kbd>) ، ثم ارجع إلى Unity Editor.
 
-**Tip:** You might finding it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
+**نصيحة:** قد تجد أنه من الأسرع استخدام <kbd>Alt</kbd>+<kbd>Tab</kbd> (أو <kbd>Cmd</kbd>+<kbd>Tab</kbd>) للتبديل بين متصفح الويب الخاص بكم  مع تعليمات المشروع ومحرر Unity ومحرر الكود الخاص بكم .
 
 --- /task ---
 
 --- task ---
 
-**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode.
+**اختبار:** انتقل إلى شريط الأدوات وانقر فوق الزر **Play** لوضع مشهدك في وضع التشغيل.
 
-Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged.
+ضع مؤشر الماوس **في عرض اللعبة** واضغط على المفتاحين <kbd>W</kbd> و <kbd>S</kbd>. انظروا إلى القيم التي تم تسجيلها في نافذة وحدة التحكم أثناء الضغط على المفاتيح. في كل مرة تضغط فيها على <kbd>W</kbd> ، يتم تسجيل رقم موجب ، وعند الضغط على <kbd>S</kbd> يتم تسجيل رقم سالب.
 
-The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a game controller). You can also use the up and down arrow keys.
+تتراوح الأرقام بين -1.0 و 1.0 وتتوافق مع الحركة من عناصر التحكم الرأسية على لوحة المفاتيح (أو وحدة التحكم في اللعبة). يمكنكم أيضًا استخدام مفاتيح الأسهم لأعلى ولأسفل.
 
-![The Console window with five log entries that have values between -1 and 1.](images/console-values.png)
+![نافذة وحدة التحكم مع خمسة إدخالات سجل لها قيم بين -1 و 1.](images/console-values.png)
 
-**Tip:** The output also appears in the bar at the bottom of the Unity Editor.
+**نصيحة:** يظهر الإخراج أيضًا في الشريط الموجود أسفل محرر الوحدة.
 
-Click the **Play** button again to exit Play mode and the debug output will stop.
-
---- /task ---
-
-It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your scene is playing:
-
-![Side-by-side images of the Unity Editor without tint and with tint to indicate the game is playing.](images/tint-no-tint.png)
-
---- task ---
-
-To set a tint, go to the **Edit Menu** (or Unity Menu) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
-
-Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
-
-![The colour wheel pop-up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
-
-**Tip:** Try a light colour so that you can still clearly see the text in the editor when the scene is running.
-
-Return to the Unity Editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
+انقر فوق الزر **Play** مرة أخرى للخروج من وضع التشغيل وسيتوقف إخراج التصحيح.
 
 --- /task ---
 
-The Character Controller component provides a `SimpleMove` method.
+من السهل أن تنسى ما إذا كانت لعبتكم  تلعب أم لا. تسهّل الصبغة اللونية لوضع التشغيل معرفة وقت تشغيل المشهد:
+
+![صور جنبًا إلى جنب لمحرر Unity بدون صبغة خفيفة مع لون خفيف للإشارة إلى أن اللعبة قيد التشغيل.](images/tint-no-tint.png)
 
 --- task ---
 
-**Add** code to use the vertical input value to move the Player each frame.
+لتعيين صبغة ، انتقل إلى **قائمة التحرير** (أو قائمة الوحدة) وحدد **التفضيلات**. اختر قائمة **Colors** وابحث عن الخاصية المسماة **Playmode tint**.
 
-You can **remove** the Debug code.
+انقر فوق اللون الموجود لرؤية عجلة الألوان حيث يمكنك اختيار اللون ومستوى التعتيم:
 
-A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
+![نافذة عجلة الألوان المنبثقة مع تحديد صبغة عتامة متوسطة زرقاء.](images/tint-colour-window.png){:width="400px"}
+
+**نصيحة:** جرب لونًا فاتحًا حتى تتمكن من رؤية النص بوضوح في المحرر عند تشغيل المشهد.
+
+ارجع إلى Unity Editor واضغط على الزر **Play** لترى الصبغة الجديدة أثناء العمل. عندما تكون راضيًا عن الصبغة التي اخترتها ، اضغط على الزر **تشغيل** مرة أخرى للخروج من وضع التشغيل.
+
+--- /task ---
+
+يوفر مكون التحكم في الأحرف طريقة `SimpleMove`.
+
+--- task ---
+
+**أضف** كود لاستخدام قيمة الإدخال الرأسي لتحريك اللاعب في كل إطار.
+
+يمكنك **إزالة** رمز التصحيح.
+
+يتم استخدام Unity `Vector3` لتخزين النُّقَط أو الاتجاهات ثلاثية الأبعاد. يخزن المتغير `إلى الأمام` الاتجاه الذي يواجهه اللاعب
 
 --- code ---
 ---
@@ -249,27 +249,27 @@ line_highlights: 18-23
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys to glide forwards and backwards.
+**اختبار:** انقر فوق **تشغيل** للدخول إلى وضع التشغيل وجرب التعليمات البرمجية الخاصة بكم استخدموا مفتاحي <kbd>W</kbd> و <kbd>S</kbd> أو مفاتيح الأسهم لأعلى ولأسفل للتنقل للأمام وللخلف.
 
-**Debug:** Remember to check the Console window for helpful messages. Check brackets, semicolons, and capital letters in your code carefully.
+**التصحيح:** تذكر أن تتحقق من نافذة وحدة التحكم للحصول على رسائل مفيدة. تحقق من الأقواس والفواصل المنقوطة والأحرف الكبيرة في التعليمات البرمجية بعناية.
 
-**Tip:** Make sure your mouse pointer is in the **Game view**.
+**نصيحة:** تأكد من وجود مؤشر الماوس في عرض اللعبة ****.
 
-Try and walk through the wall. The `SimpleMove` method from the Character Controller component stops you from being able to walk through GameObjects that have a collider. A collider is automatically added when you create a 3D shape as you did for the wall.
+هل يمكنك المشي عبر الجدران؟ تمنعك طريقة `SimpleMove` من مكون التحكم في الأحرف من أن تكون قادرًا على السير عبر كائنات GameObject التي تحتوي على مصادم. تتم إضافة الحواجز تلقائيًا عند إنشاء شكل ثلاثي الأبعاد كما فعلت للجدار.
 
-You can pan around in the Scene view by holding your right mouse button and dragging. Pan to get a better view of the wall as your character walks into it:
+يمكنك التجول في عرض المشهد بالضغط على زر الفأرة الأيمن والسحب. قم بالتحريك للحصول على رؤية أفضل للجدار بينما تدخل شخصيتك فيه:
 
-![Scene and Game views of the character stopped at the wall.](images/player-wall.gif){:width="500px"}
+![توقفت مناظر المشهد والألعاب للشخصية عند الحائط.](images/player-wall.gif){:width="500px"}
 
-To move your Player, move the mouse pointer back to the **Game view**.
+لتحريك لاعبك ، حرك مؤشر الماوس مرة أخرى إلى عرض **لعبة**.
 
-Click the **Play** button again to exit Play mode.
+انقر فوق الزر **Play** مرة أخرى للخروج من وضع التشغيل.
 
 --- /task ---
 
 --- task ---
 
-Add another line so your character can `Rotate` when the player presses the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys:
+أضف سطرًا آخر حتى تتمكن شخصيتك من `تدوير` عندما يضغط اللاعب على مفتاحي <kbd>A</kbd> و <kbd>D</kbd> أو مفتاحي الأسهم الأيمن والأيسر:
 
 --- code ---
 ---
@@ -293,25 +293,25 @@ line_highlights: 18-19
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor. Unity will load your updated script.
+احفظ الكود الخاص بك وقم بالرجوع إلى Unity Editor. ستقوم الوحدة بتحميل البرنامج النصي المحدث الخاص بك.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys to rotate.
+**اختبار:** انقر فوق **تشغيل** للدخول إلى وضع التشغيل وجرب التعليمات البرمجية الخاصة بكم استخدم مفتاحي <kbd>A</kbd> و <kbd>D</kbd> أو مفتاحي الأسهم الأيمن والأيسر للتدوير.
 
-**Debug:** If you are still seeing output to the Console and movement isn't working, then make sure you have saved your script in the code editor.
+**التصحيح:** إذا كنت لا تزال ترى الإخراج إلى وحدة التحكم والحركة لا تعمل ، فتأكد من أنك قمت بحفظ البرنامج النصي الخاص بك في محرر التعليمات البرمجية.
 
-Click the **Play** button again to exit Play mode.
+انقر فوق الزر **تشغيل** حتى تتمكن من سماع الصوت.
 
 --- /task ---
 
-You can also control the speed of movement and rotation.
+يمكنكم أيضًا التحكم في سرعة الحركة والدوران.
 
 --- task ---
 
-Open your PlayerController script and add variables for the `moveSpeed` and `rotateSpeed`.
+افتح البرنامج النصي PlayerController وأضف متغيرات لـ `moveSpeed` و `rotateSpeed`.
 
 --- code ---
 ---
@@ -330,7 +330,7 @@ public class PlayerController : MonoBehaviour
 
 --- task ---
 
-Update the code to `Rotate` and `SimpleMove` your character to multiply them by the new variables:
+قم بتحديث الكود إلى `قم بتدوير شخصيتك` و `SimpleMove` لمضاعفتهم بالمتغيرات الجديدة:
 
 --- code ---
 ---
@@ -359,11 +359,11 @@ line_highlights: 29
 
 --- task ---
 
-**Test:** Play your scene and check if you are happy with the speed settings.
+**اختبار:** قم بتشغيل المشهد الخاص بك وتحقق مما إذا كنت راضيًا عن إعدادات السرعة.
 
-Make changes to `moveSpeed` and `rotateSpeed` in your script until you are happy.
+قم بإجراء التغييرات على `moveSpeed` و `rotateSpeed` في البرنامج النصي الخاص بك حتى تشعر بالرضا.
 
-**Tip:** You can mask the `Debug.Log()` lines by putting `//` at the beginning of the line. You can also mask multiple lines using `/*` and `*/`:
+**نصيحة:** يمكنك إخفاء `Debug.Log ()` سطور عن طريق وضع `//` في بداية السطر. يمكنك أيضًا إخفاء خطوط متعددة باستخدام `/ *` و `* /`:
 ```
         /*if (speed != 0) // Player moving
         {
@@ -371,7 +371,7 @@ Make changes to `moveSpeed` and `rotateSpeed` in your script until you are happy
         }*/
 ```
 
-Click the **Play** button again to exit Play mode.
+انقر فوق الزر **Play** مرة أخرى للخروج من وضع التشغيل.
 
 --- /task ---
 
