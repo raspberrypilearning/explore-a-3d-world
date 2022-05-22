@@ -2,42 +2,42 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+القائمة: السؤال 2 من 3
 ---
 
-This GameObject is partly underneath a Plane. Which property should you change to get it to sit on top of the Plane?
+كائن GameObject هذا موجود جزئيًا تحت مستوى. ما الخاصية التي يجب عليك تغييرها لجعلها تجلس على قمة الطائرة؟
 
-![The Scene view showing a cube situated partly underneath the plane.](images/cube-scene-view-q2.png)
+![يُظهر عرض المشهد مكعبًا يقع جزئيًا أسفل المستوى.](images/cube-scene-view-q2.png)
 
 --- choices ---
 
-- () The x position
+- الموضع x
 
   --- feedback ---
 
-  No, adjusting this property would move the GameObject horizontally, not make the GameObject move up. Think about which coordinate sets the position on the up/down axis.
+  لا ، سيؤدي ضبط هذه الخاصية إلى تحريك كائن GameObject أفقيًا ، وليس تحريك كائن GameObject لأعلى. فكروا في الإحداثي الذي يحدد الموضع على المحور لأعلى / لأسفل.
 
-  You can think of the x coordinate as across in the same way as you would when working with 2D coordinates.
+  يمكنكم التفكير في إحداثي x على أنه عرضي بنفس الطريقة التي تفكرو بها عند العمل مع الإحداثيات ثنائية الأبعاد.
 
   --- /feedback ---
 
-- (x) The y position
+- (x) الموضع y
 
   --- feedback ---
 
-  That's right! The y coordinate sets the GameObject's position on the up/down axis and needs to be increased to move the GameObject up.
+  هذا صحيح! يحدد الإحداثي y موضع كائن GameObject على المحور لأعلى / لأسفل ويحتاج إلى زيادته لتحريك كائن GameObject لأعلى.
 
-  When working with 2D coordinates y is the up/down direction, and it's the same in Unity.
+  عند العمل مع الإحداثيات ثنائية الأبعاد ، فإن y هو الاتجاه لأعلى / لأسفل ، وهو نفس الشيء في الوحدة.
 
   --- /feedback ---
 
-- ( ) The z position
+- ( ) الموضع z
 
   --- feedback ---
 
-  No, adjusting this propery would move the GameObject horizontally, not make the GameObject move up. Think about which coordinate sets the position on the up/down axis.
+  لا ، سيؤدي ضبط هذه الخاصية إلى تحريك كائن GameObject أفقيًا ، وليس تحريك كائن GameObject لأعلى. فكروا في الإحداثي الذي يحدد الموضع على المحور لأعلى / لأسفل.
 
-  In 2D, you just have x and y coordinates. 3D adds a z coordinate, which you can think of as front to back.
+  في 2D ، لديكم إحداثيات x و y فقط. يضيف 3D إحداثيات من الألف إلى الياء ، والتي يمكنك التفكير فيها على أنها من الأمام إلى الخلف.
 
   --- /feedback ---
 
