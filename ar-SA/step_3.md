@@ -1,109 +1,109 @@
-## Add a player character
+## أضف شخصية ألاعب
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The player in your world will be a Cat or Raccoon character. 
+سيكون اللاعب في عالمك هو شخصية القط أو الراكون. 
 </div>
 <div>
-![The scene view with character.](images/added-character.png){:width="300px"}
+عرض المشهد مع شخصية (images/added-character.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Click on the **Models** folder in the Project window. A model describes what a 3D object looks like and can be created using 3D modelling tools such as Blender. We have included some models that you can use.
+انقر على **Models** في نافذة المشروع. يصف النموذج كيف يبدو شكل كائن ثلاثي الأبعاد ويمكن إنشاؤه باستخدام أدوات النمذجة ثلاثية الأبعاد مثل Blender. لقد قمنا بتضمين بعض النماذج التي يمكنك استخدامها.
 
-Choose either the `Cat` or `Raccoon` model and drag it from the Project window to the Scene view:
+اختر إما نموذج `القط` أو `الراكون` واسحبه من نافذة المشروع إلى عرض المشهد:
 
-![Animation of 'Raccoon' being dragged from Project window to Scene view.](images/drag-character.gif)
+![الرسم المتحرك لـ "الراكون" يتم سحبه من نافذة المشروع إلى عرض المشهد.](images/drag-character.gif)
 
-**Tip:** If you have accidentally added 'CatBase' or 'RaccoonBase' models, or if you want to change your character at this point, you can delete the model from the scene. Right-click on the model GameObject in the Hierarchy window and select 'Delete'.
+**نصيحة:** إذا أضفت بِطْرِيق الخطأ قالب " القط" أو " الراكون"، أو إذا كنت تريد تغيير شخصيتك في هذه المرحلة ، فيمكنك حذف النموذج من المشهد. انقر بزر الماوس الأيمن فوق نموذج كائن اللعبة في نافذة التسلسل الهرمي وحدد "حذف".
 
-![The Hierarchy window with right-click menu for the model and 'Delete' highlighted.](images/delete-model.png)
+![نافذة التسلسل الهرمي مع قائمة النقر بزر الماوس الأيمن للنموذج و "حذف" المؤشر.](images/delete-model.png)
 
 --- /task ---
 
-Your character will appear in the Scene view in a T-pose.
+ستظهر شخصيتك في عرض المشهد على شكل حرف T.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">**T-pose**</span> is the default position for a game character before it has been animated.
+الوضع <span style="color: #0faeb0">** T-pose **</span> هو الموضع الافتراضي لشخصية اللعبة قبل أن يتم تحريكها.
 </p>
 
 --- task ---
 
-Click on your character in the Scene view and tap the <kbd>F</kbd> key.
+انقر فوق شخصيتك في عرض المشهد واضغط على مفتاح <kbd>F</kbd>.
 
-**Tip:** If you get lost in the Scene view, you can click on your character (or another GameObject) in the Hierarchy window and then click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on your character in the Scene view.
+**نصيحة:** إذا ضللت الطريق في عرض المشهد ، يمكنك النقر فوق شخصيتك (أوا ي كائن لُعْبَة آخر) في نافذة التسلسل الهرمي ثم النقر فوق <kbd>Shift</kbd>+<kbd>F</kbd> للتركيز على شخصيتك في عرض المشهد.
 
 --- /task ---
 
-Hmm, your character is wearing multiple accessories.
+حسنًا ، شخصيتك ترتدي أكسسوارات متعددة.
 
 --- task ---
 
-Click on your character in the Hierarchy window. This will open the settings for the GameObject in the Inspector window.
+انقر على شخصيتك في نافذة التسلسل الهرمي. هذا سيؤدي لفتح الاعدادات لكائن اللعبة في نافذة الفحص.
 
-Click on the arrow next to your character in the Hierarchy window to see the 'child objects'. Click on **ConstructionGearMesh** and uncheck the box next to its name in the Inspector window. This will hide the hard hat and high-vis vest:
+انقر على السهم التالي لشخصيتك في نافذة التسلسل الهرمي لرؤية 'الكائنات الفرعية'. انقر على **شبكة مُعَدَّات البناء**وقم بإزالة تحديد المربع المجاور لأسمه في نافذة الفحص. سيؤدي ذلك إلى إخفاء القبعة الصلبة والسترة عالية اللمعان:
 
-![Inspector with 'ConstructionGearMesh' property highlighted and unchecked.](images/uncheck-hat-active.png)
+![المفتش مع خاصية "شبكة مُعِدَّات البناء" يبرز ولأيتم التحقق منه.](images/uncheck-hat-active.png)
 
-![The Scene view with 'ConstructionGearMesh' removed from the Raccoon.](images/no-hat-scene.png)
+![تمت إزالة عرض المشهد الحاوي ل"شبكة مُعِدَّات البناء" من الراكون.](images/no-hat-scene.png)
 
-Hide the other accessories for your character in the same way, or just keep one active.
+قم بإخفاء الملحقات الأخرى لشخصيتك بنفس الطريقة ، أو احتفظ بأحدها نشطًا.
 
-**Tip:** GameObjects that are not active appear greyed out in the Hierarchy window:
+**نصيحة:** كائنات اللعبة الغير نشطة تظهر باللون الرمادي في نافذة التسلسل الهرمي:
 
-![Hierarchy Window with greyed out 'ConstructionGearMesh'.](images/greyed-out-mesh.png)
+![نافذة هرمية باللون الرمادي "شبكة معدات البناء".](images/greyed-out-mesh.png)
 
 --- /task ---
 
 --- task ---
 
-The player will see the game through the 'Main Camera', which is shown as a video camera icon in the Scene. Select the camera in the Hierarchy window to see the embedded camera view:
+سيرى اللاعب اللعبة ب "الكاميرا الرئيسية"، التي تظهر كأيقونة كاميرا فيديو في المشهد. حدد الكاميرا في نافذة التسلسل الهرمي لمشاهدة عرض الكاميرا المضمنة:
 
-![Camera selected in Scene view.](images/camera-in-scene.png)
+![تم تحديد الكاميرا في عرض المشهد.](images/camera-in-scene.png)
 
 --- /task ---
 
-The Game view shows what your project will look like to a player.
+عرض اللعبة يُظهر الشكل الذي سيبدو عليه مشروعك للاعب.
 
 --- task ---
 
-Click on the Game view tab. Your character will be in whatever position you dragged it to in the Scene view (you might not be able to see it).
+انقر فوق علامة عرض اللعبة. شخصيتك ستكون في أي موضع قمت بسحبه إليه في عرض المشهد (قد لا تتمكن من رؤيته).
 
 --- /task ---
 
-If you have enough room on your screen, then it's really useful to see the Scene view and the Game view at the same time.
+إذا كان لديك مساحة كافية على شاشتك ، فهذا مفيد حقًا لمشاهدة عرض المشهد وعرض اللعبة في نفس الوقت.
 
 --- task ---
 
-Drag the Game view tab to the right so that it appears next to the Scene view:
+اسحب علامة عرض اللعبة إلى اليمين بحيث تظهر بجوار عرض المشهد:
 
-![Dragging Game view tab to position the Game view to the right of the Scene view.](images/side-by-side-views.gif)
+![سحب علامة عرض اللعبة لموضع عرض اللعبة على يمين عرض المشهد.](images/side-by-side-views.gif)
 
 --- /task ---
 
-Unity uses x, y, and z coordinates to position GameObjects in 3D space:
+تستخدم Unity محاور x وy وz لوضع الكائنات في بيئة ثلاثيّة الأبعاد:
 
 [[[unity-3D-coordinates]]]
 
 --- task ---
 
-Select your character (in the Hierarchy window or Scene view) and then change its 'Transform' settings so the 'Position' is (0, 0, 0) — the centre of the world:
+حدد شخصيتك (في نافذة التسلسل الهرمي أو عرض المشهد) ثم قم بتغيير إعدادات "التحويل" الخاصة بها بحيث يكون "الموقع" (0، 0، 0) - مركز العالم:
 
-![Transform for the selected character with position set to 0, 0, 0.](images/transform-centre.png)
+![تحويل الرمز المحدد مع ضبط الموقع على 0، 0، 0.](images/transform-centre.png)
 
-Your character will move to the centre in the Scene view and the Game view:
+ستنتقل شخصيتك إلى المركز في عرض المشهد وعرض اللعبة:
 
-![The Scene view with the character at 0, 0, 0 in the middle of the plane.](images/transform-centre-scene-view.png)
+![عرض المشهد بالرمز 0، 0، 0 في منتصف المستوى.](images/transform-centre-scene-view.png)
 
 --- /task ---
 
 --- task ---
 
-Rename your character to 'Player' in the Inspector window. This will make it easy to find if you add more GameObjects.
+أعد تسمية شخصيتك إلى "لاعب" في نافذة المفتش. إذا أضفت المزيد من كائنات اللعبة سيسهل هذا العثور عليها.
 
-![Player name shown in the Inspector window.](images/player-name.png)
+![يظهر اسم اللاعب في نافذة المفتش.](images/player-name.png)
 
 --- /task ---
 
