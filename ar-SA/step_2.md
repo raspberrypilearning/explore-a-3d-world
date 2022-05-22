@@ -2,60 +2,60 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your 3D world,  or 'map', needs a floor and walls. 
+يحتاج عالمك ثلاثي الأبعاد ، أو "الخريطة"، إلى أرضية وجدران. 
 </div>
 <div>
-![The scene view showing a plane floor with two brick walls.](images/end-walls.png){:width="300px"}
+! [منظر المشهد يظهر أرضية طائرة بجدارين من الطوب.] (images / end-walls.png) {: width = "300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn, and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
+يقضي الأشخاص وقتًا أطول في <span style="color: #0faeb0">** بيئات افتراضية عبر الإنترنت **</span>. بالإضافة إلى ممارسة الألعاب ، يمكن للأشخاص الاسترخاء والاستكشاف والتواصل الاجتماعي والتعلم والمشاركة في الترفيه التفاعلي. يسمي بعض الناس مستقبل هذه البيئات <span style="color: #0faeb0">** metaverse **</span>. القدرة على تصميم عوالم ثلاثية الأبعاد هي مهارة مهمة.
 </p>
 
-A Unity project needs graphics and sound 'Assets'.
+يحتاج مشروع الوحدة إلى "أصول" للرسومات والصوت.
 
 --- task ---
 
-Download and unzip the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} to your computer. Choose a sensible location such as your Documents folder.
+قم بتنزيل وفك ضغط حُزْمَة [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){: target = "_ blank"} على جهاز الحاسوب الخاص بك. اختر موقعًا معقولاً مثل مجلد المستندات.
 
 --- /task ---
 
 --- task ---
 
-Launch the Unity Hub and click **Projects** then select **New project**:
+قم بتشغيل Unity Hub وانقر فوق **مشاريع** ثم حدد **مشروع جديد**:
 
-![The 'New project' button on the top right of the unity hub.](images/new-project.png)
+![زر "مشروع جديد" أعلى يمين مركز الوحدة.](images/new-project.png)
 
-From the list choose **All templates** then select **3D Core**:
+من القائمة ، اختر **جميع القوالب** ثم حدد **3D Core**:
 
-![A list of templates. The one called '3D' is selected; it has a subheading of 'Core' underneath.](images/3D-core.png)
+![قائمة القوالب. يتم تحديد العنصر المسمى "ثلاثي الأبعاد" ؛ يحتوي على عنوان فرعي لـ "الأساسية" تحته.](images/3D-core.png)
 
-Edit the project settings to give your project a sensible name and save it to a sensible location. Then click **Create project**:
+قموا بتحرير إعدادات المشروع لمنح مشروعكم اسمًا معقولًا وحفظوا في مكان معقول. ثم انقر فوق **إنشاء مشروع**:
 
-![The project's settings area with 'Create project' button highlighted in the bottom right corner.](images/create-project.png)
+![منطقة إعدادات المشروع مع تحديد زر "إنشاء مشروع" في الزاوية اليمنى السفلية.](images/create-project.png)
 
-Your new project will open in the Unity Editor. It may take some time to load.
+سيفتح مشروعكم الجديد في Unity Editor. قد يستغرق التحميل بعض الوقت.
 
 --- /task ---
 
-The Unity Editor looks like this:
+يبدو محرر الوحدة كما يلي:
 
-![Unity Editor with windows annotated.](images/unity-editor.png)
+![محرر الوحدة مع النوافذ المشروحة.](images/unity-editor.png)
 
 --- collapse ---
 
 ---
-title: The Unity Editor windows and views
+العنوان: نوافذ محرر الوحدة وطرق العرض
 ---
 
-1. **The Unity menu** is used to import, open, and save scenes and projects. You can amend your Unity Editor preferences and add new GameObjects and components.
+1. **تُستخدم قائمة الوحدة** لاستيراد المشاهد والمشاريع وفتحها وحفظها. يمكنك تعديل تفضيلات Unity Editor الخاصة بكم وإضافة عناصر ومكونات GameObjects جديدة.
 
-2. **The Toolbar** contains tools for navigating in the Scene view, controlling play in the Game view, and customising your Unity Editor layout.
+2. **يحتوي شريط الأدوات** على أدوات للتنقل في عرض المشهد ، والتحكم في اللعب في عرض اللعبة ، وتخصيص تخطيط محرر الوحدة الخاص بك.
 
-3. **The Scene view** is used to navigate and edit your Scene. You can select and position GameObjects including characters, scenery, cameras, and lights.
+3. **يتم استخدام طريقة عرض المشهد** للتنقل في المشهد وتحريره. يمكنك تحديد مواقع GameObjects بما في ذلك الشخصيات والمشاهد والكاميرات والأضواء.
 
-4. **The Game view** can be accessed by clicking on the **Game** tab. It shows the scene as it looks through the lens of your cameras. When you click on the **Play** button to enter Play mode, the Game view simulates your scene as it would be viewed by a user.
+4. **يمكن الوصول إلى عرض اللعبة** بالنقر فوق علامة التبويب **لعبة**. يظهر المشهد كما ينظر من خلال عدسة الكاميرات الخاصة بكم. عند النقر فوق الزر **Play** للدخول إلى وضع Play ، فإن طريقة عرض اللعبة تحاكي مشهدكم كما يراه المستخدم.
 
 5. **The Hierarchy window** shows all the GameObjects in your Scene and the structure between them. Here, you can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
 
