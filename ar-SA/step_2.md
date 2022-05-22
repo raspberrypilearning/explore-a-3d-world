@@ -57,21 +57,21 @@
 
 4. **يمكن الوصول إلى عرض اللعبة** بالنقر فوق علامة التبويب **لعبة**. يظهر المشهد كما ينظر من خلال عدسة الكاميرات الخاصة بكم. عند النقر فوق الزر **Play** للدخول إلى وضع Play ، فإن طريقة عرض اللعبة تحاكي مشهدكم كما يراه المستخدم.
 
-5. **The Hierarchy window** shows all the GameObjects in your Scene and the structure between them. Here, you can add and navigate the GameObjects in your project. GameObjects can have 'child objects' that move with them.
+5. **تُظهر نافذة التسلسل الهرمي** جميع كائنات اللعبة في المشهد الخاص بك والهيكل بينها. هنا ، يمكنكم إضافة GameObjects والتنقل عبر مشروعك. يمكن أن تحتوي كائنات GameObjects على "كائنات فرعية" تتحرك معها.
 
-6. **The Project window** shows a library of all the files included in your project. You can find the Assets you want to use here.
+6. **نافذة المشروع**تظهر مكتبة جميع الملفات الذي يتضمنها مشروعك. يمكنكم العثور على الأصول التي تريد استخدامها هنا.
 
-7. **The Console window** can be accessed by clicking on the **Console** tab. It shows important messages. This is where you can see compiler errors (errors in your Script) and messages that you print using `Debug.Log()`.
+7. **يمكن الوصول إلى نافذة وحدة التحكم** بالنقر فوق علامة التبويب **وحدة التحكم**. يظهر رسائل مهمة. هذا هو المكان الذي يمكنكم فيه رؤية أخطاء المترجم (أخطاء في البرنامج النصي الخاص بكم) والرسائل التي تطبعها باستخدام `Debug.Log ()`.
 
-8. **The Inspector window** allows you to view and edit the properties of GameObjects. You can add other components to your GameObjects and edit the values they use.
+8. **تتيح لكم نافذة المفتش** عرض خصائص GameObjects وتحريرها. يمكنكم إضافة مكونات أخرى إلى GameObjects الخاصة بكم وتعديل القيم التي يستخدمونها.
 
 --- /collapse ---
 
 --- task ---
 
-The Unity starter package you downloaded contains a number of Assets for you to use in your project.
+تحتوي حزمة Unity starter التي قمت بتنزيلها على عدد من الأصول لتستخدمها في مشروعك.
 
-To import them into your new project, click on the **Assets** menu and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
+لاستيرادها إلى مشروعكم الجديد ، انقر فوق قائمة **الأصول** وحدد **حزمة استيراد حزمة مخصصة ... ثم انتقلوا إلى حزمة <Unity starter التي تم تنزيلها.</p>
 
 --- /task ---
 
@@ -79,231 +79,231 @@ To import them into your new project, click on the **Assets** menu and select **
 
 --- task ---
 
-The **Project window** is where you can see all the files included in your project. Click on the **Models** folder in the Assets folder to see the models you have imported.
+**نافذة المشروع**تظهر مكتبة جميع الملفات الذي يتضمنها مشروعك. انقر على**نموذج**ملف في مجلد الاصول لرؤية النماذج التي قمت بأستيرادها.
 
-![Project View selected with folders shown.](images/project-view-folders.png)
-
---- /task ---
-
-In Unity, a **Scene** contains GameObjects. A Unity project with multiple game levels might have one scene per level.
-
---- task ---
-
-Right-click on **SampleScene** in the Hierarchy and choose **Save Scene As**.
-
-![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
-
-In the pop-up window, name your Scene `3D World`:
-
-![The 'Save As' pop-up window with Scenes folder selected.](images/save-scene.png)
-
-A new file will appear in the Assets folder in the Project window:
-
-![Project window with 3D World scene in the Assets folder.](images/3dworld-scene.png)
+![عرض المشروع المحدد مع المجلدات المعروضة.](images/project-view-folders.png)
 
 --- /task ---
 
-First, your world needs some ground.
+في unity يكون **مشهد**يتضمن كائنات اللعبة. مشروع unity مع مستويات اللعبة المتعددة قد يحتوي مشهد واحد لكل مستوى.
 
 --- task ---
 
-Right-click on your scene (name 3D World) in the Hierarchy window and choose **GameObject** > **3D Object** > **Plane**:
+انقر بزر الماوس الأيمن فوق **SampleScene** في التسلسل الهرمي واختر **Save Scene As**.
 
-![The 3D World scene with menu extended and 'Plane' highlighted.](images/add-plane.png)
+![أيقونة المشهد في نافذة Hierarchy مع توسيع قائمة النقر بزر الماوس الأيمن.](images/right-click-scene.png)
 
-This will create a ground for your world.
+في النافذة المنبثقة ، قموا بتسمية Scene `3D World`:
 
-The default size for the plane is 10m × 10m. Unity uses metres as the unit of measurement.
+![النافذة المنبثقة "حفظ باسم" مع تحديد مجلد المشاهد.](images/save-scene.png)
 
-![The Scene view with a large white plane.](images/plane-floor.png)
+سيظهر ملف جديد في مجلد الأصول في نافذة المشروع:
+
+![نافذة المشروع مع مشهد 3D World في مجلد الأصول.](images/3dworld-scene.png)
 
 --- /task ---
 
-The **material** of a GameObject controls how it looks. Give the plane a different colour material.
+أولاً ، عالمكم يحتاج إلى بعض الأرضية.
 
 --- task ---
 
-In the Project window, right-click on the **Materials** folder and choose **Create** > **Material**.
+انقر بزر الماوس الأيمن على المشهد الخاص بكم (اسم 3D World) في نافذة التسلسل الهرمي واختر **GameObject** > **3D Object** > **Plane**:
 
-![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
+![مشهد العالم ثلاثي الأبعاد بقائمة ممتدة وتم تمييز "المستوى".](images/add-plane.png)
 
-A new material should appear in the Materials folder. Decide what colour you will use for your floor and name your new material:
+هذا سيخلق أرضية لعالمكم.
 
-![Icon for a new material with the name highlighted.](images/new_material.png)
+الحجم الافتراضي للطائرة هو 10 م × 10 م. تستخدم الوحدة العدادات كوحدة قياس.
 
-Click on the colour next to 'Albedo' in the Inspector window and choose a colour for your material (we used grey):
-
-![The colour bar to the right of 'Albedo' is filled in grey.](images/grey-plane-material.png)
-
-Drag your new material from the Project window to your plane in the Scene view:
-
-![The grey material in the Project window.](images/grey-material.png)
-
-![The Scene view with a grey plane.](images/gray_plane.png)
+![عرض المشهد مع طائرة بيضاء كبيرة.](images/plane-floor.png)
 
 --- /task ---
 
-You can create objects from 3D shapes.
+تتحكم المادة **** كائن GameObject في كيفية ظهوره. امنح الطائرة مادة ملونة مختلفة.
 
 --- task ---
 
-Right-click on your **3D World** scene in the Hierarchy window and choose **GameObject** > **3D Object** > **Cube**.
+في نافذة المشروع ، انقر بزر الماوس الأيمن فوق المجلد **المواد** واختر **إنشاء** > **مادة**.
 
-This will create a cube at the centre of the scene, at (0, 0, 0).
+![قائمة "إنشاء" التي تعرض "المادة" مميزة.](images/create-material.png)
 
-![A small cube located in centre of the plane.](images/new_cube.png)
+يجب أن تظهر مادة جديدة في مجلد المواد. حددوا اللون الذي ستستخدمه لأرضيتك وقم بتسمية المادة الجديدة الخاصة بك:
+
+![رمز مادة جديدة مع تمييز الاسم.](images/new_material.png)
+
+انقر فوق اللون الموجود بجوار "Albedo" في نافذة المفتش واختر لونًا للمادة الخاصة بك (استخدمنا اللون الرمادي):
+
+![شريط الألوان على يمين "Albedo" مملوء باللون الرمادي.](images/grey-plane-material.png)
+
+اسحب المادة الجديدة من نافذة المشروع إلى طائرتك في طريقة عرض المشهد:
+
+![المادة الرمادية في نافذة المشروع.](images/grey-material.png)
+
+![عرض المشهد مع طائرة رمادية.](images/gray_plane.png)
 
 --- /task ---
 
-You can see the cube in the Scene view. This is the behind-the-scenes view of your game where you set everything up.
-
-**Tip:** Click on the **Scene** tab to make sure you can see the Scene view.
+يمكنكم إنشاء كائنات من أشكال ثلاثية الأبعاد.
 
 --- task ---
 
-Click on the cube in the Scene view or Hierarchy window to select it.
+انقر بزر الماوس الأيمن على مشهد **3D World** في نافذة Hierarchy واختر **GameObject** > **3D Object** > **Cube**.
 
-Use <kbd>Shift</kbd>+<kbd>F</kbd> (hold down the <kbd>Shift</kbd> key and tap <kbd>F</kbd>) to focus on the cube.
+سيؤدي هذا إلى إنشاء مكعب في وسط المشهد ، عند (0 ، 0 ، 0).
 
-You can also use the scroll wheel on the mouse, or the up and down arrow keys, to zoom in and out:
-
-![The cube in the centre of the Scene view, half above and half below the plane.](images/cube-scene-view.png)
+![مكعب صغير يقع في وسط الطائرة.](images/new_cube.png)
 
 --- /task ---
 
-You need to get the cube to sit on the plane.
+يمكنك رؤية المكعب في طريقة عرض المشهد. هذه هي طريقة عرض لعبتكم من وراء الكواليس حيث تقوم بإعداد كل شيء.
+
+**نصيحة:** انقر فوق علامة التبويب **المشهد** للتأكد من أنه يمكنك رؤية عرض المشهد.
 
 --- task ---
 
-Click on the cube in the Scene view or Hierarchy window to select it.
+انقروا فوق المكعب في عرض المشهد أو نافذة التسلسل الهرمي لتحديده.
 
-**Choose**   
-You can either:
+استخدم <kbd>Shift</kbd>+<kbd>F</kbd> (اضغط باستمرار على مفتاح <kbd>Shift</kbd> واضغط على <kbd>F</kbd>) للتركيز على المكعب.
 
-+ Change the y position in the Inspector window to 0.5 (half the height of the cube):
+يمكنكم أيضًا استخدام عجلة التمرير في الماوس ، أو مفتاحي الأسهم لأعلى ولأسفل للتكبير والتصغير:
 
-![The Transform component for the cube with the y position coordinate set to 0.5.](images/y-transform-cube.png)
-
-+ Use the Move tool to drag the green arrow up until the cube sits on the plane:
-
-![The move tool icon with four outwardly facing arrows.](images/move-tool.png)
-
-![An animated gif showing the move arrows on the cube with the mouse pointer dragging up the y axis so the cube rises and sits on the plane.](images/drag-y-axis.gif)
+![المكعب الموجود في وسط عرض المشهد ، نصفه فوق المستوى ونصفه أسفله.](images/cube-scene-view.png)
 
 --- /task ---
 
-**Tip:** If you make a mistake in the Unity Editor, you can use <kbd>Ctrl</kbd>+<kbd>Z</kbd> (or <kbd>Cmd</kbd>+<kbd>Z</kbd>) to **undo** your last action.
+تحتاجوا إلى جعل المكعب يجلس على الطائرة.
 
 --- task ---
 
-Now change the cube into a wall with the following Position and Scale settings:
+انقر فوق المكعب في عرض المشهد أو نافذة التسلسل الهرمي لتحديده.
 
-![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+**اختر**   
+يمكنك إما:
 
-You can either enter the values in the Transform component for the cube or click on the Scale tool and drag the handles in the Scene view (this will update the Transform values.)
++ قموا بتغيير موضع y في نافذة المفتش إلى 0.5 (نصف ارتفاع المكعب):
 
-![The scale tool icon with square and arrow pointing diagonally up from the bottom left corner.](images/scale-tool.png)
+![مكون التحويل للمكعب مع ضبط إحداثيات الموضع y على 0.5.](images/y-transform-cube.png)
 
-Zoom out to see your wall:
++ استخدموا أداة التحريك لسحب السهم الأخضر لأعلى حتى يستقر المكعب على المستوى:
 
-![The new positioned and scaled wall in the Scene view.](images/scene-cube-wall.png)
+![رمز أداة النقل مع أربعة أسهم متجهة للخارج.](images/move-tool.png)
+
+![صورة gif متحركة تُظهر أسهم الحركة على المكعب مع قيام مؤشر الماوس بسحب المحور y لأعلى بحيث يرتفع المكعب ويجلس على المستوى.](images/drag-y-axis.gif)
 
 --- /task ---
 
-A material can have a colour and a texture and there are lots of properties that you can adjust to get different effects. A **texture** is a 2D image that can be created in an image editor.
+**نصيحة:** إذا ارتكبت خطأ في Unity Editor ، يمكنك استخدام <kbd>Ctrl</kbd>+<kbd>Z</kbd> (أو <kbd>Cmd</kbd>+<kbd>Z</kbd>) للتراجع عن **** الإجراء الأخير.
 
 --- task ---
 
-In the Project window, right-click on the **Materials** folder and choose **Create** > **Material**. You are going to create a coloured brick wall. Give the material a descriptive name:
+الآن قموا بتغيير المكعب إلى جدار باستخدام إعدادات الموضع والمقياس التالية:
 
-![The 'Create' menu showing 'Material' highlighted.](images/create-material.png)
+![مكون التحويل مع موضع محدث وخصائص المقياس. المركز x = 0 ، y = 1 ، z = 3. مقياس x = 5 ، y = 2 ، z = 0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
-Click on the colour next to 'Albedo' in the Inspector window and choose a colour for your material:
+يمكنكم إما إدخال القيم في مكون التحويل للمكعب أو النقر فوق أداة القياس واسحب المقابض في عرض المشهد (سيؤدي ذلك إلى تحديث قيم التحويل.)
 
-![The colour bar to the right of 'Albedo' is filled in red.](images/red-colour.png)
+![رمز أداة القياس بمربع وسهم يشيران قطريًا لأعلى من الزاوية اليسرى السفلية.](images/scale-tool.png)
 
-Add a texture by clicking on the circle to the left of 'Albedo' and selecting **BrickWallAlbedo** texture from the list:
+تصغير لرؤية الحائط الخاص بكم:
 
-![The pop-up window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
-
-Drag your new material from the Project window to your wall in the Scene view:
-
-![The red brick material in the Project window.](images/brick-material.png)
-
-![The Scene view with red brick wall.](images/red-brick-wall.png)
+![الجدار الجديد الموضوع والمقاس في عرض المشهد.](images/scene-cube-wall.png)
 
 --- /task ---
 
+يمكن أن يكون للمادة لون وملمس وهناك الكثير من الخصائص التي يمكنك تعديلها للحصول على تأثيرات مختلفة. المادة **هي** ثنائية الأبعاد يمكن إنشاؤها في محرر الصور.
+
 --- task ---
 
-In the Inspector window, right-click on your cube, choose **Rename** from the menu and rename your object from `Cube` to `Wall`:
+في نافذة المشروع ، انقر بزر الماوس الأيمن فوق المجلد **المواد** واختر **إنشاء** > **مادة**. ستقوم بإنشاء جدار من الطوب الملون. امنحوا المادة اسمًا وصفيًا:
 
-![Inspector window showing 'Wall' as the name.](images/name-wall.png)
+![قائمة "إنشاء" التي تعرض "المادة" مميزة.](images/create-material.png)
 
-**Tip:** You can name a new GameObject in the Hierarchy window when you create it and you can change the name in the Inspector window.
+انقر على اللون بجوار 'Albedo'في نافذة المفتش واختر لونًا للمادة الخاصة بكم:
+
+![شريط اللون على يمين "Albedo" مملوء باللون الأحمر.](images/red-colour.png)
+
+أضيفوا نسيجًا بالنقر فوق الدائرة الموجودة على يسار "البيدو" واختيار **نسيج BrickWallAlbedo** من القائمة:
+
+![النافذة المنبثقة لتحديد نسيج مع تمييز "BrickWallAlbedo".](images/add-texture.png)
+
+اسحب المادة الجديدة من نافذة المشروع إلى طائرتكم في طريقة عرض المشهد:
+
+![مادة الطوب الأحمر في نافذة المشروع.](images/brick-material.png)
+
+![المنظر مع جدار من الطوب الأحمر.](images/red-brick-wall.png)
 
 --- /task ---
 
 --- task ---
 
-To create a copy of your wall, you can either:
-+ Right-click on your Wall object in the Hierarchy window and choose **Duplicate**
-+ Select your wall in the Scene view and use <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd>+<kbd>D</kbd>) to duplicate
+في نافذة المفتش ، انقر بزر الماوس الأيمن على المكعب الخاص بكم ، واختروا**إعادة تسمية** من القائمة وأعد تسمية الكائن من `Cube` إلى `Wall`:
 
-Your new wall will be in exactly the same place as your first wall.
+![نافذة المفتش تظهر "جدار" كاسم.](images/name-wall.png)
 
---- /task ---
-
---- task ---
-
-Change the y rotation of the new wall to `90`:
-
-![The new wall Transform component with rotate on the y axis showing 90 degrees.](images/transform-rotate-90.png)
+**نصيحة:** يمكنكم تسمية كائن GameObject جديد في نافذة التسلسل الهرمي عند إنشائه ويمكنكم تغيير الاسم في نافذة المفتش.
 
 --- /task ---
 
 --- task ---
 
-Reposition the new wall to the following position: x = 4, y = 1, z = -1.
+لإنشاء نسخة من الحائط الخاص بكم ، يمكنك إما:
++ انقر بزر الماوس الأيمن على كائن الحائط في نافذة التسلسل الهرمي واختر **تكرار**
++ حددوا الحائط الخاص بك في عرض المشهد واستخدم <kbd>Ctrl</kbd>+<kbd>D</kbd> (أو <kbd>Cmd</kbd>+<kbd>D</kbd>) لتكرار
 
-![Transform for new wall. Position x = 4, y = 1, z = -1.](images/new-wall-transform.png)
-
-You can either enter the values in the Inspector window or drag the arrows in your Scene — it doesn't matter if the position is exact.
-
-Your Scene should look like this:
-
-![Scene with two red brick walls.](images/scene-with-walls.png)
+سيكون جداركم الجديد في نفس مكان جداركم الأول تمامًا.
 
 --- /task ---
 
 --- task ---
 
-Click on your Plane. Change the Scale settings on the Plane to make it bigger so you have more room:
+قموا بتغيير الدوران y للجدار الجديد إلى `90`:
 
-![The Transform component with scale x and z coordinates changed to 4.](images/plane-scale-4-1-4.png)
-
-![The Scene view showing the larger plane.](images/new-resized-plane.png)
-
-Think of a 4×4 plane as 40 metres by 40 metres in the real world: plenty of room for your character to move around.
+![مكون تحويل الجدار الجديد مع تدوير على المحور y يظهر 90 درجة.](images/transform-rotate-90.png)
 
 --- /task ---
 
 --- task ---
 
-When you have unsaved changes, you will see a '*' next to your Scene in the Hierarchy window.
+قموا بتغيير موضع الجدار الجديد إلى الموضع التالي: x = 4 ، y = 1 ، z = -1.
 
-Save your Scene by clicking **File** > **Save**. Or use <kbd>Ctrl</kbd>+<kbd>S</kbd>.
+![التحول لجدار جديد. المركز x = 4 ، y = 1 ، z = -1.](images/new-wall-transform.png)
 
-Also, save your project by clicking **File** > **Save Project**.
+يمكنكم إما إدخال القيم في نافذة المفتش أو سحب الأسهم في المشهد الخاص بكم - لا يهم إذا كان الموضع دقيقًا.
 
-Unity does not normally autosave changes, but your starter project contains a script to autosave your project every 60 seconds.
+يجب أن تبدو التعليمات البرمجية خاصتك بالشكل التالي:
+
+![مشهد بجدارين من الطوب الأحمر.](images/scene-with-walls.png)
 
 --- /task ---
 
-You can navigate around your scene to see it from different angles. If you get lost, just click on a wall in the Hierarchy window and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus and then zoom out:
+--- task ---
+
+انقر على الصورة. قموا بتغيير إعدادات المقياس على المستوى لتكبيرها بحيث يكون لديكم مساحة أكبر:
+
+![تم تغيير مكون التحويل بمقياس إحداثيات x و z إلى 4.](images/plane-scale-4-1-4.png)
+
+![عرض المشهد يظهر الطائرة الأكبر.](images/new-resized-plane.png)
+
+فكر في طائرة 4 × 4 بحجم 40 مترًا في 40 مترًا في العالم الحقيقي: مساحة كبيرة لشخصيتكم للتنقل.
+
+--- /task ---
+
+--- task ---
+
+عندما يكون لديكم تغييرات غير محفوظة ، سترى علامة "*" بجوار المشهد الخاص بكم في نافذة التسلسل الهرمي.
+
+احفظ المشهد الخاص بكم عن طريق النقر فوق **ملف** > **حفظ**. أو استخدموا <kbd>Ctrl</kbd>+<kbd>S</kbd>.
+
+أيضًا ، احفظ مشروعكم بالنقر فوق **ملف** > **حفظ المشروع**.
+
+لا تقوم الوحدة عادةً بالحفظ التلقائي للتغييرات ، ولكن مشروعكم المبدئي يحتوي على برنامج نصي للحفظ التلقائي لمشروعكم كل 60 ثانية.
+
+--- /task ---
+
+يمكنك التنقل حول مشهدك لرؤيته من زوايا مختلفة. إذا تهت، انقر فوق اللاعب في التدرج الهرمي ثم استخدم <kbd>Shift</kbd>+<kbd>F</kbd> للتركيز على اللاعب:
 
 [[[unity-scene-navigation]]]
 
-Remember, if you navigate around then you will be looking at your scene from a different perspective so your view won't look exactly the same as our examples.
+تذكروا ، إذا قمت بالتنقل ، فسوف تنظر إلى المشهد الخاص بكم من منظور مختلف حتى لا تبدو طريقة العرض الخاصة بك تمامًا مثل الأمثلة لدينا.
 
 --- save ---
