@@ -1,10 +1,10 @@
-## What next?
+## ما هي الخطوة التالية؟
 
-If you are following the [Introduction to Unity](https://projects.raspberrypi.org/en/raspberrypi/unity-intro){:target="_blank"} pathway, you can move on to the [Star collector](https://projects.raspberrypi.org/en/projects/star-collector){:target="_blank"} project. In this project, you will make a minigame where you collect stars that are hidden around a 3D map.
+إذا كنت تتبع مسار [مقدمة إلى Scratch](https://projects.raspberrypi.org/en/raspberrypi/unity-intro)، يمكنك الانتقال إلى مشروع [اللحاق بالحافلة](https://projects.raspberrypi.org/en/projects/star-collector). في هذا المشروع ، ستقوم بعمل لعبة صغيرة حيث تقوم بجمع النجوم المخفية حول خريطة ثلاثية الأبعاد.
 
 --- print-only ---
 
-![Star collector project](images/star-collector-project.png)
+![مشروع جامع النجوم](images/star-collector-project.png)
 
 --- /print-only ---
 
