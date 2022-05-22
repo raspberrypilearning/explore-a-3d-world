@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+القائمة: السؤال 3 من 3
 ---
 
-This Script is supposed to print the Player’s vertical movement value each frame, but it only prints it once at the start. How could you fix this?
+من المفترض أن يقوم هذا البرنامج النصي بطباعة قيمة الحركة العمودية للاعب لكل إطار ، ولكنه يطبعها مرة واحدة فقط في البداية. كيف يمكنكم اصلاح هذا؟
 
 ```
 using System.Collections;
@@ -31,36 +31,36 @@ public class PlayerController : MonoBehaviour
 
 --- choices ---
 
-- ( ) Change the code to `Debug.log(speed);`
+- () قم بتغيير الكود إلى `Debug.log (السرعة) ؛`
 
   --- feedback ---
 
-  No. C# is case sensitive so you need to make sure to use capital letters correctly. The C# naming convention is to capitalise all words in a method name so `Debug.Log(speed);` is correct.
+  لا. C # حساس لحالة الأحرف ، لذا عليك التأكد من استخدام الأحرف الكبيرة بشكل صحيح. اصطلاح التسمية C # هو جعل كل الكلمات بأحرف كبيرة في اسم الطريقة بحيث تكون `Debug.Log (السرعة) ؛` صحيح.
 
   --- /feedback ---
 
-- ( ) Add a semi-colon to the end of the `Debug` line
+- () أضف فاصلة منقوطة إلى نهاية السطر `Debug`
 
 
   --- feedback ---
 
-That's not it. Forgetting to add a semi-colon `;` to the end of a line is a common mistake in C#, but this code does have a semi-colon at the end of the line.
+هذا ليس هو. نسيان إضافة فاصلة منقوطة `؛` في نهاية السطر هو خطأ شائع في C # ، لكن هذا الرمز يحتوي على فاصلة منقوطة في نهاية السطر.
 
   --- /feedback ---
 
-- ( ) Drag the script to the Player GameObject in the Inspector
+- () اسحبوا النص إلى Player GameObject في المفتش
 
   --- feedback ---
 
-  That's not it. It's easy to forget to attach a new script to a GameObject, but the code is running once so that's not the problem here.
+  هذا ليس هو. من السهل أن تنسى إرفاق برنامج نصي جديد بكائن GameObject ، لكن الكود يعمل مرة واحدة لذا فهذه ليست المشكلة هنا.
 
   --- /feedback ---
 
-- (x) Move the code from the `Start` method to the `Update` method
+- (x) انقل الكود من طريقة `Start` إلى طريقة `Update`
 
   --- feedback ---
 
-  Yes! The `Debug.Log(speed);` line is in the `Start` method, which only runs once, before the first frame. Moving the code to the `Update` method will run the code every frame so the Player's vertical position will keep printing.
+  نعم! `Debug.Log (السرعة) ؛ يوجد سطر` في طريقة `Start` ، والتي تعمل مرة واحدة فقط ، قبل الإطار الأول. سيؤدي نقل الكود إلى طريقة `Update` إلى تشغيل الكود في كل إطار حتى يستمر الوضع الرأسي للاعب في الطباعة.
 
   --- /feedback ---
 
