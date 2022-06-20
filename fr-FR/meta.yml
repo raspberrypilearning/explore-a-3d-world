@@ -5,7 +5,7 @@ description: Crée un monde en 3D dans Unity et explore-le avec un personnage jo
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-03-26"
+last_tested: '2021-03-26'
 steps:
   - 
     title: Introduction
@@ -13,20 +13,23 @@ steps:
     title: Mise en place de la scène 3D
   - 
     title: Ajouter un personnage joueur
-    completion: engaged
+    completion:
+      - engaged
   - 
     title: Ajouter un mouvement de personnage
   - 
     title: Animation et position de la caméra
-    completion: internal
+    completion:
+      - internal
   - 
     title: Réflexion
-    completion: external
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
+    completion:
+      - external
   - 
     title: Améliorer ton projet
   - 
