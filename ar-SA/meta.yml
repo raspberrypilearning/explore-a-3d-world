@@ -5,7 +5,7 @@ description: قم بإنشاء عالم ثلاثي الأبعاد في Unity و�
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-03-26"
+last_tested: '2021-03-26'
 steps:
   - 
     title: المقدمة
@@ -13,20 +13,23 @@ steps:
     title: اضبط المشهد ثلاثي الأبعاد
   - 
     title: أضف شخصية ألاعب
-    completion: engaged
+    completion:
+      - engaged
   - 
     title: أضف الحركة الشخصية
   - 
     title: الرسوم المتحركة وموضع الكاميرا
-    completion: internal
+    completion:
+      - internal
   - 
     title: تفكير
-    completion: external
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
+    completion:
+      - external
   - 
     title: قم بتطوير مشروعك
   - 
