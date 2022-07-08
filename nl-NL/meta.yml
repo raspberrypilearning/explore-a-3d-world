@@ -1,0 +1,28 @@
+---
+title: Verken een 3D-wereld
+hero_image: images/banner.png
+description: Maak een 3D-wereld in Unity en verken deze met een geanimeerd 3D-persoon
+version: 4
+listed: true
+copyedit: true
+last_tested: '2021-03-26'
+steps:
+  - title: Inleiding
+  - title: Stel de 3D-scène in
+  - title: Voeg een personage toe
+    completion:
+      - engaged
+  - title: Voeg een beweging toe
+  - title: Animatie en camerapositie
+    completion:
+      - internal
+  - title: Reflectie
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Verbeter je project
+  - title: Wat kun je verder nog doen?

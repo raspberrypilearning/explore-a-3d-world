@@ -1,0 +1,29 @@
+Speler beweegt
+
+Forward is de voorwaartse richting voor dit personage
+
+Je hebt de CharacterController nodig om SimpleMove te kunnen gebruiken
+
+Draai rond de y-as
+
+De f aan het einde van het getal zegt dat het een getal met drijvende komma is
+
+Animaties instellen
+
+Vooruit
+
+Inactief
+
+Verken de 3D-wereld
+
+3D-wereld
+
+Grijs
+
+Rode baksteen
+
+Muur
+
+Speler
+
+SpelerController

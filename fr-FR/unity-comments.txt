@@ -1,0 +1,29 @@
+Déplacement du joueur
+
+Forward est la direction d'avancement de ce personnage
+
+Tu as besoin du Character Controller pour pouvoir utiliser SimpleMove
+
+Rotation autour de l'axe y
+
+Le f à la fin du nombre indique qu'il s'agit d'un nombre à virgule flottante
+
+Définir les animations
+
+Avants
+
+Attente
+
+Explorer un monde en 3D
+
+Monde 3D
+
+Gris
+
+Brique rouge
+
+Mur
+
+Joueur
+
+ContrôleurJoueur
