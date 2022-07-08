@@ -21,7 +21,7 @@ Voor dit project is de Unity Editor nodig, die kan worden geïnstalleerd vanaf d
 
 Je kunt onze [Unity guide](https://projects.raspberrypi.org/nl-NL/projects/unity-guide){:target="_blank"} volgen om Unity Hub en de Unity Editor voor je besturingssysteem te installeren.
 
-Je moet ook het [Unity starterspakket](https://rpf.io/p/nl-NL/explore-a-3d-world-go){:target="_blank"} downloaden voordat je begint.
+Je moet ook het [Unity starterspakket](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} downloaden voordat je begint.
 
 --- no-print ---
 
