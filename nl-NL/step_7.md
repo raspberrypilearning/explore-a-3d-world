@@ -12,7 +12,7 @@ Jij kunt:
 
 ![De scèneweergave met nieuwe camerapositie, extra vormen en een vergroot personage met de bouwhelm weer ingeschakeld.](images/customised-project.png)
 
-Je kan de basis- en uitgebreide projecten als pakketten downloaden, samen met de WebGL-projecten uit de gezipte oplossingenmap op [https://rpf.io/p/nl-NL/explore-a-3d-world-get](https://rpf.io/p/nl-NL/explore-a-3d-world-get)
+Je kan de basis- en uitgebreide projecten als pakketten downloaden, samen met de WebGL-projecten uit de gezipte oplossingenmap op [https://rpf.io/p/en/explore-a-3d-world-get](https://rpf.io/p/en/explore-a-3d-world-get)
 
 --- collapse ---
 
