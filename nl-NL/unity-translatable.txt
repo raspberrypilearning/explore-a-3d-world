@@ -1,0 +1,9 @@
+Speler is gestart
+
+snelheid
+
+controller
+
+bewegingssnelheid
+
+draaisnelheid
