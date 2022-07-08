@@ -1,0 +1,9 @@
+Le joueur a commencé
+
+vitesse
+
+contrôleur
+
+Vitessedéplacement
+
+Vitesserotation
