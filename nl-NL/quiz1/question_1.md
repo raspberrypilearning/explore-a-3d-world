@@ -35,7 +35,7 @@ De Unity Editor heeft verschillende vensters. Welk venster wordt hier weergegeve
 
   --- /feedback ---
 
-- (X) Scèneweergave
+- (x) Scèneweergave
 
   --- feedback ---
 

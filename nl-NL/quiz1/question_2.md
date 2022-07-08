@@ -21,7 +21,7 @@ Dit GameObject bevindt zich gedeeltelijk onder een vlak. Welke eigenschap moet j
 
   --- /feedback ---
 
-- (X) de y-positie
+- (x) de y-positie
 
   --- feedback ---
 

@@ -56,7 +56,7 @@ Dat is niet juist. Vergeten om een puntkomma `;` toe te voegen aan het einde van
 
   --- /feedback ---
 
-- (X) verplaats de code van de `Start` methode naar de `Update` methode
+- (x) verplaats de code van de `Start` methode naar de `Update` methode
 
   --- feedback ---
 
