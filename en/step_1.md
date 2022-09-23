@@ -1,4 +1,4 @@
-## Introduction
+## You will make
 
 Create a 3D world in Unity and explore it with an animated 3D player character.
 
@@ -26,7 +26,7 @@ You will also need to download the [Unity starter package](https://rpf.io/p/en/e
 --- no-print ---
 
 --- task ---
-### Try it
+### Play ▶️
 
 **Click on the embedded project.** Navigate the 3D world using the WASD or arrow keys. What does the raccoon do when standing still? How do they move when walking? Can you walk through the walls?
 
