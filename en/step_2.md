@@ -71,7 +71,7 @@ title: The Unity Editor windows and views
 
 The Unity starter package you downloaded contains a number of Assets for you to use in your project. 
 
-To import them into your new project, click on the **Assets** menu and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
+To import them into your new project, click on the **Assets** menu in the top bar and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
 
 --- /task ---
 
