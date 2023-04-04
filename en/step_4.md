@@ -384,9 +384,23 @@ line_highlights: 29
 
 --- task ---
 
-**Test:** Play your scene and check if you are happy with the speed settings. 
+**Test:** Play your scene and check if you are happy with the speed settings.
 
-Make changes to `moveSpeed` and `rotateSpeed` in your script until you are happy. 
+If you select the Player in your scene view you can make changes to your `moveSpeed` and `rotateSpeed` variables in the Inspector. 
+
+![Inspector view of the Player GameObject, with the variables for the Player Controller script highlighted.](images/inspector-variables.png)
+
+--- collapse ---
+
+---
+title: Variables in the Inspector
+---
+
+When you change the value of a variable in the Inspector, it takes priority over the value set in your script. 
+
+Any future changes you make to those values in your script **will not take effect**. 
+
+--- /collapse ---
 
 **Tip:** You can mask the `Debug.Log()` lines by putting `//` at the beginning of the line. 
 You can also mask multiple lines using `/*` and `*/`:
@@ -397,7 +411,7 @@ You can also mask multiple lines using `/*` and `*/`:
         }*/
 ```
 
-Click the **Play** button again to exit Play mode.
+Click the **Play** button again to exit Play mode. 
 
 --- /task ---
 
