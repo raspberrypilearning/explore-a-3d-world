@@ -23,7 +23,7 @@ The Unity Editor has several different windows. Which window is shown here?
 
   --- feedback ---
 
-  No, the Project window shows a library of all the files included in your project. In the Project window you can find Assets to use in your Scene by naviagting the project file structure.
+  No, the Project window shows a library of all the files included in your project. In the Project window you can find Assets to use in your Scene by navigating the project file structure.
 
   --- /feedback ---
 
