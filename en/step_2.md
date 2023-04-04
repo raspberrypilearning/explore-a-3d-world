@@ -198,7 +198,7 @@ You can either:
 
 Now change the cube into a wall with the following Position and Scale settings: 
 
-![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+![The Transform component with updated position and scale properties. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
 You can either enter the values in the Transform component for the cube or click on the Scale tool and drag the handles in the Scene view (this will update the Transform values.)
 
@@ -224,7 +224,7 @@ Click on the colour next to 'Albedo' in the Inspector window and choose a colour
 
 Add a texture by clicking on the circle to the left of 'Albedo' and selecting **BrickWallAlbedo** texture from the list: 
 
-![The pop-up window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
+![The pop-up window to select a texture with 'BrickWallAlbedo' highlighted.](images/add-texture.png)
 
 Drag your new material from the Project window to your wall in the Scene view:
 
