@@ -23,6 +23,10 @@ You can follow our [Unity guide](https://projects.raspberrypi.org/en/projects/un
 
 You will also need to download the [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} of assets before starting. 
 
+Moving and looking around the 3D environment is much easier if you have an external mouse, rather than a trackpad. 
+
+If you don't have an external mouse right now don't worry, you can still complete this project with a trackpad.
+
 --- no-print ---
 
 --- task ---

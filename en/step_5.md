@@ -6,6 +6,8 @@ Your Player is moving around, but at the moment, it's stuck in a T-pose position
 
 --- task ---
 
+Select the Player in the Heirarchy window.
+
 Drag the **IdleWalk** animator from the **Animation** > **Animators** folder in the Project window to the Controller property of the Animator component of your character:
 
 ![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
