@@ -43,7 +43,7 @@ line_highlights: 21-31
         //Set animations
         Animator anim = gameObject.GetComponent<Animator>();
 
-        if (Input.GetAxis("Vertical") > 0) // Forwards
+        if (speed != 0) // Is moving
         {
             anim.SetBool("forward", true);
         }
