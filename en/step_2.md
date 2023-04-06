@@ -10,7 +10,7 @@ Your 3D world,  or 'map', needs a floor and walls.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">**online virtual environments**</span>. As well as playing games, people relax, explore, socialise, learn, and participate in interactive entertainment. Some people call the future of these environments the <span style="color: #0faeb0">**metaverse**</span>. Being able to design 3D worlds is an important skill.
+People are spending more time in <span style="color: #0faeb0">**online virtual worlds**</span>. As well as playing games, people relax, explore, socialise and learn. Being able to design 3D worlds provides you with endless opportunities to create interactive experiences like these.
 </p>
 
 A Unity project needs graphics and sound 'Assets'.  
@@ -198,7 +198,7 @@ You can either:
 
 Now change the cube into a wall with the following Position and Scale settings: 
 
-![The Transform component with updated position and scale properies. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+![The Transform component with updated position and scale properties. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
 You can either enter the values in the Transform component for the cube or click on the Scale tool and drag the handles in the Scene view (this will update the Transform values.)
 
@@ -224,7 +224,7 @@ Click on the colour next to 'Albedo' in the Inspector window and choose a colour
 
 Add a texture by clicking on the circle to the left of 'Albedo' and selecting **BrickWallAlbedo** texture from the list: 
 
-![The pop-up window to select a texture with 'BrickWallAlbedo' highlighed.](images/add-texture.png)
+![The pop-up window to select a texture with 'BrickWallAlbedo' highlighted.](images/add-texture.png)
 
 Drag your new material from the Project window to your wall in the Scene view:
 

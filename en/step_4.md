@@ -163,6 +163,8 @@ Unity creates the effect of movement by quickly drawing images to the screen. Ea
 
 --- task ---
 
+Switch to your code editor.
+
 You will be able to use the WASD or arrow keys (players on a mobile or console can use different inputs without you changing your code.)
 
 `Input.GetAxis("Vertical")` takes input from the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys, and returns a number between 1 and -1, which it uses for forwards and backwards movement. 
@@ -190,7 +192,7 @@ A `float` is a decimal number.
 
 **Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
 
-**Tip:** You might finding it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
+**Tip:** You might find it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
 
 --- /task ---
 
@@ -198,7 +200,7 @@ A `float` is a decimal number.
 
 **Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode.
 
-Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged. 
+Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged. A number is only logged if the value of speed **is not** 0 (see line 18 of the code).
 
 The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a game controller). You can also use the up and down arrow keys.
 
@@ -234,9 +236,18 @@ The Character Controller component provides a `SimpleMove` method.
 
 **Add** code to use the vertical input value to move the Player each frame. 
 
-You can **remove** the Debug code.
+You can **delete** the Debug code.
 
-A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
+**Tip:** You can also mask the `Debug.Log()` lines by putting `//` at the beginning of the line. 
+You can also mask multiple lines using `/*` and `*/`:
+```
+        /*if (speed != 0) // Player moving
+        {
+            Debug.Log(speed);
+        }*/
+```
+
+Unity uses a special data type called a `Vector3` to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
 
 --- code ---
 ---
@@ -384,20 +395,25 @@ line_highlights: 29
 
 --- task ---
 
-**Test:** Play your scene and check if you are happy with the speed settings. 
+**Test:** Play your scene and check if you are happy with the speed settings.
 
-Make changes to `moveSpeed` and `rotateSpeed` in your script until you are happy. 
+If you select the Player in your scene view you can make changes to your `moveSpeed` and `rotateSpeed` variables in the Inspector. 
 
-**Tip:** You can mask the `Debug.Log()` lines by putting `//` at the beginning of the line. 
-You can also mask multiple lines using `/*` and `*/`:
-```
-        /*if (speed != 0) // Player moving
-        {
-            Debug.Log(speed);
-        }*/
-```
+![Inspector view of the Player GameObject, with the variables for the Player Controller script highlighted.](images/inspector-variables.png)
 
-Click the **Play** button again to exit Play mode.
+--- collapse ---
+
+---
+title: Variables in the Inspector
+---
+
+When you change the value of a variable in the Inspector, it takes priority over the value set in your script. 
+
+Any future changes you make to those values in your script **will not take effect**. 
+
+--- /collapse ---
+
+Click the **Play** button again to exit Play mode. 
 
 --- /task ---
 

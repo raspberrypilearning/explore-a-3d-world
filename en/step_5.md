@@ -6,6 +6,8 @@ Your Player is moving around, but at the moment, it's stuck in a T-pose position
 
 --- task ---
 
+Select the Player in the Hierarchy window.
+
 Drag the **IdleWalk** animator from the **Animation** > **Animators** folder in the Project window to the Controller property of the Animator component of your character:
 
 ![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
@@ -18,7 +20,7 @@ This will add Idle and Walk animations to your character with a `forward` Boolea
 
 **Test:** Play your project and make sure you can see the Idle animation:
 
-![The character with IdleWalk animaton in Game view.](images/idlewalk-animation.gif)
+![The character with IdleWalk animation in Game view.](images/idlewalk-animation.gif)
 
 --- /task ---
 
@@ -41,7 +43,7 @@ line_highlights: 21-31
         //Set animations
         Animator anim = gameObject.GetComponent<Animator>();
 
-        if (Input.GetAxis("Vertical") > 0) // Forwards
+        if (speed != 0) // Is moving
         {
             anim.SetBool("forward", true);
         }
@@ -112,7 +114,7 @@ Adjust the camera settings until you are happy with them.
 
 What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Play mode:
 
-![The Game view with animated character moving through the environment and the camera following with a birdseye view.](images/birdseye-walkthrough.gif)
+![The Game view with animated character moving through the environment and the camera following with a birds eye view.](images/birdseye-walkthrough.gif)
 
 --- /task ---
 

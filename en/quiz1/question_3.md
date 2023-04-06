@@ -5,7 +5,7 @@
 legend: Question 3 of 3
 ---
 
-This Script is supposed to print the Player’s vertical movement value each frame, but it only prints it once at the start. How could you fix this?
+This Script is supposed to display the Player’s vertical movement value each frame, but it only displays it once at the start. How could you fix this?
 
 ```
 using System.Collections;
@@ -60,7 +60,7 @@ That's not it. Forgetting to add a semi-colon `;` to the end of a line is a comm
 
   --- feedback ---
 
-  Yes! The `Debug.Log(speed);` line is in the `Start` method, which only runs once, before the first frame. Moving the code to the `Update` method will run the code every frame so the Player's vertical position will keep printing.
+  Yes! The `Debug.Log(speed);` line is in the `Start` method, which only runs once, before the first frame. Moving the code to the `Update` method will run the code every frame so the Player's current vertical position will always be displayed.
 
   --- /feedback ---
 
