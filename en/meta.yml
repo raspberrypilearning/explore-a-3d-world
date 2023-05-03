@@ -4,6 +4,8 @@ hero_image: images/banner.png
 description:
   Create a 3D world in Unity and explore it with an animated 3D player
   character
+meta_title: Learn Unity | Game development | 3D world
+meta_description: Learn Unity game development with the Raspberry Pi Foundation. Create a 3D world in Unity and explore it with an animated 3D player character.
 version: 4
 listed: true
 copyedit: true
