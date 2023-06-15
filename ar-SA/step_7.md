@@ -17,7 +17,7 @@
 --- collapse ---
 
 ---
-المشروع المكتمل
+title: المشروع المكتمل
 ---
 
 يمكنك الحصول على [المشروع كاملاً من هنا](https://rpf.io/p/ar-SA/explore-a-3d-world-get){:target="_blank"}.
