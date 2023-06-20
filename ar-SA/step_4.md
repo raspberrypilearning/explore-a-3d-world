@@ -5,7 +5,7 @@
 سيتحرك لاعبك باستخدام WASD أو مفاتيح الأسهم. 
 </div>
 <div>
-![المشهد في عرض اللعبة مع شخصية تتحرك حول المشهد.](images/Moving-character.gif){:width="300px"}
+![المشهد في عرض اللعبة مع شخصية تتحرك حول المشهد.](images/moving-character.gif){:width="300px"}
 </div>
 </div>
 
