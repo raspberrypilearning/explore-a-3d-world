@@ -47,7 +47,7 @@ Your character has a height of `1`, meaning their centre on the y-axis is at `0.
 
 Your character needs a script so that the player can move it around. You'll need a code editor installed on your computer to edit this script.
 
-[[[unity-visual-studio]]]
+[[[unity-visual-studio-code]]]
 
 --- task ---
 
