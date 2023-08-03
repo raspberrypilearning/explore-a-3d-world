@@ -1,4 +1,4 @@
-## Introduction
+## You will make
 
 Crée un monde en 3D dans Unity et explore-le avec un personnage joueur 3D animé.
 
@@ -23,12 +23,16 @@ Tu peux suivre notre [guide Unity](https://projects.raspberrypi.org/en/projects/
 
 Tu devras également télécharger le [package de démarrage Unity](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} d'assets avant de commencer.
 
+Moving and looking around the 3D environment is much easier if you have an external mouse, rather than a trackpad.
+
+If you don't have an external mouse right now don't worry, you can still complete this project with a trackpad.
+
 --- no-print ---
 
 --- task ---
-### Essaie-le
+### Play ▶️
 
-**Clique sur le projet intégré.** Navigue dans le monde 3D à l'aide des touches WASD (clavier QWERTY) ou des touches fléchées. Que fait le raton laveur lorsqu'il est immobile ? Comment se déplacent-ils en marchant ? Peux-tu traverser les murs ?
+**Click on the embedded project.** ⬇️ Navigate the 3D world using the WASD or arrow keys. What does the raccoon do when standing still? How do they move when walking? Can you walk through the walls?
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
@@ -38,6 +42,6 @@ Tu devras également télécharger le [package de démarrage Unity](https://rpf.
 
 --- print-only ---
 
-![Projet terminé.](images/showcase_static.png)
+![Completed project.](images/showcase_static.png)
 
 --- /print-only ---
