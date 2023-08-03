@@ -5,7 +5,7 @@
 legend: Pregunta 3 de 3
 ---
 
-This Script is supposed to display the Player’s vertical movement value each frame, but it only displays it once at the start. ¿Cómo podrías arreglarlo?
+Se supone que este Script muestra el valor de movimiento vertical del jugador en cada cuadro, pero solo lo muestra una vez al principio. ¿Cómo podrías arreglarlo?
 
 ```
 using System.Collections;
@@ -60,7 +60,7 @@ Eso no es correcto. Olvidarse de agregar un punto y coma `;` al final de una lí
 
   --- feedback ---
 
-  ¡Sí! La línea `Debug.Log(velocidad);` está en el método `Inicio`, que solo se ejecuta una vez, antes del primer cuadro. Moving the code to the `Update` method will run the code every frame so the Player's current vertical position will always be displayed.
+  ¡Sí! La línea `Debug.Log(velocidad);` está en el método `Inicio`, que solo se ejecuta una vez, antes del primer cuadro. Mover el código al método `Actualización` ejecutará el código en cada cuadro, por lo que siempre se mostrará la posición vertical actual del jugador.
 
   --- /feedback ---
 
