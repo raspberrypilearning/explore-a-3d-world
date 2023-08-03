@@ -1,109 +1,109 @@
-## Add a player character
+## Agrega un personaje
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The player in your world will be a Cat or Raccoon character. 
+El jugador en tu mundo será un Gato o un Mapache. 
 </div>
 <div>
-![The scene view with character.](images/added-character.png){:width="300px"}
+![La vista de escena con personaje.](imagenes/caracter-anadido.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Click on the **Models** folder in the Project window. A model describes what a 3D object looks like and can be created using 3D modelling tools such as Blender. We have included some models that you can use.
+Haga clic en la carpeta **Modelos** en la ventana Proyecto. Un modelo describe cómo se ve un objeto 3D y se puede crear usando herramientas de modelado 3D como Blender. Hemos incluido algunos modelos que puedes utilizar.
 
-Choose either the `Cat` or `Raccoon` model and drag it from the Project window to the Scene view:
+Elija el modelo `Gato` o `Mapache` y arrástrelo desde la ventana Proyecto a la vista Escena:
 
-![Animation of 'Raccoon' being dragged from Project window to Scene view.](images/drag-character.gif)
+![Animación de 'Mapache' siendo arrastrado desde la ventana del Proyecto a la vista de Escena.](images/drag-character.gif)
 
-**Tip:** If you have accidentally added 'CatBase' or 'RaccoonBase' models, or if you want to change your character at this point, you can delete the model from the scene. Right-click on the model GameObject in the Hierarchy window and select 'Delete'.
+**Sugerencia:** Si accidentalmente agregó los modelos 'BaseGato' o 'BaseMapache', o si desea cambiar su personaje en este punto, puede eliminar el modelo de la escena. Haga clic derecho en el modelo Objeto de juego en la ventana de Jerarquía y seleccione 'Eliminar'.
 
-![The Hierarchy window with right-click menu for the model and 'Delete' highlighted.](images/delete-model.png)
+![La ventana Jerarquía con el menú del botón derecho del ratón para el modelo y 'Eliminar' resaltado.](images/delete-model.png)
 
 --- /task ---
 
-Your character will appear in the Scene view in a T-pose.
+Tu personaje aparecerá en la vista de escena con una pose T.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">**T-pose**</span> is the default position for a game character before it has been animated.
+La <span style="color: #0faeb0">**pose T**</span> es la posición predeterminada para un personaje de juego antes que este haya sido animado.
 </p>
 
 --- task ---
 
-Click on your character in the Scene view and tap the <kbd>F</kbd> key.
+Haz clic en tu personaje en la vista de escena y presiona la tecla <kbd>F</kbd>.
 
-**Tip:** If you get lost in the Scene view, you can click on your character (or another GameObject) in the Hierarchy window and then click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on your character in the Scene view.
+**Sugerencia:** Si estas perdido en la vista de Escena, puedes hacer clic en su personaje (u otro Objeto de juego) en la ventana de Jerarquía y luego hacer clic en <kbd>Shift</kbd>+<kbd>F</kbd> para enfocar tu personaje en la vista de Escena.
 
 --- /task ---
 
-Hmm, your character is wearing multiple accessories.
+Hmm, tu personaje lleva varios accesorios.
 
 --- task ---
 
-Click on your character in the Hierarchy window. This will open the settings for the GameObject in the Inspector window.
+Haz clic en tu personaje en la ventana de Jerarquía. Esto abrirá la configuración de Objeto de juego en la ventana de Inspeccion.
 
-Click on the arrow next to your character in the Hierarchy window to see the 'child objects'. Click on **ConstructionGearMesh** and uncheck the box next to its name in the Inspector window. This will hide the hard hat and high-vis vest:
+Haz clic en la flecha al lado de tu personaje en la ventana de Jerarquía para ver los 'objetos hijos'. Haga clic en **Malla de engranajes de construcción** y desmarque la casilla junto a su nombre en la ventana de Inspeccion. Esto ocultará el casco y el chaleco de alta visibilidad:
 
-![Inspector with 'ConstructionGearMesh' property highlighted and unchecked.](images/uncheck-hat-active.png)
+![Inspector con la propiedad 'Malla de engranajes de construcción' resaltada y sin marcar.](images/uncheck-hat-active.png)
 
-![The Scene view with 'ConstructionGearMesh' removed from the Raccoon.](images/no-hat-scene.png)
+![La vista de escena con 'Malla de engranajes de construcción' eliminada del Mapache.](images/no-hat-scene.png)
 
-Hide the other accessories for your character in the same way, or just keep one active.
+Oculta los otros accesorios para tu personaje de la misma manera, o simplemente mantén uno activo.
 
-**Tip:** GameObjects that are not active appear greyed out in the Hierarchy window:
+**Sugerencia:** Los Objetos de juego que no están activos aparecen atenuados en la ventana Jerarquía:
 
-![Hierarchy Window with greyed out 'ConstructionGearMesh'.](images/greyed-out-mesh.png)
+![Ventana de jerarquía con 'Malla de engranajes de construcción' en gris.](images/greyed-out-mesh.png)
 
 --- /task ---
 
 --- task ---
 
-The player will see the game through the 'Main Camera', which is shown as a video camera icon in the Scene. Select the camera in the Hierarchy window to see the embedded camera view:
+El jugador verá el juego a través de la 'Cámara principal', que se muestra como un ícono de cámara de video en la Escena. Seleccione la cámara en la ventana Jerarquía para ver la vista de cámara incrustada:
 
-![Camera selected in Scene view.](images/camera-in-scene.png)
+![Cámara seleccionada en la vista de escena.](images/camera-in-scene.png)
 
 --- /task ---
 
-The Game view shows what your project will look like to a player.
+La vista del juego muestra cómo se verá tu proyecto para un jugador.
 
 --- task ---
 
-Click on the Game view tab. Your character will be in whatever position you dragged it to in the Scene view (you might not be able to see it).
+Haz clic en la pestaña Vista del juego. Tu personaje estará en cualquier posición a la que lo hayas arrastrado en la vista de escena (es posible que no puedas verlo).
 
 --- /task ---
 
-If you have enough room on your screen, then it's really useful to see the Scene view and the Game view at the same time.
+Si tienes suficiente espacio en pantalla, entonces es realmente útil ver la vista de escena y la vista de juego al mismo tiempo.
 
 --- task ---
 
-Drag the Game view tab to the right so that it appears next to the Scene view:
+Arrastre la pestaña Vista de juego hacia la derecha para que aparezca junto a la vista Escena:
 
-![Dragging Game view tab to position the Game view to the right of the Scene view.](images/side-by-side-views.gif)
+![Arrastrar la pestaña Vista de juego para colocar la vista de juego a la derecha de la vista de escena.](images/side-by-side-views.gif)
 
 --- /task ---
 
-Unity uses x, y, and z coordinates to position GameObjects in 3D space:
+Unity usa coordenadas x, y y z para colocar lso Objetos de Juego en el espacio 3D:
 
 [[[unity-3D-coordinates]]]
 
 --- task ---
 
-Select your character (in the Hierarchy window or Scene view) and then change its 'Transform' settings so the 'Position' is (0, 0, 0) — the centre of the world:
+Selecciona tu personaje (en la ventana Jerarquía o en la vista Escena) y luego cambia su configuración de 'Transformar' para que la 'Posición' sea (0, 0, 0) — el centro del mundo:
 
-![Transform for the selected character with position set to 0, 0, 0.](images/transform-centre.png)
+![Transformar para el personaje seleccionado con la posición establecida en 0, 0, 0.](images/transform-centre.png)
 
-Your character will move to the centre in the Scene view and the Game view:
+Tu personaje se moverá al centro en la vista de escena y en la vista de juego:
 
-![The Scene view with the character at 0, 0, 0 in the middle of the plane.](images/transform-centre-scene-view.png)
+![La vista Escena con el personaje en 0, 0, 0 en medio del plano.](images/transform-centre-scene-view.png)
 
 --- /task ---
 
 --- task ---
 
-Rename your character to 'Player' in the Inspector window. This will make it easy to find if you add more GameObjects.
+Cambia el nombre de tu personaje a 'Jugador' en la ventana de Inspeccion. Esto hará que sea más fácil de encontrar si agrega más Objetos de juego.
 
-![Player name shown in the Inspector window.](images/player-name.png)
+![El nombre del jugador se muestra en la ventana de Inspeccion.](images/player-name.png)
 
 --- /task ---
 
