@@ -1,10 +1,10 @@
-## انعكاس
+## Quick quiz
 
-لقد فعلتها! لقد انشأت مشروعك الاول ضمن مشروع unity وتعلمت العديد من المهارات الجديدة على طول الطريق.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-حان الان وقت التفكير - هذا سيجعلك قادر على الفهم ومساعدتك على تذكر ماذا تعلمت.
+When you have answered each question, click on **Check my answer**.
 
-اجب على الاسئلة الثلاثة. بعد كل سؤال، اضغط على إرسال. سيتم توجيهك نحو الإجابة الصحيحة. يمكنك القيام بهذا النشاط عدة مرات كما تريد.
+Have fun!
 
 --- question ---
 
@@ -23,7 +23,7 @@
 
   --- feedback ---
 
-  لا, نافذة المشروع تضهر مكتبة لكل ملفات الذي يتضمنها مشروعك. في نافذة المشروع ، يمكنك العثور على الموجودات لاستخدامها في المشهد الخاص بك بواسطة التنقل في هيكل مِلَفّ المشروع.
+  لا, نافذة المشروع تضهر مكتبة لكل ملفات الذي يتضمنها مشروعك. In the Project window you can find Assets to use in your Scene by navigating the project file structure.
 
   --- /feedback ---
 
