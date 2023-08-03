@@ -10,7 +10,7 @@ Tu mundo 3D, o 'mapa', necesita un suelo y paredes.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">**online virtual worlds**</span>. As well as playing games, people relax, explore, socialise and learn. Being able to design 3D worlds provides you with endless opportunities to create interactive experiences like these.
+Las personas pasan cada vez más tiempo en <span style="color: #0faeb0">**mundos virtuales en línea**</span>. Además de jugar, la gente se relaja, explora, socializa y aprende. Ser capaz de diseñar mundos en 3D le brinda infinitas oportunidades para crear experiencias interactivas como estas.
 </p>
 
 Un proyecto de Unity necesita 'Activos' gráficos y de sonido.
@@ -71,7 +71,7 @@ title: Las ventanas y vistas del Unity Editor
 
 El paquete de inicio de Unity que descargaste contiene una cantidad de Activos que puedes usar en tu proyecto.
 
-To import them into your new project, click on the **Assets** menu in the top bar and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
+Para importarlos a tu nuevo proyecto, haz clic en el menú **Activos** y selecciona **Importar paquete** >**Paquete Personalizado...** luego navega hasta el **Paquete de inicio de Unity** que descargaste previamente.
 
 --- /task ---
 
@@ -198,7 +198,7 @@ Alguno de estos:
 
 Ahora cambia el cubo a una pared con los siguientes ajustes de Posición y Escala:
 
-![The Transform component with updated position and scale properties. Posición x=0, y=1, z=3. Escala x=5, y=2, z=0,25.](images/transform-cube-to-wall.png){:width="400px"}
+![El componente Transform con propiedades de posición y escala actualizadas. Posición x=0, y=1, z=3. Escala x=5, y=2, z=0,25.](images/transform-cube-to-wall.png){:width="400px"}
 
 Puede ingresar los valores en el componente Transformar para el cubo o hacer clic en la herramienta Escala y arrastrar los controladores en la vista Escena (esto actualizará los valores de Transformación)
 
@@ -224,7 +224,7 @@ Haga clic en el color junto a 'Albedo' en la ventana de Inspeccion y elija un co
 
 Agregue una textura haciendo clic en el círculo a la izquierda de 'Albedo' y seleccionando **MuroLadrilloAlbedo** textura de la lista:
 
-![The pop-up window to select a texture with 'BrickWallAlbedo' highlighted.](images/add-texture.png)
+![La ventana emergente para seleccionar una textura con 'MuroLadrilloAlbedo' resaltado.](images/add-texture.png)
 
 Arrastre su nuevo material desde la ventana Proyecto a su pared en la vista Escena:
 
