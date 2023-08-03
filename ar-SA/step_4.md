@@ -47,7 +47,7 @@
 
 تحتاج شخصيتكم إلى نص حتى يتمكن اللاعب من تحريكها. ستحتاج إلى محرر رمز مثبتًا على جهاز الكمبيوتر الخاص بكم لتحرير هذا البرنامج النصي.
 
-[[[unity-visual-studio]]]
+[[[unity-visual-studio-code]]]
 
 --- task ---
 
@@ -153,9 +153,11 @@ line_highlights: 10
 
 --- task ---
 
-ستتمكن من استخدام WASD أو مفاتيح الأسهم (يمكن للاعبين على الهاتف المحمول أو وحدة التحكم استخدام مدخلات مختلفة دون تغيير الرمز الخاص بك.)
+Switch to your code editor.
 
-`Input.GetAxis ("عمودي")` يأخذ الإدخال من مفتاحي <kbd>W</kbd> و <kbd>S</kbd> أو مفاتيح الأسهم لأعلى ولأسفل ، ويعيد رقمًا بين 1 و -1 ، والذي يستخدمه للحركة للأمام وللخلف.
+You will be able to use the WASD or arrow keys (players on a mobile or console can use different inputs without you changing your code.)
+
+`Input.GetAxis("Vertical")` takes input from the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys, and returns a number between 1 and -1, which it uses for forwards and backwards movement.
 
 --- code ---
 ---
@@ -174,57 +176,65 @@ line_highlights: 16-21
     }
 --- /code ---
 
-`عائم` هو رقم عشري.
+A `float` is a decimal number.
 
-**احفظ** نص برنامج PlayerController الخاص بكم في محرر الكود الخاص بكم ، باستخدام <kbd>Ctrl</kbd>+<kbd>S</kbd> (أو <kbd>Cmd</kbd>+<kbd>S</kbd>) ، ثم ارجع إلى Unity Editor.
+**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
 
-**نصيحة:** قد تجد أنه من الأسرع استخدام <kbd>Alt</kbd>+<kbd>Tab</kbd> (أو <kbd>Cmd</kbd>+<kbd>Tab</kbd>) للتبديل بين متصفح الويب الخاص بكم  مع تعليمات المشروع ومحرر Unity ومحرر الكود الخاص بكم .
+**Tip:** You might find it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
 
 --- /task ---
 
 --- task ---
 
-**اختبار:** انتقل إلى شريط الأدوات وانقر فوق الزر **Play** لوضع مشهدك في وضع التشغيل.
+**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode.
 
-ضع مؤشر الماوس **في عرض اللعبة** واضغط على المفتاحين <kbd>W</kbd> و <kbd>S</kbd>. انظروا إلى القيم التي تم تسجيلها في نافذة وحدة التحكم أثناء الضغط على المفاتيح. في كل مرة تضغط فيها على <kbd>W</kbd> ، يتم تسجيل رقم موجب ، وعند الضغط على <kbd>S</kbd> يتم تسجيل رقم سالب.
+Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged. A number is only logged if the value of speed **is not** 0 (see line 18 of the code).
 
-تتراوح الأرقام بين -1.0 و 1.0 وتتوافق مع الحركة من عناصر التحكم الرأسية على لوحة المفاتيح (أو وحدة التحكم في اللعبة). يمكنكم أيضًا استخدام مفاتيح الأسهم لأعلى ولأسفل.
+The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a game controller). You can also use the up and down arrow keys.
 
-![نافذة وحدة التحكم مع خمسة إدخالات سجل لها قيم بين -1 و 1.](images/console-values.png)
+![The Console window with five log entries that have values between -1 and 1.](images/console-values.png)
 
-**نصيحة:** يظهر الإخراج أيضًا في الشريط الموجود أسفل محرر الوحدة.
+**Tip:** The output also appears in the bar at the bottom of the Unity Editor.
 
-انقر فوق الزر **Play** مرة أخرى للخروج من وضع التشغيل وسيتوقف إخراج التصحيح.
-
---- /task ---
-
-من السهل أن تنسى ما إذا كانت لعبتكم  تلعب أم لا. تسهّل الصبغة اللونية لوضع التشغيل معرفة وقت تشغيل المشهد:
-
-![صور جنبًا إلى جنب لمحرر Unity بدون صبغة خفيفة مع لون خفيف للإشارة إلى أن اللعبة قيد التشغيل.](images/tint-no-tint.png)
-
---- task ---
-
-لتعيين صبغة ، انتقل إلى **قائمة التحرير** (أو قائمة الوحدة) وحدد **التفضيلات**. اختر قائمة **Colors** وابحث عن الخاصية المسماة **Playmode tint**.
-
-انقر فوق اللون الموجود لرؤية عجلة الألوان حيث يمكنك اختيار اللون ومستوى التعتيم:
-
-![نافذة عجلة الألوان المنبثقة مع تحديد صبغة عتامة متوسطة زرقاء.](images/tint-colour-window.png){:width="400px"}
-
-**نصيحة:** جرب لونًا فاتحًا حتى تتمكن من رؤية النص بوضوح في المحرر عند تشغيل المشهد.
-
-ارجع إلى Unity Editor واضغط على الزر **Play** لترى الصبغة الجديدة أثناء العمل. عندما تكون راضيًا عن الصبغة التي اخترتها ، اضغط على الزر **تشغيل** مرة أخرى للخروج من وضع التشغيل.
+Click the **Play** button again to exit Play mode and the debug output will stop.
 
 --- /task ---
 
-يوفر مكون التحكم في الأحرف طريقة `SimpleMove`.
+It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your scene is playing:
+
+![Side-by-side images of the Unity Editor without tint and with tint to indicate the game is playing.](images/tint-no-tint.png)
 
 --- task ---
 
-**أضف** كود لاستخدام قيمة الإدخال الرأسي لتحريك اللاعب في كل إطار.
+To set a tint, go to the **Edit Menu** (or Unity Menu) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
 
-يمكنك **إزالة** رمز التصحيح.
+Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
 
-يتم استخدام Unity `Vector3` لتخزين النُّقَط أو الاتجاهات ثلاثية الأبعاد. يخزن المتغير `إلى الأمام` الاتجاه الذي يواجهه اللاعب
+![The colour wheel pop-up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
+
+**Tip:** Try a light colour so that you can still clearly see the text in the editor when the scene is running.
+
+Return to the Unity Editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
+
+--- /task ---
+
+The Character Controller component provides a `SimpleMove` method.
+
+--- task ---
+
+**Add** code to use the vertical input value to move the Player each frame.
+
+You can **delete** the Debug code.
+
+**Tip:** You can also mask the `Debug.Log()` lines by putting `//` at the beginning of the line. You can also mask multiple lines using `/*` and `*/`:
+```
+        /*if (speed != 0) // Player moving
+        {
+            Debug.Log(speed);
+        }*/
+```
+
+Unity uses a special data type called a `Vector3` to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
 
 --- code ---
 ---
@@ -249,27 +259,27 @@ line_highlights: 18-23
 
 --- task ---
 
-**اختبار:** انقر فوق **تشغيل** للدخول إلى وضع التشغيل وجرب التعليمات البرمجية الخاصة بكم استخدموا مفتاحي <kbd>W</kbd> و <kbd>S</kbd> أو مفاتيح الأسهم لأعلى ولأسفل للتنقل للأمام وللخلف.
+**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys to glide forwards and backwards.
 
-**التصحيح:** تذكر أن تتحقق من نافذة وحدة التحكم للحصول على رسائل مفيدة. تحقق من الأقواس والفواصل المنقوطة والأحرف الكبيرة في التعليمات البرمجية بعناية.
+**Debug:** Remember to check the Console window for helpful messages. Check brackets, semicolons, and capital letters in your code carefully.
 
-**نصيحة:** تأكد من وجود مؤشر الماوس في عرض اللعبة ****.
+**Tip:** Make sure your mouse pointer is in the **Game view**.
 
-هل يمكنك المشي عبر الجدران؟ تمنعك طريقة `SimpleMove` من مكون التحكم في الأحرف من أن تكون قادرًا على السير عبر كائنات GameObject التي تحتوي على مصادم. تتم إضافة الحواجز تلقائيًا عند إنشاء شكل ثلاثي الأبعاد كما فعلت للجدار.
+Try and walk through the wall. The `SimpleMove` method from the Character Controller component stops you from being able to walk through GameObjects that have a collider. A collider is automatically added when you create a 3D shape as you did for the wall.
 
-يمكنك التجول في عرض المشهد بالضغط على زر الفأرة الأيمن والسحب. قم بالتحريك للحصول على رؤية أفضل للجدار بينما تدخل شخصيتك فيه:
+You can pan around in the Scene view by holding your right mouse button and dragging. Pan to get a better view of the wall as your character walks into it:
 
-![توقفت مناظر المشهد والألعاب للشخصية عند الحائط.](images/player-wall.gif){:width="500px"}
+![Scene and Game views of the character stopped at the wall.](images/player-wall.gif){:width="500px"}
 
-لتحريك لاعبك ، حرك مؤشر الماوس مرة أخرى إلى عرض **لعبة**.
+To move your Player, move the mouse pointer back to the **Game view**.
 
-انقر فوق الزر **Play** مرة أخرى للخروج من وضع التشغيل.
+Click the **Play** button again to exit Play mode.
 
 --- /task ---
 
 --- task ---
 
-أضف سطرًا آخر حتى تتمكن شخصيتك من `تدوير` عندما يضغط اللاعب على مفتاحي <kbd>A</kbd> و <kbd>D</kbd> أو مفتاحي الأسهم الأيمن والأيسر:
+Add another line so your character can `Rotate` when the player presses the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys:
 
 --- code ---
 ---
@@ -293,25 +303,25 @@ line_highlights: 18-19
     }
 --- /code ---
 
-احفظ الكود الخاص بك وقم بالرجوع إلى Unity Editor. ستقوم الوحدة بتحميل البرنامج النصي المحدث الخاص بك.
+Save your code and switch back to the Unity Editor. Unity will load your updated script.
 
 --- /task ---
 
 --- task ---
 
-**اختبار:** انقر فوق **تشغيل** للدخول إلى وضع التشغيل وجرب التعليمات البرمجية الخاصة بكم استخدم مفتاحي <kbd>A</kbd> و <kbd>D</kbd> أو مفتاحي الأسهم الأيمن والأيسر للتدوير.
+**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys to rotate.
 
-**التصحيح:** إذا كنت لا تزال ترى الإخراج إلى وحدة التحكم والحركة لا تعمل ، فتأكد من أنك قمت بحفظ البرنامج النصي الخاص بك في محرر التعليمات البرمجية.
+**Debug:** If you are still seeing output to the Console and movement isn't working, then make sure you have saved your script in the code editor.
 
-انقر فوق الزر **تشغيل** حتى تتمكن من سماع الصوت.
+Click the **Play** button again to exit Play mode.
 
 --- /task ---
 
-يمكنكم أيضًا التحكم في سرعة الحركة والدوران.
+You can also control the speed of movement and rotation.
 
 --- task ---
 
-افتح البرنامج النصي PlayerController وأضف متغيرات لـ `moveSpeed` و `rotateSpeed`.
+Open your PlayerController script and add variables for the `moveSpeed` and `rotateSpeed`.
 
 --- code ---
 ---
@@ -330,7 +340,7 @@ public class PlayerController : MonoBehaviour
 
 --- task ---
 
-قم بتحديث الكود إلى `قم بتدوير شخصيتك` و `SimpleMove` لمضاعفتهم بالمتغيرات الجديدة:
+Update the code to `Rotate` and `SimpleMove` your character to multiply them by the new variables:
 
 --- code ---
 ---
@@ -359,19 +369,25 @@ line_highlights: 29
 
 --- task ---
 
-**اختبار:** قم بتشغيل المشهد الخاص بك وتحقق مما إذا كنت راضيًا عن إعدادات السرعة.
+**Test:** Play your scene and check if you are happy with the speed settings.
 
-قم بإجراء التغييرات على `moveSpeed` و `rotateSpeed` في البرنامج النصي الخاص بك حتى تشعر بالرضا.
+If you select the Player in your scene view you can make changes to your `moveSpeed` and `rotateSpeed` variables in the Inspector.
 
-**نصيحة:** يمكنك إخفاء `Debug.Log ()` سطور عن طريق وضع `//` في بداية السطر. يمكنك أيضًا إخفاء خطوط متعددة باستخدام `/ *` و `* /`:
-```
-        /*if (speed != 0) // Player moving
-        {
-            Debug.Log(speed);
-        }*/
-```
+![Inspector view of the Player GameObject, with the variables for the Player Controller script highlighted.](images/inspector-variables.png)
 
-انقر فوق الزر **Play** مرة أخرى للخروج من وضع التشغيل.
+--- collapse ---
+
+---
+title: Variables in the Inspector
+---
+
+When you change the value of a variable in the Inspector, it takes priority over the value set in your script.
+
+Any future changes you make to those values in your script **will not take effect**.
+
+--- /collapse ---
+
+Click the **Play** button again to exit Play mode.
 
 --- /task ---
 
