@@ -5,7 +5,7 @@
 القائمة: السؤال 3 من 3
 ---
 
-من المفترض أن يقوم هذا البرنامج النصي بطباعة قيمة الحركة العمودية للاعب لكل إطار ، ولكنه يطبعها مرة واحدة فقط في البداية. كيف يمكنكم اصلاح هذا؟
+This Script is supposed to display the Player’s vertical movement value each frame, but it only displays it once at the start. كيف يمكنكم اصلاح هذا؟
 
 ```
 using System.Collections;
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
   --- feedback ---
 
-  نعم! `Debug.Log (السرعة) ؛ يوجد سطر` في طريقة `Start` ، والتي تعمل مرة واحدة فقط ، قبل الإطار الأول. سيؤدي نقل الكود إلى طريقة `Update` إلى تشغيل الكود في كل إطار حتى يستمر الوضع الرأسي للاعب في الطباعة.
+  نعم! `Debug.Log (السرعة) ؛ يوجد سطر` في طريقة `Start` ، والتي تعمل مرة واحدة فقط ، قبل الإطار الأول. Moving the code to the `Update` method will run the code every frame so the Player's current vertical position will always be displayed.
 
   --- /feedback ---
 
