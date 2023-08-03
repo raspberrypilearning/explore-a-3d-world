@@ -1,14 +1,18 @@
 ---
 title: اكتشف العالم الثلاثي الأبعاد
 hero_image: images/banner.png
-description: قم بإنشاء عالم ثلاثي الأبعاد في Unity واستكشفه بشخصية مشغل ثلاثي الأبعاد متحرك
+description:
+  - Create a 3D world in Unity and explore it with an animated 3D player
+  - character
+meta_title: Learn Unity | Game development | 3D world
+meta_description: Learn Unity game development with the Raspberry Pi Foundation. Create a 3D world in Unity and explore it with an animated 3D player character.
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: المقدمة
+    title: You will make
   - 
     title: اضبط المشهد ثلاثي الأبعاد
   - 
@@ -22,7 +26,7 @@ steps:
     completion:
       - internal
   - 
-    title: تفكير
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
