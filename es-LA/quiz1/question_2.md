@@ -35,7 +35,7 @@ Este objeto del juego está parcialmente debajo de un plano. ¿Qué propiedad de
 
   --- feedback ---
 
-  No, adjusting this property would move the GameObject horizontally, not make the GameObject move up. Piense en qué coordenada establece la posición en el eje arriba/abajo.
+  No, ajustar esta propiedad movería el Objeto del juego horizontalmente, no haría que el Objeto del juego se moviera hacia arriba. Piense en qué coordenada establece la posición en el eje arriba/abajo.
 
   En 2D, solo tienes las coordenadas X e Y. 3D agrega una coordenada Z, que se puede considerar como de adelante hacia atrás.
 
