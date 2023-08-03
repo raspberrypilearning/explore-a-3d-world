@@ -10,7 +10,7 @@
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-يقضي الأشخاص وقتًا أطول في <span style="color: #0faeb0">** بيئات افتراضية عبر الإنترنت **</span>. بالإضافة إلى ممارسة الألعاب ، يمكن للأشخاص الاسترخاء والاستكشاف والتواصل الاجتماعي والتعلم والمشاركة في الترفيه التفاعلي. يسمي بعض الناس مستقبل هذه البيئات <span style="color: #0faeb0">** metaverse **</span>. القدرة على تصميم عوالم ثلاثية الأبعاد هي مهارة مهمة.
+People are spending more time in <span style="color: #0faeb0">**online virtual worlds**</span>. As well as playing games, people relax, explore, socialise and learn. Being able to design 3D worlds provides you with endless opportunities to create interactive experiences like these.
 </p>
 
 يحتاج مشروع الوحدة إلى "أصول" للرسومات والصوت.
@@ -71,7 +71,7 @@
 
 تحتوي حزمة Unity starter التي قمت بتنزيلها على عدد من الأصول لتستخدمها في مشروعك.
 
-لاستيرادها إلى مشروعكم الجديد ، انقر فوق قائمة **الأصول** وحدد **حزمة استيراد حزمة مخصصة ... ثم انتقلوا إلى حزمة <Unity starter التي تم تنزيلها.</p>
+To import them into your new project, click on the **Assets** menu in the top bar and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
 
 --- /task ---
 
@@ -198,7 +198,7 @@
 
 الآن قموا بتغيير المكعب إلى جدار باستخدام إعدادات الموضع والمقياس التالية:
 
-![مكون التحويل مع موضع محدث وخصائص المقياس. المركز x = 0 ، y = 1 ، z = 3. مقياس x = 5 ، y = 2 ، z = 0.25.](images/transform-cube-to-wall.png){:width="400px"}
+![The Transform component with updated position and scale properties. المركز x = 0 ، y = 1 ، z = 3. مقياس x = 5 ، y = 2 ، z = 0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
 يمكنكم إما إدخال القيم في مكون التحويل للمكعب أو النقر فوق أداة القياس واسحب المقابض في عرض المشهد (سيؤدي ذلك إلى تحديث قيم التحويل.)
 
@@ -224,7 +224,7 @@
 
 أضيفوا نسيجًا بالنقر فوق الدائرة الموجودة على يسار "البيدو" واختيار **نسيج BrickWallAlbedo** من القائمة:
 
-![النافذة المنبثقة لتحديد نسيج مع تمييز "BrickWallAlbedo".](images/add-texture.png)
+![The pop-up window to select a texture with 'BrickWallAlbedo' highlighted.](images/add-texture.png)
 
 اسحب المادة الجديدة من نافذة المشروع إلى طائرتكم في طريقة عرض المشهد:
 
