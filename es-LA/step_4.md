@@ -176,57 +176,57 @@ line_highlights: 16-21
     }
 --- /code ---
 
-A `float` is a decimal number.
+Un `flotante` es un número decimal.
 
-**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
+**Guarde** su secuencia de comandos ControladorJugador en su editor de código, usando <kbd>Ctrl</kbd>+<kbd>S</kbd> (o <kbd>Cmd</kbd>+<kbd>S</kbd>), luego regrese al Editor de Unity.
 
-**Tip:** You might find it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
+**Sugerencia:** Puede que le resulte más rápido usar <kbd>Alt</kbd>+<kbd>Tab</kbd> (o <kbd>Cmd</kbd>+<kbd>Tab</kbd>) para cambiar entre su navegador web con las instrucciones del proyecto, el editor de Unity y su editor de código.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode.
+**Prueba:** Vaya a la barra de herramientas y haga clic en el botón **Reproducir** para poner su escena en modo Reproducir.
 
-Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged. A number is only logged if the value of speed **is not** 0 (see line 18 of the code).
+Coloque **el puntero del mouse en la Vista de juego** y presione las teclas <kbd>W</kbd> y <kbd>S</kbd>. Mire los valores registrados en la ventana Consola mientras presiona las teclas. Cada vez que presiona <kbd>W</kbd> se registra un número positivo, cuando presiona <kbd>S</kbd> se registra un número negativo. Solo se registra un número si el valor de la velocidad **no es** 0 (consulte la línea 18 del código).
 
-The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a game controller). You can also use the up and down arrow keys.
+Los números oscilan entre -1,0 y 1,0 y corresponden al movimiento de los controles verticales del teclado (o un controlador de juego). También puede utilizar las teclas de flecha arriba y abajo.
 
-![The Console window with five log entries that have values between -1 and 1.](images/console-values.png)
+![La ventana Consola con cinco entradas de registro que tienen valores entre -1 y 1.](images/console-values.png)
 
-**Tip:** The output also appears in the bar at the bottom of the Unity Editor.
+**Sugerencia:** La salida también aparece en la barra en la parte inferior del editor Unity.
 
-Click the **Play** button again to exit Play mode and the debug output will stop.
-
---- /task ---
-
-It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your scene is playing:
-
-![Side-by-side images of the Unity Editor without tint and with tint to indicate the game is playing.](images/tint-no-tint.png)
-
---- task ---
-
-To set a tint, go to the **Edit Menu** (or Unity Menu) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
-
-Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
-
-![The colour wheel pop-up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
-
-**Tip:** Try a light colour so that you can still clearly see the text in the editor when the scene is running.
-
-Return to the Unity Editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
+Haga clic en el botón **Reproducir** nuevamente para salir del modo Reproducir y la salida de depuración se detendrá.
 
 --- /task ---
 
-The Character Controller component provides a `SimpleMove` method.
+Es fácil olvidar si tu juego está jugando o no. Un color del modo de reproducción hace que sea más fácil saber cuándo se está reproduciendo su escena:
+
+![Imágenes en paralelo del Editor de Unity sin color y con color para indicar que se está jugando el juego.](images/tint-no-tint.png)
 
 --- task ---
 
-**Add** code to use the vertical input value to move the Player each frame.
+Para establecer un color, vaya al **Menú de edición** (o Menú de Unity) y seleccione **Preferencias**. Elija el menú **Colores** y busque la propiedad llamada **Color del Mode de juego**.
 
-You can **delete** the Debug code.
+Haga clic en el color existente para ver una rueda de colores donde puede elegir un color y un nivel de opacidad:
 
-**Tip:** You can also mask the `Debug.Log()` lines by putting `//` at the beginning of the line. You can also mask multiple lines using `/*` and `*/`:
+![La ventana emergente de la rueda de colores con un color azul de opacidad media seleccionado.](images/tint-colour-window.png){:width="400px"}
+
+**Sugerencia:** Pruebe con un color claro para poder ver claramente el texto en el editor cuando la escena se está ejecutando.
+
+Vuelva al Editor de Unity y presione el botón **Reproducir** para ver su nuevo tinte en acción. Cuando esté satisfecho con el color que ha elegido, presione el botón **Reproducir** nuevamente para salir del modo Reproducir.
+
+--- /task ---
+
+El componente Controlador de caracteres proporciona un método `Movimiento Simple`.
+
+--- task ---
+
+**Agregue** código para usar el valor de entrada vertical para mover el jugador en cada cuadro.
+
+Puede **eliminar** el código de depuración.
+
+**Sugerencia:** Puede enmascarar las lineas del `Debug.Log()` poniendo `//` al principio de la línea. También puede enmascarar varias líneas usando `/*` y `*/`:
 ```
         /*if (speed != 0) // Player moving
         {
@@ -234,7 +234,7 @@ You can **delete** the Debug code.
         }*/
 ```
 
-Unity uses a special data type called a `Vector3` to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
+Unity usa un tipo de datos especial llamado `Vector3` para almacenar puntos o direcciones en 3D. La variable `adelante` almacena la dirección hacia la que mira el jugador:
 
 --- code ---
 ---
@@ -259,27 +259,27 @@ line_highlights: 18-23
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys to glide forwards and backwards.
+**Prueba:** Haga clic en **Reproducir** para ingresar al modo Reproducir y probar su código. Utilice las teclas <kbd>W</kbd> y <kbd>S</kbd> o las teclas de flecha arriba y abajo para deslizarse hacia adelante y hacia atrás.
 
-**Debug:** Remember to check the Console window for helpful messages. Check brackets, semicolons, and capital letters in your code carefully.
+**Depuración:** Recuerde consultar la ventana Consola para ver mensajes útiles. Revise cuidadosamente los corchetes, los puntos y comas y las letras mayúsculas en su código.
 
-**Tip:** Make sure your mouse pointer is in the **Game view**.
+**Sugerencia:** Asegúrese de que el puntero del mouse esté en la **Vista del juego**.
 
-Try and walk through the wall. The `SimpleMove` method from the Character Controller component stops you from being able to walk through GameObjects that have a collider. A collider is automatically added when you create a 3D shape as you did for the wall.
+Intenta caminar a través de la pared. El método `Movimiento Simple` del componente Controlador de personajes impide que pueda caminar a través de Objectos del Juego que tienen un colisionador. Un colisionador se agrega automáticamente cuando crea una figura 3D como lo hizo para la pared.
 
-You can pan around in the Scene view by holding your right mouse button and dragging. Pan to get a better view of the wall as your character walks into it:
+Puede desplazarse por la vista de escena manteniendo presionado el botón derecho del mouse y arrastrando. Desplácese para obtener una mejor vista de la pared a medida que su personaje camina hacia ella:
 
-![Scene and Game views of the character stopped at the wall.](images/player-wall.gif){:width="500px"}
+![Vistas de Escena y Juego del personaje detenido en la pared.](images/player-wall.gif){:width="500px"}
 
-To move your Player, move the mouse pointer back to the **Game view**.
+Para mover su jugador, mueva el puntero del mouse de regreso a la vista **Juego**.
 
-Click the **Play** button again to exit Play mode.
+Haga clic en el botón **Reproducir** nuevamente para salir del modo Reproducir.
 
 --- /task ---
 
 --- task ---
 
-Add another line so your character can `Rotate` when the player presses the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys:
+Agregue otra línea para que su personaje pueda `Rotar` cuando el jugador presiona las teclas <kbd>A</kbd> y <kbd>D</kbd> o las teclas de flecha izquierda y derecha:
 
 --- code ---
 ---
@@ -303,25 +303,25 @@ line_highlights: 18-19
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor. Unity will load your updated script.
+Guarda tu secuencia de código y regresa al Editor de Unity. Unity cargará su secuencia de código actualizada.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys to rotate.
+**Prueba:** Haga clic en **Reproducir** para ingresar al modo Reproducir y probar su código. Use las teclas <kbd>A</kbd> y <kbd>D</kbd> o las teclas de flecha izquierda y derecha para rotar.
 
-**Debug:** If you are still seeing output to the Console and movement isn't working, then make sure you have saved your script in the code editor.
+**Depuración:** Si sigue viendo el resultado en la Consola y el movimiento no funciona, asegúrese de haber guardado su secuencia de código en el editor de código.
 
-Click the **Play** button again to exit Play mode.
+Haga clic en el botón **Reproducir** nuevamente para salir del modo Reproducir.
 
 --- /task ---
 
-You can also control the speed of movement and rotation.
+También puede controlar la velocidad de movimiento y rotación.
 
 --- task ---
 
-Open your PlayerController script and add variables for the `moveSpeed` and `rotateSpeed`.
+Abre tu secuencia de comandos del Controlador de Juegador y agrega variables para `Vlocidad de Movimiento` y `Velocidad de Rotación`.
 
 --- code ---
 ---
@@ -340,7 +340,7 @@ public class PlayerController : MonoBehaviour
 
 --- task ---
 
-Update the code to `Rotate` and `SimpleMove` your character to multiply them by the new variables:
+Actualice el código a `Rotar` y `Movimiento Simple` de tu personaje para multiplicarlos por las nuevas variables:
 
 --- code ---
 ---
@@ -352,7 +352,7 @@ line_highlights: 22
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
 --- /code ---
 
-and
+y
 
 --- code ---
 ---
@@ -369,25 +369,25 @@ line_highlights: 29
 
 --- task ---
 
-**Test:** Play your scene and check if you are happy with the speed settings.
+**Prueba:** Reproduzca su escena y verifique si está satisfecho con la configuración de velocidad.
 
-If you select the Player in your scene view you can make changes to your `moveSpeed` and `rotateSpeed` variables in the Inspector.
+Si selecciona el reproductor en su vista de escena, puede realizar cambios en sus variables `moveSpeed` y `rotateSpeed` en el Inspector.
 
-![Inspector view of the Player GameObject, with the variables for the Player Controller script highlighted.](images/inspector-variables.png)
+![Vista de inspección del Player GameObject, con las variables para el script de Player Controller resaltadas.](images/inspector-variables.png)
 
 --- collapse ---
 
 ---
-title: Variables in the Inspector
+title: Variables en el Inspector
 ---
 
-When you change the value of a variable in the Inspector, it takes priority over the value set in your script.
+Cuando cambia el valor de una variable en el Inspector, tiene prioridad sobre el valor establecido en su secuencia de comandos.
 
-Any future changes you make to those values in your script **will not take effect**.
+Cualquier cambio futuro que realice a esos valores en su secuencia de comandos **no tendrá efecto**.
 
 --- /collapse ---
 
-Click the **Play** button again to exit Play mode.
+Haga clic en el botón **Reproducir** nuevamente para salir del modo Reproducir.
 
 --- /task ---
 
