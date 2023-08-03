@@ -10,7 +10,7 @@ Ton monde 3D, ou « map », a besoin d'un sol et de murs.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Les gens passent plus de temps dans l'<span style="color: #0faeb0">**environnements virtuels en ligne**</span>. En plus de jouer à des jeux, les gens se détendent, explorent, socialisent, apprennent et participent à des divertissements interactifs. Certaines personnes appellent l'avenir de ces environnements le <span style="color: #0faeb0">**métaverse**</span>. Être capable de concevoir des mondes en 3D est une compétence importante.
+People are spending more time in <span style="color: #0faeb0">**online virtual worlds**</span>. As well as playing games, people relax, explore, socialise and learn. Being able to design 3D worlds provides you with endless opportunities to create interactive experiences like these.
 </p>
 
 Un projet Unity a besoin d'« Assets » graphiques et sonores.
@@ -71,7 +71,7 @@ title: Les fenêtres et les vues de l'éditeur Unity
 
 Le package de démarrage Unity que tu as téléchargé contient un certain nombre d'assets que tu peux utiliser dans ton projet.
 
-Pour les importer dans ton nouveau projet, clique sur le menu **Assets** et sélectionne **Import package** > **Custom Package...** puis accède au **package de démarrage Unity** téléchargé.
+To import them into your new project, click on the **Assets** menu in the top bar and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
 
 --- /task ---
 
@@ -198,7 +198,7 @@ Tu peux soit :
 
 Transforme maintenant le cube en mur avec les paramètres de position et d'échelle suivants :
 
-![Le composant Transform avec des propriétés de position et d'échelle mises à jour. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+![The Transform component with updated position and scale properties. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
 Tu peux soit entrer les valeurs dans le composant Transform pour le cube, soit cliquer sur l'outil Scale et faire glisser les poignées dans la vue Scene (cela mettra à jour les valeurs de transformation.)
 
@@ -224,7 +224,7 @@ Clique sur la couleur à côté de « Albedo » dans la fenêtre Inspector et ch
 
 Ajoute une texture en cliquant sur le cercle à gauche de « Albedo » et en sélectionnant la texture **BrickWallAlbedo** dans la liste :
 
-![La fenêtre pop-up pour sélectionner une texture avec "BrickWallAlbedo" en surbrillance.](images/add-texture.png)
+![The pop-up window to select a texture with 'BrickWallAlbedo' highlighted.](images/add-texture.png)
 
 Fais glisser ton nouveau matériau de la fenêtre Project vers ton mur dans la vue Scene :
 
