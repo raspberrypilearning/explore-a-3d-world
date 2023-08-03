@@ -1,10 +1,10 @@
-## Quick quiz
+## Test rápido
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Contesta las tres preguntas. Hay pistas para guiarte hacia la respuesta correcta.
 
-When you have answered each question, click on **Check my answer**.
+Cuando hayas respondido a cada pregunta, haz clic en **Revisar mi respuesta**.
 
-Have fun!
+¡Qué te diviertas!
 
 --- question ---
 
@@ -23,7 +23,7 @@ El editor de Unity tiene varias ventanas diferentes. ¿Qué ventana se esta most
 
   --- feedback ---
 
-  No, la Ventana de proyecto muestra una biblioteca de todos los archivos incluidos en su proyecto. In the Project window you can find Assets to use in your Scene by navigating the project file structure.
+  No, la Ventana de proyecto muestra una biblioteca de todos los archivos incluidos en su proyecto. En la Ventana de proyecto, usted puede encontrar recursos para usar en su escena navegando por la estructura de archivos del proyecto.
 
   --- /feedback ---
 
