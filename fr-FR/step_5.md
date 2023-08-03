@@ -6,25 +6,27 @@ Ton personnage se déplace, mais pour le moment, il est bloqué dans une positio
 
 --- task ---
 
-Fais glisser l'animateur **IdleWalk** du dossier **Animation** > **Animators** de la fenêtre Project vers la propriété Controller du composant Animator de ton personnage :
+Select the Player in the Hierarchy window.
 
-![L'animateur IdleWalk dans les animations pointant vers le contrôleur.](images/move_idlewalk.png)
+Drag the **IdleWalk** animator from the **Animation** > **Animators** folder in the Project window to the Controller property of the Animator component of your character:
 
-Cela ajoutera des animations Attente et Marche à ton personnage avec un paramètre booléen `forward` que tu peux utiliser pour contrôler quelle animation est lue.
+![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
 
---- /task ---
-
---- task ---
-
-**Test :** Joue ton projet et assure-toi que tu peux voir l'animation Attente :
-
-![Le personnage avec l'animation IdleWalk en mode Game.](images/idlewalk-animation.gif)
+This will add Idle and Walk animations to your character with a `forward` Boolean parameter that you can use to control which animation plays.
 
 --- /task ---
 
 --- task ---
 
-Ajoute du code à la méthode `Update` de ton script afin que lorsque le personnage avance, il utilise une animation de marche, sinon il utilise une animation d'attente :
+**Test:** Play your project and make sure you can see the Idle animation:
+
+![The character with IdleWalk animation in Game view.](images/idlewalk-animation.gif)
+
+--- /task ---
+
+--- task ---
+
+Add code to the `Update` method of your script so that when the character is moving forward it uses a walking animation, otherwise it uses an idle animation:
 
 --- code ---
 ---
@@ -39,7 +41,7 @@ line_highlights: 21-31
         //Set animations
         Animator anim = gameObject.GetComponent<Animator>();
     
-        if (Input.GetAxis("Vertical") > 0) // Forwards
+        if (speed != 0) // Is moving
         {
             anim.SetBool("forward", true);
         }
@@ -56,45 +58,45 @@ line_highlights: 21-31
 
 --- task ---
 
-**Test :** Joue ton projet et assure-toi que tu peux voir l'animation changer pour marcher lorsque tu avances et passer en mode attente lorsque tu n'avances pas :
+**Test:** Play your project and make sure you can see the animation change to walk when you move forward and switch to idle when you are not moving forward:
 
-![Le personnage avec une animation en attente lorsqu'il est immobile et une animation de marche lorsqu'il avance.](images/idle-and-walk-animation.gif)
+![The character with Idle animation when standing still and Walk animation when moving forward.](images/idle-and-walk-animation.gif)
 
 --- /task ---
 
-Dans les jeux, la caméra suit souvent le joueur.
+In games, the camera often follows the Player.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Le placement d'une <span style="color: #0faeb0">**caméra virtuelle**</span> dans un environnement 3D est essentiel pour créer la bonne perspective pour les utilisateurs. Les niveaux de visibilité de l'objectif de la caméra affectent le niveau de difficulté et influencent l'atmosphère d'un jeu. 
+The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3D environment is key for creating the right perspective for users. Visibility levels from the camera lens affect the difficulty level and influence the atmosphere of a game. 
 </p>
 
 --- task ---
 
-Dans la fenêtre Hierarchy, fais glisser la **Main Camera** vers le GameObject Joueur ; il deviendra un « enfant » du joueur et suivra le joueur partout.
+In the Hierarchy window, drag the **Main Camera** to the Player GameObject; it will become a 'child' of the Player and will follow the Player around.
 
-![La fenêtre Hierarchy avec la main camera positionnée à l'intérieur du joueur en tant que Gameobject enfant.](images/child-camera.png)
+![The Hierarchy window with main camera positioned inside the Player as a child game object.](images/child-camera.png)
 
 --- /task ---
 
 --- task ---
 
-**Test :** Joue ton projet. La caméra va maintenant suivre ton personnage, mais c'est un peu loin et des murs se dressent souvent entre le joueur et la caméra.
+**Test:** Play your project. The camera will now follow your character, but it's a bit far away and walls often come between the Player and the camera.
 
-![Le personnage se déplaçant sur la scène avec la caméra qui le suit.](images/camera-follow-player.gif)
+![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
 
 --- /task ---
 
-Tu peux ajuster la position et la rotation de la caméra dans la vue Scene ou la fenêtre Inspector.
+You can adjust the position and rotation of the camera in the Scene view or the Inspector window.
 
 --- task ---
 
-Quitte le mode Play et sélectionne **Main Camera** dans la fenêtre Hierarchy. Ajuste ses paramètres Transform pour obtenir une vue à la troisième personne de ton joueur, en regardant de derrière et au-dessus de ton joueur :
+Exit Play mode and select the **Main Camera** in the Hierarchy window. Adjust its Transform settings to get a third-person view of your Player, looking down from behind and above your Player:
 
-![Le composant Transform de la caméra principale avec la position x = 0, y = 2,5, z = -2,5 et la rotation x = 35.](images/birdseye-transform.png)
+![The Transform component of the main camera with position x = 0, y = 2.5, z = -2.5, and rotation x = 35.](images/birdseye-transform.png)
 
-![La vue Game avec de nouvelles coordonnées.](images/birdseye-game.png)
+![The Game view with new coordinates.](images/birdseye-game.png)
 
-Tu peux positionner la caméra dans la vue Scene à l'aide des outils Transform et Rotate si tu préfères :
+You can position the camera in the Scene view using the Transform and Rotate tools if you prefer:
 
 ![The Scene view with Transform and Rotate tools highlighted and the camera selected with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
 
@@ -102,15 +104,15 @@ Tu peux positionner la caméra dans la vue Scene à l'aide des outils Transform 
 
 --- task ---
 
-**Test :** Joue ton projet. La caméra suivra maintenant ton personnage avec la caméra juste derrière et au-dessus de lui et regardant vers le bas.
+**Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
 
-Ajuste les paramètres de la caméra jusqu'à ce que tu en sois satisfait.
+Adjust the camera settings until you are happy with them.
 
-**Astuce :** Tu peux essayer les paramètres en mode Play, mais tu dois quitter le mode Play et mettre à jour les paramètres pour les conserver.
+**Tip:** You can try settings out in Play mode but you need to exit Play mode and update the settings to keep them.
 
-Que se passe-t-il si tu sors du bord du plane ? Ne t'inquiètes pas, ton personnage reviendra au centre la prochaine fois que tu entreras en mode Game :
+What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Play mode:
 
-![La vue Game avec un personnage animé se déplaçant dans l'environnement et la caméra suivant avec une vue de dessus.](images/birdseye-walkthrough.gif)
+![The Game view with animated character moving through the environment and the camera following with a birds eye view.](images/birdseye-walkthrough.gif)
 
 --- /task ---
 
