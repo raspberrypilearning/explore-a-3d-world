@@ -1,10 +1,10 @@
-## Wat nu?
+## Quick quiz
 
-Goed gedaan! Je hebt je eerste Unity-project gemaakt en zo veel nieuwe vaardigheden geleerd.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Nu is het tijd om na te denken: Dit zorgt ervoor dat je begrijpt wat je hebt geleerd en helpt je om te onthouden.
+When you have answered each question, click on **Check my answer**.
 
-Beantwoord de drie vragen. Druk na elke vraag op Controleer mijn antwoord. Je wordt naar het juiste antwoord geleid. Je kunt deze activiteit zo vaak doen als je wilt.
+Have fun!
 
 --- question ---
 
@@ -23,7 +23,7 @@ De Unity Editor heeft verschillende vensters. Welk venster wordt hier weergegeve
 
   --- feedback ---
 
-  Nee, het venster Project toont een bibliotheek met alle bestanden in je project. In het venster Project kun je elementen vinden die je in je Scène kunt gebruiken door de structuur van het projectbestand te bepalen.
+  Nee, het venster Project toont een bibliotheek met alle bestanden in je project. In the Project window you can find Assets to use in your Scene by navigating the project file structure.
 
   --- /feedback ---
 
