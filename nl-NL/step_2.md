@@ -10,7 +10,7 @@ Je 3D-wereld, of 'toegangspunt', heeft een vloer en muren nodig.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Mensen brengen meer tijd door in <span style="color: #0faeb0">**online virtuele omgevingen**</span>. Naast het spelen van games, ontspannen, verkennen, socialiseren en leren mensen en nemen deel aan interactief entertainment. Sommige mensen noemen de toekomst van deze omgevingen de <span style="color: #0faeb0">**metaverse**</span>. Het kunnen ontwerpen van 3D-werelden is een belangrijke vaardigheid.
+People are spending more time in <span style="color: #0faeb0">**online virtual worlds**</span>. As well as playing games, people relax, explore, socialise and learn. Being able to design 3D worlds provides you with endless opportunities to create interactive experiences like these.
 </p>
 
 Een Unity-project heeft graphics en geluid 'Assets' nodig.
@@ -71,7 +71,7 @@ title: De vensters en weergaven van de Unity Editor
 
 Het Unity-starter package dat je hebt gedownload bevat een aantal elementen die je in je project kunt gebruiken.
 
-Om ze in je nieuwe project te importeren, klik je op het **Assets** menu en selecteer je **Import package** > **Custom Package...** en navigeer je vervolgens naar het gedownloade **Unity starter package**.
+To import them into your new project, click on the **Assets** menu in the top bar and select **Import package** > **Custom Package...** then navigate to the downloaded **Unity starter package**.
 
 --- /task ---
 
@@ -198,7 +198,7 @@ je kunt:
 
 Verander nu de kubus in een muur met de volgende positie- en schaalinstellingen:
 
-![De Transform-component met bijgewerkte positie- en schaaleigenschappen. Positie x=0, y=1, z=3. Schaal x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+![The Transform component with updated position and scale properties. Positie x=0, y=1, z=3. Schaal x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
 
 Je kunt de waarden invoeren in de Transform-component voor de kubus of op de Scale-tool klikken en de handvatten in de Scene-weergave slepen (hiermee worden de Transform-waarden bijgewerkt.)
 
@@ -224,7 +224,7 @@ Klik op de kleur naast 'Albedo' in het Inspector venster en kies een kleur voor 
 
 Voeg een textuur toe door op de cirkel links van 'Albedo' te klikken en **BrickWallAlbedo** texture te selecteren in de lijst:
 
-![Het pop-upvenster om een structuur te selecteren met 'BrickWallAlbedo' gemarkeerd.](images/add-texture.png)
+![The pop-up window to select a texture with 'BrickWallAlbedo' highlighted.](images/add-texture.png)
 
 Sleep je nieuwe materiaal van het Project venster naar je muur in de scèneweergave:
 
