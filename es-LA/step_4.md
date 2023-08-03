@@ -1,67 +1,67 @@
-## Add character movement
+## Agrega movimiento a tu personaje
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your player will move with the WASD or arrow keys. 
+Tu jugador se moverá con las teclas WASD o las teclas de flechas. 
 </div>
 <div>
-![The scene in Game view with character moving around the scene.](images/moving-character.gif){:width="300px"}
+![La escena en la vista Juego con el personaje moviéndose por la escena.](images/moving-character.gif){:width="300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Unity uses the <span style="color: #0faeb0">**C#**</span> (pronounced C sharp) programming language, which is used by professional software developers. C# is an object-oriented language with **classes** that define behaviour for similar objects and **methods**, which are functions that belong to a class. In Unity, a **script** defines a class with variables and methods. You can add the same script to multiple GameObjects if they need the same features.</p>
+Unity utiliza el lenguaje de programación <span style="color: #0faeb0">**C#**</span> (pronunciado C sharp), que utilizan los desarrolladores de software profesionales. C# es un lenguaje orientado a objetos con **clases** que definen el comportamiento de objetos y **métodos** similares, que son funciones que pertenecen a una clase. En Unity, un **codigo** define una clase con variables y métodos. Puede agregar el mismo codigo a varios Objectos de juego si necesitan las mismas funciones.</p>
 
 --- task ---
 
-Click on the **Player** GameObject in the Hierarchy window or Scene view so you can see its properties in the Inspector window.
+Haga clic en Objectos de juego**Jugador** en la ventana Jerarquía o en la vista Escena para poder ver sus propiedades en la ventana de Inspeccion.
 
-![The Player Game Object selected in the Hierarchy.](images/player-selected.png){:width="300px"}
+![El Objeto de juego del jugador seleccionado en la jerarquía.](images/player-selected.png){:width="300px"}
 
-**Tip:** Make sure you have the **Player** selected and not one of its child objects.
+**Sugerencia:** Asegúrese de tener seleccionado el **Jugador** y no uno de sus objetos hijos.
 
-Click **Add Component** and start to type `character` in the Search box, then click on the **Character Controller** component when it appears:
+Haga clic en **Añadir Componente** y comience a escribir `caracteres` en el cuadro de búsqueda, luego haga clic en el componente **Controlador de personajes** cuando este aparezca:
 
-![The 'Add Component' menu showing the character controller.](images/character-controller-add.png)
+![El menú 'Agregar componente' que muestra el controlador de personajes.](images/character-controller-add.png)
 
 --- /task ---
 
-The Character Controller component adds new features to your Player GameObject including a `SimpleMove` method and a **collider**. Colliders can be used to stop your character walking through solid objects and to detect when collisions take place.
+El componente Controlador de Personaje agrega nuevas funciones a su Objeto de juego Jugador, incluido un método `MovimientoSimple` y un **colisionador**. Los colisionadores se pueden usar para evitar que tu personaje camine a través de objetos sólidos y para detectar cuándo se producen colisiones.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- A <span style="color: #0faeb0">**collider**</span> is a shape that is used to detect when a GameObject collides, or intersects, with another GameObject. It's much quicker for a computer to check for collisions with a simple collider shape than the complex shape of a GameObject. A **hitbox** is a kind of collider. </p>
+ Un <span style="color: #0faeb0">**colisionador**</span> es una figura que se usa para detectar cuando un Objecto de juego choca o se cruza con otro Objecto de juego. Es mucho más rápido para una computadora buscar colisiones con una forma de colisionador simple que con la forma compleja de un Objeto de juego. Una **Caja de Choque** es una especie de colisionador. </p>
 
 --- task ---
 
-The Character Controller collider has a height of `2` and a centre at `0, 0, 0`; this means it is positioned half above and half below the plane:
+El colisionador del controlador de personajes tiene una altura de `2` y un centro en `0, 0, 0`; esto significa que se coloca la mitad por encima y la mitad por debajo del plano:
 
-![The Scene view showing the character with a Character Controller capsule around the model.](images/scene-char-controller.png){:width="300px"}
+![La vista de escena que muestra al personaje con una cápsula de controlador de personaje alrededor del modelo.](images/scene-char-controller.png){:width="300px"}
 
-Your character has a height of `1`, meaning their centre on the y-axis is at `0.5`. Change the value in the Character Controller y-axis centre to `0.5` and the height to `1` to match the character:
+Tu personaje tiene una altura de `1`, lo que significa que su centro en el eje Y está en `0.5`. Cambie el valor en el centro del eje Y del controlador de caracteres a `0.5` y la altura a `1` para que coincida con el personaje:
 
-![The Inspector window properties of the Character Controller component.](images/properties-controller.png){:width="400px"}
+![Las propiedades de la ventana de inspeccion del componente Controlador de personajes.](images/properties-controller.png){:width="400px"}
 
-![The Scene view showing the character with a Character Controller capsule around the model.](images/updated-char-controller.png){:width="300px"}
+![La vista de escena muestra al personaje con una cápsula de controlador de personaje alrededor del modelo.](images/updated-char-controller.png){:width="300px"}
 
 --- /task ---
 
-Your character needs a script so that the player can move it around. You'll need a code editor installed on your computer to edit this script.
+Tu personaje necesita una secuencia de codigo para que el jugador pueda moverlo. Necesitará un editor de código instalado en su computadora para editar esta secuencia de codigo.
 
-[[[unity-visual-studio]]]
+[[[unity-visual-studio-code]]]
 
 --- task ---
 
-Go to the Inspector window for the Player and click on the **Add Component** button. Type `script` and select **New Script**. Name your new script `PlayerController`, then press <kbd>Enter</kbd>.
+Vaya a la ventana Inspector del jugador y haga clic en el botón **Agregar componente**. Escriba la `secuencia de codigo` y seleccione **Nueva secuencia de codigo**. Nombre su nuevo script `ControladorJugador`, luego presione <kbd>Enter</kbd>.
 
-The new script will be saved in the Assets folder:
+La nueva secuencia de codigo se guardara en la carpeta Activos:
 
-![The Project window with new 'My Scripts' folder shown.](images/new-script-project.png){:width="400px"}
+![Se muestra la ventana Proyecto con la nueva carpeta 'Mis secuencias de codigo'.](images/new-script-project.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-Double-click on **PlayerController** in the script component in the Inspector window. The script will open in a separate code editor and have this code:
+Haga doble clic en **ControladorJugador** en el componente de secuencia de codigo en la ventana de Inspeccion. La secuencia de código se abrirá en un editor de código separado y tendrá este código:
 
 --- code ---
 ---
@@ -83,15 +83,15 @@ public class PlayerController : MonoBehaviour
     }
 } --- /code ---
 
-**Debug:** Check that the name after 'class' is `PlayerController` and this matches the name of your script file: if you rename the file after creating it, then you will need to change the class name in the script.
+**Depuración:** Verifique que el nombre después de 'clase' sea `ControladorJugador` y coincida con el nombre de su archivo de secuencia de comandos: si cambia el nombre del archivo después de crearlo, deberá cambiar el nombre de la clase en la secuencia de comandos.
 
 --- /task ---
 
-The Start method is called once when you play your scene. Add code to print the message `Player started` when your project starts running.
+El método Inicio se llama una vez cuando reproduce su escena. Agregue código para imprimir el mensaje `El jugador comenzó` cuando su proyecto comience a ejecutarse.
 
 --- task ---
 
-Use the `Debug.Log()` method to print a message when the `Start` method is called for the Player GameObject. The message will appear in the bar at the bottom of the Unity Editor and in the Console window:
+Utilice el método `Debug.Log()` para imprimir un mensaje cuando se llame al método `Inicio` para el Obejto de juego Jugador. El mensaje aparecerá en la barra en la parte inferior del Editor de Unity y en la ventana Consola:
 
 --- code ---
 ---
@@ -106,52 +106,54 @@ line_highlights: 10
     }
 --- /code ---
 
-**Tip:** The lines starting with // are comments that explain the code. You don’t need to type them.
+**Sugerencia:** Las líneas que comienzan con // son comentarios que explican el código. No es necesario escribirlos.
 
-**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor. The Unity Editor will load your script to get it ready to run; this may take a few seconds.
-
---- /task ---
-
---- task ---
-
-Click on the Console window tab to bring it to the front:
-
-![The tab for the Console window highlighted in the bottom left section of the Unity Editor.](images/console-window.png){:width="400px"}
+**Guarde** su secuencia de comandos ControladorJugador en su editor de código, usando <kbd>Ctrl</kbd>+<kbd>S</kbd> (o <kbd>Cmd</kbd>+<kbd>S</kbd>), luego regrese al Editor de Unity. El Editor de Unity cargará su secuencia de código para que esté listo para ejecutarse; Esto puede tardar unos pocos segundos.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Go to the Toolbar and click once on the **Play** button to put your scene into Play mode. This will simulate your scene as it would be viewed and interacted with by a user:
+Haga clic en la pestaña de la ventana Consola para traerla al frente:
 
-![The Toolbar at the top of the Unity Editor with Play button highlighted.](images/play-button.png){:width="400px"}
-
-Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Player started' output in the Console.
-
-![The Console window with the time-stamped 'Player started' message as a comment.](images/player-started.png)
-
-**Debug:** Your scene won't play if there are errors in your code. Check the Console window for information. You may see:
-+ `; expected` – check for a semicolon `;` at the end of each line of code.
-+ `Newline in constant` – you missed a quote `"` from the end of a text string.
-+ `} expected` – you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
-+ `) expected` – make sure there's a closing `)` at the end of each method call, before the semicolon.
-+ `Debug` does not contain a definition for 'log' – C# is case sensitive, so it needs to be `Log` with a capital `L`.
-
-Compare your code with the example code and make sure everything is exactly the same.
+![La pestaña de la ventana Consola resaltada en la sección inferior izquierda del Editor de Unity.](images/console-window.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-Click once on the **Play** button again to exit Play mode and the debug output will stop.
+**Prueba:** Vaya a la barra de herramientas y haga clic una vez en el botón **Reproducir** para poner su escena en modo Reproducir. Esto simulará su escena, como sería vista y como se interactuaria con ella por parte de un usuario:
 
-**Tip:** Changes made in Play mode are lost when you exit Play mode. Make sure you exit Play mode when you finish testing.
+![La barra de herramientas en la parte superior de Unity Editor con el botón Reproducir resaltado.](images/play-button.png){:width="400px"}
+
+Unity tarda unos segundos en iniciarse, luego debería ver el resultado `Debug.Log()` 'Jugador iniciado' en la consola.
+
+![La ventana de la consola con el mensaje "Jugador iniciado" con marca de tiempo como comentario.](images/player-started.png)
+
+**Depuración:** Su escena no se reproducirá si hay errores en su código. Consulte la ventana Consola para obtener información. Podrias ver:
++ `; esperado`: verifique si hay un punto y coma `;` al final de cada línea de código.
++ `Nueva línea en la constante`: se perdió una comilla `"` del final de una cadena de texto.
++ `} esperado` - usted debe tener un par de corchetes abiertos y cerrados `{}` alrededor de cada método y alrededor de la clase. Compruebe que sus corchetes coincidan.
++ `) esperado` - asegúrese de que haya un cierre de parentesis `)` al final de cada llamada al método, antes del punto y coma.
++ `El depurador` no contiene una definición para 'registro': C# distingue entre mayúsculas y minúsculas, por lo que debe ser `Log` con mayúscula `L`.
+
+Compare su código con el código de ejemplo y asegúrese de que todo sea exactamente igual.
 
 --- /task ---
 
-Unity creates the effect of movement by quickly drawing images to the screen. Each image is a **frame**. The `Update` method is called once every frame.
+--- task ---
+
+Haga clic una vez en el botón **Reproducir** nuevamente para salir del modo Reproducir y la salida de depuración se detendrá.
+
+**Sugerencia:** Los cambios realizados en el modo de reproducción se pierden cuando sale del modo de reproducción. Asegúrese de salir del modo de reproducción cuando termine la prueba.
+
+--- /task ---
+
+Unity crea el efecto de movimiento al dibujar rápidamente imágenes en la pantalla. Cada imagen es un **cuadro**. El método `Actualizar` se llama una vez por cada cuadro.
 
 --- task ---
+
+Switch to your code editor.
 
 You will be able to use the WASD or arrow keys (players on a mobile or console can use different inputs without you changing your code.)
 
@@ -178,7 +180,7 @@ A `float` is a decimal number.
 
 **Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
 
-**Tip:** You might finding it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
+**Tip:** You might find it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
 
 --- /task ---
 
@@ -186,7 +188,7 @@ A `float` is a decimal number.
 
 **Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode.
 
-Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged.
+Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged. A number is only logged if the value of speed **is not** 0 (see line 18 of the code).
 
 The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a game controller). You can also use the up and down arrow keys.
 
@@ -222,9 +224,17 @@ The Character Controller component provides a `SimpleMove` method.
 
 **Add** code to use the vertical input value to move the Player each frame.
 
-You can **remove** the Debug code.
+You can **delete** the Debug code.
 
-A Unity `Vector3` is used to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
+**Tip:** You can also mask the `Debug.Log()` lines by putting `//` at the beginning of the line. You can also mask multiple lines using `/*` and `*/`:
+```
+        /*if (speed != 0) // Player moving
+        {
+            Debug.Log(speed);
+        }*/
+```
+
+Unity uses a special data type called a `Vector3` to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
 
 --- code ---
 ---
@@ -361,15 +371,21 @@ line_highlights: 29
 
 **Test:** Play your scene and check if you are happy with the speed settings.
 
-Make changes to `moveSpeed` and `rotateSpeed` in your script until you are happy.
+If you select the Player in your scene view you can make changes to your `moveSpeed` and `rotateSpeed` variables in the Inspector.
 
-**Tip:** You can mask the `Debug.Log()` lines by putting `//` at the beginning of the line. You can also mask multiple lines using `/*` and `*/`:
-```
-        /*if (speed != 0) // Player moving
-        {
-            Debug.Log(speed);
-        }*/
-```
+![Inspector view of the Player GameObject, with the variables for the Player Controller script highlighted.](images/inspector-variables.png)
+
+--- collapse ---
+
+---
+title: Variables in the Inspector
+---
+
+When you change the value of a variable in the Inspector, it takes priority over the value set in your script.
+
+Any future changes you make to those values in your script **will not take effect**.
+
+--- /collapse ---
 
 Click the **Play** button again to exit Play mode.
 
