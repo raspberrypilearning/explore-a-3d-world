@@ -35,7 +35,7 @@ Dit GameObject bevindt zich gedeeltelijk onder een vlak. Welke eigenschap moet j
 
   --- feedback ---
 
-  Nee, door deze eigenschap aan te passen beweegt het GameObject horizontaal, en dus niet omhoog. Bedenk welke coördinaat de positie op de omhoog/omlaag-as instelt.
+  No, adjusting this property would move the GameObject horizontally, not make the GameObject move up. Bedenk welke coördinaat de positie op de omhoog/omlaag-as instelt.
 
   In 2D heb je alleen x- en y-coördinaten. 3D voegt een z-coördinaat toe, die je kunt voorstellen als van voren naar achteren.
 
