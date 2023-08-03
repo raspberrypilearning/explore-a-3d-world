@@ -35,7 +35,7 @@ Ce GameObject est en partie sous un Plane. Quelle propriété dois-tu modifier p
 
   --- feedback ---
 
-  Non, l'ajustement de cette propriété déplacerait le GameObject horizontalement, ne ferait pas monter le GameObject. Réfléchis à la coordonnée qui définit la position sur l'axe haut/bas.
+  No, adjusting this property would move the GameObject horizontally, not make the GameObject move up. Réfléchis à la coordonnée qui définit la position sur l'axe haut/bas.
 
   En 2D, tu n'as que les coordonnées x et y. La 3D ajoute une coordonnée z, que tu peux considérer comme d'avant en arrière.
 
