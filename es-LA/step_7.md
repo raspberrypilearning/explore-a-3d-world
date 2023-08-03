@@ -1,28 +1,28 @@
-## Upgrade your project
+## Mejora tu proyecto
 
-Now you can make your 3D world just the way you want it.
+Ahora puede hacer su mundo 3D tal como lo desea.
 
-You can:
-+ Add more 3D objects to your world, try Spheres and Capsules
-+ Try different colours and materials
-+ Change the Scale settings or the Transform values for your character to make it bigger or smaller — you'll need to change all three values to keep it in proportion
-+ Enable and disable different accessories in the Inspector window to get the look you want
-+ Adjust the Player movement and rotation speed
-+ Adjust the position of the camera
+Puedes:
++ Agrega más objetos 3D a tu mundo, prueba con Esferas y Cápsulas
++ Prueba diferentes colores y materiales
++ Cambia la configuración de escala o los valores de transformación de su personaje para hacerlo más grande o más pequeño; deberá cambiar los tres valores para mantener su proporción
++ Habilita y deshabilita diferentes accesorios en la ventana de Inspeccion para obtener el aspecto que desea
++ Ajustar el movimiento del jugador y la velocidad de rotación
++ Ajustar la posición de la cámara
 
-![The scene view with new camera position, additional shapes, and enlarged character with the construction mesh turned back on.](images/customised-project.png)
+![La vista de la escena con una nueva posición de la cámara, formas adicionales y un personaje ampliado con la malla de construcción activada.](images/customised-project.png)
 
-You can download the basic and extended projects as packages along with the WebGL projects from the zipped solutions directory at [https://rpf.io/p/en/explore-a-3d-world-get](https://rpf.io/p/en/explore-a-3d-world-get)
+Puede descargar los proyectos básicos y extendidos como paquetes junto con los proyectos WebGL del directorio de soluciones comprimidas en [https://rpf.io/p/en/explore-a-3d-world-get](https://rpf.io/p/en/explore-a-3d-world-get)
 
 --- collapse ---
 
 ---
-title: Completed project
+title: Proyecto terminado
 ---
 
-You can download the [completed project here](https://rpf.io/p/en/explore-a-3d-world-get){:target="_blank"}.
+Puede descargar el [proyecto completo aquí](https://rpf.io/p/en/explore-a-3d-world-get){:target="_blank"}.
 
-You can view the completed project below.
+Puede ver el proyecto completo a continuación.
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-extended.rpfilt.repl.co" frameborder="0"></iframe>
 
