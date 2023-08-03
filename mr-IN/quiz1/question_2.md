@@ -35,7 +35,7 @@ This GameObject is partly underneath a Plane. Which property should you change t
 
   --- feedback ---
 
-  No, adjusting this propery would move the GameObject horizontally, not make the GameObject move up. Think about which coordinate sets the position on the up/down axis.
+  No, adjusting this property would move the GameObject horizontally, not make the GameObject move up. Think about which coordinate sets the position on the up/down axis.
 
   In 2D, you just have x and y coordinates. 3D adds a z coordinate, which you can think of as front to back.
 
