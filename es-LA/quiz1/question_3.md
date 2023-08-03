@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Pregunta 3 de 3
 ---
 
-This Script is supposed to print the Player’s vertical movement value each frame, but it only prints it once at the start. How could you fix this?
+This Script is supposed to display the Player’s vertical movement value each frame, but it only displays it once at the start. ¿Cómo podrías arreglarlo?
 
 ```
 using System.Collections;
@@ -31,36 +31,36 @@ public class PlayerController : MonoBehaviour
 
 --- choices ---
 
-- ( ) Change the code to `Debug.log(speed);`
+- ( ) Cambie el código a `Debug.log(velocidad);`
 
   --- feedback ---
 
-  No. C# is case sensitive so you need to make sure to use capital letters correctly. The C# naming convention is to capitalise all words in a method name so `Debug.Log(speed);` is correct.
+  No. C# distingue entre mayúsculas y minúsculas, por lo que debe asegurarse de usar las letras mayúsculas correctamente. La convención de nomenclatura de C# es poner en mayúscula el inicio de todas las palabras en el nombre del método, por lo que `Debug.Log(velocidad);` es correcto.
 
   --- /feedback ---
 
-- ( ) Add a semi-colon to the end of the `Debug` line
+- ( ) Agregue un punto y coma al final de la línea `Debug`
 
 
   --- feedback ---
 
-That's not it. Forgetting to add a semi-colon `;` to the end of a line is a common mistake in C#, but this code does have a semi-colon at the end of the line.
+Eso no es correcto. Olvidarse de agregar un punto y coma `;` al final de una línea es un error común en C#, pero este código tiene un punto y coma al final de la línea.
 
   --- /feedback ---
 
-- ( ) Drag the script to the Player GameObject in the Inspector
+- ( ) Arrastre las instrucciones de codigo del Script al Objeto del juego Jugador en el Inspector
 
   --- feedback ---
 
-  That's not it. It's easy to forget to attach a new script to a GameObject, but the code is running once so that's not the problem here.
+  Eso no es correcto. Es fácil olvidar adjuntar las nuevas instrucciones de codigo del script a un Objeto del juego, pero el código se ejecuta una vez, así que ese no es el problema aquí.
 
   --- /feedback ---
 
-- (x) Move the code from the `Start` method to the `Update` method
+- (x) Mueva el código del método `Inicio` al método `Actualizar`
 
   --- feedback ---
 
-  Yes! The `Debug.Log(speed);` line is in the `Start` method, which only runs once, before the first frame. Moving the code to the `Update` method will run the code every frame so the Player's vertical position will keep printing.
+  ¡Sí! La línea `Debug.Log(velocidad);` está en el método `Inicio`, que solo se ejecuta una vez, antes del primer cuadro. Moving the code to the `Update` method will run the code every frame so the Player's current vertical position will always be displayed.
 
   --- /feedback ---
 
