@@ -5,7 +5,7 @@
 legend: Question 3 sur 3
 ---
 
-Ce script est censé imprimer la valeur de mouvement vertical du joueur à chaque frame, mais il ne l'imprime qu'une seule fois au début. Comment pourrais-tu régler cela ?
+This Script is supposed to display the Player’s vertical movement value each frame, but it only displays it once at the start. Comment pourrais-tu régler cela ?
 
 ```
 using System.Collections;
@@ -60,7 +60,7 @@ Ce n'est pas ça. Oublier d'ajouter un point-virgule `;` à la fin d'une ligne e
 
   --- feedback ---
 
-  Oui ! La ligne `Debug.Log(speed);`est dans la méthode `Start`, qui ne s'exécute qu'une seule fois, avant la première frame. Déplacer le code vers la méthode `Update` exécutera le code à chaque frame afin que la position verticale du joueur continue à s'imprimer.
+  Oui ! La ligne `Debug.Log(speed);`est dans la méthode `Start`, qui ne s'exécute qu'une seule fois, avant la première frame. Moving the code to the `Update` method will run the code every frame so the Player's current vertical position will always be displayed.
 
   --- /feedback ---
 
