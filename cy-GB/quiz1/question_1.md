@@ -1,10 +1,10 @@
-## Reflection
+## Quick quiz
 
-You did it! You created your first Unity project and learned lots of new skills along the way.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Now it's time to reflect — this will make sure you have understood and help you to remember what you have learnt.
+When you have answered each question, click on **Check my answer**.
 
-Answer the three questions. After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want.
+Have fun!
 
 --- question ---
 
@@ -23,7 +23,7 @@ The Unity Editor has several different windows. Which window is shown here?
 
   --- feedback ---
 
-  No, the Project window shows a library of all the files included in your project. In the Project window you can find Assets to use in your Scene by naviagting the project file structure.
+  No, the Project window shows a library of all the files included in your project. In the Project window you can find Assets to use in your Scene by navigating the project file structure.
 
   --- /feedback ---
 
