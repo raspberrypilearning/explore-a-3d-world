@@ -1,53 +1,53 @@
-## Reflection
+## Quick quiz
 
-You did it! You created your first Unity project and learned lots of new skills along the way.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Now it's time to reflect — this will make sure you have understood and help you to remember what you have learnt.
+When you have answered each question, click on **Check my answer**.
 
-Answer the three questions. After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want.
+Have fun!
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Pregunta 1 de 3
 ---
 
-The Unity Editor has several different windows. Which window is shown here?
+El editor de Unity tiene varias ventanas diferentes. ¿Qué ventana se esta mostrando aquí?
 
-![Image showing the object selected and arrows to drag.](images/object-move-view.png)
+![Imagen que muestra el Objeto seleccionado y flechas para arrastrar.](images/object-move-view.png)
 
 
 --- choices ---
 
-- ( ) Project window
+- ( ) Ventana de proyecto
 
   --- feedback ---
 
-  No, the Project window shows a library of all the files included in your project. In the Project window you can find Assets to use in your Scene by naviagting the project file structure.
+  No, la Ventana de proyecto muestra una biblioteca de todos los archivos incluidos en su proyecto. In the Project window you can find Assets to use in your Scene by navigating the project file structure.
 
   --- /feedback ---
 
-- ( ) Game view
+- ( ) Vista del juego
 
   --- feedback ---
 
-  Not quite, the window shown in the question looks a bit like the Game view but the Game view shows the Scene as it would be viewed by a user, through the lens of a camera.
+  No del todo, la ventana que se muestra en la pregunta se parece a la vista del juego, pero la vista del juego muestra la escena como la vería un usuario, a través de la lente de una cámara.
 
   --- /feedback ---
 
-- (x) Scene view
+- (x) Vista de escena
 
   --- feedback ---
 
-  That's right! This is the Scene view and it is used to navigate and edit your Scene. Here, you can select, position, rotate, and scale GameObjects including characters, scenery, cameras, and lights.
+  Es correcto! Es la Vista de escena que se usa para navegar y editar tu escena. Aquí, puede seleccionar, colocar, rotar y escalar Objectos del juego, incluidos personajes, escenarios, cámaras y luces.
 
   --- /feedback ---
 
-- ( ) Hierarchy window
+- ( ) Ventana de jerarquía
 
   --- feedback ---
 
-  No, the Hierarchy window shows all the GameObjects in your Scene and how they are organised. In the Hierarchy window, you can add and navigate the GameObjects and child GameObjects in your project.
+  No, la Ventana de jerarquía muestra todos los objectos del juego en tu escena y cómo ellos están organizados. En la Ventana de jerarquía, usted puede agregar y navegar por los Objectos del juego y por los Objetos hijos en su proyecto.
 
   --- /feedback ---
 
