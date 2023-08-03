@@ -1,4 +1,4 @@
-## المقدمة
+## You will make
 
 اصنع عالم ثلاثي الأبعاد في Unity واستكشفه بشخصية مشغل ثلاثي الأبعاد متحرك.
 
@@ -23,12 +23,16 @@
 
 ستحتاج أيضًا إلى تنزيل [Unity starter package](https://rpf.io/p/en/explore-a-3d-world-go){: target = "_ blank"} من الأصول قبل البدء.
 
+Moving and looking around the 3D environment is much easier if you have an external mouse, rather than a trackpad.
+
+If you don't have an external mouse right now don't worry, you can still complete this project with a trackpad.
+
 --- no-print ---
 
 --- task ---
-### جربها
+### Play ▶️
 
-**انقر فوق المشروع المضمن.** تنقل في العالم ثلاثي الأبعاد باستخدام WASD أو مفاتيح الأسهم. ماذا يفعل الراكون عندما يقف ساكنا؟ كيف يتحركون عند المشي؟ هل يمكنك المشي عبر الجدران؟
+**Click on the embedded project.** ⬇️ Navigate the 3D world using the WASD or arrow keys. What does the raccoon do when standing still? How do they move when walking? Can you walk through the walls?
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
@@ -38,6 +42,6 @@
 
 --- print-only ---
 
-![مشروع كامل.](images/showcase_static.png)
+![Completed project.](images/showcase_static.png)
 
 --- /print-only ---
