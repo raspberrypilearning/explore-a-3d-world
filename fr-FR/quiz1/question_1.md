@@ -1,10 +1,10 @@
-## Réflexion
+## Quick quiz
 
-Tu as réussi ! Tu as créé ton premier projet Unity et acquis de nouvelles compétences en même temps.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Prends le temps de réfléchir, cela te permettra de t'assurer que tu as bien compris et t'aidera à te souvenir de ce que tu as appris.
+When you have answered each question, click on **Check my answer**.
 
-Réponds aux trois questions. Après chaque question, appuie sur Soumettre. Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de fois que tu le souhaites.
+Have fun!
 
 --- question ---
 
@@ -23,7 +23,7 @@ L'éditeur Unity comporte plusieurs fenêtres différentes. Quelle fenêtre est 
 
   --- feedback ---
 
-  Non, la fenêtre Project affiche une bibliothèque de tous les fichiers inclus dans ton projet. Dans la fenêtre Project, tu peux trouver les assets à utiliser dans ta scène en naviguant dans la structure du fichier du projet.
+  Non, la fenêtre Project affiche une bibliothèque de tous les fichiers inclus dans ton projet. In the Project window you can find Assets to use in your Scene by navigating the project file structure.
 
   --- /feedback ---
 
