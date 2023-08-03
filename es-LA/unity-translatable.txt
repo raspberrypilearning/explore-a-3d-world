@@ -1,9 +1,9 @@
-Player started
+Jugador iniciado
 
-speed
+velocidad
 
-controller
+controlador
 
-moveSpeed
+velocidadMovimiento
 
-rotateSpeed
+velocidadRotacion
