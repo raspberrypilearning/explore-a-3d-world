@@ -1,10 +1,10 @@
-## Quick quiz
+## Snelle quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Beantwoord de drie vragen. Je wordt naar het juiste antwoord geleid.
 
-When you have answered each question, click on **Check my answer**.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
-Have fun!
+Veel plezier!
 
 --- question ---
 
@@ -23,7 +23,7 @@ De Unity Editor heeft verschillende vensters. Welk venster wordt hier weergegeve
 
   --- feedback ---
 
-  Nee, het venster Project toont een bibliotheek met alle bestanden in je project. In the Project window you can find Assets to use in your Scene by navigating the project file structure.
+  Nee, het venster Project toont een bibliotheek met alle bestanden in je project. In het venster Project kun je elementen vinden die je in je Scène kunt gebruiken door de structuur van het projectbestand te bepalen.
 
   --- /feedback ---
 
