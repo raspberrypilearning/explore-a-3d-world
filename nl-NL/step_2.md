@@ -10,7 +10,7 @@ Je 3D-wereld, of 'toegangspunt', heeft een vloer en muren nodig.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-People are spending more time in <span style="color: #0faeb0">**online virtual worlds**</span>. As well as playing games, people relax, explore, socialise and learn. Being able to design 3D worlds provides you with endless opportunities to create interactive experiences like these.
+Mensen brengen meer tijd door in <span style="color: #0faeb0">**online virtuele omgevingen**</span>. As well as playing games, people relax, explore, socialise and learn. Het kunnen ontwerpen van 3D-werelden bied je eindeloze mogelijkheden om interactieve ervaringen zoals deze te creëren.
 </p>
 
 Een Unity-project heeft graphics en geluid 'Assets' nodig.
