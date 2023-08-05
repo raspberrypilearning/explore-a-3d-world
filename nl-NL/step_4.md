@@ -153,11 +153,11 @@ Unity creëert het effect van beweging door snel afbeeldingen op het scherm te t
 
 --- task ---
 
-Switch to your code editor.
+Schakel over naar jouw code-editor.
 
-You will be able to use the WASD or arrow keys (players on a mobile or console can use different inputs without you changing your code.)
+Je kunt de WASD- of pijltjestoetsen gebruiken (spelers op een mobiel of console kunnen verschillende invoer gebruiken zonder dat je de code hoeft te wijzigen)
 
-`Input.GetAxis("Vertical")` takes input from the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys, and returns a number between 1 and -1, which it uses for forwards and backwards movement.
+`Input.GetAxis("Vertical")` neemt input van de <kbd>W</kbd> en <kbd>S</kbd> toetsen of de pijltjestoetsen omhoog en omlaag, en retourneert een getal tussen 1 en -1, dat wordt gebruikt voor vooruit- en achterwaartse beweging.
 
 --- code ---
 ---
@@ -176,57 +176,57 @@ line_highlights: 16-21
     }
 --- /code ---
 
-A `float` is a decimal number.
+Een `float` is een decimaal getal.
 
-**Save** your PlayerController script in your code editor, using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Cmd</kbd>+<kbd>S</kbd>), then return to the Unity Editor.
+**Save** je PlayerController script met <kbd>Ctrl</kbd>+<kbd>S</kbd> (of <kbd>Cmd</kbd>+<kbd>S</kbd>) en keer vervolgens terug naar de Unity Editor.
 
-**Tip:** You might find it quicker to use <kbd>Alt</kbd>+<kbd>Tab</kbd> (or <kbd>Cmd</kbd>+<kbd>Tab</kbd>) to switch between your web browser with the project instructions, the Unity Editor, and your code editor.
+**Tip:** je kunt ook <kbd>Alt</kbd>+<kbd>Tab</kbd> (of <kbd>Cmd</kbd>+<kbd>Tab</kbd>) gebruiken om te schakelen tussen je webbrowser met de projectinstructies, de Unity Editor en je code-editor.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Go to the Toolbar and click on the **Play** button to put your scene into Play mode.
+**Test:** Ga naar de werkbalk en klik op de knop **Play** om de scène in de afspeelmodus te zetten.
 
-Place your **mouse pointer in the Game view** and press keys <kbd>W</kbd> and <kbd>S</kbd>. Look at the values logged in the Console window as you press the keys. Each time you press <kbd>W</kbd> a positive number is logged, when you press <kbd>S</kbd> a negative number is logged. A number is only logged if the value of speed **is not** 0 (see line 18 of the code).
+Plaats de **muisaanwijzer in de spelweergave** en druk op de toetsen <kbd>W</kbd> en <kbd>S</kbd>. Bekijk de geregistreerde waarden in het consolevenster terwijl je op de toetsen drukt. Elke keer dat je op <kbd>W</kbd> drukt, wordt er een positief getal geregistreerd, wanneer je op <kbd>S</kbd> drukt, wordt er een negatief getal geregistreerd. Een nummer wordt alleen gelogd als de waarde van snelheid **niet** 0 is (zie regel 18 van de code).
 
-The numbers range between -1.0 and 1.0 and correspond to movement from the vertical controls on the keyboard (or a game controller). You can also use the up and down arrow keys.
+De getallen lopen uiteen tussen -1,0 en 1.0 en komen overeen met de bewegingen van de verticale knoppen op het toetsenbord (of een spelcontroller). Je kunt ook de pijltjestoetsen omhoog en omlaag gebruiken.
 
-![The Console window with five log entries that have values between -1 and 1.](images/console-values.png)
+![Het Console venster met vijf logboekitems met waarden tussen -1 en 1.](images/console-values.png)
 
-**Tip:** The output also appears in the bar at the bottom of the Unity Editor.
+**Tip:** de uitvoer verschijnt ook in de balk onder aan de Unity Editor.
 
-Click the **Play** button again to exit Play mode and the debug output will stop.
-
---- /task ---
-
-It's easy to forget whether your game is playing or not. A Play mode colour tint makes it easier to tell when your scene is playing:
-
-![Side-by-side images of the Unity Editor without tint and with tint to indicate the game is playing.](images/tint-no-tint.png)
-
---- task ---
-
-To set a tint, go to the **Edit Menu** (or Unity Menu) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
-
-Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
-
-![The colour wheel pop-up window with a blue medium opacity tint selected.](images/tint-colour-window.png){:width="400px"}
-
-**Tip:** Try a light colour so that you can still clearly see the text in the editor when the scene is running.
-
-Return to the Unity Editor and press the **Play** button to see your new tint in action. When you are happy with the tint you have chosen, press the **Play** button again to exit Play mode.
+Klik opnieuw op de knop **Play** om de afspeelmodus te verlaten en de uitvoer van foutopsporing stopt.
 
 --- /task ---
 
-The Character Controller component provides a `SimpleMove` method.
+Het is gemakkelijk om te vergeten of je spel aan het spelen is of niet. Een kleurtint voor de afspeelmodus maakt het gemakkelijker om te zien wanneer je scène wordt afgespeeld:
+
+![Naast elkaar geplaatste afbeeldingen van de Unity Editor zonder tint en met tint om aan te geven dat het spel wordt gespeeld.](images/tint-no-tint.png)
 
 --- task ---
 
-**Add** code to use the vertical input value to move the Player each frame.
+Om een tint in te stellen, ga je naar het **Edit Menu** (of Unity Menu) en selecteer je **Preferences**. Kies het menu **Colours** en zoek de eigenschap **Playmode tint**.
 
-You can **delete** the Debug code.
+Klik op de bestaande kleur om een kleurenwiel te zien waar je een kleur en transparantie niveau kunt kiezen:
 
-**Tip:** You can also mask the `Debug.Log()` lines by putting `//` at the beginning of the line. You can also mask multiple lines using `/*` and `*/`:
+![Het kleurenwiel pop-up venster met een blauwe, gemiddelde transparantie tint geselecteerd.](images/tint-colour-window.png){:width="400px"}
+
+**Tip:** Probeer een lichte kleur zodat je de tekst in de editor nog steeds goed kunt zien wanneer de scène wordt uitgevoerd.
+
+Ga terug naar de Unity Editor en druk op de **Play** knop om je nieuwe tint in actie te zien. Wanneer je tevreden bent met de tint die je hebt gekozen, druk je opnieuw op de **Play** knop om de afspeelmodus te verlaten.
+
+--- /task ---
+
+De Character Controller component biedt een `SimpleMove` methode.
+
+--- task ---
+
+**Voeg** code toe om de verticale invoerwaarde te gebruiken om de speler elk frame te verplaatsen.
+
+Je kunt de Debug code **verwijderen**.
+
+**Tip:** je kunt de `Debug.Log()` regels verbergen door `//` aan het begin van de regel te zetten. Je kunt ook meerdere regels verbergen met `/*` en `*/`:
 ```
         /*if (speed != 0) // Player moving
         {
@@ -234,7 +234,7 @@ You can **delete** the Debug code.
         }*/
 ```
 
-Unity uses a special data type called a `Vector3` to store 3D points or directions. The `forward` variable stores the direction that the Player is facing:
+Een Unity `Vector3` wordt gebruikt om 3D-punten of -richtingen op te slaan. De `forward` variabele slaat de richting op waar de Player naar kijkt:
 
 --- code ---
 ---
@@ -259,27 +259,27 @@ line_highlights: 18-23
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>W</kbd> and <kbd>S</kbd> keys or the up and down arrow keys to glide forwards and backwards.
+**Test:** Klik op **Play** om de afspeelmodus te openen en je code uit te proberen. Gebruik de <kbd>W</kbd> en <kbd>S</kbd> toetsen of de pijltjestoetsen omhoog en omlaag om naar voren en naar achteren te schuiven.
 
-**Debug:** Remember to check the Console window for helpful messages. Check brackets, semicolons, and capital letters in your code carefully.
+**Debug:** Vergeet niet om het Console venster te controleren op nuttige berichten. Controleer zorgvuldig haakjes, puntkomma's en hoofdletters in de code.
 
-**Tip:** Make sure your mouse pointer is in the **Game view**.
+**Tip:** Zorg ervoor dat de muisaanwijzer zich in de **Game view** bevindt.
 
-Try and walk through the wall. The `SimpleMove` method from the Character Controller component stops you from being able to walk through GameObjects that have a collider. A collider is automatically added when you create a 3D shape as you did for the wall.
+Probeer eens door de muur te lopen. De `SimpleMove` methode van de Character Controller component zorgt ervoor dat je niet door GameObjects kunt lopen die een collider hebben. Een collider wordt automatisch toegevoegd wanneer je een 3D-vorm maakt zoals je dat deed voor de muur.
 
-You can pan around in the Scene view by holding your right mouse button and dragging. Pan to get a better view of the wall as your character walks into it:
+Je kunt in de scèneweergave "pannen" door de rechtermuisknop ingedrukt te houden en te verslepen. Pan om een beter zicht op de muur te krijgen terwijl je personage er tegenaan loopt:
 
-![Scene and Game views of the character stopped at the wall.](images/player-wall.gif){:width="500px"}
+![Scene en Game Views van het personage gestopt aan de muur.](images/player-wall.gif){:width="500px"}
 
-To move your Player, move the mouse pointer back to the **Game view**.
+Om je Player te verplaatsen, beweeg je de muisaanwijzer terug naar de **Game view**.
 
-Click the **Play** button again to exit Play mode.
+Klik nogmaals op de knop **Play** om de Play mode te verlaten.
 
 --- /task ---
 
 --- task ---
 
-Add another line so your character can `Rotate` when the player presses the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys:
+Voeg nog een regel toe zodat je personage kan `draaien` wanneer de speler op de toetsen <kbd>A</kbd> en <kbd>D</kbd> of de pijltjestoetsen links en rechts drukt:
 
 --- code ---
 ---
@@ -303,29 +303,29 @@ line_highlights: 18-19
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor. Unity will load your updated script.
+Sla je code op en schakel terug naar de Unity Editor. Unity zal je bijgewerkte script laden.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click **Play** to enter Play mode and try out your code. Use the <kbd>A</kbd> and <kbd>D</kbd> keys or the left and right arrow keys to rotate.
+**Test:** Klik op **Play** om de Play mode te openen en je code uit te proberen. Gebruik de <kbd>A</kbd> en <kbd>D</kbd> toetsen of de linker- en rechterpijltjestoetsen om je personage te laten draaien.
 
-**Debug:** If you are still seeing output to the Console and movement isn't working, then make sure you have saved your script in the code editor.
+**Debug:** als je nog steeds uitvoer naar de console ziet en beweging niet werkt, zorg er dan voor dat je het script in de code-editor hebt opgeslagen.
 
-Click the **Play** button again to exit Play mode.
+Klik nogmaals op de knop **Play** om de Play mode te verlaten.
 
 --- /task ---
 
-You can also control the speed of movement and rotation.
+Je kunt ook de snelheid van beweging en rotatie regelen.
 
 --- task ---
 
-Open your PlayerController script and add variables for the `moveSpeed` and `rotateSpeed`.
+Open je PlayerController script en voeg variabelen toe voor `moveSpeed` en `rotateSpeed`.
 
 --- code ---
 ---
-language: cs filename: PlayerController.cs line_numbers: true line_number_start: 5
+language: cs filename: SterController.cs line_numbers: True line_number_start: 5
 line_highlights: 7-8
 ---
 public class PlayerController : MonoBehaviour
@@ -340,7 +340,7 @@ public class PlayerController : MonoBehaviour
 
 --- task ---
 
-Update the code to `Rotate` and `SimpleMove` your character to multiply them by the new variables:
+Update de code voor `Rotate` en `SimpleMove` om de nieuwe variabelen te gebruiken:
 
 --- code ---
 ---
@@ -352,7 +352,7 @@ line_highlights: 22
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
 --- /code ---
 
-and
+en
 
 --- code ---
 ---
@@ -369,25 +369,25 @@ line_highlights: 29
 
 --- task ---
 
-**Test:** Play your scene and check if you are happy with the speed settings.
+**Test:** Speel je scène en controleer of je tevreden bent met de snelheidsinstellingen.
 
-If you select the Player in your scene view you can make changes to your `moveSpeed` and `rotateSpeed` variables in the Inspector.
+Als je de speler in uw scèneweergave selecteert, kun je wijzigingen aanbrengen in je variabelen `moveSpeed` en `rotationSpeed` in de Inspector.
 
-![Inspector view of the Player GameObject, with the variables for the Player Controller script highlighted.](images/inspector-variables.png)
+![Inspectorweergave van het Player GameObject, met de variabelen voor het Player Controller-script gemarkeerd.](images/inspector-variables.png)
 
 --- collapse ---
 
 ---
-title: Variables in the Inspector
+title: Variabelen in de inspector
 ---
 
-When you change the value of a variable in the Inspector, it takes priority over the value set in your script.
+Wanneer je de waarde van een variabele in de Inspector wijzigt, heeft deze voorrang op de waarde die in jouw script is ingesteld.
 
-Any future changes you make to those values in your script **will not take effect**.
+Alle toekomstige wijzigingen die je aanbrengt in die waarden in jouw script **zullen niet van kracht worden**.
 
 --- /collapse ---
 
-Click the **Play** button again to exit Play mode.
+Klik nogmaals op de knop **Play** om de Play mode te verlaten.
 
 --- /task ---
 
