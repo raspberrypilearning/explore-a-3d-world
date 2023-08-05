@@ -1,4 +1,4 @@
-## You will make
+## Wat ga je maken
 
 Maak een 3D-wereld in Unity en verken deze met een geanimeerd 3D-personage.
 
@@ -23,16 +23,16 @@ Je kunt onze [Unity guide](https://projects.raspberrypi.org/en/projects/unity-gu
 
 Je moet ook het [Unity starterspakket](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} downloaden voordat je begint.
 
-Moving and looking around the 3D environment is much easier if you have an external mouse, rather than a trackpad.
+Bewegen en rondkijken in de 3D-omgeving is veel gemakkelijker als je een externe muis hebt in plaats van een trackpad.
 
-If you don't have an external mouse right now don't worry, you can still complete this project with a trackpad.
+Maak je geen zorgen als je op dit moment geen externe muis hebt, je kunt dit project nog steeds voltooien met een trackpad.
 
 --- no-print ---
 
 --- task ---
-### Play ▶️
+### Afspelen ▶️
 
-**Click on the embedded project.** ⬇️ Navigate the 3D world using the WASD or arrow keys. What does the raccoon do when standing still? How do they move when walking? Can you walk through the walls?
+**Klik op het project.** ⬇️ Navigeer door de 3D-wereld met behulp van de WASD- of pijltjestoetsen. Wat doet de wasbeer wanneer hij stilstaat? Hoe bewegen ze tijdens het lopen? Kun je door de muren lopen?
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
@@ -42,6 +42,6 @@ If you don't have an external mouse right now don't worry, you can still complet
 
 --- print-only ---
 
-![Completed project.](images/showcase_static.png)
+![Voltooid project.](images/showcase_static.png)
 
 --- /print-only ---
