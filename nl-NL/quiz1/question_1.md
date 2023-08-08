@@ -1,10 +1,10 @@
-## Wat nu?
+## Snelle quiz
 
-Goed gedaan! Je hebt je eerste Unity-project gemaakt en zo veel nieuwe vaardigheden geleerd.
+Beantwoord de drie vragen. Je wordt naar het juiste antwoord geleid.
 
-Nu is het tijd om na te denken: Dit zorgt ervoor dat je begrijpt wat je hebt geleerd en helpt je om te onthouden.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
-Beantwoord de drie vragen. Druk na elke vraag op Controleer mijn antwoord. Je wordt naar het juiste antwoord geleid. Je kunt deze activiteit zo vaak doen als je wilt.
+Veel plezier!
 
 --- question ---
 

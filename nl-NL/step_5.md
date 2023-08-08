@@ -6,7 +6,9 @@ Je speler beweegt, maar zit op dit moment vast in een T-pose-positie. Je kunt di
 
 --- task ---
 
-Sleep de **IdleWalk** animator van de **Animation** > **animators** map in het Project venster naar de eigenschap Controller van de Animator-component van je personage:
+Selecteer de speler in het hiërarchievenster.
+
+Sleep de **IdleWalk** animator van de **Animation** > **Animators** map in het Project venster naar de eigenschap Controller van de Animator-component van je personage:
 
 ![De IdleWalk-animator in de Animations die naar de controller wijst.](images/move_idlewalk.png)
 
@@ -90,7 +92,7 @@ Je kunt de positie en rotatie van de camera aanpassen in de Scene view of het In
 
 --- task ---
 
-Verlaat de afspeelmodus en selecteer de **Main Camera** in het venster Hierarchy. Pas de Transform-instellingen aan om een third-person weergave van je speler te krijgen, je kijkt dan van achter en boven je speler:
+Verlaat de afspeelmodus en selecteer de **Main Camera** in het venster Hierarchy. Pas de Transform-instellingen aan om een derde-persoon weergave van je speler te krijgen, je kijkt dan van achter en boven je speler:
 
 ![Het Transform-onderdeel van de main camera met positie x = 0, y = 2.5, z = -2.5, en rotatie x = 35.](images/birdseye-transform.png)
 

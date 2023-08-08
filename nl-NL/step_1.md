@@ -1,4 +1,4 @@
-## Inleiding
+## Wat ga je maken
 
 Maak een 3D-wereld in Unity en verken deze met een geanimeerd 3D-personage.
 
@@ -23,12 +23,16 @@ Je kunt onze [Unity guide](https://projects.raspberrypi.org/nl-NL/projects/unity
 
 Je moet ook het [Unity starterspakket](https://rpf.io/p/en/explore-a-3d-world-go){:target="_blank"} downloaden voordat je begint.
 
+Bewegen en rondkijken in de 3D-omgeving is veel gemakkelijker als je een externe muis hebt in plaats van een trackpad.
+
+Maak je geen zorgen als je op dit moment geen externe muis hebt, je kunt dit project nog steeds voltooien met een trackpad.
+
 --- no-print ---
 
 --- task ---
-### Probeer het uit
+### Afspelen ▶️
 
-**Klik op het project.** Navigeer door de 3D-wereld met behulp van de WASD- of pijltjestoetsen. Wat doet de wasbeer wanneer hij stilstaat? Hoe bewegen ze tijdens het lopen? Kun je door de muren lopen?
+**Klik op het project.** ⬇️ Navigeer door de 3D-wereld met behulp van de WASD- of pijltjestoetsen. Wat doet de wasbeer wanneer hij stilstaat? Hoe bewegen ze tijdens het lopen? Kun je door de muren lopen?
 
 <iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
 

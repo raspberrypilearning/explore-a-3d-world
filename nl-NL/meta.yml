@@ -1,22 +1,26 @@
 ---
 title: Verken een 3D-wereld
 hero_image: images/banner.png
-description: Maak een 3D-wereld in Unity en verken deze met een geanimeerd 3D-persoon
+description:
+  - Maak een 3D-wereld in Unity en verken deze met een geanimeerd 
+  - 3D-persoon
+meta_title: Leer Unity | Games ontwikkelen | 3D wereld
+meta_description: Leer Unity-game-ontwikkeling met de Raspberry Pi Foundation. Creëer een 3D-wereld in Unity en verken deze met een 3D-spelerpersonage met animatie.
 version: 4
 listed: true
 copyedit: true
 last_tested: '2021-03-26'
 steps:
-  - title: Inleiding
+  - title: Wat ga je maken
   - title: Stel de 3D-scène in
-  - title: Voeg een personage toe
+  - title: Voeg een Speler toe
     completion:
       - engaged
   - title: Voeg een beweging toe
   - title: Animatie en camerapositie
     completion:
       - internal
-  - title: Reflectie
+  - title: Snelle quiz
     knowledge_quiz:
       path: quiz1
       version: 1
