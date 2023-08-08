@@ -10,7 +10,7 @@ Je 3D-wereld, of 'toegangspunt', heeft een vloer en muren nodig.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Mensen brengen meer tijd door in <span style="color: #0faeb0">**online virtuele omgevingen**</span>. Naast het spelen van games, ontspannen, verkennen, socialiseren en leren mensen en nemen deel aan interactief entertainment. Sommige mensen noemen de toekomst van deze omgevingen de <span style="color: #0faeb0">**metaverse**</span>. Het kunnen ontwerpen van 3D-werelden is een belangrijke vaardigheid.
+Mensen brengen meer tijd door in <span style="color: #0faeb0">**online virtuele omgevingen**</span>. Naast het spelen van games, ontspannen, verkennen, socialiseren en leren mensen. Het kunnen ontwerpen van 3D-werelden bied je eindeloze mogelijkheden om interactieve ervaringen zoals deze te creëren.
 </p>
 
 Een Unity-project heeft graphics en geluid 'Assets' nodig.
@@ -192,7 +192,7 @@ je kunt:
 
 --- /task ---
 
-**Tip:** als je een fout maakt in de Unity Editor, kun je <kbd>Ctrl</kbd>+<kbd>Z</kbd> (of <kbd>Cmd</kbd>+<kbd>Z</kbd>) gebruiken om je laatste actie **ongedaan te maken (undo)</kbd>. </p>
+**Tip:** als je een fout maakt in de Unity Editor, kun je <kbd>Ctrl</kbd>+<kbd>Z</kbd> (of <kbd>Cmd</kbd>+<kbd>Z</kbd>) gebruiken om je laatste actie **ongedaan te maken (undo)</kbd>.
 
 --- task ---
 

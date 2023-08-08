@@ -47,7 +47,7 @@ Je personage heeft een hoogte van `1`, wat betekent dat het midden op de y-as op
 
 Je personage heeft een script nodig zodat de speler het kan verplaatsen. Je hebt een code-editor nodig die op je computer is geïnstalleerd om dit script te kunnen bewerken.
 
-[[[unity-visual-studio]]]
+[[[unity-visual-studio-code]]]
 
 --- task ---
 
@@ -198,9 +198,9 @@ Een `float` is een decimaal getal.
 
 **Test:** Ga naar de werkbalk en klik op de knop **Play** om de scène in de afspeelmodus te zetten.
 
-Plaats de **muisaanwijzer in de spelweergave** en druk op de toetsen <kbd>W</kbd> en <kbd>S</kbd>. Kijk naar de waarden die in het Console-venster worden getoond terwijl je op de toetsen drukt. Elke keer dat je op <kbd>W</kbd> drukt, wordt er een positief getal geregistreerd, wanneer je op <kbd>S</kbd> drukt, wordt er een negatief getal geregistreerd.
+Plaats de **muisaanwijzer in de spelweergave** en druk op de toetsen <kbd>W</kbd> en <kbd>S</kbd>. Bekijk de geregistreerde waarden in het consolevenster terwijl je op de toetsen drukt. Elke keer dat je op <kbd>W</kbd> drukt, wordt er een positief getal geregistreerd, wanneer je op <kbd>S</kbd> drukt, wordt er een negatief getal geregistreerd. Een nummer wordt alleen gelogd als de waarde van snelheid **niet** 0 is (zie regel 18 van de code).
 
-De getallen lopen tussen -1,0 en 1.0 en komen overeen met de bewegingen van de verticale knoppen op het toetsenbord (of een spelcontroller). Je kunt ook de pijltjestoetsen omhoog en omlaag gebruiken.
+De getallen lopen uiteen tussen -1,0 en 1.0 en komen overeen met de bewegingen van de verticale knoppen op het toetsenbord (of een spelcontroller). Je kunt ook de pijltjestoetsen omhoog en omlaag gebruiken.
 
 ![Het Console venster met vijf logboekitems met waarden tussen -1 en 1.](images/console-values.png)
 
@@ -210,7 +210,7 @@ Klik opnieuw op de knop **Play** om de afspeelmodus te verlaten en de uitvoer va
 
 --- /task ---
 
-Je kunt eenvoudig over het hoofd zien of het spel loopt of niet. Een kleurtint voor de afspeelmodus maakt het gemakkelijker om te zien wanneer je scène wordt afgespeeld:
+Het is gemakkelijk om te vergeten of je spel aan het spelen is of niet. Een kleurtint voor de afspeelmodus maakt het gemakkelijker om te zien wanneer je scène wordt afgespeeld:
 
 ![Naast elkaar geplaatste afbeeldingen van de Unity Editor zonder tint en met tint om aan te geven dat het spel wordt gespeeld.](images/tint-no-tint.png)
 
@@ -235,6 +235,14 @@ De Character Controller component biedt een `SimpleMove` methode.
 **Voeg** code toe om de verticale invoerwaarde te gebruiken om de speler elk frame te verplaatsen.
 
 Je kunt de Debug code **verwijderen**.
+
+**Tip:** je kunt de `Debug.Log()` regels verbergen door `//` aan het begin van de regel te zetten. Je kunt ook meerdere regels verbergen met `/*` en `*/`:
+```
+        /*if (speed != 0) // Player moving
+        {
+            Debug.Log(speed);
+        }*/
+```
 
 Een Unity `Vector3` wordt gebruikt om 3D-punten of -richtingen op te slaan. De `forward` variabele slaat de richting op waar de Player naar kijkt:
 
@@ -386,15 +394,21 @@ line_highlights: 29
 
 **Test:** Speel je scène en controleer of je tevreden bent met de snelheidsinstellingen.
 
-Breng wijzigingen aan in `moveSpeed` en `rotateSpeed` in je script totdat je tevreden bent.
+Als je de speler in uw scèneweergave selecteert, kun je wijzigingen aanbrengen in je variabelen `moveSpeed` en `rotationSpeed` in de Inspector.
 
-**Tip:** je kunt de `Debug.Log()` regels verbergen door `//` aan het begin van de regel te zetten. Je kunt ook meerdere regels verbergen met `/*` en `*/`:
-```
-        /*if (speed != 0) // Speler beweegt
-        {
-            Debug.Log(speed);
-        }*/
-```
+![Inspectorweergave van het Player GameObject, met de variabelen voor het Player Controller-script gemarkeerd.](images/inspector-variables.png)
+
+--- collapse ---
+
+---
+title: Variabelen in de inspector
+---
+
+Wanneer je de waarde van een variabele in de Inspector wijzigt, heeft deze voorrang op de waarde die in jouw script is ingesteld.
+
+Alle toekomstige wijzigingen die je aanbrengt in die waarden in jouw script **zullen niet van kracht worden**.
+
+--- /collapse ---
 
 Klik nogmaals op de knop **Play** om de Play mode te verlaten.
 
