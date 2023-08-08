@@ -192,7 +192,7 @@ je kunt:
 
 --- /task ---
 
-**Tip:** als je een fout maakt in de Unity Editor, kun je <kbd>Ctrl</kbd>+<kbd>Z</kbd> (of <kbd>Cmd</kbd>+<kbd>Z</kbd>) gebruiken om je laatste actie **ongedaan te maken (undo)</kbd>.
+**Tip:** als je een fout maakt in de Unity Editor, kun je <kbd>Ctrl</kbd>+<kbd>Z</kbd> (of <kbd>Cmd</kbd>+<kbd>Z</kbd>) gebruiken om je laatste actie **ongedaan te maken** (undo).
 
 --- task ---
 
