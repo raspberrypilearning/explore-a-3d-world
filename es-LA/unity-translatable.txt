@@ -1,0 +1,9 @@
+Jugador iniciado
+
+velocidad
+
+controlador
+
+velocidadMovimiento
+
+velocidadRotacion

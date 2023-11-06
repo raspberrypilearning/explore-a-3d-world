@@ -1,0 +1,29 @@
+Jugador en movimiento
+
+Avanzar es moverse hacia adelante para este personaje
+
+Necesitas el controlador de personajes para poder usar SimpleMove
+
+Rotar alrededor del eje Y
+
+La f al final del número dice que es un número de punto flotante
+
+Definir animaciones
+
+Hacia delante
+
+Inactivo
+
+Explora el mundo 3D
+
+mundo 3D 
+
+Gris
+
+Ladrillo rojo
+
+Muro
+
+Jugador
+
+ControladorJugador
