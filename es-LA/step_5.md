@@ -6,27 +6,27 @@ Su jugador se está moviendo, pero en este momento está atascado en una posici�
 
 --- task ---
 
-Select the Player in the Hierarchy window.
+Selecciona el reproductor en la ventana Hierarchy.
 
-Drag the **IdleWalk** animator from the **Animation** > **Animators** folder in the Project window to the Controller property of the Animator component of your character:
+Arrastra el animador **IdleWalk** desde la carpeta **Animación** > **Animadores** en la ventana de Proyecto a la propiedad Controller del componente Animador de tu personaje:
 
-![The IdleWalk animator in the Animations pointing to the controller.](images/move_idlewalk.png)
+![El animador IdleWalk en las Animaciones apuntando al controlador.](images/move_idlewalk.png)
 
-This will add Idle and Walk animations to your character with a `forward` Boolean parameter that you can use to control which animation plays.
-
---- /task ---
-
---- task ---
-
-**Test:** Play your project and make sure you can see the Idle animation:
-
-![The character with IdleWalk animation in Game view.](images/idlewalk-animation.gif)
+Esto agregará animaciones de Inactividad y Caminar a su personaje con un parámetro booleano `adelante` que puede usar para controlar qué animación se reproduce.
 
 --- /task ---
 
 --- task ---
 
-Add code to the `Update` method of your script so that when the character is moving forward it uses a walking animation, otherwise it uses an idle animation:
+**Prueba:** Ejecute su proyecto y asegúrese de que puede ver la animación inactiva:
+
+![El personaje con la animación IdleWalk en la vista del juego.](images/idlewalk-animation.gif)
+
+--- /task ---
+
+--- task ---
+
+Agregue código al método `Actualizar` de su secuencia de comandos para que cuando el personaje se mueva hacia adelante use una animación para caminar, de lo contrario, use una animación inactiva:
 
 --- code ---
 ---
@@ -58,61 +58,61 @@ line_highlights: 21-31
 
 --- task ---
 
-**Test:** Play your project and make sure you can see the animation change to walk when you move forward and switch to idle when you are not moving forward:
+**Prueba:** Ejecute su proyecto y asegúrese de que puede ver el cambio de animación para caminar cuando avanza y pasar a inactivo cuando no avanza:
 
-![The character with Idle animation when standing still and Walk animation when moving forward.](images/idle-and-walk-animation.gif)
+![El personaje con animación de inactividad cuando está parado y animación de caminar cuando avanza.](images/idle-and-walk-animation.gif)
 
 --- /task ---
 
-In games, the camera often follows the Player.
+En los juegos, la cámara suele seguir al jugador.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The placement of a <span style="color: #0faeb0">**virtual camera**</span> in a 3D environment is key for creating the right perspective for users. Visibility levels from the camera lens affect the difficulty level and influence the atmosphere of a game. 
+La ubicación de una <span style="color: #0faeb0">**cámara virtual**</span> en un entorno 3D es clave para crear la perspectiva adecuada para los usuarios. Los niveles de visibilidad de la lente de la cámara afectan el nivel de dificultad e influyen en la atmósfera de un juego. 
 </p>
 
 --- task ---
 
-In the Hierarchy window, drag the **Main Camera** to the Player GameObject; it will become a 'child' of the Player and will follow the Player around.
+En la ventana Jerarquía, arrastre la **Cámara principal** al Objecto del Juego del jugador; se convertirá en un 'hijo' del Jugador y lo seguirá.
 
-![The Hierarchy window with main camera positioned inside the Player as a child game object.](images/child-camera.png)
-
---- /task ---
-
---- task ---
-
-**Test:** Play your project. The camera will now follow your character, but it's a bit far away and walls often come between the Player and the camera.
-
-![The character moving around the stage with the camera following them.](images/camera-follow-player.gif)
-
---- /task ---
-
-You can adjust the position and rotation of the camera in the Scene view or the Inspector window.
-
---- task ---
-
-Exit Play mode and select the **Main Camera** in the Hierarchy window. Adjust its Transform settings to get a third-person view of your Player, looking down from behind and above your Player:
-
-![The Transform component of the main camera with position x = 0, y = 2.5, z = -2.5, and rotation x = 35.](images/birdseye-transform.png)
-
-![The Game view with new coordinates.](images/birdseye-game.png)
-
-You can position the camera in the Scene view using the Transform and Rotate tools if you prefer:
-
-![The Scene view with Transform and Rotate tools highlighted and the camera selected with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
+![La ventana de Jerarquía con la cámara principal colocada dentro del jugador como un objeto de juego hijo.](images/child-camera.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. The camera will now follow your character with the camera just behind and above your character and looking down at an angle.
+**Prueba:** Juega tu proyecto. La cámara ahora seguirá a tu personaje, pero está un poco lejos y las paredes a menudo se interponen entre el jugador y la cámara.
 
-Adjust the camera settings until you are happy with them.
+![El personaje moviéndose por el escenario con la cámara siguiéndolos.](images/camera-follow-player.gif)
 
-**Tip:** You can try settings out in Play mode but you need to exit Play mode and update the settings to keep them.
+--- /task ---
 
-What happens if you go off the edge of the plane? Don't worry your character will go back to the centre next time you enter Play mode:
+Puede ajustar la posición y la rotación de la cámara en la vista de escena o en la ventana de inspección.
 
-![The Game view with animated character moving through the environment and the camera following with a birds eye view.](images/birdseye-walkthrough.gif)
+--- task ---
+
+Salga del modo de ejecución y seleccione la **Cámara principal** en la ventana Jerarquía. Ajuste su configuración de transformación para obtener una vista en tercera persona de su jugador, mirando hacia abajo desde atrás y por encima de su jugador:
+
+![El componente Transformar de la cámara principal con posición x = 0, y = 2,5, z = -2,5 y rotación x = 35.](images/birdseye-transform.png)
+
+![La vista del Juego con nuevas coordenadas.](images/birdseye-game.png)
+
+Puede colocar la cámara en la vista de escena usando las herramientas Transformar y Rotar si lo prefiere:
+
+![La vista de escena con las herramientas Transformar y Rotar resaltadas y la cámara seleccionada mostrando los círculos de rotación x, y y z.](images/transform-rotate-scene.png)
+
+--- /task ---
+
+--- task ---
+
+**Prueba:** Juega tu proyecto. La cámara ahora seguirá a tu personaje con la cámara justo detrás y encima de tu personaje y mirando hacia abajo en ángulo.
+
+Ajuste la configuración de la cámara hasta que esté satisfecho con ellos.
+
+**Sugerencia:** Puede probar la configuración en el modo Juego, pero debe salir del modo Juego y actualizar la configuración para mantenerla.
+
+¿Qué sucede si te sales del borde del avión? No te preocupes, tu personaje volverá al centro la próxima vez que ingreses al modo de Juego:
+
+![La vista del juego con el personaje animado moviéndose por el entorno y la cámara siguiéndolo con una vista de pájaro.](images/birdseye-walkthrough.gif)
 
 --- /task ---
 
