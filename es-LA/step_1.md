@@ -1,6 +1,6 @@
 ## Lo que harás
 
-Crea un mundo 3D en Unity y explóralo con un personaje 3D animado.
+Crea un mundo 3D en Unity y explóralo con un personaje 3D animado. 
 
 Este proyecto es presentado gracias al generoso apoyo de [Unity Technologies](https://unity.com/){:target="_blank"}.  Estos [proyectos](https://projects.raspberrypi.org/es-LA/pathways/unity-intro){:target="_blank"} ofrecen a los jóvenes la oportunidad de dar sus primeros pasos en la creación de mundos virtuales utilizando Real-Time 3D.
 
