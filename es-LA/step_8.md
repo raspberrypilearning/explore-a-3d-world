@@ -14,3 +14,13 @@ Si estás siguiendo la ruta [Introducción a Unity](https://projects.raspberrypi
 
 --- /no-print ---
 
+***
+
+Este proyecto fue traducido por voluntarios:
+
+Reymar Kingsea
+shusinthebox
+Alejandra Moreno
+
+Gracias a los voluntarios, podemos dar a las personas de todo el mundo la oportunidad de aprender en su propio idioma. Puedes ayudarnos a llegar a más personas ofreciéndote como voluntario para traducir. Más información en [rpf.io/translate](https://rpf.io/translate).
+
