@@ -1,0 +1,32 @@
+---
+title: Explora un mundo 3D
+hero_image: images/banner.png
+description:
+  Crea un mundo 3D en Unity y explóralo con un personaje 3D
+  animado
+meta_title: Aprenda Unity | Desarrollo de juegos | Mundo 3D
+meta_description: Aprende el desarrollo de juegos de Unity con la Fundación Raspberry Pi. Crea un mundo 3D en Unity y explóralo con un personaje 3D animado.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: Lo que harás
+  - title: Prepara la escena 3D
+  - title: Agrega un personaje
+    completion:
+      - engaged
+  - title: Agrega movimiento del personaje
+  - title: Animación y posición de cámara
+    completion:
+      - internal
+  - title: Test rápido
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Mejora tu proyecto
+  - title: '¿Qué sigue?'
