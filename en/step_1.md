@@ -34,7 +34,7 @@ If you don't have an external mouse right now don't worry, you can still complet
 
 **Click on the embedded project.** ⬇️ Navigate the 3D world using the WASD or arrow keys. What does the raccoon do when standing still? How do they move when walking? Can you walk through the walls?
 
-<iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-basic.rpfilt.repl.co" frameborder="0"></iframe>
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/explore-a-3d-world-basic" frameborder="0"></iframe>
 
 --- /task ---
 
