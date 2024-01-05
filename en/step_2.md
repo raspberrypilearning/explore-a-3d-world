@@ -192,13 +192,15 @@ You can either:
 
 --- /task ---
 
-**Tip:** If you make a mistake in the Unity Editor, you can use <kbd>Ctrl</kbd>+<kbd>Z</kbd> (or <kbd>Cmd</kbd>+<kbd>Z</kbd>) to **undo** your last action. 
+**Tip:** If you make a mistake in the Unity Editor, you can use <kbd>Ctrl</kbd>+<kbd>Z</kbd> (or <kbd>Cmd</kbd>+<kbd>Z</kbd>) to **undo** your last action. You can also use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> (or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>) to **redo** something you have accidentally undone.
 
 --- task ---
 
 Now change the cube into a wall with the following Position and Scale settings: 
 
 ![The Transform component with updated position and scale properties. Position x=0, y=1, z=3. Scale x=5, y=2, z=0.25.](images/transform-cube-to-wall.png){:width="400px"}
+
+**Tip:** the position coordinates are for the center of the Cube.
 
 You can either enter the values in the Transform component for the cube or click on the Scale tool and drag the handles in the Scene view (this will update the Transform values.)
 
