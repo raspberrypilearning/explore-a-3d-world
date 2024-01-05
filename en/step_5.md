@@ -102,6 +102,8 @@ You can position the camera in the Scene view using the Transform and Rotate too
 
 ![The Scene view with Transform and Rotate tools highlighted and the camera selected with rotate x, y, and z circles showing.](images/transform-rotate-scene.png)
 
+**Tip:** If you would like your camera to be closer, try changing the `Z` position to be slighter closer to 0 (try `-7` first), you might also need to increase the `X` rotation to get the characte in the middle of the view. 
+
 --- /task ---
 
 --- task ---

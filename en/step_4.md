@@ -20,7 +20,7 @@ Click on the **Player** GameObject in the Hierarchy window or Scene view so you 
 
 **Tip:** Make sure you have the **Player** selected and not one of its child objects.
 
-Click **Add Component** and start to type `character` in the Search box, then click on the **Character Controller** component when it appears: 
+Right at the bottom of the Inspecor, click **Add Component** and start to type `character` in the Search box, then click on the **Character Controller** component when it appears: 
 
 ![The 'Add Component' menu showing the character controller.](images/character-controller-add.png)
 
@@ -146,6 +146,7 @@ Unity takes a few seconds to start up, then you should see the `Debug.Log()` 'Pl
 + `} expected` – you should have a pair of open and close curly brackets `{}` around each method and around the class. Check that your curly brackets match.
 + `) expected` – make sure there's a closing `)` at the end of each method call, before the semicolon.
 + `Debug` does not contain a definition for 'log' – C# is case sensitive, so it needs to be `Log` with a capital `L`.
++ You might see a yellow **warning** about the `.NET Core SDK`, this will not affect you running or building your game - it is a warning rather than an error.
 
 Compare your code with the example code and make sure everything is exactly the same.
 
@@ -218,7 +219,7 @@ It's easy to forget whether your game is playing or not. A Play mode colour tint
 
 --- task ---
 
-To set a tint, go to the **Edit Menu** (or Unity Menu) and select **Preferences**. Choose the **Colours** menu and find the property called **Playmode tint**.
+To set a tint, go to the **Edit** -> **Preferences** (Windows) or **Unity** -> **Preferences** (Mac). Choose the **Colors** menu and find the property called **Playmode tint**.
 
 Click on the existing colour to see a colour wheel where you can choose a colour and opacity level:
 

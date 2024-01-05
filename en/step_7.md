@@ -24,7 +24,7 @@ You can download the [completed project here](https://rpf.io/p/en/explore-a-3d-w
 
 You can view the completed project below.
 
-<iframe allowtransparency="true" width="710" height="450" src="https://explore-a-3d-world-extended.rpfilt.repl.co" frameborder="0"></iframe>
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/explore-a-3d-world-extended" frameborder="0"></iframe>
 
 --- /collapse ---
 
