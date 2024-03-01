@@ -10,7 +10,7 @@ If you are following the [Introduction to Unity](https://projects.raspberrypi.or
 
 --- no-print ---
 
-<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/StarCollector" frameborder="0"></iframe>
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/StarCollectorBasic" frameborder="0"></iframe>
 
 --- /no-print ---
 
